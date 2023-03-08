@@ -1,0 +1,91 @@
+
+	
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PREPMYSKILLS - CBSE PROGRAM</title>
+
+		<link href="../../contents/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../../contents/goodmanners/css/lesson/032lsgm07.css">
+		<!-- Core JS files -->
+		
+		<script type="text/javascript" src="../../contents/assets/js/core/libraries/jquery.min.js"></script>
+		<script type="text/javascript" src="../../contents/assets/js/core/libraries/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				$("._content1,._content2,._content3,._content4,._content5,._content6,._content7,._content8").hide();
+				$("._content1").fadeOut('slow').delay(1000).fadeIn('slow');
+				$("._content2").fadeOut('slow').delay(2000).fadeIn('slow');
+				$("._content3").fadeOut('slow').delay(3000).fadeIn('slow');
+				$("._content4").fadeOut('slow').delay(4000).fadeIn('slow');
+				$("._content5").fadeOut('slow').delay(5000).fadeIn('slow');
+				$("._content6").fadeOut('slow').delay(6000).fadeIn('slow');
+				$("._content7").fadeOut('slow').delay(7000).fadeIn('slow');
+				$("._content8").fadeOut('slow').delay(8000).fadeIn('slow');
+			});
+		</script>
+		<style>
+			
+        </style>
+	
+    
+		
+		<form id="user_form" name="user_form" enctype="multipart/form-data">
+		<!-- Page container -->
+		<div class="container-fluid">
+			<!-- Page content -->
+			<div class="page-content">
+				<!-- Main content -->
+				<div class="content-wrapper">
+					<div class="row mydivs">
+						<div class="col-md-12  col-sm-12 col-xs-12 template img-responsive">
+							<div class="_content1" style="display: block;">
+                             	
+                                <div id="_objective">
+                                 	<h2><input type="text" id="head" name="h1[]"></h2>
+                                </div>
+                            </div>
+                            
+                             <div class="col-md-6 col-sm-6 col-xs-12 content_part">   
+								 
+								 
+								<ul class="_content2" style="display: block;">
+							        <li>
+									     <img id="_objective1" src="../../contents/goodmanners/manners3_images/valuebtn.png" style="float:left"> 
+								         <p style="margin-left:30px;"><input type="text" name="lp[]"></p>
+								    </li>
+							    </ul>     
+							    
+							    <ul class="_content3" style="display: block;">
+							        <li>
+									     <img id="_objective1" src="../../contents/goodmanners/manners3_images/valuebtn.png" style="float:left"> 
+								         <p style="margin-left:30px;"><input type="text" name="lp[]"></p>
+								    </li>
+							    </ul>      
+							    
+							     <ul class="_content4" style="display: block;">
+							        <li>
+									     <img id="_objective1" src="../../contents/goodmanners/manners3_images/valuebtn.png" style="float:left"> 
+								         <p style="margin-left:30px;"><input type="text" name="lp[]"></p>
+								    </li>
+							    </ul>      
+                            
+                               
+							</div>
+							
+							<div class="col-md-6 col-sm-6 col-xs-12 _content5" style="display: block;">	 
+								<input type="file" id="img" name="img[]" style="    margin-top: 47%;">
+						    </div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- <input type="button" class='finish btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Finish' /> -->			    
+		</form>                  
+    
+  
+
+
+
+	

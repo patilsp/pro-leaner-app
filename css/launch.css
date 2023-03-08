@@ -1,0 +1,26 @@
+#launch {
+    border-radius: 10px;
+    background-color: #fff;
+    /* padding: 40px 30px; */
+    margin: 0px 10px;
+}
+
+#launch h5 {
+    background: transparent !important;
+}
+
+#launch_modules h6 {
+    color: #878787;
+}
+
+#launch a {
+    min-width: 150px;
+}
+
+.col-form-label {
+    color: #181818;
+}
+
+input[type=checkbox] {
+  outline: 2px solid #000000;
+}

@@ -1,0 +1,1 @@
+<div class="br-logo bg-br-primary"><a href="<?php echo $web_root; ?>app/home.php"><span>[</span><i class="menu-item-icon ion-ios-undo-outline tx-16">Return to Home</i><span>]</span></a></div>

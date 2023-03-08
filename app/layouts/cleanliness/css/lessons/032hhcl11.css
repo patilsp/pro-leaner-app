@@ -1,0 +1,672 @@
+body{
+	
+}
+.template {
+    height: 670px;
+    background-image: url('../../cleanliness3_images/clean3.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+	._content1 img{
+    width: 430px;
+    position: absolute;
+    top: 195px;
+    left: 36px;
+
+
+}
+
+
+
+	#_objective1 {
+    margin-top: 2px;
+    width: 25px;
+}
+
+	._content5 img{
+    width: 381px;
+    position: absolute;
+    top: 108px;
+    left: 76px;
+
+
+
+}
+
+
+
+
+#_objective h2{
+	
+    position: relative;
+    top: 104px;
+    
+}
+
+.content_part{
+    top: 85px;
+    left: 28px;
+  
+    
+}
+ul{
+	           margin-left: -1px;
+}
+
+li{
+	list-style-type: none;
+	/*word-wrap:break-word;*/
+	font-family:century gothic;
+	font-weight:bold;
+	font-size:20px;
+	text-align: initial;
+}
+li img{
+	width:20px;
+}
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+	._content1 img{
+    width: 430px;
+    position: absolute;
+    top: 195px;
+    left: 36px;
+
+
+}
+
+    #_objective h2{
+		top: 71px;
+		
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+	._content1 img{
+    width: 320px;
+    position: absolute;
+    top: 108px;
+    height: 147px;
+    left: 240px;
+
+
+}
+
+	
+    #_objective h2{
+      top: 72px;
+    margin-left: 86px;
+    font-size: 27px;
+    font-weight: bold;
+    }
+
+}
+
+/* Small Devices, Tablets */
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	._content1 img{
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: 197px;
+
+
+}
+
+    #_objective h2{
+    top: 67px;
+    margin-left: 62px;
+    font-weight: bold;
+   
+
+	}
+	.content_part {
+    top: 75px;
+    left: 11px;
+    
+   
+
+
+    
+	}
+		._content5 img{
+    width: 330px;
+    position: absolute;
+    top: 94px;
+    left: 66px;
+
+}
+	
+	 ul{
+    margin-left: -13px;
+}
+	
+		
+	#_objective1 {
+    margin-top: 3px;
+    width: 22px;
+}
+	
+    .content_part li{
+    font-size: 20px;
+	}
+	
+
+
+}
+
+@media only screen and (max-width : 800px) {
+
+	._content1 img{
+    width: 280px;
+    position: absolute;
+    top: 26px;
+    left: 282px;
+
+
+}
+
+	
+		._content5 img{
+    width: 320px;
+    position: absolute;
+    top: 45px;
+    left: 17px;
+
+
+}
+    #_objective h2{
+    top: 29px;
+    margin-left: 26px;
+
+  
+	}
+	.content_part {
+    top: 37px;
+    left: -44px;
+   
+    }
+    
+    ul{
+    margin-left: 6px;
+}
+	
+		#_objective1 {
+    margin-top: 0px;
+    width: 23px;
+}
+	
+	.content_part li{
+		font-size: 18px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	._content1 img{
+    width: 280px;
+    position: absolute;
+    top: 26px;
+    left: 282px;
+
+
+}
+
+	
+		._content5 img{
+    width: 260px;
+    position: absolute;
+    top: 35px;
+    left: 207px;
+
+
+}
+    #_objective h2{
+    top: 9px;
+    margin-left: 236px;
+
+  
+	}
+	.content_part {
+    top: 17px;
+    left: -118px;
+   
+    }
+    
+    ul{
+	          margin-left: 176px;
+}
+	
+		#_objective1 {
+    margin-top: 0px;
+    width: 23px;
+}
+	
+	.content_part li{
+		font-size: 18px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 700px) {
+
+	._content1 img{
+    width: 270px;
+    position: absolute;
+    top: 35px;
+    left: 239px;
+
+
+}
+
+    #_objective h2{
+    top: 8px;
+    margin-left: 219px;
+    font-size: 21px;
+  
+	}
+	
+		._content5 img{
+    width: 253px;
+    position: absolute;
+    top: 44px;
+    left: 177px;
+
+
+}
+	.content_part {
+    top: 24px;
+    left: -50px;
+   
+    }
+    
+    ul{
+	        margin-left:78px;
+}
+	
+		#_objective1 {
+margin-top: 1px;
+    width: 23px;
+}
+	
+	.content_part li{
+		font-size: 18px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 650px) {
+
+	._content1 img{
+    width: 260px;
+    position: absolute;
+    top: 55px;
+    left: 217px;
+
+
+}
+
+    #_objective h2{
+    top: 15px;
+    margin-left: 171px;
+    font-size: 23px;
+  
+	}
+	
+		._content5 img{
+    width: 198px;
+    position: absolute;
+    top: 32px;
+    left: 147px;
+
+}
+	.content_part {
+     top: 26px;
+    left: -91px;
+   
+    }
+    
+    ul{
+	      margin-left:92px;
+}
+	
+		#_objective1 {
+    margin-top: 1px;
+    width: 24px;
+}
+	
+	.content_part li{
+		font-size: 18px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+@media only screen and (max-width : 600px) {
+
+	._content1 img{
+    width: 260px;
+    position: absolute;
+    top: 55px;
+    left: 217px;
+
+
+}
+
+    #_objective h2{
+    top: 15px;
+    margin-left: 171px;
+    font-size: 23px;
+  
+	}
+	
+		._content5 img{
+    width: 208px;
+    position: absolute;
+    top: 32px;
+    left: 147px;
+
+}
+	.content_part {
+     top: 26px;
+    left: -91px;
+   
+    }
+    
+    ul{
+	      margin-left:92px;
+}
+	
+		#_objective1 {
+    margin-top: 1px;
+    width: 24px;
+}
+	
+	.content_part li{
+		font-size: 18px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+
+@media only screen and (max-width : 550px) {
+
+	._content1 img{
+    width: 260px;
+    position: absolute;
+    top: 55px;
+    left: 217px;
+
+
+}
+
+    #_objective h2{
+    top: 15px;
+    margin-left: 121px;
+    font-size: 23px;
+  
+	}
+	
+		._content5 img{
+    width: 198px;
+    position: absolute;
+    top: 32px;
+    left: 127px;
+
+}
+	.content_part {
+    top: 26px;
+    left: -80px;
+   
+    }
+    
+    ul{
+	    margin-left: 52px;
+}
+	
+		#_objective1 {
+    margin-top: 1px;
+    width: 24px;
+}
+	
+	.content_part li{
+		font-size: 18px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+	._content1 img{
+    width: 230px;
+    position: absolute;
+    top: 95px;
+    height: 110px;
+    left: 101px;
+
+
+}
+
+	
+		._content5 img{
+    width: 222px;
+    position: absolute;
+    top: 47px;
+    left: 64px;
+
+
+
+}
+    #_objective h2{
+    top: 23px;
+    font-size: 19px;
+    margin-left: 101px;
+ 
+	}
+	
+    #_objective1 {
+    margin-top: -1px;
+    width: 24px;
+}
+
+ul{
+	            margin-left: 1px;
+}
+	.content_part {
+    top: 26px;
+    left: -31px;
+     }
+	.content_part li{
+	  font-size: 16px;
+	}
+	
+	li img{
+	width:15px;
+}
+	
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 400px) {
+
+	._content1 img{
+    width: 230px;
+    position: absolute;
+    top: 95px;
+    height: 110px;
+    left: 101px;
+
+
+}
+
+	
+		._content5 img{
+    width: 200px;
+    position: absolute;
+    top: 33px;
+    left: 64px;
+
+
+
+}
+    #_objective h2{
+    top: 23px;
+    font-size: 19px;
+    margin-left: 88px;
+ 
+	}
+	
+    #_objective1 {
+    margin-top: -1px;
+    width: 24px;
+}
+
+ul{
+	            margin-left: 1px;
+}
+	.content_part {
+    top: 25px;
+    left: -23px;
+     }
+	.content_part li{
+	  font-size: 16px;
+	}
+	
+	li img{
+	width:15px;
+}
+	
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+	._content1 img{
+    width: 230px;
+    position: absolute;
+    top: 95px;
+    height: 110px;
+    left: 101px;
+
+
+}
+
+	
+		._content5 img{
+    width: 141px;
+    position: absolute;
+    top: 33px;
+    left: 54px;
+
+
+
+}
+    #_objective h2{
+top: 23px;
+    font-size: 19px;
+    margin-left: 71px;
+ 
+	}
+	
+    #_objective1 {
+    margin-top: -1px;
+    width: 24px;
+}
+
+ul{
+	margin-left: -36px;
+}
+	.content_part {
+    top: 25px;
+    left: -1px;
+     }
+	.content_part li{
+	  font-size: 16px;
+	}
+	
+	li img{
+	width:15px;
+}
+	
+}

@@ -1,0 +1,588 @@
+body {
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.template {
+    height: 670px;
+    background-image: url('../../scientific_thinking6_images/4b.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#_objective b {
+    position: absolute;
+    left: 258px;
+    top: 41px;
+    border: 1px solid gray;
+    font-size: 27px;
+    box-shadow: 0px 0px 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#question {
+    font-family: century Gothic;
+    font-size: 23px;
+    left: 246px;
+    position: absolute;
+    top: 100px;
+}
+
+.dvSource img {
+    cursor: pointer;
+    margin-left: 121px;
+    margin-top: 0px;
+    max-width: 116px;
+}
+
+.row_1 {
+    margin-left: -36px;
+}
+
+.row_2 {
+    margin-top: -8%;
+    margin-left: -3%;
+}
+
+.valid_msg {
+    position: absolute;
+    top: 86px;
+    left: -10px;
+}
+
+#reason {
+    font-family: century Gothic;
+    font-size: 16px;
+    left: 552px;
+    position: absolute;
+    top: 320px;
+    width: 355px;
+}
+.desc b {
+    font-size: 20px;
+}
+.desc {
+        width: 90%;
+    }
+    .dvSource {
+        top: 25px;
+    }
+    #trye{
+        top: 0px;
+    }
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+    #_objective b {
+        position: absolute;
+        left: 220px;
+        top: 36px;
+        border: 1px solid gray;
+        font-size: 23px;
+        box-shadow: 0px 0px 3px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 210px;
+        position: absolute;
+        top: 90px;
+    }
+    .dvSource {
+        top: 25px;
+    }
+    .row_1 {
+        margin-left: -6px;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 104px;
+        margin-top: 0px;
+        max-width: 123px;
+    }
+    .desc b {
+        font-size: 20px;
+    }
+    .desc {
+        width: 90%;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #_objective b {
+        position: absolute;
+        left: 189px;
+        top: 43px;
+        border: 1px solid gray;
+        font-size: 27px;
+        box-shadow: 0px 0px 3px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    #question {
+        font-family: century Gothic;
+        font-size: 18px;
+        left: 177px;
+        position: absolute;
+        top: 105px;
+    }
+    .dvSource {
+        top: 25px;
+    }
+    .row_1 {
+        margin-left: -6%;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    .desc b {
+        font-size: 20px;
+    }
+    .desc {
+        width: 90%;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 105px;
+        margin-top: 1px;
+        max-width: 120px;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    #_objective b {
+        position: absolute;
+        left: 163px;
+        top: 41px;
+        border: 1px solid gray;
+        font-size: 27px;
+        box-shadow: 0px 0px 3px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    #question {
+        font-family: century Gothic;
+        font-size: 18px;
+        left: 151px;
+        position: absolute;
+        top: 101px;
+    }
+    .dvSource {
+        top: 25px;
+    }
+    .row_1 {
+        margin-left: -6%;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    .desc b {
+        font-size: 20px;
+    }
+    .desc {
+        width: 90%;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 89px;
+        margin-top: 0px;
+        max-width: 118px;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #_objective b {
+        position: absolute;
+        left: 161px;
+        top: 36px;
+        border: 1px solid gray;
+        font-size: 27px;
+        box-shadow: 0px 0px 3px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .dvSource {
+        top: 25px;
+    }
+    #question {
+        font-family: century Gothic;
+        font-size: 18px;
+        left: 149px;
+        position: absolute;
+        top: 100px;
+    }
+    .row_1 {
+        margin-left: -39px;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    .desc b {
+        font-size: 20px;
+    }
+    .desc {
+        width: 90%;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 70px;
+        margin-top: -1px;
+        max-width: 108px;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #_objective b {
+        position: absolute;
+        left: 156px;
+        top: 34px;
+        border: 1px solid gray;
+        font-size: 27px;
+        box-shadow: 0px 0px 3px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    #question {
+        font-family: century Gothic;
+        font-size: 18px;
+        left: 144px;
+        position: absolute;
+        top: 98px;
+        width: 74%;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 26px;
+        margin-top: 0px;
+        max-width: 102px;
+    }
+    .row_1 {
+        margin-left: -6%;
+        top: 18px;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    .desc b {
+        font-size: 20px;
+    }
+    .desc {
+        width: 90%;
+    }
+    .dvSource {
+        top: 25px;
+        left: 46px;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    #_objective b {
+        top: 39px;
+        left: 121px;
+    }
+    .desc b {
+        font-size: 18px;
+    }
+    .desc {
+        width: 90%;
+    }
+    .row_1 {
+        margin-left: -6%;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    #question {
+        font-size: 16px;
+        top: 101px;
+        left: 112px;
+        width: 75%;
+    }
+    .dvSource {
+        top: 14px;
+        left: 39px;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #_objective b {
+        top: 39px;
+        left: 114px;
+    }
+    .desc b {
+        font-size: 16px;
+    }
+    .desc {
+        width: 90%;
+    }
+    .row_1 {
+        margin-left: -6%;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    #question {
+        font-size: 16px;
+        top: 106px;
+        left: 104px;
+    }
+    .dvSource {
+        top: 42px;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #_objective b {
+        top: 36px;
+        left: 101px;
+    }
+    .desc b {
+        font-size: 16px;
+    }
+    .desc {
+        width: 90%;
+    }
+    .row_1 {
+        margin-left: -6%;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    #question {
+        font-size: 16px;
+        top: 97px;
+        left: 90px;
+    }
+    .dvSource {
+        top: 17px;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 500px) {
+    #question {
+        font-size: 15px;
+        left: 88px;
+        width: 75%;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 11px;
+        max-width: 98px;
+        padding: 5px;
+        margin-top: 0px;
+    }
+    .dvSource {
+        top: 42px;
+    }
+    .row_1 {
+        margin-left: -6%;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    .desc b {
+        font-size: 16px;
+    }
+    .desc {
+        width: 90%;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 480px) {
+    #_objective b {
+        left: 88px;
+        top: 42px;
+        font-size: 20px;
+    }
+    .desc b {
+        font-size: 16px;
+    }
+    .desc {
+        width: 90%;
+        left: 18px;
+    }
+    #question {
+        font-size: 16px;
+        left: 60px;
+        top: 97px;
+        width: 74%;
+    }
+    .row_1 {
+        margin-left: -6%;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 20px;
+        padding: 0px;
+        margin-top: -10px;
+        max-width: 68px;
+    }
+    .dvSource {
+        top: 42px;
+        left: 22px;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    #_objective b {
+        left: 71px;
+        top: 58px;
+        font-size: 21px;
+    }
+    #question {
+        font-size: 15px;
+        left: 60px;
+        top: 18%;
+        width: 74%;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 14px;
+        max-width: 57px;
+    }
+    .dvSource {
+        top: 42px;
+    }
+    .row_1 {
+        margin-left: -6%;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    .desc b {
+        font-size: 14px;
+    }
+    .desc {
+        width: 90%;
+    }
+    #trye{
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    #_objective b {
+        left: 53px;
+        top: 74px;
+        font-size: 17px;
+        position: absolute;
+    }
+    .desc b {
+        font-size: 12px;
+    }
+    .desc {
+        width: 90%;
+    }
+    #question {
+        font-size: 8px;
+        left: 42px;
+        top: 20%;
+        width: 77%;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 14px;
+        padding: 0px;
+        margin-top: 0px;
+        max-width: 45px;
+    }
+    .row_1 {
+        margin-left: -6%;
+    }
+    .dvSource {
+        top: 42px;
+    }
+    .row_2 {
+        margin-left: -6%;
+    }
+    #trye{
+        top: 0px;
+    }
+}

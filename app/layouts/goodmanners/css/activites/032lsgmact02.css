@@ -1,0 +1,573 @@
+body{
+    font-family: Arial;
+    font-size: 10pt;
+}
+.template {
+    height: 670px;
+    background-image: url('../../manners3_images/manners.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#_objective b {
+    position: absolute;
+    left: 65px;
+    top: 157px;
+    border: 1px solid gray;
+    font-size: 27px;
+    box-shadow: 0px 0px 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#question {
+    font-family: century Gothic;
+    font-size: 18px;
+    left: 68px;
+    position: absolute;
+    top: 215px;
+}
+.row1_img{
+    top: 51px;
+}
+.row2_img{
+    top: 51px;
+}
+.dvSource img{
+    cursor: pointer;
+    margin-left: 148px;
+    width: 182px;
+}
+.valid_msg {
+    position: absolute;
+    top: 31px;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px) {
+    /*.col-md-3 {
+        width: 17%;
+    }*/
+    /*.dvSource img {
+        cursor: pointer;
+        margin-left: 135px;
+    }*/
+    /*.template {
+        height: 878px;
+    }*/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 107px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 160px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+@media only screen and (max-width : 1000px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 101px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 160px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+@media only screen and (max-width : 950px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 93px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 160px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+@media only screen and (max-width : 900px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 78px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 156px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 850px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 70px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 156px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+@media only screen and (max-width : 800px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 61px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 152px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+@media only screen and (max-width : 750px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 51px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 145px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+@media only screen and (max-width : 700px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 46px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 137px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 650px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 37px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 131px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+} 
+@media only screen and (max-width : 600px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 35px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 121px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+@media only screen and (max-width : 550px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 24px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 115px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 21px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 108px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+@media only screen and (max-width : 440px) {
+    #_objective b {
+        left: 22px;
+    }
+    #question {
+        font-size: 14px;
+        left: 14px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 14px;
+        padding: 0px;
+        margin-top: 0px;
+        width: 91px;
+    }
+    .dvSource{
+        top: 65px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+} 
+@media only screen and (max-width : 370px) {
+    #_objective b {
+        left: 13px;
+        top: 176px;
+    }
+    #question {
+        font-size: 15px;
+        left: 22px;
+        top: 235px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 14px;
+        width: 70px;
+    }
+    .dvSource{
+        top: 76px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 131px;
+    }
+}
+@media only screen and (max-width : 330px) {
+    #_objective b {
+        left: 13px;
+        top: 208px;
+    }
+    #question {
+        font-size: 13px;
+        left: 22px;
+        top: 275px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 29px;
+        width: 50px;
+        padding: 0px;
+        margin-top: 0px;
+    }
+    .dvSource{
+        top: 76px;
+        left: -16px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}
+@media only screen and (max-width : 320px) {
+    #_objective b {
+        left: 13px;
+        top: 208px;
+    }
+    #question {
+        font-size: 13px;
+        left: 22px;
+        top: 275px;
+    }
+    .row1_img{
+        top: 51px;
+    }
+    .row2_img{
+        top: 51px;
+    }
+    .dvSource img {
+        cursor: pointer;
+        margin-left: 20px;
+        width: 50px;
+        padding: 0px;
+        margin-top: 0px;
+    }
+    .dvSource{
+        top: 76px;
+        left: -16px;
+    }
+    .valid_msg {
+        position: absolute;
+        top: 95px;
+    }    
+}

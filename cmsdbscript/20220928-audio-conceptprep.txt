@@ -1,0 +1,3 @@
+ALTER TABLE `cpadd_slide_list` DROP `slide_audio_src`;"
+
+ALTER TABLE `resources` ADD `cp_slide_id` INT NULL AFTER `template_id`;

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ACT1</title>
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../../../contents/bootstrap_4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../contents/assets/fonts/San-Francisco-Font/fonts.css">
+  <link rel="stylesheet" type="text/css" href="../../../contents/css/static_layouts/lessons/Layout6.0.css">
+  <style type="text/css">
+      .form-control{
+        height: auto;
+      }
+      body{
+        overflow-y: scroll;
+      }
+      .fr-box a{
+      display: none !important;
+    }
+    a[href="https://www.froala.com/wysiwyg-editor?k=u"]{
+      padding: 0px !important;
+      height: 0px !important;
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <form id="layout_form" name="layout_form" enctype="multipart/form-data">
+    <div class="container-fluid">
+        <div class="rowalign-items-center grid-divider" id="grid-divider1">
+            <div class="card my-5">
+              <div class="card-header">
+                <div class="form-group">
+                    <label for="act_title">Title</label>
+                    <textarea class="form-control" id="act_title" name="act_title" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <th>Question 1</th>
+                            <th>Question 2</th>
+                            <th>Question 3</th>
+                            <th>Question 4</th>
+                            <th>Question 5</th>
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust1[qust]" class="image img1" value="" />
+                                    <img src="../../../images/upload.jpg" id="img1" class="exp_img img-fluid mx-auto d-block img1" />
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <select class="form-control qust1_option1_status" name="qust1[ans]">
+                                                <option value="">-Choose Option Type-</option>
+                                                <option value="1">Right</option>
+                                                <option value="0">wrong</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust2[qust]" class="image img2" value="" />
+                                    <img src="../../../images/upload.jpg" id="img2" class="exp_img img-fluid mx-auto d-block" />
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <select class="form-control qust2_option1_status" name="qust2[ans]">
+                                                <option value="">-Choose Option Type-</option>
+                                                <option value="1">Right</option>
+                                                <option value="0">wrong</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust3[qust]" class="image img3" value="" />
+                                    <img src="../../../images/upload.jpg" id="img3" class="exp_img img-fluid mx-auto d-block" />
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <select class="form-control qust3_option1_status" name="qust3[ans]">
+                                                <option value="">-Choose Option Type-</option>
+                                                <option value="1">Right</option>
+                                                <option value="0">wrong</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust4[qust]" class="image img4" value="" />
+                                    <img src="../../../images/upload.jpg" id="img4" class="exp_img img-fluid mx-auto d-block" />
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <select class="form-control qust4_option1_status" name="qust4[ans]">
+                                                <option value="">-Choose Option Type-</option>
+                                                <option value="1">Right</option>
+                                                <option value="0">wrong</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust5[qust]" class="image img5" value="" />
+                                    <img src="../../../images/upload.jpg" id="img5" class="exp_img img-fluid mx-auto d-block" />
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <select class="form-control qust5_option1_status" name="qust5[ans]">
+                                                <option value="">-Choose Option Type-</option>
+                                                <option value="1">Right</option>
+                                                <option value="0">wrong</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+              <div class="card-footer py-0">
+                <div class="row align-items-center grid-divider" id="grid-divider2">
+                    <div class="col-8" id="content">
+                        <div class="form-group">
+                            <label for="explanation">Explanation</label>
+                            <textarea class="form-control exp_content" name="explanation[exp1]" id="explanation1" rows="2"></textarea>
+                            <textarea class="form-control exp_content" name="explanation[exp2]" id="explanation2" rows="2"></textarea>
+                            <textarea class="form-control exp_content" name="explanation[exp3]" id="explanation3" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-4" id="img_block">
+                      <input type="hidden" name="exp_img" class="image" value="" />
+                      <img src="../../../images/upload.jpg" id="exp_img" class="image exp_img img-fluid mx-auto d-block" />
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </form>
+  <script src="../../../contents/bootstrap_4.1.3/js/jquery-3.3.1.min.js"></script>
+  <script src="../../../contents/bootstrap_4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var url = document.URL;
+      var split_url_val = url.split('?');
+      var split_url_qust_id = split_url_val[1].split('&');
+      var api_url = split_url_qust_id[0].replace('api_end_point=','');
+      var qust_id = split_url_qust_id[1].replace('qust_id=','');
+      
+      setTimeout(function () {
+        //console.log(api_url,'-',qust_id);
+          $.ajax({
+              url: '../../../../'+api_url+'?qust_id='+qust_id,
+              method:'GET',
+              contentType:false,
+              processData:false,
+              async:true,
+              success:function(data)
+              {
+                data = JSON.parse(data);
+                console.log(data);
+                $("#act_title").text(data.act_title);
+                if(data.exp_img != "")
+                  $("#exp_img").attr("src",data.exp_img);
+                $("#explanation1").text(data.explanation.exp1);
+                $("#explanation2").text(data.explanation.exp2);
+                $("#explanation3").text(data.explanation.exp3);
+                
+                
+                var question = "";
+                var answer = "";
+                $.each(data, function(i, e){
+                  if(typeof(e) === 'object'){
+                    if(i == 'qust1') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          $("#img1").attr("src",val);
+                          $(".img1").val(val);
+                        }
+                        else if(key == "ans"){
+                          $(".qust1_option1_status").val(val).trigger('change');
+                        }
+                      });
+                    } else if(i == 'qust2') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          $("#img2").attr("src",val);
+                          $(".img2").val(val);
+                        }
+                        else if(key == "ans"){
+                          $(".qust2_option1_status").val(val).trigger('change');
+                        }
+                      });
+                    } else if(i == 'qust3') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          $("#img3").attr("src",val);
+                          $(".img3").val(val);
+                        }
+                        else if(key == "ans"){
+                          $(".qust3_option1_status").val(val).trigger('change');
+                        }
+                      });
+                    } else if(i == 'qust4') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          $("#img4").attr("src",val);
+                          $(".img4").val(val);
+                        }
+                        else if(key == "ans"){
+                          $(".qust4_option1_status").val(val).trigger('change');
+                        }
+                      });
+                    } else if(i == 'qust5') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          $("#img5").attr("src",val);
+                          $(".img5").val(val);
+                        }
+                        else if(key == "ans"){
+                          $(".qust5_option1_status").val(val).trigger('change');
+                        }
+                      });
+                    }
+                  }
+                });
+              },
+              beforeSend: function(){
+                $("#loader_modal").modal("show");
+              },
+              complete: function(){
+                setTimeout(function(){
+                  $("#loader_modal").modal("hide");
+                }, 1000);
+              }
+          });
+      }, 1000)
+    })
+  </script>
+</body>
+</html>

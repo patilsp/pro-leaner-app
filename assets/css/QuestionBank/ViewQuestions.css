@@ -1,0 +1,81 @@
+/* #s1filterform, h4{
+	max-width: 600px;
+} */
+
+.col-form-label{
+	font-weight: 600
+}
+
+table#qust_table{
+	border-collapse: separate;
+	border-spacing: 0 8px;
+}
+table#qust_table tbody tr{
+	border-radius: 10px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+table#qust_table td, table#qust_table thead th{
+	border: none;
+}
+table#qust_table thead th{
+	color: #878787;
+	font-size: 14px;
+	font-weight: 600;
+}
+table#qust_table td{
+	font-size: 15px;
+	padding: 15px;
+}
+table#qust_table .action_img img{
+	width: 20px;
+	height: 20px
+}
+
+
+.dataTables_length {
+	padding-bottom: 10px;
+  }
+  .dataTables_length .select2-container {
+	width: 60px;
+	margin-left: 0;
+	margin-right: 10px;
+  }
+  
+  .dataTables_filter {
+	padding-bottom: 10px;
+	padding-right: 5px;
+  }
+  
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.45rem;
+	height: 2.6rem;
+	min-width: 2.5rem;
+	font-weight: 500;
+	font-size: 1rem;
+	padding-bottom: 0.54rem;
+	background-color: #fff;
+	border-color: transparent;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover, .dataTables_wrapper .dataTables_paginate .paginate_button:focus {
+	background-color: #ced4da;
+	background-image: none;
+	border-color: transparent;
+	color: #696cff !important;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+	box-shadow: none;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.current:focus {
+	background-color: #696cff;
+	background-image: none;
+	border-color: transparent;
+	color: #fff !important;
+	box-shadow: 0 0.125rem 0.25rem rgb(105 108 255 / 40%);
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:focus {
+	background-color: #e9ecef;
+	color: #adb5bd !important;
+  }

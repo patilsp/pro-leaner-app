@@ -1,0 +1,88 @@
+ALTER TABLE `users`  ADD `admission` VARCHAR(255) NULL ;
+ALTER TABLE `users`  ADD `class` INT NULL ;
+ALTER TABLE `users`  ADD `section` INT NULL ;
+ALTER TABLE `cpmodules`  ADD `visibility` INT NOT NULL DEFAULT '0' ;
+ALTER TABLE `cpmodules`  ADD `category_id` INT NULL ;
+
+
+CREATE TABLE IF NOT EXISTS `masters_subject_category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `mandatory` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `created_by` int(10) unsigned NOT NULL,
+  `created_on` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `masters_subject_category`
+--
+
+INSERT INTO `masters_subject_category` (`id`, `name`, `mandatory`, `created_by`, `created_on`) VALUES
+(1, 'Main Subject', 1, 6, '2020-07-07 18:27:42'),
+(2, 'II Language', 0, 6, '2020-07-07 18:27:42'),
+(3, 'III Language', 0, 6, '2020-07-07 18:27:42'),
+(4, 'Optional', 0, 6, '2020-07-07 18:27:42'),
+(5, 'Co-Curricular', 0, 6, '2020-07-07 18:27:42');
+
+CREATE TABLE IF NOT EXISTS `masters_subject_category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `mandatory` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `created_by` int(10) unsigned NOT NULL,
+  `created_on` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `masters_subject_category`
+--
+
+INSERT INTO `masters_subject_category` (`id`, `name`, `mandatory`, `created_by`, `created_on`) VALUES
+(1, 'Main Subject', 1, 6, '2020-07-07 18:27:42'),
+(2, 'II Language', 0, 6, '2020-07-07 18:27:42'),
+(3, 'III Language', 0, 6, '2020-07-07 18:27:42'),
+(4, 'Optional', 0, 6, '2020-07-07 18:27:42'),
+(5, 'Co-Curricular', 0, 6, '2020-07-07 18:27:42');
+
+CREATE TABLE IF NOT EXISTS `teacher_subject_mapping` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL COMMENT 'Users belongs to Teacher role',
+  `class` int(10) unsigned NOT NULL,
+  `section` varchar(20) NOT NULL,
+  `courseid` int(10) unsigned NOT NULL,
+  `updated_by` int(10) unsigned NOT NULL,
+  `updated_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+
+CREATE TABLE IF NOT EXISTS `masters_subject_classes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `subject_id` int(10) unsigned NOT NULL,
+  `class` int(10) unsigned NOT NULL,
+  `category_id` int(11) DEFAULT NULL COMMENT 'Linked with mdl_course_categories',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+INSERT INTO `pms`.`roles` (`id`, `name`, `created_by`, `created_on`) VALUES (NULL, 'Teacher', '1', '2023-02-12 22:37:05');
+INSERT INTO `pms`.`roles` (`id`, `name`, `created_by`, `created_on`) VALUES (NULL, 'Student', '1', '2023-02-12 22:37:05');
+
+CREATE TABLE IF NOT EXISTS `class_subject_assignment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `class` int(11) NOT NULL,
+  `section` varchar(55) NOT NULL,
+  `categoryid` int(11) NOT NULL,
+  `subjectid` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `student_subject_mapping` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `subject_id` int(10) unsigned NOT NULL,
+  `course_id` int(10) unsigned NOT NULL,
+  `updated_by` int(10) unsigned NOT NULL,
+  `updated_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;

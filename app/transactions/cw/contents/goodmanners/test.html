@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<object class="mp4downloader_tagChecked" data="layout1.html" height="700" width="100%"> </object>
+	
+</body>
+<script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript">
+ 	$(function(){
+ 		//$("#privew").modal("show");
+		//$(document).on('submit', '#user_form', function(event){
+            //event.preventDefault();
+        $(".finish").click(function(){
+        	console.log($("#user_form").serialize());
+			$.ajax({
+                url:"layout1.php",
+                method:'POST',
+                data:$("#user_form").serialize(),
+                contentType:false,
+                processData:false,
+                success:function(data)
+                {
+                	console.log(data)
+                	$("#data").html(data);
+                	$("#privew").modal("show");
+                }
+            }); 
+		});
+	});
+ </script>
+</html>

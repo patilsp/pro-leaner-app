@@ -1,0 +1,362 @@
+body,html{
+  margin: 0px;
+  font-family: San Francisco;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  overflow: hidden;
+  height: 100vh
+}
+.container-fluid{
+  max-width: 1280px;
+  max-height: 677px;
+  height: 100vh;
+  width: 100%;
+  background: #ffffff;
+}
+.h-100{
+  height: 100vh !important;
+}
+h1{
+  letter-spacing: 0.1px;
+  color: #2f2f3c;
+  margin-bottom: 61px;
+  font-family: "San Francisco Display Medium";
+}
+.qust_table_col{
+  padding: 0px;
+}
+.options_ans_li{
+  margin-left: -24px;
+  display: block;
+  transition: all 1s ease-in-out;
+}
+#sortable1 tr{
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+ul {
+  width: 90%;
+  margin: 0px;
+  padding: 0px
+}
+ul li {
+    display: inline-block;
+    height: 65px;
+    width: 100%;
+    position: relative;
+    font-family: "San Francisco Display Medium";
+}
+
+ul li.options_li:before {
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 0px;
+    border-style: solid;
+    border-width: 33px 0 33px 25px;
+    border-color: transparent transparent transparent #fff;
+    z-index: 0;
+}
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+ul li.qust_li {
+    border-color: transparent;
+}
+
+ul li.qust_li span:after {
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0px;
+    right: -25px;
+    border-style: solid;
+    border-width: 33px 0 33px 25px;
+    border-color: transparent transparent transparent #91b79e;
+    z-index: 10;
+}
+
+ul li span {
+    height: 65px; 
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+ul li.qust_li span{
+  padding: 0px 30px;
+  background: #91b79e;
+}
+ul li.options_li span{
+  padding: 0px 30px 0px 50px;
+  background: #8ca695;
+}
+.box_showdow{
+  width: 110%;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4);
+  transition: all 100ms;
+}
+ul li.box_showdow:before{
+  border-color: transparent transparent transparent #69737f !important;
+}
+#submit_btn, #next_btn, .go_back_btn{
+  width: 197px;
+  height: 51px;
+  border: 2px solid #6bb5f6;
+  border-radius: 6px;
+  background-color: #6bb5f6;
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 35px;
+  font-family: "San Francisco Display Semibold"
+}
+.fontawesome_icon {
+  width: 31px;
+  height: 30px;
+  position: absolute;
+  right: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  top: 30px;
+}
+.fontawesome_icon_right{
+  background-color: #59d966;
+}
+.fontawesome_icon_wrong{
+  background-color: #d8675c;
+}
+/*score screen style*/
+.col_div {
+  margin-top: 40.5px
+}
+.score_page_body{
+  max-width: 940px;
+  width: 100%;
+}
+.score_page_body_bg{
+  background-color: #fefdfb;
+  padding: 20px 0px;
+}
+.card-title{
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #222222;
+  margin-top: 14px;
+  font-family: "San Francisco Display Bold";
+}
+.card-text {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #222222;
+  margin-top: 17px;
+  font-family: "San Francisco Display Medium";
+}
+.card-text span#score_text{
+  font-family: "San Francisco Display Bold";
+}
+.cor_ans_btn{
+  width: 242px;
+  height: 51px;
+  border: 2px solid #6bb5f6;
+  border-radius: 6px;
+  background-color: #6bb5f6;
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 50px;
+  font-family: "San Francisco Display Semibold";
+}
+.mt-32{
+  margin-top: 32px
+}
+.try_again{
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #6bb5f6;
+  font-family: "San Francisco Display Semibold";
+}
+.badge {
+    width: 280px;
+    height: 197px;
+}
+/*hide sections*/
+.qust_section, .score_section, .cor_ans_section, .submit_btn, .next_btn {
+  display: none !important;
+}
+/** Score Section Styles */
+#score_section .card-title, #score_section .card-text{
+  font-size: 24px;
+}
+#score_section #card_message, #score_section .card-text{
+  font-family: "San Francisco Display Regular";
+  font-size: 20px
+}
+ul li.options_li span p, ul li.qust_li span p {
+  margin-bottom: 0px;
+}
+.nav-pills li{
+  width: auto;
+}
+#pills-tab li a{
+  font-family: "San Francisco Display Bold";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.09px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 2px #0094ff;
+  color: #0094ff;
+}
+.nav-pills .nav-link.active{
+  color: #ffffff !important
+}
+#pills-vc{
+  padding: 0px 137px;
+}
+#pills-vc h5{
+  font-family: "San Francisco Display Medium";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.04px;
+  color: #101010;
+}
+#pills-vc p{
+  font-family: "San Francisco Display Regular";
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.15px;
+  color: #101010;
+}
+@media (max-width: 820px){
+  body,html{
+    overflow-y: visible;
+  }
+  h1 {
+    font-size: 18px;
+    margin-bottom:0px;
+  }
+  table tbody td {
+    font-size: 15px;
+    padding: 7px !important;
+  }
+  table tbody td span{
+    font-size: 15px;
+  }
+  .options, .submit_btn {
+    font-size: 15px;
+  }
+  .options{
+    width: 100px;
+    height: 35px;
+  }
+  #submit_btn, #next_btn, .go_back_btn {
+    width: 150px;
+    height: 44px;
+    margin-top: -13px;
+  }
+  .fontawesome_icon {
+    width: 26px;
+    height: 26px;
+    right: 0;
+    top: 15px
+  }
+
+  .col_div {
+    margin-top: 0px;
+  }
+  
+  .cor_ans_btn{
+    margin-top: 0px
+  }
+}
+@media (max-width: 640px){
+  h1, #submit_btn, #next_btn, .go_back_btn{
+    margin-bottom: 15px;
+    font-size: 18px
+  }
+  #qust_section h1:first-of-type {
+      font-size: 20px;
+      margin-bottom: 1.5rem;
+      font-family: 'San Francisco Display Bold';
+  }
+  table tbody td {
+    font-size: 13px;
+  }
+  table tbody td span{
+    font-size: 13px;
+  }
+  ul li{
+    height: 53px;
+  }
+  ul li span {
+    height: 53px;
+  }
+  ul li.options_li span{
+    padding: 0px 5px;
+  }
+  ul li.qust_li span{
+    padding: 0px 5px;
+  }
+  ul li.qust_li span:after{
+    content: none;
+  }
+  ul li.options_li:before{
+    content: none;
+    border-width: 27px 0 26px 25px;
+  }
+  ul li.qust_li span:after{
+    border-width: 27px 0 26px 25px;
+  }
+  .options_ans_li {
+    margin-left: -14px;
+  }
+  .fontawesome_icon {
+    right: 12px;
+    top: 22px;
+  }
+  #pills-vc{
+    padding: 0px
+  }
+  .img_st{
+    padding: 5px;
+  }
+  #pills-tab li a{
+    font-size: 12px
+  }
+}

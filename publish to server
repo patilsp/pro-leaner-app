@@ -1,0 +1,9 @@
+DB:
+	quizzone_type table
+
+	INSERT INTO `cms`.`resources` (`id`, `name`, `filename`, `filepath`, `layoutfilepath_html`, `info`, `resource_type_id`, `module`, `class_id`, `topics_id`, `template_id`, `status_id`) VALUES (NULL, 'Activity1', 'Activity1', 'img/quizzone_types/act1.png', 'img/quizzone_types/act1.html', NULL, '7', NULL, '0', '0', '0', '1');
+
+	quizzone_questions table
+
+	ALTER TABLE `resources` ADD `qzone_slide_path` TEXT NULL AFTER `layoutfilepath_html`;
+Files

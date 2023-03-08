@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ACT1</title>
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../../../contents/bootstrap_4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../contents/assets/fonts/San-Francisco-Font/fonts.css">
+  <link rel="stylesheet" type="text/css" href="../../../contents/css/static_layouts/lessons/Layout6.0.css">
+  <link rel="stylesheet" type="text/css" href="../../../contents/assets/css/dragndrop.table.columns.css">
+  <style type="text/css">
+      .form-control{
+        height: auto;
+      }
+      body{
+        overflow-y: scroll;
+      }
+      li {
+          border:1px dashed Gainsboro;
+          display:inline-block;
+      }
+      .input-group{
+        max-width: 500px;
+        width: 100%
+      }
+      .fr-box a{
+      display: none !important;
+    }
+    a[href="https://www.froala.com/wysiwyg-editor?k=u"]{
+      padding: 0px !important;
+      height: 0px !important;
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <form id="layout_form" name="layout_form" enctype="multipart/form-data">
+    <div class="container-fluid">
+        <div class="rowalign-items-center grid-divider" id="grid-divider1">
+            <div class="card my-5">
+              <div class="card-header">
+                <div class="form-group">
+                    <label for="act_title">Title</label>
+                    <textarea class="form-control" id="act_title" name="act_title" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card">
+                  <div class="card-header d-flex align-items-center border-info">
+                    Add extra Words</div>
+                    
+                    <div class="card-body p-0 mb-2 d-flex align-items-center">
+                      <div class="input-group m-2">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">word 1</span>
+                        </div>
+                        <input type="text" class="form-control" id="word1" name="word1">
+                      </div>
+                      <div class="input-group m-2">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">word 2</span>
+                        </div>
+                        <input type="text" class="form-control" id="word2" name="word2">
+                      </div>
+                      <div class="input-group m-2">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">word 3</span>
+                        </div>
+                        <input type="text" class="form-control" id="word3" name="word3">
+                      </div>
+                      <div class="input-group m-2">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">word 4</span>
+                        </div>
+                        <input type="text" class="form-control" id="word4" name="word4">
+                      </div>
+                    </div>
+                  <div class="card-header d-flex align-items-center border-info">
+                    Question1</div>
+                    
+                    <div class="card-body p-0 mb-2" id="list-A">
+                      <ul class="d-flex w-100" id="qust1">
+                        <li class="ui-draggable" id="qust1_part1">
+                          <div class="form-group">
+                            <label>Question Start</label>
+                            <input type="text" class="form-control" name="qust1[qust_part1]" id="opt3">
+                          </div>
+                        </li>
+                        <li class="ui-draggable" id="qust1_blank">
+                          <div class="form-group">
+                            <label>Answer</label>
+                            <input type="text" class="form-control qust1_option2_label" name="qust1[fill_blank]" aria-label="Text input with checkbox">
+                          </div>
+                        </li>
+                        <li class="ui-draggable" id="qust1_part2">
+                          <div class="form-group">
+                            <label>Question End</label>
+                            <input type="text" class="form-control qust1_option2_label" name="qust1[qust_part2]" aria-label="Text input with checkbox">
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                  <div class="card-header d-flex align-items-center border-info">
+                    Question2</div>
+                  
+                    <div class="card-body p-0 mb-2" id="list-B">
+                      <ul class="d-flex w-100" id="qust2">
+                        <li class="ui-draggable" id="qust2_part1">
+                          <div class="form-group">
+                            <label>Question Start</label>
+                            <input type="text" class="form-control" name="qust2[qust_part1]" id="opt3">
+                          </div>
+                        </li>
+                        <li class="ui-draggable" id="qust1_blank">
+                          <div class="form-group">
+                            <label>Answer</label>
+                            <input type="text" class="form-control qust2_option2_label" name="qust2[fill_blank]" aria-label="Text input with checkbox">
+                          </div>
+                        </li>
+                        <li class="ui-draggable" id="qust2_part2">
+                          <div class="form-group">
+                            <label>Question End</label>
+                            <input type="text" class="form-control qust1_option2_label" name="qust2[qust_part2]" aria-label="Text input with checkbox">
+                          </div>
+                        </li>
+                      </ul>
+                    </div>  
+                  
+                  <div class="card-header d-flex align-items-center border-info">
+                    Question3</div>
+                  
+                    <div class="card-body p-0 mb-2" id="list-C">
+                      <ul class="d-flex w-100" id="qust3">
+                        <li class="ui-draggable" id="qust3_part1">
+                          <div class="form-group">
+                            <label>Question Start</label>
+                            <input type="text" class="form-control" name="qust3[qust_part1]" id="opt3">
+                          </div>
+                        </li>
+                        <li class="ui-draggable" id="qust3_blank">
+                          <div class="form-group">
+                            <label>Answer</label>
+                            <input type="text" class="form-control qust3_option2_label" name="qust3[fill_blank]" aria-label="Text input with checkbox">
+                          </div>
+                        </li>
+                        <li class="ui-draggable" id="qust3_part2">
+                          <div class="form-group">
+                            <label>Question End</label>
+                            <input type="text" class="form-control qust3_option2_label" name="qust3[qust_part2]" aria-label="Text input with checkbox">
+                          </div>
+                        </li>
+                      </ul>  
+                  
+                </div>
+              </div>
+             <div class="card-footer py-0">
+                <div class="row align-items-center grid-divider" id="grid-divider2">
+                    <div class="col-8" id="content">
+                        <div class="form-group">
+                            <label for="explanation">Explanation</label>
+                            <textarea class="form-control exp_content" name="explanation[exp1]" id="explanation1" rows="2"></textarea>
+                            <textarea class="form-control exp_content" name="explanation[exp2]" id="explanation2" rows="2"></textarea>
+                            <textarea class="form-control exp_content" name="explanation[exp3]" id="explanation3" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-4" id="img_block">
+                      <input type="hidden" name="exp_img" class="image" value="" />
+                      <img src="../../../images/upload.jpg" id="exp_img" class="image exp_img img-fluid mx-auto d-block" />
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </form>
+  <script src="../../../contents/bootstrap_4.1.3/js/jquery-3.3.1.min.js"></script>
+  <script src="../../../contents/bootstrap_4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../../contents/assets/js/core/libraries/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../../contents/assets/js/core/libraries/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      $('#list-A ul').sortable({
+          start: function(event, ui) {
+              ui.item.data('sorting', true);
+          },
+          stop: function(event, ui) {
+              ui.item.removeData('sorting');
+          }
+      });
+      $('#list-B ul').sortable({
+          start: function(event, ui) {
+              ui.item.data('sorting', true);
+          },
+          stop: function(event, ui) {
+              ui.item.removeData('sorting');
+          }
+      });
+      $('#list-C ul').sortable({
+          start: function(event, ui) {
+              ui.item.data('sorting', true);
+          },
+          stop: function(event, ui) {
+              ui.item.removeData('sorting');
+          }
+      });
+
+
+      var qust1 = $("#qust1").html();
+      var qust2 = $("#qust2").html();
+      var qust3 = $("#qust3").html();
+
+      var url = document.URL;
+      var split_url_val = url.split('?');
+      var split_url_qust_id = split_url_val[1].split('&');
+      var api_url = split_url_qust_id[0].replace('api_end_point=','');
+      var qust_id = split_url_qust_id[1].replace('qust_id=','');
+      
+      setTimeout(function () {
+        //console.log(api_url,'-',qust_id);
+          $.ajax({
+              url: '../../../../'+api_url+'?qust_id='+qust_id,
+              method:'GET',
+              contentType:false,
+              processData:false,
+              async:true,
+              success:function(data)
+              {
+                data = JSON.parse(data);
+                console.log(data);
+                $("#act_title").text(data.act_title);
+                if(data.exp_img != "")
+                  $(".exp_img").attr("src",data.exp_img);
+                $("#explanation1").text(data.explanation.exp1);
+                $("#explanation2").text(data.explanation.exp2);
+                $("#explanation3").text(data.explanation.exp3);
+                $(".image").val(data.exp_img);
+                $("#word1").val(data.word1);
+                $("#word2").val(data.word2);
+                $("#word3").val(data.word3);
+                $("#word4").val(data.word4);
+                
+                var question_part1 = "";
+                var question_part2 = "";
+                var answer = "";
+                $.each(data, function(i, e){
+                  if(i == 'qust1') {
+                    $("#qust1").html('');
+                    $.each(e, function(key, val){
+                      if(key == "qust_part1" && val != ""){
+                        $("#qust1").append(`<li class="ui-draggable">
+                          <div class="form-group">
+                            <label>Question Start</label>
+                            <input type="text" class="form-control" name="qust1[qust_part1]" id="opt3" value="`+val+`">
+                          </div>
+                        </li>`);
+                      }
+                      else if(key == "fill_blank" && val != ""){
+                        $("#qust1").append(`<li class="ui-draggable">
+                          <div class="form-group">
+                            <label>Answer</label>
+                            <input type="text" class="form-control qust1_option2_label" name="qust1[fill_blank]" aria-label="Text input with checkbox" value="`+val+`">
+                          </div>
+                        </li>`);
+                      }
+                      else if(key == "qust_part2" && val != ""){
+                        $("#qust1").append(`<li class="ui-draggable">
+                          <div class="form-group">
+                            <label>Question End</label>
+                            <input type="text" class="form-control qust1_option2_label" name="qust1[qust_part2]" aria-label="Text input with checkbox" value="`+val+`">
+                          </div>
+                        </li>`)
+                      }
+                    });
+                  } else if(i == 'qust2') {
+                    $("#qust2").html('');
+                    $.each(e, function(key, val){
+                      if(key == "qust_part1" && val != ""){
+                        $("#qust2").append(`<li class="ui-draggable">
+                          <div class="form-group">
+                            <label>Question Start</label>
+                            <input type="text" class="form-control" name="qust2[qust_part1]" id="opt3" value="`+val+`">
+                          </div>
+                        </li>`);
+                      }
+                      else if(key == "fill_blank" && val != ""){
+                        $("#qust2").append(`<li class="ui-draggable">
+                          <div class="form-group">
+                            <label>Answer</label>
+                            <input type="text" class="form-control qust1_option2_label" name="qust2[fill_blank]" aria-label="Text input with checkbox" value="`+val+`">
+                          </div>
+                        </li>`);
+                      }
+                      else if(key == "qust_part2" && val != ""){
+                        $("#qust2").append(`<li class="ui-draggable">
+                          <div class="form-group">
+                            <label>Question End</label>
+                            <input type="text" class="form-control qust1_option2_label" name="qust2[qust_part2]" aria-label="Text input with checkbox" value="`+val+`">
+                          </div>
+                        </li>`)
+                      }
+                    });
+                  } else if(i == 'qust3') {
+                    $("#qust3").html('');
+                    $.each(e, function(key, val){
+                      if(key == "qust_part1" && val != ""){
+                        $("#qust3").append(`<li class="ui-draggable">
+                          <div class="form-group">
+                            <label>Question Start</label>
+                            <input type="text" class="form-control" name="qust3[qust_part1]" id="opt3" value="`+val+`">
+                          </div>
+                        </li>`);
+                      }
+                      else if(key == "fill_blank" && val != ""){
+                        $("#qust3").append(`<li class="ui-draggable">
+                          <div class="form-group">
+                            <label>Answer</label>
+                            <input type="text" class="form-control qust1_option2_label" name="qust3[fill_blank]" aria-label="Text input with checkbox" value="`+val+`">
+                          </div>
+                        </li>`);
+                      }
+                      else if(key == "qust_part2" && val != ""){
+                        $("#qust3").append(`<li class="ui-draggable">
+                          <div class="form-group">
+                            <label>Question End</label>
+                            <input type="text" class="form-control qust1_option2_label" name="qust3[qust_part2]" aria-label="Text input with checkbox" value="`+val+`">
+                          </div>
+                        </li>`)
+                      }
+                    });
+                  }
+                });
+              },
+              beforeSend: function(){
+                $("#loader_modal").modal("show");
+              },
+              complete: function(){
+                setTimeout(function(){
+                  $("#loader_modal").modal("hide");
+                }, 1000);
+              }
+          });
+      }, 1000);
+      
+      setTimeout(function () {
+        if( $('#qust1').is(':empty') ) {
+          $("#qust1").html(qust1);
+        }
+        if( $('#qust2').is(':empty') ) {
+          $("#qust2").html(qust2);
+        }
+        if( $('#qust3').is(':empty') ) {
+          $("#qust3").html(qust3);
+        }
+      }, 2000);
+    })
+  </script>
+</body>
+</html>

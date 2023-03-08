@@ -1,0 +1,116 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PREPMYSKILLS - CBSE PROGRAM</title>
+
+		<!-- Core JS files -->
+		<link href="../../../../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/activites/011lsgmact01.css">
+		<style type="text/css">
+	       
+
+	        .valid_msg_hide{
+				display: none;
+			}
+	    </style>
+	</head>
+	<body>
+	
+		<!-- Page container -->
+		<div class="container-fluid">
+			<!-- Page content -->
+			<div class="page-content">
+				<!-- Main content -->
+				<div class="content-wrapper">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12 template img-responsive">
+							<div id='_objective'>
+				               	<b>Activity</b>
+			              	</div>
+              				<div id="question">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+								 	<b>From the images given below, which child do you want to be friends with? </b>
+								</div>
+								<div class="form-group col-md-12 col-sm-12 col-xs-12 dvSource">
+									<img class="ui-draggable col-md-3 col-md-offset-2 col-sm-3 col-xs-3" value="bad_group" src="images-1/1a.png">
+									<img class="ui-draggable col-md-3 col-sm-3 col-xs-3" value="good_group" src="images-1/1b.png">
+									<img class="ui-draggable col-md-3 col-sm-3 col-xs-3" value="bad_group" src="images-1/1c.png">
+								</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 dvSource">
+									<img class="ui-draggable col-md-3 col-sm-3 col-xs-3" value="good_group" src="images-1/1d.png">
+									<img class="ui-draggable col-md-3 col-sm-3 col-xs-3" value="bad_group" src="images-1/1e.png">
+									<img class="ui-draggable col-md-3 col-sm-3 col-xs-3"value="good_group" src="images-1/1f.png">
+								</div>
+						    	<div class="valid_msg valid_msg_hide col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+							    	&nbsp;
+								 	<div class="welldone alert alert-success fade in" id="welldone">
+										<span><img alt="" src="images-1/welldone.png" style="width:50px"/>
+									  	<strong>Well done...!</strong></span>
+									</div>
+									<div class="welldone alert alert-danger fade in" id="notdone">
+										<span><img alt="" src="images-1/notdone.png" style="width:50px"/>
+									  	<strong>Sorry !! </strong><p id='_try' class="pull-right"></p></span>
+									</div>
+								</div>
+							</div>
+						</div>  
+                    </div>  
+                </div>
+            </div>
+       	</div>
+
+       	<script type="text/javascript" src="../../../../assets/js/core/libraries/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../../assets/js/core/libraries/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../../../assets/js/core/libraries/jquery-ui.min.js"></script>
+		<script src="../../../../assets/js/core/libraries/jquery.ui.touch-punch.min.js"></script>
+		
+		<script>
+			$(function () {
+				var count=0;
+				var bad_count=0;
+				$('.welldone').hide();
+				
+				$('.ui-draggable').click(function(){
+					
+				  var valu = $(this).attr('value');	
+				  var value = $(this).attr('value');	
+				  if(valu=='good_group'){
+					  count++;
+					    $(this).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0);  
+					  }
+				 if(valu=='bad_group'){
+					  bad_count++;
+					    $(this).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0).fadeTo(100, 0.1).fadeTo(200, 1.0);  
+					  }
+					  if(bad_count=='1'){
+					  	$(".valid_msg").removeClass("valid_msg_hide");
+						 $('#welldone').hide();
+						 $('#notdone').show();
+						  $(".ui-draggable").off("click"); 
+						 
+						  var a='<input type="button" id="try"value="Try Again"/>';
+							$('#_try').html(a);
+							$('#try').click(function(){
+								$(".valid_msg").addClass("valid_msg_hide");
+								 location.reload();
+							     
+							});  
+					  }
+					  else if(count=='3'){
+					  	$(".valid_msg").removeClass("valid_msg_hide");
+						 $('#welldone').show();
+						  $(".ui-draggable").off("click");
+						 $('#notdone').hide(); 
+						 
+						 
+					  }
+				});	
+			});
+
+			$('#widget').draggable();
+		</script>
+    </body>
+</html> 

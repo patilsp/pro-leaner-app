@@ -1,0 +1,12 @@
+Choose Date
+
+accordion with list of each subject
+	Add question
+	list of entries in table(sl.no, date, class, subject, Action(Edit and delete))
+
+Add question
+	In leftside bar show the options
+	show Activity Types
+
+For activites
+	fixed number of questions, so script handel will be easy

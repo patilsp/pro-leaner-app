@@ -1,0 +1,613 @@
+body{
+	
+}
+.template {
+    height: 670px;
+    background-image:url(../../constitution6_images/constitution6.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+	._content1 img{
+    width: 430px;
+    position: absolute;
+    top: 195px;
+    left: 36px;
+
+
+}
+
+
+
+	#_objective1 {
+    margin-top: 2px;
+    width: 27px;
+}
+
+	._content7 img{
+    width: 330px;
+    position: absolute;
+    top: -8px;
+    left: -34px;
+}
+
+
+
+
+#_objective h2{
+	
+    position: relative;
+    top: 104px;
+    
+}
+
+.content_part{
+      top: 31px;
+      left: -41px;
+}
+ul{
+	         margin-left: 66px;
+}
+
+li{
+	list-style-type: none;
+	/*word-wrap:break-word;*/
+	font-family:century gothic;
+	font-weight:bold;
+	font-size: 20px;
+	text-align: initial;
+}
+li img{
+	width:20px;
+}
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+	._content1 img{
+    width: 430px;
+    position: absolute;
+    top: 195px;
+    left: 36px;
+
+
+}
+
+    #_objective h2{
+		top: 71px;
+		
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+	._content1 img{
+    width: 400px;
+    position: absolute;
+    top: 73px;
+    height: 147px;
+    left: 274px;
+}
+
+	
+    #_objective h2{top: 33px;margin-left: 62px;font-size: 28px;font-weight: 700;}
+
+}
+
+/* Small Devices, Tablets */
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	._content1 img{
+    width: 332px;
+    position: absolute;
+    top: 46px;
+    left: 208px;
+}
+
+    #_objective h2{
+    top: 35px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    font-weight: 700;
+ }
+	.content_part {
+    top: 39px;
+    left: -36px;
+ }
+		._content7 img{
+    width: 218px;
+    position: absolute;
+    top: 32px;
+    left: 181px;
+}
+	
+	 ul{
+	    margin-left: 7px;
+}
+	
+		
+	#_objective1 {
+    margin-top: 3px;
+    width: 27px;
+}
+	
+    .content_part li{
+    font-size: 20px;
+ }
+	
+
+
+}
+
+@media only screen and (max-width : 800px) {
+
+	._content1 img{
+    width: 324px;
+    position: absolute;
+    top: 49px;
+    left: 193px;
+}
+
+	
+		._content7 img{
+    width: 227px;
+    position: absolute;
+    top: 32px;
+    left: 172px;
+}
+    #_objective h2{
+    top: 29px;
+    margin-left: 29px;
+    font-size: 27px;
+ }
+	.content_part {
+                top: 40px;
+                left: -28px;
+    }
+    
+    ul{
+	     margin-left: 4px;
+}
+	
+		#_objective1 {
+    margin-top: 1px;
+    width: 24px;
+}
+	
+	.content_part li{
+		font-size: 19px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	._content1 img{
+    width: 321px;
+    position: absolute;
+    top: 26px;
+    left: 202px;
+}
+
+	
+		._content7 img{
+    width: 220px;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+    #_objective h2{
+    top: 15px;
+    margin-left: 18px;
+    font-size: 24px;
+ }
+	.content_part {
+    top: 38px;
+    left: -196px;
+    }
+    
+    ul{
+	       margin-left: 176px;
+}
+	
+		#_objective1 {
+    margin-top: 0px;
+    width: 27px;
+}
+	
+	.content_part li{
+		font-size: 18px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 700px) {
+
+	._content1 img{
+    width: 325px;
+    position: absolute;
+    top: 35px;
+    left: 182px;
+}
+
+
+
+
+    #_objective h2{
+    top: 47px;
+    margin-left: 25px;
+    font-size: 25px;
+ }
+	
+		._content7 img{
+    width: 211px;
+    position: absolute;
+    top: 72px;
+    left: 109px;
+}
+	.content_part {
+           top: 63px;
+           left: -166px;
+    }
+    
+    ul{
+	        margin-left: 158px;
+}
+	
+		#_objective1 {
+margin-top: 1px;
+    width: 23px;
+}
+	
+	.content_part li{
+		font-size: 16px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 650px) {
+
+	._content1 img{
+    width: 324px;
+    position: absolute;
+    top: 39px;
+    left: 163px;
+}
+
+    #_objective h2{
+    top: 30px;
+    margin-left: 40px;
+    font-size: 23px;
+    font-weight: 700;
+ }
+	
+		._content7 img{
+    width: 203px;
+    position: absolute;
+    top: 62px;
+    left: 110px;
+}
+	.content_part {
+                top: 50px;
+                left: -118px;
+    }
+    
+    ul{
+	      margin-left: 122px;
+}
+	
+		#_objective1 {
+    margin-top: 1px;
+    width: 24px;
+}
+	
+	.content_part li{
+		font-size: 16px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+@media only screen and (max-width : 600px) {
+
+	._content1 img{
+    width: 316px;
+    position: absolute;
+    top: 35px;
+    left: 164px;
+}
+
+    #_objective h2{
+    top: 38px;
+    margin-left: 50px;
+    font-size: 27px;
+ }
+	
+		._content7 img{
+    width: 162px;
+    position: absolute;
+    top: 56px;
+    left: 143px;
+}
+	.content_part {
+                top: 51px;
+                left: -103px;
+    }
+    
+    ul{
+	      margin-left: 122px;
+}
+	
+		#_objective1 {
+    margin-top: 1px;
+    width: 24px;
+}
+	
+	.content_part li{
+		font-size: 16px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+
+@media only screen and (max-width : 550px) {
+
+	._content1 img{
+    width: 318px;
+    position: absolute;
+    top: 40px;
+    left: 134px;
+}
+
+    #_objective h2{
+    top: 26px;
+    margin-left: 271px;
+    margin-left: 29px;
+    font-size: 21px;
+ }
+	
+		._content7 img{
+    width: 144px;
+    position: absolute;
+    top: 35px;
+    left: 93px;
+}
+	.content_part {
+                top: 24px;
+                left: -127px;
+    }
+    
+    ul{
+	      margin-left: 122px;
+}
+	
+		#_objective1 {
+    margin-top: 1px;
+    width: 24px;
+}
+	
+	.content_part li{
+		font-size: 16px;
+	}
+	
+li img{
+	width:15px;
+}
+	
+
+
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+._content1 img{
+    width: 287px;
+    position: absolute;
+    top: 95px;
+    height: 110px;
+    left: 97px;
+}
+
+	
+		._content7 img{
+    width: 117px;
+    position: absolute;
+    top: 25px;
+    left: 125px;
+}
+    #_objective h2{
+    top: 6px;
+    font-size: 20px;
+    margin-left: 16px;
+    font-weight: 700;
+ }
+	
+    #_objective1 {
+    margin-top: -1px;
+    width: 27px;
+}
+
+ul{
+	        margin-left: 46px;
+}
+	.content_part {
+    top: 18px;
+    left: -71px;
+    }
+	.content_part li{
+	  font-size: 15px;
+	}
+	
+	li img{
+	width:15px;
+}
+	
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 400px) {
+
+	._content1 img{
+    width: 221px;
+    position: absolute;
+    top: 47px;
+    height: 110px;
+    left: 77px;
+}
+
+	
+		._content7 img{
+    width: 117px;
+    position: absolute;
+    top: 6px;
+    left: 71px;
+}
+    #_objective h2{
+    top: 13px;
+    font-size: 21px;
+    margin-left: 29px;
+ }
+	
+    #_objective1 {
+    margin-top: -1px;
+    width: 27px;
+}
+
+ul{
+	         margin-left: 31px;
+}
+	.content_part {
+    top: 21px;
+    left: -47px;
+    }
+	.content_part li{
+	  font-size: 13px;
+	}
+	
+	li img{
+	width:15px;
+}
+	
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+	._content1 img{
+    width: 192px;
+    position: absolute;
+    top: 50px;
+    height: 104px;
+    left: 54px;
+}
+
+
+	._content7 img{
+    width: 83px;
+    position: absolute;
+    top: 13px;
+    left: 57px;
+}
+	
+    #_objective1 {
+    margin-top: 2px;
+    width: 22px;
+}
+    #_objective h2 {
+    top: 18px;
+    margin-left: 31px;
+    font-size: 19px;
+    font-weight: 700;
+}
+    .content_part {
+
+top: 20px;
+
+left: -22px;
+}
+	
+	ul{
+	          margin-left: 12px;
+}
+	.content_part li{
+		font-size: 13px;
+	}
+	
+	li img{
+	width:15px;
+}
+	
+	
+
+
+} 

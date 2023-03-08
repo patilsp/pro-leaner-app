@@ -1,0 +1,967 @@
+body{
+    font-family: Arial;
+    font-size: 10pt;
+}
+.template {
+    height: 670px;
+    background-image: url('../../emotional6_images/emotional6.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+li{
+    list-style-type: none;
+}
+.img_title{
+    width: 257px;
+    height: 137px;
+    margin-left: 346px;
+}
+#_objective {
+    font-family: century gothic;
+    left: 226px;
+    position: absolute;
+    top: -13px;
+    font-weight: bolder;
+}
+#_objective h2{
+    font-weight: bold;
+    font-size: 31px;
+}
+._content_part {
+    left: 0px;
+    position: absolute;
+    top: 104px;
+}
+._content_part1 {
+    left: 394px;
+    position: absolute;
+    top: 136px;
+    font-size: 22px;
+}
+._content_part2 {
+    left: 164px;
+    position: absolute;
+    top: 56px;
+    font-size: 20px;
+}
+p {
+    font-family: century gothic;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+#_objective1 {
+    margin-top: 3px;
+    width: 26px;
+}
+.img_right img{
+    position: absolute;
+    left: 3px;
+    top: -73px;
+}
+
+/** styles for this slide*/
+.img_boot img{
+    position: absolute;
+    left: 30%;
+    width: 43%;
+    top: 143px;
+}
+.img_boot h3{
+    top: 438px;
+    position: absolute;
+    left: 48%;
+    font-size: 43px;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .img_title{
+        width: 253px;
+        height: 137px;
+        margin-left: 346px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 193px;
+        position: absolute;
+        top: -25px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 29px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 104px;
+    }
+    ._content_part1 {
+        left: 394px;
+        position: absolute;
+        top: 136px;
+        font-size: 22px;
+    }
+    ._content_part2 {
+        left: 127px;
+        position: absolute;
+        top: 37px;
+        font-size: 20px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: 3px;
+        width: 27px;
+    }
+    .img_right img{
+        position: absolute;
+        left: -11px;
+        top: -1px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1030px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 490px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 204px;
+        position: absolute;
+        top: -59px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 26px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: 142px;
+        position: absolute;
+        top: 11px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: 3px;
+        width: 25px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 446px;
+        top: 141px;
+        width: 254px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 37%;
+        width: 34%;
+        top: 83px;
+    }
+    .img_boot h3{
+        top: 341px;
+        position: absolute;
+        left: 49%;
+        font-size: 43px;
+    }   
+}
+@media only screen and (max-width : 992px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 402px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 155px;
+        position: absolute;
+        top: -54px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 29px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: 92px;
+        position: absolute;
+        top: 14px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: 0px;
+        width: 31px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 346px;
+        top: 121px;
+        width: 245px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 34%;
+        width: 39%;
+        top: 98px;
+    }
+    .img_boot h3{
+        top: 392px;
+        position: absolute;
+        left: 48%;
+        font-size: 43px;
+    }        
+}
+@media only screen and (max-width : 865px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 402px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 148px;
+        position: absolute;
+        top: -39px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;font-size:14px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: 84px;
+        position: absolute;
+        top: 23px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: -4px;
+        width: 31px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 346px;
+        top: 121px;
+        width: 245px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 35%;
+        width: 46%;
+        top: 75px;
+    }
+    .img_boot h3{
+        top: 378px;
+        position: absolute;
+        left: 53%;
+        font-size: 31px;
+    }   
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 785px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 329px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 132px;
+        position: absolute;
+        top: -47px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 26px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+		font-size:13px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: 66px;
+        position: absolute;
+        top: 16px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 19px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: 2px;
+        width: 26px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 319px;
+        top: 118px;
+        width: 248px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 31%;
+        width: 46%;
+        top: 75px;
+    }
+    .img_boot h3{
+        top: 347px;
+        position: absolute;
+        left: 49%;
+        font-size: 31px;
+    }
+}
+@media only screen and (max-width : 680px) {
+
+
+
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 238px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 107px;
+        position: absolute;
+        top: -49px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: 48px;
+        position: absolute;
+        top: 11px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: 1px;
+        width: 24px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 239px;
+        top: 172px;
+        width: 206px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 27%;
+        width: 58%;
+        top: 75px;
+    }
+    .img_boot h3{
+        top: 358px;
+        position: absolute;
+        left: 50%;
+        font-size: 31px;
+    }
+}
+@media only screen and (max-width : 610px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 170px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 92px;
+        position: absolute;
+        top: -48px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 22px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: 35px;
+        position: absolute;
+        top: 14px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 16px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: -4px;
+        width: 31px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 191px;
+        top: 152px;
+        width: 217px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 27%;
+        width: 58%;
+        top: 75px;
+    }
+    .img_boot h3{
+        top: 323px;
+        position: absolute;
+        left: 50%;
+        font-size: 31px;
+    }    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 500px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 136px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 89px;
+        position: absolute;
+        top: -39px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 23px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+		font-size:14px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: 30px;
+        position: absolute;
+        top: 16px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 16px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: 1px;
+        width: 23px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 185px;
+        top: 159px;
+        width: 192px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 27%;
+        width: 58%;
+        top: 75px;
+    }
+    .img_boot h3{
+        top: 264px;
+        position: absolute;
+        left: 47%;
+        font-size: 31px;
+    }
+}
+@media only screen and (max-width : 490px) {
+    .img_title{
+        width: 238px;
+        height: 137px;
+        margin-left: 116px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 159px;
+        position: absolute;
+        top: -59px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 19px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+		font-size:14px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: 15px;
+        position: absolute;
+        top: 5px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: 0px;
+        width: 24px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 151px;
+        top: 154px;
+        width: 192px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 27%;
+        width: 58%;
+        top: 75px;
+    }
+    .img_boot h3{
+        top: 264px;
+        position: absolute;
+        left: 47%;
+        font-size: 31px;
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 440px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 118px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 137px;
+        position: absolute;
+        top: -59px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 19px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: 9px;
+        position: absolute;
+        top: 0px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 16px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: -4px;
+        width: 31px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 134px;
+        top: 175px;
+        width: 192px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 27%;
+        width: 57%;
+        top: 100px;
+    }
+    .img_boot h3{
+        top: 261px;
+        position: absolute;
+        left: 45%;
+        font-size: 33px;
+    }
+}
+@media only screen and (max-width : 390px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 89px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 113px;
+        position: absolute;
+        top: -59px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 19px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: -1px;
+        position: absolute;
+        top: 0px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: -4px;
+        width: 31px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 105px;
+        top: 185px;
+        width: 192px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 21%;
+        width: 64%;
+        top: 81px;
+    }
+    .img_boot h3{
+        top: 243px;
+        position: absolute;
+        left: 39%;
+        font-size: 38px;
+    }
+}
+@media only screen and (max-width : 370px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 85px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 58px;
+        position: absolute;
+        top: -59px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 19px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: -5px;
+        position: absolute;
+        text-align: justify;
+        top: -6px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: 0px;
+        width: 24px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 79px;
+        top: 185px;
+        width: 192px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 24%;
+        width: 67%;
+        top: 78px;
+    }
+    .img_boot h3{
+        top: 241px;
+        position: absolute;
+        left: 44%;
+        font-size: 29px;
+    }
+}
+@media only screen and (max-width : 330px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 62px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 80px;
+        position: absolute;
+        top: -47px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 19px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: -1px;
+        position: absolute;
+        top: 8px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: 0px;
+        width: 23px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 79px;
+        top: 185px;
+        width: 192px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 22%;
+        width: 69%;
+        top: 88px;
+    }
+    .img_boot h3{
+        top: 241px;
+        position: absolute;
+        left: 45%;
+        font-size: 26px;
+    }    
+}
+@media only screen and (max-width : 315px) {
+    .img_title{
+        width: 212px;
+        height: 137px;
+        margin-left: 40px;
+        margin-top: -52px;
+    }
+    #_objective {
+        font-family: century gothic;
+        left: 54px;
+        position: absolute;
+        top: -28px;
+        font-weight: bolder;
+    }
+    #_objective h2{
+        font-weight: bold;
+        font-size: 19px;
+    }
+    ._content_part {
+        left: 0px;
+        position: absolute;
+        top: 132px;
+        text-align: justify;
+    }
+    ._content_part1 {
+        left: 79px;
+        position: absolute;
+        top: 102px;
+        font-size: 14px;
+    }
+    ._content_part2 {
+        left: -8px;
+        position: absolute;
+        top: 63px;
+    }
+    p {
+        font-family: century gothic;
+        font-size: 12px;
+        word-wrap: break-word;
+    }
+    #_objective1 {
+        margin-top: -4px;
+        width: 31px;
+    }
+    .img_right img{
+        position: absolute;
+        left: 69px;
+        top: 211px;
+        width: 157px;
+    }
+    /** styles for this slide*/
+    .img_boot img{
+        position: absolute;
+        left: 22%;
+        width: 69%;
+        top: 143px;
+    }
+    .img_boot h3{
+        top: 281px;
+        position: absolute;
+        left: 45%;
+        font-size: 26px;
+    }
+}

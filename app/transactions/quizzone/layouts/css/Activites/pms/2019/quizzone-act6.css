@@ -1,0 +1,390 @@
+body,html{
+  margin: 0px;
+  font-family: San Francisco;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  overflow: hidden;
+  height: 100vh
+}
+.container-fluid{
+  max-width: 1280px;
+  max-height: 677px;
+  height: 100vh;
+  width: 100%;
+  background: #ffffff;
+}
+.h-100{
+  height: 100vh !important;
+}
+h1{
+  letter-spacing: 0.1px;
+  color: #2f2f3c;
+  margin-bottom: 61px;
+  font-family: "San Francisco Display Medium";
+}
+#drag_div .drag_box{
+  width: 436px;
+  height: 411px;
+  overflow: hidden;
+}
+#drag_div .drag_box img{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: snow;
+  border-radius: 20px;
+  border: solid 6px #aad3ff;
+  background-color: #ffffff;
+}
+.ui-draggable{
+  cursor: all-scroll;
+}
+.remove_html{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.draggable
+{
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    z-index: 2000;
+    /*position: absolute !important;*/
+}
+.dropped
+{
+    position: static !important;
+    margin: 0px !important;
+    width: 96.8px !important;
+    height: 77.9px !important;
+}
+.highlighter_focus_in{
+  height: 100px;
+  -moz-transition: height 1s ease;
+  -webkit-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+  background-color: #d8675c !important;
+}
+.highlighter_focus_out{
+  height: 77.9px !important;
+  -moz-transition: height 1s ease;
+  -webkit-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+}
+.highlighter_focus_dropped{
+  background-color: #f8e8d1 !important;
+}
+
+.drop_div .card{
+  border: 0px;
+  margin-bottom: 20px;
+}
+.drop_div .card:last-child{
+  margin-bottom: 0px;
+}
+.drop_div .card-header{
+  padding: 0px;
+  border-radius: 0px;
+  border: 0px;
+  background: transparent;
+}
+.drop_div .card-header label{
+  font-family: "San Francisco Display Bold";
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #020202;
+}
+.drop_div .card-body{
+  padding: 5px 0px 20px 0px
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.drop_div li{
+  width: 106.1px;
+  height: 90.2px;
+  border-radius: 5px;
+  border: solid 4px #aad3ff;
+  background-color: #cce4ff;
+  box-shadow: inset 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+  float: left;
+  margin-right: 30px;
+}
+.drop_div li .inner_div{
+  width: 96.8px;
+  height: 77.9px;
+  background-color: #cce4ff;
+  margin: 0px auto;
+}
+.opacity {
+  opacity: 0;
+  position: absolute;
+}
+#submit_btn, #next_btn, .go_back_btn{
+  width: 197px;
+  height: 51px;
+  border: 2px solid #6bb5f6;
+  border-radius: 6px;
+  background-color: #6bb5f6;
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 60px;
+  font-family: "San Francisco Display Semibold"
+}
+.fontawesome_icon {
+  width: 31px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin: 0px auto;
+}
+.fontawesome_icon_right{
+  background-color: #59d966;
+}
+.fontawesome_icon_wrong{
+  background-color: #d8675c;
+}
+/*score screen style*/
+.col_div {
+  margin-top: 40.5px
+}
+.score_page_body{
+  max-width: 940px;
+  width: 100%;
+}
+.score_page_body_bg{
+  background-color: #fefdfb;
+  padding: 20px 0px;
+}
+.card-title{
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #222222;
+  margin-top: 14px;
+  font-family: "San Francisco Display Bold";
+}
+.card-text {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #222222;
+  margin-top: 17px;
+  font-family: "San Francisco Display Medium";
+}
+.card-text span#score_text{
+  font-family: "San Francisco Display Bold";
+}
+.cor_ans_btn{
+  width: 242px;
+  height: 51px;
+  border: 2px solid #6bb5f6;
+  border-radius: 6px;
+  background-color: #6bb5f6;
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 50px;
+  font-family: "San Francisco Display Semibold";
+}
+.mt-32{
+  margin-top: 32px
+}
+.try_again{
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #6bb5f6;
+  font-family: "San Francisco Display Semibold";
+}
+.badge{
+  width: 244px;
+  height: 263px;
+}
+/*hide sections*/
+.qust_section, .score_section, .cor_ans_section, .submit_btn, .next_btn, .drag_div_hide {
+  display: none !important;
+}
+/* quizzone CS & VC styles */
+#card_row1 .card-header{
+  position: relative;
+  margin-top: -30px
+}
+#card_row2 .card-header{
+  position: relative;
+  margin-top: -30px
+}
+#corect_card_row1 .card-header{
+  position: relative;
+  margin-top: -30px
+}
+#corect_card_row2 .card-header{
+  position: relative;
+  margin-top: -30px
+}
+.img_st{
+  max-width: 366px;
+  max-height: 366px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: solid 3px #d3d3d3;
+  background-color: #ffffff;
+  padding: 5px 40px
+}
+#pills-tab li a{
+  font-family: "San Francisco Display Bold";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.09px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 2px #0094ff;
+  color: #0094ff;
+}
+.nav-pills .nav-link.active{
+  color: #ffffff !important
+}
+#pills-vc{
+  padding: 0px 137px;
+}
+#pills-vc h5{
+  font-family: "San Francisco Display Medium";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.04px;
+  color: #101010;
+}
+#pills-vc p{
+  font-family: "San Francisco Display Regular";
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.15px;
+  color: #101010;
+}
+#pills-ca h5{
+  font-family: "San Francisco Display Medium";
+}
+#pills-ca .drop_div li {
+  border-radius: 5px;
+  box-shadow: inset 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+  border: solid 4px #aad3ff;
+  background-color: #ffffff;
+}
+@media (max-width: 920px){
+  h1 {
+    font-size: 18px;
+    margin-bottom:0px;
+  }
+  .options, .submit_btn {
+    font-size: 15px;
+  }
+  /*#qust_section{
+    align-items: start !important;
+  }*/
+  #submit_btn, #next_btn, .go_back_btn {
+    width: 150px;
+    height: 44px;
+    margin-top: -13px;
+  }
+  .drop_div .card-header label{
+    font-size: 12px;
+  }
+  #drag_div .drag_box img {
+    width: 200px;
+    height: 200px;
+  }
+  .drop_div li{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .drop_div li {
+    width: 80px;
+    height: 80px;
+  }
+  .drop_div li:before{
+    margin-left: 36px;
+  }
+  .drop_div li:after{
+    margin-top: 6%;
+    margin-left: 91%;
+  }
+  .drop_div li .inner_div {
+    width: 60px;
+    height: 60px;
+  }
+  .drop_div .card-body {
+    padding: 5px 0px 5px 0px;
+  }
+  .dropped {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .highlighter_focus_out{
+    height: 60px !important;
+  }
+  .fontawesome_icon {
+    width: 31px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin: 0px auto;
+    margin-top: auto;
+    position: absolute;
+  }
+
+  .col_div {
+    margin-top: 0px;
+  }
+  .badge {
+    width: 100px;
+    height: 100px;
+  }
+  .cor_ans_btn{
+    margin-top: 0px
+  }
+  #drag_div .drag_box{
+    height: auto
+  }
+}
+@media (max-width: 640px){
+  h1, #submit_btn, #next_btn, .go_back_btn{
+    margin-bottom:0px;
+    font-size: 18px
+  }
+  #pills-vc{
+    padding: 0px
+  }
+  .img_st{
+    padding: 5px;
+  }
+  #pills-tab li a{
+    font-size: 12px
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=EmulateIE10">
+    <title>ACT7_2019 - PMS</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../../bootstrap_4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/fonts/San-Francisco-Font/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../../../bootstrap_4.1.3/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../bootstrap_4.1.3/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/Activites/pms/2019/quizzone-act27.css">
+</head>
+
+<body>
+    <form id="layout_form" name="layout_form" enctype="multipart/form-data">
+        <div class="container-fluid">
+            <div class="row h-100 justify-content-center" id="qust_section">
+                <div class="col-12 col-sm-12 col-md-12" id="contentPart">
+                  <div class="col-md-12 px-0">
+                    <h1 class="text-center mb-2" id="act_title">Let’s recall our learnings in a fun way! Read the clues given and find the key word in the word search</h1>
+                    <div class="row align-items-center justify-content-center my-4">
+                      <nav aria-label="..." class="mb-0">
+                        <ul class="pagination pagination-md m-0">
+                          <li class="page-item" id="page_item1">
+                            <a class="page-link active" href="#" id="page_item1_link">
+                            </a>
+                          </li>
+                          <li class="page-item" id="page_item2">
+                            <a class="page-link" href="#" id="page_item2_link">
+                            </a>
+                          </li>
+                          <li class="page-item" id="page_item3">
+                            <a class="page-link" href="#" id="page_item3_link"></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="col-12 px-0">
+                      <div class="input-group mb-3" id="qus1"></div>
+
+                      <div class="input-group mb-3 qus2" id="qus2"></div>
+
+                      <div class="input-group mb-3 qus3" id="qus3"></div>
+                    </div>
+                  </div>
+                  <div id="scrambledWords" class="scrambledWords"></div>
+                </div>
+
+                <img src="../../../images/Dolphin-animation.gif" class="position-absolute w-100" id="dolphinAnimation">
+            </div>
+            <div class="row h-100 score_section" id="score_section">
+              <div class="col-12 d-flex justify-content-center align-items-center text-center col_div">
+                <div class="score_page_body">
+                    <div class="score_page_body_bg position-relative d-flex align-items-center">
+                        <img class="d-block mx-auto badge position-relative" src="../../../images/graphics/welldone.png" alt="badge" id="card_image">
+                        <div class="scoreImgCircle position-absolute mx-auto"></div>
+                    </div>
+                    <div class="scoreInfo position-relative">
+                        <div class=" scoreCircle position-absolute bg-white d-flex align-items-center justify-content-center">
+                            <div class="gold" id="score_text">4/4</div>
+                        </div>
+                        <div class="scoreInfoMsg">
+                            <p class="mb-0">Your Score</p>
+                            <hr>
+                            <h4 class="card-title" id="card_title">Well done!</h4>
+                            <p class="card-text">You have understood the diffrence between telling a Lie and telling the Truth</p>
+                        </div>
+                    </div>
+                    <div class="static_page_footer">
+                        <button type="button" class="cor_ans_btn mt-32 shadow">Check Answers</button>
+                        <div class="mt-32">
+                            <a href="#." class="try_again">Want to try again?</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row h-100 align-items-center cor_ans_section" id="cor_ans_section">
+              <div class="col-md-12">
+                <h1 class="text-center">Correct Answers</h1>
+                <div class="row my-4">
+                  <div class="col-12 col-md-10 offset-md-1">
+                    <div class="input-group mb-3" id='cqust1'></div>
+                    <div class="input-group mb-3" id='cqust2'></div>
+                    <div class="input-group mb-3" id='cqust3'></div>
+                  </div>
+                </div>
+                <button type="button" class="d-block mx-auto go_back_btn"> Go Back </button>  
+              </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="modal fade  bs-example-modal-sm" id="showWords" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="text-center"></h2>
+                  <ul class="list-group ws-words answers"></ul>      
+          </div>
+        </div>
+        <div class="modal-footer">        
+        <button type="button" class="btn btn-primary btn-danger" data-dismiss="modal">Cancel</button>
+        </div>      
+      </div>
+     </div> 
+    <script src="../../../bootstrap_4.1.3/js/jquery-3.3.1.min.js"></script>
+    <script src="../../../assets/js/core/libraries/jquery-ui.min.js"></script>
+    <script src="../../../assets/js/core/libraries/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../../bootstrap_4.1.3/js/bootstrap.min.js"></script>
+    <script src="../../../js/Activites/pms/2019/quizzone-act27.js"></script>
+</body>
+
+</html>

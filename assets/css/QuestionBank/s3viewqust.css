@@ -1,0 +1,32 @@
+/** modal styles */
+.modal-content{
+  background-color: #f6f6fa;
+}
+
+.modal-header{
+	position: absolute;
+	right: 0px;
+	padding: 0px;
+	z-index: 1
+}
+.modal-header button{
+  margin: 0px !important;
+}
+.modal-body .qust_option_max_width{
+	max-width: 485px;
+	width: 100%
+}
+.modal-body .qust_img{
+	border-radius: 5px;
+  border: solid 2px #e2e2e2;
+  background-color: #ffffff;
+}
+.options li{
+	list-style-type:lower-alpha
+}
+.options .right_ans{
+	border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  border: solid 2px #26e552;
+  background-color: #ebfdef;
+}

@@ -1,0 +1,670 @@
+body,html{
+  margin: 0px;
+  font-family: San Francisco;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  overflow: hidden;
+  height: 100vh;
+}
+body {
+  background-image: url("../../../../images/act27BG.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: linear-gradient(to right, #c3facf 0%, #effff3 53%, #c3facf 100%);
+}
+.container-fluid{
+  max-width: 1280px;
+  max-height: 677px;
+  height: 100vh;
+  width: 100%;
+  background: transparent;
+}
+.h-100{
+  height: 100vh !important;
+}
+h1{
+  letter-spacing: 0.1px;
+  color: #2f2f3c;
+  margin-bottom: 61px;
+  font-family: "San Francisco Display Medium";
+  font-size: 24px;
+}
+.input-group p {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04px;
+  color: #222;
+  text-align: center;
+  font-family: "San Francisco Display Regular";
+}
+.tdEven {
+  background-color: #e5f3ff;
+}
+.tdOdd {
+  background-color: #ffffff;
+}
+#scrambledWords{
+  ms-touch-action:none;
+  touch-action:none
+}
+
+/* Style for grid cells */
+.rf-tgrid {
+    
+    font-weight: bold;
+    font-size: 20px;
+    margin: 1px;
+    padding: 10px;
+    border: 1px solid bisque;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+.rf-ptrue{
+    text-align: center;
+}
+.center-table
+{
+  margin: 0 auto !important;
+  float: none !important;
+}
+.alignCenter{
+    text-align: center;
+}
+/* Style for the grid */
+.rf-tablestyle {
+    background-color: #f8f8ffc4;
+    cursor: pointer;
+    border: 0px solid;
+}
+#contentPart{
+  z-index: 1;
+}
+#dolphinAnimation {
+  bottom: 0px;
+  z-index: 0;
+  max-width: 360px;
+}
+
+.btn-responsive {
+    white-space: normal !important;
+    word-wrap: break-word;
+}
+
+/* Style for the div containing the grid */
+#rf-searchgamecontainer {
+    float: left;
+    padding-right: 0px;
+    border: 0px solid !important;
+}
+
+/* Style for the div containing the word list */
+#rf-wordcontainer {
+    float :left;
+    padding-right: 50px; 
+    cursor: default;
+  margin : 1em 1em 1em 0;
+  
+    border: 2px solid;
+    border-color: gold;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;  
+    
+  cursor: pointer;  
+  display: none;
+}
+
+/* Style for the words that have been found */
+.rf-foundword {
+  text-decoration : line-through;
+  color : lightgray;
+  font-style : italic;
+
+}
+
+#rf-tablegrid .rf-armed {
+/*  background: lightcyan;*/
+}
+
+#rf-tablegrid .rf-highlight {
+    background: red;
+}
+
+
+#rf-tablegrid .rf-glowing {
+  background: greenyellow;
+        
+}
+
+#rf-tablegrid .rf-selected {
+  background: #4fda66;
+}
+
+/* style for words that didn't make it on the grid */
+.rf-pfalse {
+    color: gray;
+    visibility: hidden; 
+}
+.table>tbody>tr>td{
+    padding: 4px 15px !important;
+}
+    #_objective1 {
+    margin-top: 2px;
+    width: 27px;
+}
+.table{
+    width: 0 !important;
+}
+
+#submit_btn, #next_btn, .go_back_btn{
+  width: 197px;
+  height: 51px;
+  border: 2px solid #6bb5f6;
+  border-radius: 6px;
+  background-color: #6bb5f6;
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 60px;
+  font-family: "San Francisco Display Semibold"
+}
+label {
+  margin: 0px
+}
+label.active{
+  background: #92a3b3;
+  color: #ffffff
+}
+.fontawesome_icon {
+  width: 31px;
+  height: 30px;
+  position: absolute;
+  right: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  top: 20px;
+}
+.fontawesome_icon_right{
+  background-color: #59d966;
+}
+.fontawesome_icon_wrong{
+  background-color: #d8675c;
+}
+/*score screen style*/
+.col_div {
+  margin-top: 40.5px
+}
+.score_page_body{
+  max-width: 940px;
+  width: 100%;
+}
+.score_page_body_bg{
+  padding: 20px 0px;
+}
+.card-title{
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #222222;
+  margin-top: 14px;
+  font-family: "San Francisco Display Bold";
+}
+.card-text {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #222222;
+  margin-top: 17px;
+  font-family: "San Francisco Display Medium";
+}
+.card-text span#score_text{
+  font-family: "San Francisco Display Bold";
+}
+.cor_ans_btn{
+  width: 242px;
+  height: 51px;
+  border: 2px solid #6bb5f6;
+  border-radius: 6px;
+  background-color: #6bb5f6;
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 50px;
+  font-family: "San Francisco Display Semibold";
+}
+.mt-32{
+  margin-top: 32px
+}
+.try_again{
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #6bb5f6;
+  font-family: "San Francisco Display Semibold";
+}
+.badge {
+    width: 280px;
+    height: 197px;
+}
+/*hide sections*/
+.qust_section, .score_section, .cor_ans_section, .submit_btn, .show_rightwrong_icon, .next_btn, .qus1, .qus2, .qus3, .qus4, .qus5,.qus6,.qus7,.qus8, .qus9, .qus10,.qus11,.qus12,.qus13, .qus14,.qus15,.qus16,.qus17 {
+  display: none !important;
+}
+.disabled_li{
+  pointer-events: none;
+  opacity: 0.3
+}
+.disable_li{
+  pointer-events: none;
+}
+/** Score Section Styles */
+#score_section .card-title, #score_section .card-text{
+  font-size: 24px;
+}
+#score_section #card_message, #score_section .card-text{
+  font-family: "San Francisco Display Regular";
+  font-size: 20px
+}
+
+.page-item {
+  border: 1px solid #dddddd;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 22px;
+  background-color: #ffffff;
+}
+#qust_section li.page-item:last-child{
+  margin-right: 0px;
+}
+.page-item .page-link {
+  width: 33px;
+  height: 32px;
+  border-radius: 20px !important;
+  margin: 7px !important;
+  background-color: #d7d7d7;
+}
+.page-item .page-link .cyu_pagination_icon {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: -5px;
+}
+.page-item .page-link .right_icon{
+  margin-left: -8px;
+}
+.page-item .page-link .wrong_icon{
+  margin-left: -5px;
+}
+.page-item .page-link.active {
+  background-color: #6bb5f6;
+}
+.page-item .page-link.right {
+  background-color: #4fda66;
+}
+.page-item .page-link.wrong {
+  background-color: #ed6a6a;
+}
+
+.opts {
+    min-width: 100px;
+    max-width: 100px;
+    width: 100%;
+    border-bottom: 2px solid #222;
+    min-height: 20px;
+    font-size: 16px;
+    color: #6bb5f6;
+    font-family: "San Francisco Display Medium";
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.rf-tgrid {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 1px;
+        padding: 2px !important;
+        border: 1px solid bisque;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .table {
+        width: 50% !important;
+    }
+    
+.infoButton{
+    padding-top: 9%;
+}
+.table>tbody>tr>td{
+    padding: 3px 15px !important;
+}
+.moveAway {
+    margin-top: 302px;
+}    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.rf-tgrid {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        margin: 1px;
+        padding: 9px !important;
+        border: 1px solid bisque;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+.infoButton{
+    padding-top: 11%;
+}
+.table>tbody>tr>td{
+    padding: 0px 4px !important;
+}
+.moveAway {
+    margin-top: 302px;
+}    
+}
+
+
+
+@media (max-width: 820px){
+  body,html{
+    overflow-y: visible;
+  }
+  h1 {
+    font-size: 18px;
+    margin-bottom:0px;
+  }
+  table tbody td {
+    font-size: 15px;
+    padding: 7px !important;
+  }
+  .options, .submit_btn {
+    font-size: 15px;
+  }
+  .options{
+    width: auto;
+    height: 35px;
+  }
+  tr > td:first-child{
+    margin-right: 2rem;
+  }
+  #submit_btn, #next_btn, .go_back_btn {
+    width: 150px;
+    height: 44px;
+    margin-top: -13px;
+  }
+  .fontawesome_icon {
+    width: 26px;
+    height: 26px;
+    right: 0;
+    top: 15px
+  }
+
+  .col_div {
+    margin-top: 0px;
+  }
+  
+  .cor_ans_btn{
+    margin-top: 0px
+  }
+
+  .page-item{
+    width: 33px;
+    height: 33px;
+  }
+  .page-item .page-link{
+    width: 10px;
+    height: 26px;
+    margin: 3px !important;
+  }
+  .page-item .page-link .cyu_pagination_icon{
+    position: absolute;
+    z-index: 1;
+    font-size: 17px;
+    margin-top: 0px;
+  }
+  .page-item .page-link .right_icon{
+    margin: 0px;
+    top: 4px;
+    left: 4px;
+  }
+  .page-item .page-link .wrong_icon{
+    margin: 0px;
+    top: 4px;
+    left: 6px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.rf-tgrid {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 1px;
+        padding: 9px !important;
+        border: 1px solid bisque;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+.infoButton{
+    padding-top: 13%;
+}
+.table>tbody>tr>td{
+    padding: -6px 15px !important;
+}
+.moveAway {
+    margin-top: 302px;
+}
+}
+@media (max-width: 640px){
+  h1, .go_back_btn{
+    margin-bottom:0px;
+    font-size: 18px
+  }
+  #submit_btn, #next_btn{
+    margin-top: 1rem
+  }
+  .fontawesome_icon{
+    position: relative;
+    top: 5px;
+    right: -5px
+  }
+  #qust_section h1:first-of-type {
+      font-size: 18px;
+      margin-bottom: 1.5rem;
+      font-family: 'San Francisco Display Bold';
+  }
+  table tbody td {
+    font-size: 14px;
+  }
+  body{
+    overflow-y: scroll !important;
+  }
+    /* custom scroll bar **/
+  /* !important is needed sometimes */
+  body::-webkit-scrollbar, .table-responsive::-webkit-scrollbar {
+      width: 5px !important;
+  }
+
+  /* Track */
+  body::-webkit-scrollbar-track, .table-responsive::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+      -webkit-border-radius: 5px !important;
+      border-radius: 10px !important;
+  }
+
+  /* Handle */
+  body::-webkit-scrollbar-thumb, .table-responsive::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px !important;
+      border-radius: 5px !important;
+      background: #fe8602 !important; 
+      -webkit-box-shadow: inset 0 0 6px #fe8602 !important;
+
+  }
+  body::-webkit-scrollbar-thumb:window-inactive, .table-responsive::-webkit-scrollbar-thumb:window-inactive {
+      background-color: #41617D !important;
+  }
+}
+@media only screen and (max-width : 600px) {
+    .table>tbody>tr>td{
+        padding: -1px 4px !important;
+    }
+    .table {
+        width: 100% !important;
+    }
+    .pagination {
+      flex-wrap: wrap;
+    }
+    .page-item {
+      margin-right: auto;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    .rf-tgrid {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 1px;
+        padding: 6px !important;
+        border: 1px solid bisque;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+.infoButton{
+    padding-top: 19%;
+}
+.table>tbody>tr>td{
+    padding: 4px 0px !important;
+}
+.moveAway {
+    margin-top: 302px;
+}    
+}
+
+/** Feedback styles **/
+
+.score_page_body .score_page_body_bg {
+   height: 200px;
+   margin-bottom: 4rem;
+}
+ .score_page_body .score_page_body_bg .badge {
+   width: 200px;
+   height: 150px;
+}
+ .score_page_body .score_page_body_bg img {
+   z-index: 1;
+}
+ .score_page_body .score_page_body_bg .scoreImgCircle {
+   width: 200px;
+   height: 200px;
+   background-color: #fff;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   border-radius: 50%;
+   opacity: 45%;
+}
+ .score_page_body .scoreInfo {
+   border-radius: 10px;
+   background-color: #fff;
+   padding: 1rem;
+}
+ .score_page_body .scoreInfo .scoreCircle {
+   top: -3rem;
+   left: 50%;
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%);
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+}
+ .score_page_body .scoreInfo .scoreCircle #score_text {
+   border: solid 7px #29bb02;
+   border-radius: 50%;
+   padding: 0.5rem;
+   font-size: 26px;
+   font-family: 'San Francisco Display Bold';
+}
+ .score_page_body .scoreInfo .scoreCircle .gold {
+   border-color: #29bb02 !important;
+}
+ .score_page_body .scoreInfo .scoreCircle .sliver {
+   border-color: #ffc60d !important;
+}
+ .score_page_body .scoreInfo .scoreCircle .bronze {
+   border-color: #f34a39 !important;
+}
+ .score_page_body .scoreInfo .scoreInfoMsg {
+   background-color: #e6feeb;
+   padding: 2rem 0rem 1rem 0rem;
+}
+ .score_page_body .scoreInfo .scoreInfoMsg p {
+   letter-spacing: 0.1px;
+   color: #2f2f3c;
+   margin-bottom: 20px;
+   font-family: "San Francisco Display Semibold";
+   font-size: 30px;
+}
+ .score_page_body .scoreInfo .scoreInfoMsg hr {
+   width: 85px;
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
+   border: 0;
+   border-top: 1px solid #d8d5dc;
+}
+ .score_page_body .scoreInfo .scoreInfoMsg .card-title {
+   font-size: 24px;
+   font-weight: bold;
+   letter-spacing: 0.1px;
+   color: #222;
+   margin-top: 14px;
+   font-family: "San Francisco Display Bold";
+}
+ .score_page_body .scoreInfo .scoreInfoMsg p.card-text {
+   font-family: "San Francisco Display Semibold";
+   font-size: 20px;
+}
+ .score_page_body .static_page_footer .cor_ans_btn {
+   width: 150px;
+   height: 48px;
+   border: 2px solid #6bb5f6;
+   border-radius: 6px;
+   background-color: #6bb5f6;
+   color: #fff;
+   font-size: 18px;
+   margin-top: 30px !important;
+   font-family: "San Francisco Display Bold";
+   cursor: pointer;
+}
+ .score_page_body .static_page_footer .mt-32 {
+   margin-top: 32px;
+}
+ .score_page_body .static_page_footer .try_again {
+   font-size: 22px;
+   font-weight: 600;
+   color: #6bb5f6;
+   font-family: "San Francisco Display Semibold";
+}

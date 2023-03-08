@@ -1,0 +1,552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraph.org/schema/">
+    <head>
+        <!-- BEGIN META TAGS -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="revisit-after" content="1 day" />
+        <meta name="robots" content="index, follow" />
+<!--        <meta name="copyright" content="--><!--" />-->
+        <meta name="msvalidate.01" content="912815055E507DB91981FE8B2E555FED" />
+                <script type="text/javascript" language="javascript" src="/hqx/sl/?g=js-2.0"></script>
+        <!-- AUTOCOMPLETE CACHE -->
+        <script type="text/javascript">window.userAutoCompleteArray = new Array();</script>
+
+        <!-- INCLUDE JAVASCRIPT -->
+        <!--<script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript"></script>-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+
+        <!-- DEFERRED JAVASCRIPT LOADING -->
+        <!-- based on googles page speed recommendations http://code.google.com/speed/page-speed/docs/payload.html#DeferLoadingJS -->
+        <script type="text/javascript">
+            var misc_defer_js = [];
+
+            // Add a script element as a child of the body
+            function site_downloadJSAtOnload(js_src) {
+                var element = document.createElement("script");
+                element.src = js_src;
+                document.body.appendChild(element);
+            }
+
+            function site_loadJSFiles() {
+                //loop through misc js files and lazy load them... usually external files that internal files rely on
+                for(src in misc_defer_js)
+                {
+                    site_downloadJSAtOnload(misc_defer_js[src]);
+                }
+                //can remove this if not needed for whole site and load through misc_defer_js
+                site_downloadJSAtOnload("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js");
+<!--                site_downloadJSAtOnload(--><!--);-->
+            }
+
+            // Check for browser support of event handling capability
+            if (window.addEventListener) {
+                window.addEventListener("load", function(){
+                    site_loadJSFiles();
+                }, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent("onload", function(){
+                    site_loadJSFiles();
+                });
+            }
+            else {
+                window.onload = function(){
+                    site_loadJSFiles();
+                }
+            }
+        </script>
+
+        <title>Page Not Found</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="DCS.dcssta" content="404" />
+<meta name="description" content="The page you requested was not found." />
+<link type="text/css" rel="stylesheet" media="screen" href="/hqx/min/?b=css&f=reset.css,text.css,layout.css,jss.css,asset.css" />
+<script type="text/javascript" src="/hqx/min/?b=js&f=newsletter.js"></script>
+
+        <script type="text/javascript" language="javascript" src="http://e1.cdn.qnsr.com/cgi/d/0/0/203/662677/cmp0.js"></script>
+<script type="text/javascript"  language="javascript" src="http://e1.cdn.qnsr.com/jsc/e1/fx.js"></script>
+<script type="text/javascript"  language="JavaScript" src="http://e1.cdn.qnsr.com/jsc/e1/fc.js"></script>
+        <link rel="shortcut icon" href="http://www.javascriptsource.com/favicon.ico" type="image/x-icon" />
+		<script type="text/javascript">
+		//For greeting user after login/register
+		/*!
+		* jQuery Cookie Plugin
+		*/
+			(function($) {
+				$.cookie = function(key, value, options) {
+
+					// key and at least value given, set cookie...
+					if (arguments.length > 1 && (!/Object/.test(Object.prototype.toString.call(value)) || value === null || value === undefined)) {
+						options = $.extend({}, options);
+
+						if (value === null || value === undefined) {
+							options.expires = -1;
+						}
+
+						if (typeof options.expires === 'number') {
+							var days = options.expires, t = options.expires = new Date();
+							t.setDate(t.getDate() + days);
+						}
+
+						value = String(value);
+
+						return (document.cookie = [
+							encodeURIComponent(key), '=', options.raw ? value : encodeURIComponent(value),
+							options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+							options.path ? '; path=' + options.path : '',
+							options.domain ? '; domain=' + options.domain : '',
+							options.secure ? '; secure' : ''
+						].join(''));
+					}
+
+					// key and possibly options given, get cookie...
+					options = value || {};
+					var decode = options.raw ? function(s) { return s; } : decodeURIComponent;
+
+					var pairs = document.cookie.split('; ');
+					for (var i = 0, pair; pair = pairs[i] && pairs[i].split('='); i++) {
+						if (decode(pair[0]) === key) return decode(pair[1] || ''); // IE saves cookies with empty string as "c; ", e.g. without "=" as opposed to EOMB, thus pair[1] may be undefined
+					}
+					return null;
+				};
+			})(jQuery);
+
+		jQuery(function(){
+
+				welcomeUser();
+		});
+
+		function welcomeUser(){
+			if($.cookie('FIRST_NAME')!=null && $.cookie('LAST_NAME')!=null){
+					var firstName = decodeURIComponent($.cookie('FIRST_NAME'));
+					var lastName =  decodeURIComponent($.cookie('LAST_NAME'));
+					firstName = firstName.replace("+"," ");
+					lastName = lastName.replace("+"," ");
+					if ($('#developer-login-register').css('display') == "block"){
+						$('#developer-logout').show();
+						$('#developer-login-register').hide();
+						$("<span class='greeting' style='color: #797979; font-family: Arial, sans-serif; font-size: 13px;'>Hi, <a href='/accountManagement?formType=userProfile' alt='User Profile' title='User Profile'>"+firstName+' '+lastName+"</a>&nbsp;&nbsp;</span>").insertBefore("#developer-logout .logout-link");
+					}
+				}else{
+						$('#developer-logout').hide();
+						$('#developer-login-register').show();
+				}	
+		}
+		
+				var userId = '';
+		if($.cookie('USERID_COOKIE')!=null){
+						userId =  decodeURIComponent($.cookie('USERID_COOKIE'));
+		}
+		else if($.cookie('STAGE_USERID_COOKIE')!=null && userId==''){
+						userId =  decodeURIComponent($.cookie('STAGE_USERID_COOKIE'));                  
+		}
+		else if($.cookie('TEST_USERID_COOKIE')!=null && userId==''){
+						userId =  decodeURIComponent($.cookie('TEST_USERID_COOKIE'));                      
+		}
+		else if($.cookie('DEV_USERID_COOKIE')!=null && userId==''){
+						userId =  decodeURIComponent($.cookie('DEV_USERID_COOKIE'));                       
+		}
+		else
+						userId = 'undefined';
+
+		if(userId!='undefined'){
+						var meta = document.createElement('meta');
+						meta.name = 'DCS.dcsaut';                          
+						meta.content = userId;
+						document.getElementsByTagName('head')[0].appendChild(meta);        
+		}
+				
+		function updateIFrame( leadformData) { //only used for ACL screens not for lead forms pages
+		//console.log('leadformData height'+leadformData['height']);
+		var iframe = document.getElementById( 'myframe' );   
+		var containerDiv = document.getElementById('ACL_Form_Container');
+		if(typeof( leadformData['height'] )!=undefined && leadformData['height'] !=0)			 
+			iframe.setAttribute( 'height', leadformData['height']);
+		
+			welcomeUser();						 
+		}
+		</script>
+    </head>
+    <body >
+
+	<!------ QUAD_AD 'interstitial' begin ------>
+	<!--
+AD position = B1
+OAS eqv. = interstitial
+QUAD pos = interstitial-FLEX(WELCOME)
+QUAD path = www.javascriptsource.com
+Page type = index
+-->
+<script type="text/javascript" language="JavaScript">
+zzfocrender("203", "10665", "662686/662677/662676/662675/581034", "67", "600", "400", "", "", "");</script>
+<noscript>
+<a href="http://o1.qnsr.com/cgi/r?;n=203;c=662686/662677/662676/662675/581034;s=10665;x=17152;f=4512864291;u=j;z=20130903233135" target="_blank">
+<img border="0" width="600" height="400" src="http://o1.qnsr.com/cgi/x?;n=203;c=662686/662677/662676/662675/581034;s=10665;x=17152;f=4512864291;u=j;z=20130903233135" alt="Click here" /></a>
+</noscript>
+	<!------ QUAD_AD 'interstitial' end ------>
+	
+	<!------ QUAD_AD 'send' begin ------>
+	<!--
+AD position = R
+OAS eqv. = send
+QUAD pos = sendad FLEX(SEND)
+QUAD path = www.javascriptsource.com
+Page type = index
+-->
+<script type="text/javascript" language="JavaScript">
+zzfocrender("203", "10665", "662687/662677/662676/662675/581034", "31", "0", "0", "", "", "");</script>
+<noscript>
+<a href="http://o1.qnsr.com/cgi/r?;n=203;c=662687/662677/662676/662675/581034;s=10665;x=7936;f=1364511527;u=j;z=20130903233135" target="_blank">
+<img border="0" width="0" height="0" src="http://o1.qnsr.com/cgi/x?;n=203;c=662687/662677/662676/662675/581034;s=10665;x=7936;f=1364511527;u=j;z=20130903233135" alt="Click here" /></a>
+</noscript>
+	<!------ QUAD_AD 'send' end ------>
+
+<div id="header_container" class="container">
+    <div id="header">
+        <div id="header_top">
+    <!DOCTYPE html>
+<style type="text/css">
+<!--
+body { margin: 0; padding: 0;}
+.brandLogo a img { border: none;}
+.globalHeader { font: 100%/1.4 Arial, Helvetica, sans-serif; height: 25px; background-color: #111; background-image: url(/icom_includes/toolbars/globaltoolbar/img/header-bg.jpg); background-repeat: repeat-x;	background-position: center top;}
+.globalHeader .brandLogo { padding: 4px 0 0 .5em; float: left; }
+.globalHeader .brandLogo p { color: #666; font-family: Arial, sans-serif; font-size: 11px; padding: 0; margin: 0;}
+.globalHeader .login-register { text-align: right; padding: 4px .5em 0 .5em; /*float: right;*/}
+.globalHeader .login-register img{ cursor:pointer;}
+.globalHeader .logout { text-align: right;  }
+.globalHeader .logout .greeting span{ color: #797979; font-family: Arial, sans-serif; font-size: 13px; padding: 0; margin: 0;}
+.globalHeader .logout .greeting a{ color: #797979 !important; font-family: Arial, sans-serif; padding: 0; font-size: 13px; margin: 0;}
+.logout-link img{ cursor:pointer;margin-top:3px; margin-right:5px;}
+.clearfloat { clear:both; height:0;	font-size: 1px;	line-height: 0px;}
+-->
+</style>
+<div class="globalHeader" id="ITBE-ACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="ITBE-NonACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="Developer.com-ACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="Developer.com-NonACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="Developer.com-CustomToolbar" style="display:none;">
+</div>
+<div class="globalHeader" id="developerBrandForum" style="display:none;">
+</div>
+<div class="globalHeader" id="itbeBrandForum-CustomToolbar" style="display:none;">
+</div>
+<div class="globalHeader" id="itbeBrandForum" style="display:none;">
+</div>
+<div class="globalHeader" id="ZDE-ACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="ZDE-NonACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="BASELINE-ACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="BASELINE-NonACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="CINSIDER-ACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="CINSIDER-NonACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="CIOINSIGHT-ACLHeader" style="display:none;"> 
+</div>
+<div class="globalHeader" id="CIOINSIGHT-NonACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="EWEEK-ACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="EWEEK-NonACLHeader" style="display:none;">
+</div>
+<div class="globalHeader" id="WBG-ACLHeader" style="display:none;">
+</div>
+<script language="Javascript" src="/icom_includes/toolbars/globaltoolbar/scripts/brandingcode_new.js"></script></div>
+<div id="header_middle" class="clearfix">
+    <div class="header_content" class="clearfix">
+        <div id="header_left" class="left">
+
+            <div id="logo">
+                <a href="http://www.javascriptsource.com"><img src="/img/logo2.png" alt="The JavaScript Source"></a>
+            </div>
+        </div>
+        <div id="quad_top" class="right">
+            <!--
+AD position = D
+OAS eqv. = 468x60-1
+QUAD pos = Leo-FLEX(LEO)POS(TOP)
+QUAD path = www.javascriptsource.com
+Page type = index
+-->
+<script type="text/javascript" language="JavaScript">
+zzfocrender("203", "10665", "662681/662677/662676/662675/581034", "14", "728", "90", "", "", "");</script>
+<noscript>
+<a href="http://o1.qnsr.com/cgi/r?;n=203;c=662681/662677/662676/662675/581034;s=10665;x=3584;f=1828989069;u=j;z=20130903233135" target="_blank">
+<img border="0" width="728" height="90" src="http://o1.qnsr.com/cgi/x?;n=203;c=662681/662677/662676/662675/581034;s=10665;x=3584;f=1828989069;u=j;z=20130903233135" alt="Click here" /></a>
+</noscript>
+        </div>
+
+    </div>
+</div>
+<div id="header_bottom" class="clearfix">
+    <div class="header_content">
+        <div id="navigation">
+    <ul id="navigation_list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/jss-about.html">About</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="http://www.webdeveloper.com/forum/forumdisplay.php?f=3" target="new">Forum</a></li>
+        <li><a href="/reference/core_ref/contents.html">Core Reference</a></li>
+        <li><a href="#" class="nl">Newsletter</a></li>
+    </ul>
+</div>        <div id="search_box" class="right">
+    <form action="/search" method="get" >
+        <label id="search-input-label" for="search-input" class="left">Search</label>
+        <div id="search" class="left clearfix">
+            <input type="text" id="search-input" name="q" class="left" />
+        </div>
+        <button id="search-submit" class="textButton left" type="submit" title="Go">&nbsp;</button>
+    </form>
+</div>
+    </div>
+</div>
+<!--div id="nl-signup" class="nl-signup" onMouseOver="signup_hovered=1;"-->
+<div id="newsletter_container">
+    <div id="nl-signup" class="nl-signup">
+        <div class="top">&nbsp;</div>
+        <div class="middle">
+            <div id="nl-signup-error"></div>
+            <form method="post" id="newsletterform" action="">
+                <input id="namecard" name="namecard" type=text placeholder="Enter your Email Address" required/>
+				<input id="NewsletterSignup" type="hidden" value="Web Development Update" name="NewsletterSignup">
+				<input id="navNewsletterSignup" type="hidden" value="1543" name="NewsletterKey">
+				<input id="businessUnit" type="hidden" value="Internet.com" name="businessUnit">
+				<input id="RegistrationWebsite" type="hidden" value="www.javascriptsource.com" name="RegistrationWebsite">
+                <!--input id="namecard" onclick="signup_clicked=1;" name="namecard" type=text placeholder="Enter your Email Address" required/-->
+                <input type="image" src="http://www.javascriptsource.com/img/btn-subscribe.gif" value="" name="btnSearch" id="newsletter_signInButton"/>
+            </form>
+            <div class="btn">
+                <p>
+                    <a href="javascript:void(0)" onclick="document.getElementById('nl-signup').style.display = 'none';">Close</a>
+                </p>
+            </div>
+        </div>
+        <div class="bottom">&nbsp;</div>
+    </div>
+</div>    </div>
+</div>
+<div id="content_container" class="container">
+    <div id="body" class="col3 body_content">
+        <div id="left"><div id="secondary-navigation">
+    <ul>
+        <span class="heading">Categories</span>
+        <li class="first"><h3><a href="/alphabetical-listing">Alphabetical Listing</a></h3></li>
+        <li><h3><a href="/tutorials">Tutorials</a></h3></li>
+        <li><h3><a href="/ajaxTutorials">Ajax Tutorials</a></h3></li>
+        <li><h3><a href="/ajax">Ajax</a></h3></li>
+        <li><h3><a href="/buttons">Buttons</a></h3></li>
+        <li><h3><a href="/cookies">Cookies</a></h3></li>
+        <li><h3><a href="/css">CSS</a></h3></li>
+        <li><h3><a href="/forms">Forms</a></h3></li>
+        <li><h3><a href="/games">Games</a></h3></li>
+        <li><h3><a href="/generators">Generators</a></h3></li>
+        <li><h3><a href="/image-effects">Image Effects</a></h3></li>
+        <li><h3><a href="/math-related">Math Related</a></h3></li>
+        <li><h3><a href="/miscellaneous">Miscellaneous</a></h3></li>
+        <li><h3><a href="/multimedia">Multimedia</a></h3></li>
+        <li><h3><a href="/navigation">Navigation</a></h3></li>
+        <li><h3><a href="/page-details">Page Details</a></h3></li>
+        <li><h3><a href="/passwords">Password</a></h3></li>
+        <li><h3><a href="/snippets">Snippets</a></h3></li>
+        <li><h3><a href="/text-effects">Text Effects</a></h3></li>
+        <li><h3><a href="/time-date">Time & Date</a></h3></li>
+        <li class="last"><h3><a href="/user-details">User Details</a></h3></li>
+        </li>
+    </ul>
+</div><div class="quad">
+    <!--
+AD position = F
+OAS eqv. = 125x800
+QUAD pos = sky-FLEX(SKY)
+QUAD path = www.javascriptsource.com
+Page type = index
+-->
+<script type="text/javascript" language="JavaScript">
+zzfocrender("203", "10665", "662680/662677/662676/662675/581034", "8", "120", "600", "", "", "");</script>
+<noscript>
+<a href="http://o1.qnsr.com/cgi/r?;n=203;c=662680/662677/662676/662675/581034;s=10665;x=2048;f=4841218889;u=j;z=20130903233135" target="_blank">
+<img border="0" width="120" height="600" src="http://o1.qnsr.com/cgi/x?;n=203;c=662680/662677/662676/662675/581034;s=10665;x=2048;f=4841218889;u=j;z=20130903233135" alt="Click here" /></a>
+</noscript>
+</div></div>        <div id="main_content">
+            <div class="content">
+    <div class="gray_box">
+        <!--
+AD position = R
+OAS eqv. = send
+QUAD pos = sendad FLEX(SEND)
+QUAD path = www.javascriptsource.com
+Page type = index
+-->
+<script type="text/javascript" language="JavaScript">
+zzfocrender("203", "10665", "662687/662677/662676/662675/581034", "31", "0", "0", "", "", "");</script>
+<noscript>
+<a href="http://o1.qnsr.com/cgi/r?;n=203;c=662687/662677/662676/662675/581034;s=10665;x=7936;f=790121719;u=j;z=20130903233135" target="_blank">
+<img border="0" width="0" height="0" src="http://o1.qnsr.com/cgi/x?;n=203;c=662687/662677/662676/662675/581034;s=10665;x=7936;f=790121719;u=j;z=20130903233135" alt="Click here" /></a>
+</noscript>
+    </div>
+    <div id="page_content">
+        <h1 class="heading">
+            We're sorry...
+        </h1>
+        <div class="body">
+            <p>We were unable to find the page you asked for on <a href="http://www.javascriptsource.com">JavaScriptSource</a>.</p>
+            <p>Feel free to click your browser's back button, or you can go to:</p>
+            <p><a href="http://www.javascriptsource.com">&laquo; JavaScriptSource Home Page</a></p>
+        </div>
+    </div>
+    <div class="gray_box">
+        <!--
+AD position = G
+OAS eqv. = ciu
+QUAD pos = ciu-FLEX(CIU)
+QUAD path = www.javascriptsource.com
+Page type = index
+-->
+<script type="text/javascript" language="JavaScript">
+zzfocrender("203", "10665", "662683/662677/662676/662675/581034", "59", "600", "200", "", "", "");</script>
+<noscript>
+<a href="http://o1.qnsr.com/cgi/r?;n=203;c=662683/662677/662676/662675/581034;s=10665;x=15104;f=7993356070;u=j;z=20130903233135" target="_blank">
+<img border="0" width="600" height="200" src="http://o1.qnsr.com/cgi/x?;n=203;c=662683/662677/662676/662675/581034;s=10665;x=15104;f=7993356070;u=j;z=20130903233135" alt="Click here" /></a>
+</noscript>
+    </div>
+</div>
+        </div>
+        <div id="right"><div id="right_content">
+    <h2>Attention JavaScript Coders</h2>
+    <p>
+        <a href="/contribute"><img class="contribute left" src="../../img/contribute.png"></a>
+        Want some recognition for your scripts?
+        <a href="/contribute">Submit them to JavaScript Source!</a>
+    </p>
+    <div class="clearfix"></div>
+    <div class="quad">
+        <!--
+AD position = Q
+
+OAS eqv. = flex
+QUAD pos = Bob-FLEX(BOB)POS(MIDDLE)
+QUAD path = www.javascriptsource.com
+Page type = index
+-->
+<script type="text/javascript" language="JavaScript">
+zzfocrender("203", "10665", "662684/662677/662676/662675/581034", "9", "300", "250", "", "", "");</script>
+<noscript>
+<a href="http://o1.qnsr.com/cgi/r?;n=203;c=662684/662677/662676/662675/581034;s=10665;x=2304;f=3645405127;u=j;z=20130903233135" target="_blank">
+<img border="0" width="300" height="250" src="http://o1.qnsr.com/cgi/x?;n=203;c=662684/662677/662676/662675/581034;s=10665;x=2304;f=3645405127;u=j;z=20130903233135" alt="Click here" /></a>
+</noscript>
+    </div>
+        <div class="quad">
+        <!--
+AD position = U
+OAS eqv. = 336x280
+QUAD pos = Bob-FLEX(BOB)POS(TOP)
+QUAD path = www.javascriptsource.com
+Page type = index
+-->
+<script type="text/javascript" language="JavaScript">
+zzfocrender("203", "10665", "662679/662677/662676/662675/581034", "6", "125", "125", "", "", "");</script>
+<noscript>
+<a href="http://o1.qnsr.com/cgi/r?;n=203;c=662679/662677/662676/662675/581034;s=10665;x=1536;f=5354050220;u=j;z=20130903233135" target="_blank">
+<img border="0" width="125" height="125" src="http://o1.qnsr.com/cgi/x?;n=203;c=662679/662677/662676/662675/581034;s=10665;x=1536;f=5354050220;u=j;z=20130903233135" alt="Click here" /></a>
+</noscript>
+    </div>
+    <div id="marketplace">
+    <!--<script src="http://jlinks.industrybrains.com/jsct?sid=829&amp;ct=INTERNETCOM_DEVELOPER&amp;tr=JAVASCRIPTINTERNET&amp;num=5&amp;layt=7&amp;fmt=simp" type="text/javascript"></script>-->
+<!--    <script type="text/javascript" src="http://jlinks.industrybrains.com/jsct?sid=829&amp;ct=INTERNETCOM_DEVELOPER&amp;tr=JAVASCRIPTINTERNET&amp;num=5&amp;layt=7&amp;fmt=simp"></script>-->
+</div></div></div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="footer_container" class="container">
+    <div id="footer">
+        <div id="footer_top">
+    <div class="footer_content">
+    </div>
+</div>
+<div id="footer_middle" class="clearfix">
+    <div class="footer_content">
+        <div id="footer_logo" class="left">
+            <img src="/img/logos.png" alt="The JavaScriptSource" />
+        </div>
+        <div class="quad right">
+            <!--
+AD position = E
+OAS eqv. = 468x60-2
+QUAD pos = Leo-FLEX(LEO)POS(BOTTOM)
+QUAD path = www.javascriptsource.com
+Page type = index
+-->
+<script type="text/javascript" language="JavaScript">
+zzfocrender("203", "10665", "662682/662677/662676/662675/581034", "14", "728", "90", "", "", "");</script>
+<noscript>
+<a href="http://o1.qnsr.com/cgi/r?;n=203;c=662682/662677/662676/662675/581034;s=10665;x=3584;f=7158993263;u=j;z=20130903233135" target="_blank">
+<img border="0" width="728" height="90" src="http://o1.qnsr.com/cgi/x?;n=203;c=662682/662677/662676/662675/581034;s=10665;x=3584;f=7158993263;u=j;z=20130903233135" alt="Click here" /></a>
+</noscript>
+        </div>
+    </div>
+
+</div>
+<div id="footer_bottom">
+    <div class="footer_content clearfix">
+        <div class="social-media left">
+    <a href="/rss.xml"><img src="/img/icon-rss-feed.gif" alt="RSS" /></a>
+</div>        <div id="copyright" class="left">Copyright © 2013 QuinStreet Inc. All Rights Reserved.</div>
+        <div id="footer-links" class="right">
+            <ul>
+                <li class="first"><a href="/terms">Legal Notices</a></li>
+                <li><a href="/licensing">Licensing and Permissions</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/mediakit/index.html">Advertising</a></li>
+                <li><a href="http://e-newsletters.developer.com/">Newsletters</a></li>
+                <li class="last"><a href="/about-developer">About the Developer.com Network</a></li>
+            </ul>
+        </div>
+    </div>
+</div>    </div>
+</div>
+
+<!-- Google Analytics -->
+<script src="/icom_includes/footers/scripts/ga.js"  type="text/javascript"></script>
+<script  type="text/javascript" >
+<!--     hide from no js browsers
+delete Array.prototype.itemValidation;
+delete Array.prototype.isArray;
+var superTracker = _gat._getTracker("UA-2838492-1");
+superTracker._initData();
+superTracker._trackPageview();
+
+-->
+</script>
+<script  type="text/javascript" >
+<!--     hide from no js browsers
+   var site_name =  location.hostname;
+   if ( site_name.indexOf("www.") != 0 ) {
+     site_name  = "www."+site_name ;
+   }
+   document.write("<SCR" + "IPT LANGUAGE='JavaScript1.2' SRC='/icom_includes/footers/sites/"+ site_name +".js' TYPE='text/javascript'><\/SCR" + "IPT>");
+-->
+</script>
+<script  type="text/javascript" >
+<!--     hide from no js browsers
+   pageTracker._initData();
+   pageTracker._trackPageview();
+   // -->
+</script>
+<!-- End Google Analytics -->
+        
+<!-- start Vibrant Media IntelliTXT script section -->
+<script type="text/javascript" src="http://javascriptsource.us.intellitxt.com/intellitxt/front.asp?ipid=26021"></script>
+<!-- end Vibrant Media IntelliTXT script section -->
+
+<!-- CREATE AJAX CONTAINERS -->
+<div id="ajax_alpha"></div>
+<div id="ajax_beta"></div>
+</body>
+</html>

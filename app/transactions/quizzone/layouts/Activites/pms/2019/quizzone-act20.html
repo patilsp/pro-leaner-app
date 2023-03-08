@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=EmulateIE10">
+	<title>Activity Type 20</title>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../../../bootstrap_4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/fonts/San-Francisco-Font/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/Activites/pms/2019/quizzone-act20.css">
+</head>
+<body>
+  <form id="layout_form" name="layout_form" enctype="multipart/form-data">
+  	<div class="container-fluid">
+      <div class="row h-100 d-flex align-items-center" id="drop_div">
+        <div class="col-12" id="drag_div">
+          <div class="d-flex justify-content-center flex-wrap flex-sm-wrap flex-md-nowrap mb-4">
+            <h1 class="text-center m-0 order-1 order-sm-1 order-md-0" id="act_title">Re-arrange the tiles and complete the pictures</h1>
+            <h5 class="justify-content-end align-self-center ml-0 ml-sm-0 ml-md-5 mb-3 mb-sm-3 mb-md-0 order-0 order-sm-0 order-md-1">Time: <span id="timer">00:00</span></h5>
+          </div>
+          <div class="d-flex justify-content-between mb-4"  id="dvSource">
+            <div id="box1" class="parent_box">
+              <div class="d-flex align-content-start flex-wrap box">
+                <div class="dragable_image_div box1_img" id="dvDest1" value='img1_1'>
+                  <img src="../../../images/graphics/act19_loader.gif" class="dynamic_input" value='img1_2' alt="dragable_image"/>
+                </div>
+                <div class="dragable_image_div box1_img" id="dvDest2" value='img1_2'>
+                  <img src="../../../images/graphics/act19_loader.gif" class="dynamic_input" value='img3_1' alt="dragable_image" />
+                </div>
+                <div class="dragable_image_div box1_img" id="dvDest3" value='img1_3'>
+                  <img src="../../../images/graphics/act19_loader.gif" class="dynamic_input" value='img1_1' alt="dragable_image"/>
+                </div>
+                <div class="dragable_image_div box1_img" id="dvDest4" value='img1_4'>
+                  <img src="../../../images/graphics/act19_loader.gif" class="dynamic_input" value='img1_4' alt="dragable_image" />
+                </div>
+              </div>
+            </div>
+            <div id="box2" class="parent_box">
+              <div class="d-flex align-content-start flex-wrap box">
+                <div class="dragable_image_div box2_img" id="dvDest5" value='img2_1'>
+                  <img src="../../../images/graphics/act19_loader.gif"class="dynamic_input"  value='img1_3' alt="dragable_image" />
+                </div>
+                <div class="dragable_image_div box2_img" id="dvDest6" value='img2_2'>
+                  <img src="../../../images/graphics/act19_loader.gif"class="dynamic_input"  value='img2_1' alt="dragable_image" />
+                </div>
+                <div class="dragable_image_div box2_img" id="dvDest7" value='img2_3'>
+                  <img src="../../../images/graphics/act19_loader.gif"class="dynamic_input" value='img2_3' alt="dragable_image" />
+                </div>
+                <div class="dragable_image_div box2_img" id="dvDest8" value='img2_4'>
+                  <img src="../../../images/graphics/act19_loader.gif" class="dynamic_input" value='img2_4' alt="dragable_image" />
+                </div>
+              </div>
+            </div>
+            <div id="box3" class="parent_box">
+              <div class="d-flex align-content-start flex-wrap box">
+                <div class="dragable_image_div box3_img" id="dvDest9" value='img3_1'>
+                  <img src="../../../images/graphics/act19_loader.gif" class="dynamic_input" value='img3_2' alt="dragable_image" />
+                </div>
+                <div class="dragable_image_div box3_img" id="dvDest10" value='img3_2'>
+                  <img src="../../../images/graphics/act19_loader.gif" class="dynamic_input" value='img3_4' alt="dragable_image" />
+                </div>
+                <div class="dragable_image_div box3_img" id="dvDest11" value='img3_3'>
+                  <img src="../../../images/graphics/act19_loader.gif" class="dynamic_input" value='img3_3' alt="dragable_image" />
+                </div>
+                <div class="dragable_image_div box3_img" id="dvDest12" value='img3_4'>
+                  <img src="../../../images/graphics/act19_loader.gif" class="dynamic_input" value='img2_2' alt="dragable_image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center p-2 mb-4" id="optionBox">
+            <div class="align-self-center arrow_box">
+              Use this empty block to move one tile.
+            </div>
+            <div id="arrow">&#8594;</div>
+            <div class="box" id="temp_drop_box">
+              
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="d-block mx-auto submit_btn" id="submit_btn"> Submit </button>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- Modal -->
+  <div class="modal fade" id="StatusModal" tabindex="-1" data-backdrop="static"
+   data-keyboard="false" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row d-flex align-items-center">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="text-center">
+                <img id="modal_img" src="../../../images/graphics/welldone.png">
+                <h5 class="mb-2" id="modal_title">Hurray! Nice job my friend</h5>
+                <p class="mb-5" id="modal_info">You have a sharp brain.</p>
+
+                <button type="button" class="d-block mx-auto" id="next_btn"> Want to try again? </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	<script src="../../../bootstrap_4.1.3/js/jquery-3.3.1.min.js"></script>
+	<script src="../../../bootstrap_4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../../assets/js/core/libraries/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../../assets/js/core/libraries/jquery.ui.touch-punch.min.js"></script>
+  <script src="../../../js/Activites/pms/2019/quizzone-act20.js"></script>
+</body>
+</html>

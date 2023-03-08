@@ -1,0 +1,152 @@
+<?php
+include_once "../session_token/checksession.php";
+include_once "../configration/config.php";
+//include_once "session_token/checktoken.php";
+$token=$_SESSION['token'];
+$logged_user_id=$_SESSION['cms_userid'];
+$user_type = $_SESSION['cms_usertype'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Meta -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <!-- vendor css -->
+    <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../../lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="../../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="../../lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
+    <link href="../../lib/highlightjs/github.css" rel="stylesheet">
+    <link href="../../lib/datatables/jquery.dataTables.css" rel="stylesheet">
+    <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+
+    <!-- CMS CSS -->
+    <link rel="stylesheet" href="../../css/cms.css">
+   
+  </head>
+
+  <style type="text/css">
+    
+    
+    
+    
+</style>
+
+  <body class="collapsed-menu">
+
+    <!-- ########## START: LEFT PANEL ########## -->
+    <?php include("../fixed-blocks/left_sidebar.php"); ?>
+    <!-- ########## END: LEFT PANEL ########## -->
+
+    <!-- ########## START: HEAD PANEL ########## -->
+    <?php include("../fixed-blocks/header.php"); ?>
+    <!-- ########## END: HEAD PANEL ########## -->
+
+    <!-- ########## START: MAIN PANEL ########## -->
+    <div class="br-mainpanel">
+      <div class="br-pagetitle">
+        
+      </div><!-- d-flex -->
+
+      <div class="br-pagebody">
+        <!-- start you own content here -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card h-100 d-flex flex-column justify-content-between">
+              <div class="card-header card-header d-flex align-items-center justify-content-between pd-y-5 bg-dark">
+                <h6 class="mg-b-0 tx-14 tx-white">List of Roles</h6>
+                <div class="card-option tx-24">
+                  <a href="role_creation.php" class="btn btn-md btn-info">Add Role</a>
+                </div><!-- card-option -->
+              </div><!-- card-header -->
+              <div class="card-body">
+                <table id="datatable" class="table table-striped table-bordered">
+                  <thead>
+
+                     
+                    <tr>
+                      <th>Roles</th>
+                      <th>Created By</th>
+                      <th>Created On</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <?php 
+                       
+                        $query="SELECT * FROM roles";
+                        $result=$db->query($query);
+                        while($row = $result->fetch(PDO::FETCH_ASSOC))
+                        { 
+                          $query1 = "SELECT * FROM users where id = ?";
+                          $result1=$db->prepare($query1);
+                          $result1->execute(array($row['created_by']));
+                          while($rows = $result1->fetch(PDO::FETCH_ASSOC))
+                          {
+                            
+                        ?>
+                          
+                    <tr>
+
+                      <td><?php echo $row['name']; ?></td>
+                      <td><?php echo $rows['first_name']." ".$rows['last_name']; ?></td>
+                      <td><?php echo $row['created_on']; ?></td>
+                      <td><button type="button" class="btn btn-info" onclick="location.href='update_roles.php?id=<?php echo $row['id']; ?>';">Edit</button></td>
+                      
+                    </tr>
+
+
+                    <?php
+                  }
+                }
+                  ?>
+                  </tbody>
+                  
+                </table>
+              </div><!-- card-body -->
+            </div>
+          </div>
+        </div>
+      </div><!-- br-pagebody -->
+    </div><!-- br-mainpanel -->
+
+
+
+    <!-- ########## END: MAIN PANEL ########## -->
+    <script src="../../lib/jquery/jquery.js"></script>
+    <script src="../../lib/popper.js/popper.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../../lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="../../lib/moment/moment.js"></script>
+    <script src="../../lib/jquery-ui/jquery-ui.js"></script>
+    <script src="../../lib/jquery-switchbutton/jquery.switchButton.js"></script>
+    <script src="../../lib/peity/jquery.peity.js"></script>
+    <script src="../../lib/highlightjs/highlight.pack.js"></script>
+    <script src="../../lib/datatables/jquery.dataTables.js"></script>
+    <script src="../../lib/datatables-responsive/dataTables.responsive.js"></script>
+    <script src="../../lib/select2/js/select2.min.js"></script>
+
+    <script src="../../js/cms.js"></script>
+    <script>
+      $(function(){
+        'use strict';
+
+        $('#datatable').DataTable({
+          responsive: false
+        });
+        // Select2
+        $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+
+      });
+    </script>
+  </body>
+</html>

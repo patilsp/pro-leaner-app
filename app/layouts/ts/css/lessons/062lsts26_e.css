@@ -1,0 +1,622 @@
+body{
+    
+}
+.template {
+    height: 670px;
+    background-image: url('../../thinking6_images/thinking skill 6 7.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+._content1 img{
+    width: 430px;
+    position: absolute;
+    top: 195px;
+    left: 36px;
+}
+
+#_objective1 {
+    margin-top: 0px;
+    width: 27px;
+}
+
+
+._content7 img{
+    width: 300px;
+    position: absolute;
+    top: 134px;
+    left: 141px;
+}
+
+
+#_objective h2{
+    position: relative;
+    top: 106px;
+    margin-left: 138px;
+    font-weight: bold;
+}
+
+.content_part{
+    top: 117px;
+    left: 91px;
+    width: 60%;
+}
+ul{
+   margin-left: -1px;
+   margin-bottom: 0!important;
+}
+
+li{
+    list-style-type: none;
+    /*word-wrap:break-word;*/
+    font-family:century gothic;
+    font-weight:bold;
+    font-size: 20px;
+    text-align: initial;
+    /* line-height: 21px; */
+}
+li img{
+    width:20px;
+}
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+
+
+/* Small Devices, Tablets */
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+._content1 img{
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: 197px;
+}
+ul{
+    margin-bottom: 0!important;
+}
+#_objective h2{
+    top: 96px;
+    margin-left: 108px;
+    font-weight: bold;
+}
+.content_part {
+    top: 85px;
+    left: 56px;
+    width: 63%;
+}
+._content7 img{
+    width: 254px;
+    position: absolute;
+    top: 153px;
+    left: 92px;
+}
+    
+ul{
+    margin-left: -33px;
+}
+    
+    
+#_objective1 {
+    margin-top: 3px;
+    width: 27px;
+}
+    
+.content_part li{
+    font-size: 19px;
+}
+   
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+._content1 img{
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: 197px;
+}
+ul{
+    margin-bottom: 0!important;
+}
+#_objective h2{
+    top: 103px;
+    margin-left: 104px;
+    font-weight: bold;
+}
+.content_part {
+    top: 105px;
+    left: 97px;
+    width: 59%;
+}
+._content7 img{
+    max-width: 207px;
+    position: absolute;
+    top: 179px;
+    left: 109px;
+}
+    
+ul{
+    margin-left: -99px;
+}
+    
+        
+#_objective1 {
+    margin-top: 0px;
+    width: 27px;
+}
+    
+.content_part li{
+    font-size: 17px;
+}
+}
+
+@media only screen and (max-width : 800px) {
+
+._content1 img{
+    width: 290px;
+    position: absolute;
+    top: 75px;
+    left: 169px;
+}
+ul{
+    margin-bottom: 0!important;
+}
+    
+._content7 img{
+    width: 159px;
+    position: absolute;
+    top: 182px;
+    left: 119px;
+}
+#_objective h2{
+    top: 86px;
+    margin-left: 99px;
+}
+.content_part {
+    top: 81px;
+    left: 116px;
+    width: 60%;
+}
+    
+ul{
+    margin-left: -111px;
+}
+    
+#_objective1 {
+    margin-top: 1px;
+    width: 24px;
+}
+    
+.content_part li{
+    font-size: 17px;
+}
+    
+li img{
+    width:15px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+._content1 img{
+    width: 280px;
+    position: absolute;
+    top: 26px;
+    left: 282px;
+}
+ul{
+    margin-bottom: 0!important;
+}
+    
+._content7 img{
+    width: 128px;
+    position: absolute;
+    top: 53px;
+    left: 241px;
+}
+#_objective h2{
+    top: 64px;
+    margin-left: 109px;
+}
+.content_part {
+    top: 64px;
+    left: -183px;
+    width: 124%;
+}
+    
+ul{
+   margin-left: 229px;
+}
+    
+#_objective1 {
+    margin-top: -3px;
+    width: 27px;
+}
+    
+.content_part li{
+    font-size: 16px;
+}
+    
+li img{
+    width:15px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 700px) {
+
+._content1 img{
+    width: 130px;
+    top: 18px;
+    position: absolute;    
+    left: 239px;
+
+
+}
+ul{
+    margin-bottom: 0!important;
+}
+#_objective h2{
+    top: 68px;
+    margin-left: 94px;
+    font-size: 21px;
+}
+    
+._content7 img{
+    width: 121px;
+    position: absolute;
+    top: 66px;
+    left: 246px;
+}
+.content_part {
+   top: 73px;
+   left: -40px;
+   width: 100%;
+}
+    
+ul{
+    margin-left:78px;
+}
+    
+#_objective1 {
+    margin-top: 1px;
+    width: 23px;
+}
+    
+.content_part li{
+    font-size: 15px;
+}
+    
+li img{
+    width:15px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 650px) {
+
+._content1 img{
+    width: 130px;
+    top: 18px;
+    position: absolute;
+    left: 217px;
+}
+ul{
+    margin-bottom: 0!important;
+}
+#_objective h2{
+    top: 59px;
+    margin-left: 80px;
+    font-size: 23px;
+}
+    
+._content7 img{
+    width: 97px;
+    position: absolute;
+    top: 27px;
+    left: 211px;
+}
+.content_part {
+    top: 57px;
+    left: -68px;
+}
+    
+ul{
+  margin-left:92px;
+}
+    
+#_objective1 {
+    margin-top: -2px;
+    width: 24px;
+}
+    
+.content_part li{
+    font-size: 15px;
+}
+    
+li img{
+    width:15px;
+}
+    
+
+
+}
+
+@media only screen and (max-width : 600px) {
+
+._content1 img{
+    width: 130px;
+    top: 18px;
+    position: absolute;    
+    left: 217px;
+}
+ul{
+    margin-bottom: 0!important;
+}
+#_objective h2{
+    top: 56px;
+    margin-left: 75px;
+    font-size: 23px;
+}
+    
+._content7 img{
+    width: 93px;
+    position: absolute;
+    top: 40px;
+    left: 215px;
+}
+.content_part {
+    top: 57px;
+    left: -81px;
+    width: 106%;
+}
+
+ul{
+  margin-left:92px;
+}
+    
+#_objective1 {
+    margin-top: -2px;
+    width: 24px;
+}
+    
+.content_part li{
+    font-size: 14px;
+}
+    
+li img{
+    width:15px;
+}
+}
+
+
+@media only screen and (max-width : 550px) {
+
+._content1 img{
+    width: 130px;
+    top: 18px;
+    position: absolute;
+    left: 217px;
+}
+ul{
+    margin-bottom: 0!important;
+}
+#_objective h2{
+    top: 55px;
+    margin-left: 64px;
+    font-size: 23px;
+}
+    
+._content7 img{
+    width: 99px;
+    position: absolute;
+    top: 61px;
+    left: 144px;
+}
+.content_part {
+    top: 55px;
+    left: 0px;
+    width: 100%;
+}
+    
+ul{
+    margin-left: 12px;
+}
+    
+#_objective1 {
+    margin-top: -1px;
+    width: 24px;
+}
+    
+.content_part li{
+    font-size: 13px;
+}
+
+li img{
+    width:15px;
+}
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+._content1 img{
+    width: 130px;
+    top: 18px;
+    position: absolute;
+    height: 110px;
+    left: 101px;
+}
+ul{
+    margin-bottom: 0!important;
+}
+    
+._content7 img{
+    width: 90px;
+    position: absolute;
+    top: 56px;
+    left: 177px;
+}
+#_objective h2{
+    top: 59px;
+    font-size: 19px;
+    margin-left: 62px;
+}
+    
+#_objective1 {
+    margin-top: -3px;
+    width: 25px;
+}
+
+ul{
+    margin-left: 1px;
+}
+.content_part {
+    top: 58px;
+    left: 12px;
+    width: 96%;
+}
+.content_part li{
+    font-size: 13px;
+}
+    
+li img{
+    width:15px;
+}
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 400px) {
+
+._content1 img{
+    width: 130px;
+    top: 18px;
+    position: absolute;   
+    height: 110px;
+    left: 101px;
+
+
+}
+ul{
+    margin-bottom: 0!important;
+}
+    
+._content7 img{
+    width: 59px;
+    position: absolute;
+    top: 98px;
+    left: 141px;
+}
+#_objective h2{
+    top: 93px;
+    font-size: 19px;
+    margin-left: 43px;
+}
+    
+#_objective1 {
+    margin-top: -4px;
+    width: 21px;
+}
+
+ul{
+    margin-left: -27px;
+}
+.content_part {
+    top: 97px;
+    left: -6px;
+    width: 100%;
+}
+.content_part li{
+    font-size: 12px;
+}
+    
+li img{
+    width:15px;
+}
+    
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+._content1 img{
+    width: 130px;
+    top: 18px;
+    position: absolute;
+    height: 110px;
+    left: 101px;
+
+
+}
+ul{
+    margin-bottom: 0!important;
+}
+    
+._content7 img{
+    width: 43px;
+    position: absolute;
+    top: 49px;
+    left: 120px;
+}
+#_objective h2{
+    top: 61px;
+    font-size: 19px;
+    margin-left: 37px;
+}
+    
+#_objective1 {
+    margin-top: -5px;
+    width: 23px;
+}
+
+ul{
+    margin-left: -25px;
+}
+.content_part {
+    top: 60px;
+    left: 9px;
+    width: 100%;
+}
+.content_part li{
+  font-size: 12px;
+}
+    
+li img{
+    width:15px;
+}
+    
+}
+

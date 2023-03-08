@@ -1,0 +1,217 @@
+body{
+    font-family: Arial;
+    font-size: 10pt;
+}
+.template {
+    height: 670px;
+    background-image: url('../../thinking6_images/thinkingskill6.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#_objective b {
+    position: absolute;
+    left: 230px;
+    top: 75px;
+    border: 1px solid gray;
+    font-size: 27px;
+    box-shadow: 0px 0px 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#question {
+    font-family: century Gothic;
+    font-size: 18px;
+    left: 258px;
+    position: absolute;
+    top: 140px;
+}
+table{
+    margin-left: 283px;
+}
+.table-style{
+    top: 47px;
+    left: 0px;
+}
+.table-style td{
+    padding: 12px;
+}
+
+.valid_msg {
+    position: absolute;
+    top: 159px;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    table{
+        margin-left: 0px;
+    }
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width : 1040px) {
+    table{
+        margin-left: 0px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+   #_objective b {
+        left: 87px;
+        top: 89px;
+    }
+    #question {
+        font-size: 13px;
+        left: 116px;
+        top: 153px;
+    }
+    table{
+        margin-left: 0px;
+    }
+    .table-style {
+        top: 12px;
+        left: 0px;
+    }
+    .table-style td {
+        padding: 23px;
+    }    
+}
+ 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 500px) {
+    #_objective b {
+        left: 60px;
+        top: 89px;
+    }
+    #question {
+        font-size: 13px;
+        left: 55px;
+        top: 153px;
+    }
+    table{
+        margin-left: 0px;
+    }
+    .table-style {
+        top: 12px;
+        left: 0px;
+    }
+    .table-style td {
+        padding: 1px;
+        padding-top: 20px;
+    }
+        
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px) {
+    #_objective b {
+        left: 60px;
+        top: 89px;
+    }
+    #question {
+        font-size: 13px;
+        left: 55px;
+        top: 153px;
+    }
+    table{
+        margin-left: 0px;
+    }
+    .table-style {
+        top: 12px;
+        left: 0px;
+    }
+    .table-style td {
+        padding: 1px;
+        padding-top: 20px;
+    }
+     
+} 
+@media only screen and (max-width : 370px) {
+     #_objective b {
+        left: 48px;
+        top: 89px;
+    }
+    #question {
+        font-size: 13px;
+        left: 45px;
+        top: 153px;
+    }
+    table{
+        margin-left: 0px;
+    }
+    .table-style {
+        top: 12px;
+        left: 24px;
+    }
+    .table-style td {
+        padding: 1px;
+        padding-top: 20px;
+    }
+    
+}
+@media only screen and (max-width : 330px) {
+    #_objective b {
+        left: 48px;
+        top: 89px;
+    }
+    #question {
+        font-size: 13px;
+        left: 55px;
+        top: 153px;
+    }
+    table{
+        margin-left: 0px;
+    }
+    .table-style {
+        top: 12px;
+        left: 0px;
+    }
+    .table-style td {
+        padding: 1px;
+        padding-top: 20px;
+    }
+}

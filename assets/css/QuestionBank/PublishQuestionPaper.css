@@ -1,0 +1,46 @@
+#s1filterform, h4{
+	max-width: 600px;
+}
+
+.col-form-label{
+	font-weight: 600
+}
+.pointer_event{
+	opacity: 0.4;
+	pointer-events: none;
+}
+table#qust_table{
+	border-collapse: separate;
+	border-spacing: 0 8px;
+}
+table#qust_table tbody tr{
+	border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+table#qust_table td, table#qust_table thead th{
+	border: none;
+}
+table#qust_table thead th{
+	color: #878787;
+	font-size: 14px;
+	font-weight: 600;
+	vertical-align:middle
+}
+table#qust_table td{
+	color: #181818;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 1.5rem;
+	vertical-align: middle;
+}
+table#qust_table td .tick_icon{
+    width: 30px;
+}
+table#qust_table td.action_img img{
+	width: 20px;
+	height: 20px
+}
+table.dataTable td, table.dataTable th{
+	border:none;
+}

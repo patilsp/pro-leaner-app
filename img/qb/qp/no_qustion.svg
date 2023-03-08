@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="78" viewBox="0 0 120 78">
+    <g fill="none" fill-rule="evenodd" font-family="ArialRoundedMTBold, Arial Rounded MT Bold">
+        <g fill="#EDEDED">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <text font-size="68" transform="translate(-930 -745) translate(122 179) translate(30 25) translate(10 350) translate(0 25) translate(768 166)">
+                                    <tspan x="40.036" y="64">?</tspan>
+                                </text>
+                                <text font-size="38" transform="translate(-930 -745) translate(122 179) translate(30 25) translate(10 350) translate(0 25) translate(768 166) rotate(24 100.052 49.049)">
+                                    <tspan x="89.16" y="63.049">?</tspan>
+                                </text>
+                                <text font-size="38" transform="translate(-930 -745) translate(122 179) translate(30 25) translate(10 350) translate(0 25) translate(768 166) rotate(-24 19 49.049)">
+                                    <tspan x="8.108" y="63.049">?</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

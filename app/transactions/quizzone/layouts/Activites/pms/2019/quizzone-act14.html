@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=EmulateIE10">
+    <title>ACT7_2019 - PMS</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../../bootstrap_4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/fonts/San-Francisco-Font/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../../../bootstrap_4.1.3/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../bootstrap_4.1.3/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/Activites/pms/2019/quizzone-act14.css">
+</head>
+
+<body>
+    <form id="layout_form" name="layout_form" enctype="multipart/form-data">
+        <div class="container-fluid">
+            <div class="row h-100 align-items-center justify-content-center" id="qust_section">
+                <div class="col-12 col-md-10 md-offset-1">
+                    <h1 class="text-center act_title">Fill the correct word based on question</h1>
+                    <div class="row align-items-center justify-content-center">
+                        <nav aria-label="..." class="mb-35">
+                            <ul class="pagination pagination-md m-0">
+                                <li class="page-item" id="page_item1">
+                                    <a class="page-link active" href="#" id="page_item1_link">
+                                    </a>
+                                </li>
+                                <li class="page-item" id="page_item2">
+                                    <a class="page-link" href="#" id="page_item2_link">
+                                    </a>
+                                </li>
+                                <li class="page-item" id="page_item3">
+                                    <a class="page-link" href="#" id="page_item3_link"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="col-12" id="qust_col">
+                            
+                        </div>
+                        <div class="col-12" id="word_search_blk">
+                            <div class="d-flex flex-row justify-content-center" id="bind_section">
+                                
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center" id="keypad">
+                                <ul class="d-flex flex-row justify-content-center flex-wrap">
+                                    <li id="back_btn">
+                                        <div>BACK</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="button" class="d-block mx-auto submit_btn" id="submit_btn"> Submit </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100 score_section" id="score_section">
+                <div class="col-12 d-flex justify-content-center text-center col_div">
+                    <div class="score_page_body">
+                        <div class="score_page_body_bg">
+                            <img class="d-block mx-auto badge" src="../../../images/graphics/welldone.png" alt="badge" id="act_image">
+                            <h4 class="card-title" id="act_title">Well done!</h4>
+                            <p class="card-text">You have scored <span id="score_text"></span> answers correct</p>
+                        </div>
+                        <div class="static_page_footer">
+                            <button type="button" class="cor_ans_btn">Check Answers</button>
+                            <div class="mt-32">
+                                <a href="#." class="try_again">Want to try again?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100 align-items-center cor_ans_section" id="cor_ans_section">
+                <div class="col-md-12">
+                    <h1 class="text-center">Check Answers</h1>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tbody id="cor_ans_table">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <button type="button" class="d-block mx-auto go_back_btn"> Go Back </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="../../../bootstrap_4.1.3/js/jquery-3.3.1.min.js"></script>
+    <script src="../../../bootstrap_4.1.3/js/bootstrap.min.js"></script>
+    <script src="../../../js/Activites/pms/2019/quizzone-act14.js?ver=16032022913"></script>
+</body>
+
+</html>

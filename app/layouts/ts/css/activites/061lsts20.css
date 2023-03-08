@@ -1,0 +1,148 @@
+
+.template {
+    height: 670px;
+    background-image: url('../../images/thinking.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+
+.inline-code { padding: 1px 5px; background: #eee; border-radius: 2px; }
+pre { padding: 15px 10px; font-size: .9em; color: #555; background: #edf3f8; }
+pre i { color: #aaa; } /* comments */
+pre b { font-weight: normal; color: #cf4b25; } /* strings */
+pre em { color: #0c59e9; } /* numeric */
+
+/* Pure CSS */
+.pure-button { margin: 5px 0; text-decoration: none !important; }
+.button-lg { margin: 5px 0; padding: .65em 1.6em; font-size: 105%; }
+
+/* required snapPuzzle styles */
+.snappuzzle-wrap {position: relative;display: block;top: 115px;left: 80px;}
+.snappuzzle-pile { position: relative; }
+.snappuzzle-piece { cursor: move; }
+.snappuzzle-slot { position: absolute; background: #fff; opacity: .8; }
+.snappuzzle-slot-hover { background: #eee; }
+
+
+
+/**my styles*/
+#_objective b {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    top: 0px;
+    border: 1px solid gray;
+    font-size: 27px;
+    box-shadow: 0px 0px 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.question_1{
+    position: absolute;
+    margin-top: 111px;
+    font-size: 23px;
+    text-align: center;
+}
+.content{
+    top: 100px;
+}
+.main_img{
+    max-width: 350px;
+    margin-top: 68px;
+}
+.img_2{
+    top: 180px;
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .main_img{
+        max-width: 240px;
+        margin-top: 68px;
+    }
+    /*.img_2{
+        top: 198px;
+    }*/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .main_img{
+        max-width: 180px;
+        margin-top: 68px;
+    }
+    .img_2{
+        top: 170px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .main_img{
+        max-width: 180px;
+        margin-top: 68px;
+    }
+    .img_2{
+        top: 170px;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .main_img{
+        max-width: 180px;
+        margin-top: 88px;
+    }
+    .img_2 {
+        left: 42px;
+        top: 195px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .main_img{
+        max-width: 150px;
+        margin-top: 68px;
+    }
+    .img_2{
+        top: 380px;
+        left: -90px;
+    }
+}
+@media only screen and (max-width : 450px) {
+  .main_img{
+        max-width: 150px;
+        margin-top: 48px;
+  }
+  .img_2{
+    top: 355px;
+    left: -90px;
+  }  
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 350px) {
+  .main_img{
+        max-width: 150px;
+        margin-top: 68px;
+  }
+  .img_2{
+    top: 390px;
+    left: -90px;
+  }  
+} 
+@media only screen and (max-width : 320px) {
+  .main_img{
+        max-width: 150px;
+        margin-top: 68px;
+  }
+  .img_2{
+    top: 417px;
+    left: -54px;
+  }  
+}

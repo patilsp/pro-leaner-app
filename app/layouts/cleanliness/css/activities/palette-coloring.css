@@ -1,0 +1,20 @@
+.alignTopLeft{
+    top: 13px;
+    position: absolute;
+    left: 110px;
+} 
+  
+input#thick {
+    top: 15%;
+    left: 33%;
+    font-size: 20px;
+    width: 108px;
+    height: 42px;
+}
+
+  
+  
+input#color {
+	visibility: hidden;
+}  
+  

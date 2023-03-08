@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ACT1</title>
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../../../contents/bootstrap_4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../contents/assets/fonts/San-Francisco-Font/fonts.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/froala_editor.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/froala_style.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/code_view.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/colors.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/emoticons.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/image_manager.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/image.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/line_breaker.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/table.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/char_counter.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/video.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/fullscreen.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/css/plugins/file.css">
+  <link rel="stylesheet" href="../../conceptprep/layouts/froala/codemirror.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../contents/css/static_layouts/lessons/Layout6.0.css">
+  <style type="text/css">
+      .form-control{
+        height: auto;
+      }
+      body{
+        overflow-y: scroll;
+      }
+      table img{
+        width: 100px
+      }
+      td{
+        text-align: left;
+      }
+      .fr-box a{
+      display: none !important;
+    }
+    a[href="https://www.froala.com/wysiwyg-editor?k=u"]{
+      padding: 0px !important;
+      height: 0px !important;
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <form id="layout_form" name="layout_form" enctype="multipart/form-data">
+    <div class="container-fluid">
+        <div class="rowalign-items-center grid-divider" id="grid-divider1">
+            <div class="card my-5">
+              <div class="card-header">
+                <div class="form-group">
+                    <label for="act_title">Title</label>
+                    <textarea class="form-control froala_editor" id="act_title" name="act_title" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <th colspan="3">Question</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust1[qust]" class="image img1" value="" />
+                                    <img src="../../../images/upload.jpg" id="img1" class="exp_img img-fluid mx-auto d-block img1" />
+                                    <div class="input-group mb-3">
+                                      <textarea class="form-control froala_editor qust1_option1_label" name="qust1[ans]" aria-label="Text input with checkbox"></textarea>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust2[qust]" class="image img2" value="" />
+                                    <img src="../../../images/upload.jpg" id="img2" class="exp_img img-fluid mx-auto d-block img2" />
+                                    <div class="input-group mb-3">
+                                      <textarea class="form-control froala_editor qust2_option1_label" name="qust2[ans]" aria-label="Text input with checkbox"></textarea>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust3[qust]" class="image img3" value="" />
+                                    <img src="../../../images/upload.jpg" id="img3" class="exp_img img-fluid mx-auto d-block img3" />
+                                    <div class="input-group mb-3">
+                                      <textarea class="form-control froala_editor qust3_option1_label" name="qust3[ans]" aria-label="Text input with checkbox"></textarea>
+                                    </div>
+                                  </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust4[qust]" class="image img4" value="" />
+                                    <img src="../../../images/upload.jpg" id="img4" class="exp_img img-fluid mx-auto d-block img4" />
+                                    <div class="input-group mb-3">
+                                      <textarea class="form-control froala_editor qust4_option1_label" name="qust4[ans]" aria-label="Text input with checkbox"></textarea>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust5[qust]" class="image img5" value="" />
+                                    <img src="../../../images/upload.jpg" id="img5" class="exp_img img-fluid mx-auto d-block img5" />
+                                    <div class="input-group mb-3">
+                                      <textarea class="form-control froala_editor qust5_option1_label" name="qust5[ans]" aria-label="Text input with checkbox"></textarea>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <input type="hidden" name="qust6[qust]" class="image img6" value="" />
+                                    <img src="../../../images/upload.jpg" id="img6" class="exp_img img-fluid mx-auto d-block img6" />
+                                    <div class="input-group mb-3">
+                                      <textarea class="form-control froala_editor qust6_option1_label" name="qust6[ans]" aria-label="Text input with checkbox"></textarea>
+                                    </div>
+                                  </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+              <div class="card-footer py-0">
+                <div class="row align-items-center grid-divider" id="grid-divider2">
+                    <div class="col-8" id="content">
+                        <div class="form-group">
+                            <label for="explanation">Explanation</label>
+                            <textarea class="form-control froala_editor exp_content" name="explanation[exp1]" id="explanation1" rows="2"></textarea>
+                            <textarea class="form-control froala_editor exp_content" name="explanation[exp2]" id="explanation2" rows="2"></textarea>
+                            <textarea class="form-control froala_editor exp_content" name="explanation[exp3]" id="explanation3" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-4" id="img_block">
+                      <input type="hidden" name="exp_img" class="image" value="" />
+                      <img src="../../../images/upload.jpg" id="exp_img" class="image exp_img img-fluid mx-auto d-block" />
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </form>
+  <script src="../../../contents/bootstrap_4.1.3/js/jquery-3.3.1.min.js"></script>
+  <script src="../../../contents/bootstrap_4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/froala_editor.min.js" ></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/align.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/char_counter.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/code_beautifier.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/code_view.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/colors.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/draggable.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/emoticons.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/entities.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/file.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/font_size.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/font_family.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/fullscreen.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/image.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/image_manager.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/line_breaker.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/inline_style.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/link.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/lists.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/paragraph_format.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/paragraph_style.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/quote.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/table.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/save.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/url.min.js"></script>
+  <script type="text/javascript" src="../../conceptprep/layouts/froala/js/plugins/video.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var urlGet = document.URL;
+      if ((i = urlGet.indexOf('?')) >= 0) {
+        var split_url_val = urlGet.split('?');
+        var split_url_qust_id = split_url_val[1].split('&');
+        var api_url = split_url_qust_id[0].replace('api_end_point=','');
+        var qust_id = split_url_qust_id[1].replace('qust_id=','');
+        
+        setTimeout(function () {
+          //console.log(api_url,'-',qust_id);
+            $.ajax({
+                url: '../../../../'+api_url+'?qust_id='+qust_id,
+                method:'GET',
+                contentType:false,
+                processData:false,
+                async:true,
+                success:function(data)
+                {
+                  data = JSON.parse(data);
+                  console.log(data);
+                  $("#act_title").text(data.act_title);
+                  if(data.exp_img != "")
+                    $(".exp_img").attr("src",data.exp_img);
+                  $("#explanation1").text(data.explanation.exp1);
+                  $("#explanation2").text(data.explanation.exp2);
+                  $("#explanation3").text(data.explanation.exp3);
+                  
+                  var question = "";
+                  var option1 = "";
+                  
+                  $.each(data, function(i, e){
+                    //console.log(i," - ",e);
+                    if(i == 'qust1') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          if(val !== ''){
+                            $(".img1").val(val);
+                            $(".img1").attr("src",val);
+                          }
+                        } else {
+                          $(".qust1_option1_label").val(val);
+                        }
+                      });
+                    } else if(i == 'qust2') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          if(val !== ''){
+                            $(".img2").val(val);
+                            $(".img2").attr("src",val);
+                          }
+                        } else {
+                          $(".qust2_option1_label").val(val);
+                        }
+                      });
+                    } else if(i == 'qust3') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          if(val !== ''){
+                            $(".img3").val(val);
+                            $(".img3").attr("src",val);
+                          }
+                        } else {
+                          $(".qust3_option1_label").val(val);
+                        }
+                      });
+                    } else if(i == 'qust4') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          if(val !== ''){
+                            $(".img4").val(val);
+                            $(".img4").attr("src",val);
+                          }
+                        } else {
+                          $(".qust4_option1_label").val(val);
+                        }
+                      });
+                    } else if(i == 'qust5') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          if(val !== ''){
+                            $(".img5").val(val);
+                            $(".img5").attr("src",val);
+                          }
+                        } else {
+                          $(".qust5_option1_label").val(val);
+                        }
+                      });
+                    } else if(i == 'qust6') {
+                      $.each(e, function(key, val){
+                        if(key == "qust"){
+                          if(val !== ''){
+                            $(".img6").val(val);
+                            $(".img6").attr("src",val);
+                          }
+                        } else {
+                          $(".qust6_option1_label").val(val);
+                        }
+                      });
+                    }
+                  });
+                },
+                beforeSend: function(){
+                  $("#loader_modal").modal("show");
+                },
+                complete: function(){
+                  setTimeout(function(){
+                    $("#loader_modal").modal("hide");
+                  }, 1000);
+                }
+            });
+        }, 1000)
+      }
+
+      var classId = '';
+      var subjectId = '';
+      console.log(parent);
+      var uploadURL = '../../conceptprep/apis/editorUploadImages.php?class_id='+classId+'&subject_id='+subjectId;
+      setTimeout(function() {
+      
+        $('.froala_editor').froalaEditor({
+            imageEditButtons: ['imageDisplay', 'imageAlign', 'imageInfo', 'imageRemove'],
+            //toolbarButtons: ['undo', 'redo' , 'bold', 'image', '|', 'wirisEditor', 'wirisChemistry','clear', 'insert'],
+            toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|', 'color','|', 'insertImage','|', 'print', 'help', 'html', '|', 'undo', 'redo'],
+            // Allowed tags
+            htmlAllowedTags:   ['.*'],
+            htmlAllowedAttrs: ['.*'],
+            // Set the file upload URL.
+            imageUploadURL: uploadURL,
+
+            imageUploadParams: {
+              id: 'my_editor'
+            },
+            placeholderText: '',
+            imageDefaultWidth: 'auto',
+            pastePlain: true
+            //toolbarInline: true
+        });
+      }, 1500)
+    })
+  </script>
+</body>
+</html>

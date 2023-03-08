@@ -1,0 +1,648 @@
+body{
+    
+}
+.template {
+    height: 670px;
+    background-image: url('../../thinking6_images/thinking skill 6 7.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+._content1 img{
+    width: 430px;
+    position: absolute;
+    top: 195px;
+    left: 36px;
+}
+#_objective1 {
+    margin-top: 0px;
+    width: 27px;
+}
+._content5 img{
+    width: 381px;
+    position: absolute;
+    top: 75px;
+    left: 161px;
+}
+
+#_objective h2{
+    position: relative;
+    top: 130px;
+    margin-left: 121px;
+    font-weight: bold;
+}
+
+.content_part{
+    top: 152px;
+    left: 61px;
+}
+ul{
+   margin-left: -1px;
+}
+
+li{
+    list-style-type: none;
+    /*word-wrap:break-word;*/
+    font-family:century gothic;
+    font-weight:bold;
+    font-size:20px;
+    text-align: initial;
+}
+li img{
+    width:20px;
+}
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+
+
+/* Small Devices, Tablets */
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+._content1 img{
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: 197px;
+}
+
+#_objective h2{
+    top: 110px;
+    margin-left: 116px;
+    font-weight: bold;
+}
+.content_part {
+    top: 123px;
+    left: 73px;
+}
+._content5 img{
+    width: 310px;
+    position: absolute;
+    top: 86px;
+    left: 150px;
+}
+    
+ ul{
+    margin-left: -13px;
+}
+    
+        
+#_objective1 {
+    margin-top: 3px;
+    width: 27px;
+}
+    
+.content_part li{
+    font-size: 20px;
+}
+    
+
+}
+
+@media only screen and (max-width : 1025px) {
+
+._content1 img{
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: 197px;
+
+
+}
+
+#_objective h2{
+    top: 101px;
+    margin-left: 97px;
+    font-weight: bold;
+}
+.content_part {
+    top: 125px;
+    left: 59px;
+}
+._content5 img{
+    width: 310px;
+    position: absolute;
+    top: 91px;
+    left: 121px;
+}
+    
+ul{
+    margin-left: -13px;
+}
+    
+        
+#_objective1 {
+    margin-top: 3px;
+    width: 27px;
+}
+    
+.content_part li{
+    font-size: 20px;
+}
+    
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+._content1 img{
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: 197px;
+}
+
+#_objective h2{
+    top: 96px;
+    margin-left: 79px;
+    font-weight: bold;
+}
+.content_part {
+    top: 111px;
+    left: 41px;
+}
+._content5 img{
+    width: 310px;
+    position: absolute;
+    top: 105px;
+    left: 76px;
+}
+    
+ ul{
+    margin-left: -13px;
+}
+    
+        
+#_objective1 {
+    margin-top: 3px;
+    width: 27px;
+}
+    
+.content_part li{
+    font-size: 20px;
+}
+    
+}
+
+@media only screen and (max-width : 800px) {
+
+._content1 img{
+    width: 290px;
+    position: absolute;
+    top: 75px;
+    left: 169px;
+}
+
+    
+._content5 img{
+    width: 216px;
+    position: absolute;
+    top: 352px;
+    left: -106px;
+}
+#_objective h2{
+    top: 97px;
+    margin-left: 158px;
+}
+.content_part {
+     top: 121px;
+     left: 272px;
+}
+    
+ul{
+    margin-left: -167px;
+}
+    
+#_objective1 {
+    margin-top: -1px;
+    width: 28px;
+}
+    
+.content_part li{
+    font-size: 18px;
+}
+    
+li img{
+    width:15px;
+}
+    
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+._content1 img{
+    width: 280px;
+    position: absolute;
+    top: 26px;
+    left: 282px;
+}
+
+
+._content5 img{
+    width: 207px;
+    position: absolute;
+    top: 109px;
+    left: 225px;
+}
+#_objective h2{
+    top: 93px;
+    margin-left: 131px;
+}
+.content_part {
+    top: 109px;
+    left: -99px;
+}
+    
+ul{
+   margin-left: 176px;
+}
+    
+#_objective1 {
+    margin-top: 0px;
+    width: 27px;
+}
+    
+.content_part li{
+    font-size: 18px;
+}
+    
+li img{
+    width:15px;
+}
+    
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 700px) {
+
+._content1 img{
+    width: 270px;
+    position: absolute;
+    top: 35px;
+    left: 239px;
+
+
+}
+
+#_objective h2{
+    top: 93px;
+    margin-left: 96px;
+    font-size: 21px;
+}
+
+._content5 img{
+  width: 207px;
+  position: absolute;
+  top: 149px;
+  left: 205px;
+}
+.content_part {
+   top: 120px;
+   left: -40px;
+}
+    
+ul{
+    margin-left:78px;
+}
+    
+#_objective1 {
+    margin-top: -1px;
+    width: 25px;
+}
+    
+.content_part li{
+    font-size: 18px;
+}
+    
+li img{
+    width:15px;
+}
+    
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 650px) {
+
+._content1 img{
+    width: 260px;
+    position: absolute;
+    top: 55px;
+    left: 217px;
+}
+
+#_objective h2{
+    top: 98px;
+    margin-left: 111px;
+    font-size: 23px;
+ }
+    
+._content5 img{
+    width: 190px;
+    position: absolute;
+    top: 130px;
+    left: 170px;
+}
+.content_part {
+    top: 111px;
+    left: -38px;
+}
+    
+ul{
+  margin-left:92px;
+}
+    
+#_objective1 {
+    margin-top: 1px;
+    width: 24px;
+}
+    
+.content_part li{
+    font-size: 18px;
+}
+    
+li img{
+    width:15px;
+}
+    
+
+
+}
+
+@media only screen and (max-width : 600px) {
+
+._content1 img{
+    width: 260px;
+    position: absolute;
+    top: 55px;
+    left: 217px;
+
+
+}
+
+#_objective h2{
+    top: 89px;
+    margin-left: 89px;
+    font-size: 23px;
+}
+    
+._content5 img{
+    width: 190px;
+    position: absolute;
+    top: 114px;
+    left: 145px;
+}
+.content_part {
+    top: 106px;
+    left: -55px;
+}
+    
+ul{
+  margin-left:92px;
+}
+
+#_objective1 {
+    margin-top: 1px;
+    width: 24px;
+}
+    
+.content_part li{
+    font-size: 18px;
+}
+    
+li img{
+    width:15px;
+}
+    
+
+
+}
+
+
+@media only screen and (max-width : 550px) {
+
+._content1 img{
+    width: 260px;
+    position: absolute;
+    top: 55px;
+    left: 217px;
+
+
+}
+
+#_objective h2{
+     top: 80px;
+     margin-left: 64px;
+     font-size: 23px;
+}
+    
+._content5 img{
+     width: 180px;
+     position: absolute;
+     top: 100px;
+     left: 132px;
+}
+.content_part {
+  top: 94px;
+  left: -2px;
+}
+    
+ul{
+    margin-left: 12px;
+}
+    
+#_objective1 {
+    margin-top: -1px;
+    width: 25px;
+}
+    
+.content_part li{
+    font-size: 18px;
+}
+    
+li img{
+    width:15px;
+}
+    
+
+
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+._content1 img{
+    width: 230px;
+    position: absolute;
+    top: 95px;
+    height: 110px;
+    left: 101px;
+
+
+}
+
+    
+._content5 img{
+    width: 130px;
+    position: absolute;
+    top: 114px;
+    left: 142px;
+}
+#_objective h2{
+      top: 85px;
+      font-size: 19px;
+      margin-left: 61px;
+}
+    
+#_objective1 {
+    margin-top: -4px;
+    width: 27px;
+}
+
+ul{
+    margin-left: 1px;
+}
+.content_part {
+     top: 101px;
+     left: 7px;
+}
+.content_part li{
+  font-size: 16px;
+}
+    
+li img{
+    width:15px;
+}
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 400px) {
+
+._content1 img{
+    width: 230px;
+    position: absolute;
+    top: 95px;
+    height: 110px;
+    left: 101px;
+
+
+}
+
+
+._content5 img{
+    width: 117px;
+    position: absolute;
+    top: 126px;
+    left: 79px;
+}
+#_objective h2{
+    top: 82px;
+    font-size: 19px;
+    margin-left: 42px;
+ }
+    
+#_objective1 {
+    margin-top: -2px;
+    width: 27px;
+}
+
+ul{
+    margin-left: 1px;
+}
+.content_part {
+    top: 100px;
+    left: -15px;
+}
+.content_part li{
+  font-size: 16px;
+}
+    
+li img{
+    width:15px;
+}
+    
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+._content1 img{
+    width: 230px;
+    position: absolute;
+    top: 95px;
+    height: 110px;
+    left: 101px;
+
+
+}
+
+    
+._content5 img{
+    width: 117px;
+    position: absolute;
+    top: 93px;
+    left: 59px;
+}
+#_objective h2{
+    top: 76px;
+    font-size: 19px;
+    margin-left: 32px;
+    }
+    
+#_objective1 {
+    margin-top: -3px;
+    width: 27px;
+}
+
+ul{
+    margin-left: -36px;
+}
+.content_part {
+    top: 92px;
+    left: 4px;
+}
+.content_part li{
+  font-size: 15px;
+}
+    
+li img{
+    width:15px;
+}
+    
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=EmulateIE10">
+  <title>ACT7_2019 - PMS</title>
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../../../bootstrap_4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/fonts/San-Francisco-Font/fonts.css">
+  <link rel="stylesheet" type="text/css" href="../../../bootstrap_4.1.3/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../../bootstrap_4.1.3/css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/Activites/pms/2019/quizzone-act11_1.css?ver=110320220955">
+</head>
+<body>
+  <form id="layout_form" name="layout_form" enctype="multipart/form-data">
+    <div class="container-fluid">
+      <div class="row h-100 align-items-center justify-content-center" id="qust_section">
+        <div class="col-12 col-md-10 md-offset-1">
+          <h1 class="text-center mb-3" id="act_title">Look at the image given below</h1>
+          <h5 class="text-center mb-5" id="act_sub_title">Answer if it is a lie or the truth.</h5>
+          <div class="row align-items-center justify-content-center">
+            <nav aria-label="..." class="mb-5">
+              <ul class="pagination pagination-md m-0">
+                <li class="page-item" id="page_item1">
+                  <a class="page-link active" href="#" id="page_item1_link">
+                  </a>
+                </li>
+                <li class="page-item" id="page_item2">
+                  <a class="page-link" href="#" id="page_item2_link">
+                  </a>
+                </li>
+                <li class="page-item" id="page_item3">
+                  <a class="page-link" href="#" id="page_item3_link"></a>
+                </li>
+              </ul>
+            </nav>
+            <div class="col-12" id="qust_col">
+              
+              <div class="d-flex feedback d-flex justify-content-center" id="feedback">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <span class="card_msg text-white mb-0"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="d-block mx-auto next_btn" id="next_btn"> Next </button>  
+        </div>
+      </div>
+
+      <div class="row h-100 score_section" id="score_section">
+          <div class="col-12 d-flex justify-content-center text-center col_div">
+              <div class="score_page_body">
+                  <div class="score_page_body_bg position-relative d-flex align-items-center">
+                      <img class="d-block mx-auto badge position-relative" src="../../../images/graphics/welldone.png" alt="badge" id="card_image">
+                      <div class="scoreImgCircle position-absolute mx-auto"></div>
+                  </div>
+                  <div class="scoreInfo position-relative">
+                      <div class=" scoreCircle position-absolute bg-white d-flex align-items-center justify-content-center">
+                          <div class="gold" id="score_text">4/4</div>
+                      </div>
+                      <div class="scoreInfoMsg">
+                          <p class="mb-0">Your Score</p>
+                          <hr>
+                          <h4 class="card-title" id="card_title">Well done!</h4>
+                      </div>
+                  </div>
+                  <div class="static_page_footer">
+                      <div class="mt-32">
+                          <a href="#." class="try_again">Want to try again?</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </form>
+  <script src="../../../bootstrap_4.1.3/js/jquery-3.3.1.min.js"></script>
+  <script src="../../../bootstrap_4.1.3/js/bootstrap.min.js"></script>
+  <script src="../../../js/Activites/pms/2019/quizzone-act11_1.js"></script>
+</body>
+</html>

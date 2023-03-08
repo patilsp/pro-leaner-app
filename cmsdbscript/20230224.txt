@@ -1,0 +1,203 @@
+CREATE TABLE IF NOT EXISTS `question_categories` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `contextid` bigint(10) NOT NULL DEFAULT '0',
+  `info` longtext NOT NULL,
+  `infoformat` tinyint(2) NOT NULL DEFAULT '0',
+  `stamp` varchar(255) NOT NULL DEFAULT '',
+  `parent` bigint(10) NOT NULL DEFAULT '0',
+  `sortorder` bigint(10) NOT NULL DEFAULT '999',
+  `course_id` int(10) unsigned DEFAULT NULL,
+  `pms_qcategory_id` int(10) unsigned DEFAULT NULL,
+  `pms_difficulty_id` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mdl_quescate_con_ix` (`contextid`),
+  KEY `mdl_quescate_par_ix` (`parent`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Categories are for grouping questions' AUTO_INCREMENT=1 ;
+
+
+CREATE TABLE IF NOT EXISTS `quiz_question` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `category` bigint(10) NOT NULL DEFAULT '0',
+  `parent` bigint(10) NOT NULL DEFAULT '0',
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `questiontext` longtext NOT NULL,
+  `questiontextformat` tinyint(2) NOT NULL DEFAULT '0',
+  `generalfeedback` longtext NOT NULL,
+  `generalfeedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  `defaultmark` decimal(12,7) NOT NULL DEFAULT '1.0000000',
+  `penalty` decimal(12,7) NOT NULL DEFAULT '0.3333333',
+  `qtype` varchar(20) NOT NULL DEFAULT '',
+  `length` bigint(10) NOT NULL DEFAULT '1',
+  `stamp` varchar(255) NOT NULL DEFAULT '',
+  `version` varchar(255) NOT NULL DEFAULT '',
+  `hidden` tinyint(1) NOT NULL DEFAULT '0',
+  `timecreated` bigint(10) NOT NULL DEFAULT '0',
+  `timemodified` bigint(10) NOT NULL DEFAULT '0',
+  `createdby` bigint(10) DEFAULT NULL,
+  `modifiedby` bigint(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mdl_ques_cat_ix` (`category`),
+  KEY `mdl_ques_par_ix` (`parent`),
+  KEY `mdl_ques_cre_ix` (`createdby`),
+  KEY `mdl_ques_mod_ix` (`modifiedby`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='The questions themselves' AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `question_multichoice` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `question` bigint(10) NOT NULL DEFAULT '0',
+  `layout` smallint(4) NOT NULL DEFAULT '0',
+  `answers` varchar(255) NOT NULL DEFAULT '',
+  `single` smallint(4) NOT NULL DEFAULT '0',
+  `shuffleanswers` smallint(4) NOT NULL DEFAULT '1',
+  `correctfeedback` longtext NOT NULL,
+  `correctfeedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  `partiallycorrectfeedback` longtext NOT NULL,
+  `partiallycorrectfeedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  `incorrectfeedback` longtext NOT NULL,
+  `incorrectfeedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  `answernumbering` varchar(10) NOT NULL DEFAULT 'abc',
+  `shownumcorrect` tinyint(2) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `mdl_quesmult_que2_ix` (`question`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Options for multiple choice questions' AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `question_ddmatch_sub` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `code` bigint(10) NOT NULL DEFAULT '0',
+  `question` bigint(10) NOT NULL DEFAULT '0',
+  `questiontext` longtext NOT NULL,
+  `questiontextformat` tinyint(2) NOT NULL DEFAULT '0',
+  `answertext` longtext NOT NULL,
+  `answertextformat` tinyint(2) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `mdl_quesddmasub_que_ix` (`question`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Defines the subquestions that make up a matching question' AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `question_ddmatch` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `question` bigint(10) NOT NULL DEFAULT '0',
+  `subquestions` varchar(255) NOT NULL DEFAULT '',
+  `shuffleanswers` smallint(4) NOT NULL DEFAULT '1',
+  `correctfeedback` longtext NOT NULL,
+  `correctfeedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  `partiallycorrectfeedback` longtext NOT NULL,
+  `partiallycorrectfeedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  `incorrectfeedback` longtext NOT NULL,
+  `incorrectfeedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  `shownumcorrect` tinyint(2) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `mdl_quesddma_que_ix` (`question`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Defines fixed matching questions' AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `question_answers` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `question` bigint(10) NOT NULL DEFAULT '0',
+  `answer` longtext NOT NULL,
+  `answerformat` tinyint(2) NOT NULL DEFAULT '0',
+  `fraction` decimal(12,7) NOT NULL DEFAULT '0.0000000',
+  `feedback` longtext NOT NULL,
+  `feedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `mdl_quesansw_que_ix` (`question`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Answers, with a fractional grade (0-1) and feedback' AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `question_shortanswer` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `question` bigint(10) NOT NULL DEFAULT '0',
+  `answers` varchar(255) NOT NULL DEFAULT '',
+  `usecase` tinyint(2) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `mdl_quesshor_que_ix` (`question`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Options for short answer questions' AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `question_multichoice` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `question` bigint(10) NOT NULL DEFAULT '0',
+  `layout` smallint(4) NOT NULL DEFAULT '0',
+  `answers` varchar(255) NOT NULL DEFAULT '',
+  `single` smallint(4) NOT NULL DEFAULT '0',
+  `shuffleanswers` smallint(4) NOT NULL DEFAULT '1',
+  `correctfeedback` longtext NOT NULL,
+  `correctfeedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  `partiallycorrectfeedback` longtext NOT NULL,
+  `partiallycorrectfeedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  `incorrectfeedback` longtext NOT NULL,
+  `incorrectfeedbackformat` tinyint(2) NOT NULL DEFAULT '0',
+  `answernumbering` varchar(10) NOT NULL DEFAULT 'abc',
+  `shownumcorrect` tinyint(2) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `mdl_quesmult_que2_ix` (`question`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Options for multiple choice questions' AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `pms_quiz_questiontypes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(50) NOT NULL,
+  `description` varchar(100) NOT NULL,
+  `created_on` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+INSERT INTO `pms_quiz_questiontypes` (`id`, `code`, `description`, `created_on`) VALUES
+(1, 'multichoice', 'MCQ with Single Answer', '2020-11-05 10:09:09'),
+(2, 'multichoicem', 'MCQ with Multiple Answers', '2020-11-05 10:09:09'),
+(3, 'shortanswer', 'Descriptive', '2020-11-05 10:09:09'),
+(4, 'ddmatch', 'Match the Following', '2020-11-05 10:09:09');
+
+CREATE TABLE IF NOT EXISTS `quiz` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `course` bigint(10) NOT NULL DEFAULT '0',
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `intro` longtext NOT NULL,
+  `introformat` smallint(4) NOT NULL DEFAULT '0',
+  `timeopen` bigint(10) NOT NULL DEFAULT '0',
+  `timeclose` bigint(10) NOT NULL DEFAULT '0',
+  `timelimit` bigint(10) NOT NULL DEFAULT '0',
+  `overduehandling` varchar(16) NOT NULL DEFAULT 'autoabandon',
+  `graceperiod` bigint(10) NOT NULL DEFAULT '0',
+  `preferredbehaviour` varchar(32) NOT NULL DEFAULT '',
+  `attempts` mediumint(6) NOT NULL DEFAULT '0',
+  `attemptonlast` smallint(4) NOT NULL DEFAULT '0',
+  `grademethod` smallint(4) NOT NULL DEFAULT '1',
+  `decimalpoints` smallint(4) NOT NULL DEFAULT '2',
+  `questiondecimalpoints` smallint(4) NOT NULL DEFAULT '-1',
+  `reviewattempt` mediumint(6) NOT NULL DEFAULT '0',
+  `reviewcorrectness` mediumint(6) NOT NULL DEFAULT '0',
+  `reviewmarks` mediumint(6) NOT NULL DEFAULT '0',
+  `reviewspecificfeedback` mediumint(6) NOT NULL DEFAULT '0',
+  `reviewgeneralfeedback` mediumint(6) NOT NULL DEFAULT '0',
+  `reviewrightanswer` mediumint(6) NOT NULL DEFAULT '0',
+  `reviewoverallfeedback` mediumint(6) NOT NULL DEFAULT '0',
+  `questionsperpage` bigint(10) NOT NULL DEFAULT '0',
+  `navmethod` varchar(16) NOT NULL DEFAULT 'free',
+  `shufflequestions` smallint(4) NOT NULL DEFAULT '0',
+  `shuffleanswers` smallint(4) NOT NULL DEFAULT '0',
+  `questions` longtext NOT NULL,
+  `sumgrades` decimal(10,5) NOT NULL DEFAULT '0.00000',
+  `grade` decimal(10,5) NOT NULL DEFAULT '0.00000',
+  `timecreated` bigint(10) NOT NULL DEFAULT '0',
+  `timemodified` bigint(10) NOT NULL DEFAULT '0',
+  `password` varchar(255) NOT NULL DEFAULT '',
+  `subnet` varchar(255) NOT NULL DEFAULT '',
+  `browsersecurity` varchar(32) NOT NULL DEFAULT '',
+  `delay1` bigint(10) NOT NULL DEFAULT '0',
+  `delay2` bigint(10) NOT NULL DEFAULT '0',
+  `showuserpicture` smallint(4) NOT NULL DEFAULT '0',
+  `showblocks` smallint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `mdl_quiz_cou_ix` (`course`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='The settings for each quiz.' AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `question_images` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `course_id` int(10) unsigned DEFAULT NULL,
+  `orginal_name` varchar(200) DEFAULT NULL,
+  `final_path` varchar(500) DEFAULT NULL,
+  `uploaded_by` int(10) unsigned NOT NULL,
+  `uploaded_on` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+
+

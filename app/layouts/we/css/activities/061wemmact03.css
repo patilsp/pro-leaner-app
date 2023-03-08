@@ -1,0 +1,1164 @@
+body{
+    font-family: Arial;
+    font-size: 10pt;
+}
+.template {
+    height: 670px;
+    background-image: url('../../images/WE_MM.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.table {
+    
+    background-image: url('../../images/bg1.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+#question {
+    font-family: century Gothic;
+    font-size: 20px;
+    left: 147px;
+    position: absolute;
+    top: 156px;
+    width: 69%;
+    height: 476px;
+}
+.table-style{
+    top: 30px;
+    left: 43px;
+    width: 100%;
+    height: 392px;
+}
+.table-style td{
+    padding: 5px;
+}
+.table {
+    height: 399px;
+}
+
+
+#oneA {
+    color:blue;
+    font-weight:bold;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 33%;
+}
+#oneB {
+    color:red;
+    font-weight:bold;
+    font-size: 40px;
+    position: absolute;
+    left: 77%;
+    top: 30%;
+}
+input[type=text] {
+    font-size: 22px;
+    color:green;
+    font-weight:bold;
+    size:1;
+    width: 9%;
+    border:none;
+    top: 63%;
+    position: absolute;
+    left: 57%;
+}
+img {
+    position: absolute;
+    top: 58%;
+    left: 40%;
+    width: 20%;
+}
+.text {
+    left: 32%;
+    top: 23%;
+    color:blue;
+    font-weight:bold;
+    font-size: 18px;
+    position: absolute;
+    width: 36%;
+}
+input[type=button] {
+    position: absolute;
+    top: 75%;
+    left: 54%;
+    width: 12%;
+    font-size: 17px;
+}
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 1200px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 169px;
+        position: absolute;
+        top: 156px;
+        width: 72%;
+        height: 476px;
+    }
+    .table-style{
+        top: 38px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 33%;
+    }
+    img {
+    position: absolute;
+    top: 57%;
+    left: 39%;
+    width: 21%;
+}
+    .text {
+    left: 30%;
+    top: 22%;
+    color:blue;
+    font-weight:bold;
+    font-size: 18px;
+    width: 39%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 71%;
+    left: 54%;
+    width: 12%;
+    font-size: 17px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 77%;
+    }
+    input[type=text] {
+        font-size: 17px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+        position: absolute;
+        top: 61%;
+    }
+    
+    
+        
+}
+
+@media only screen and (max-width : 1100px) {
+   #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 168px;
+        position: absolute;
+        top: 156px;
+        width: 67%;
+        height: 476px;
+    }
+    .table-style{
+        top: 36px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 33%;
+    }
+    img {
+    position: absolute;
+    top: 56%;
+    left: 39%;
+    width: 21%;
+}
+    .text {
+    left: 30%;
+    top: 21%;
+    color:blue;
+    font-weight:bold;
+    font-size: 18px;
+    width: 40%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 72%;
+    left: 54%;
+    width: 12%;
+    font-size: 14px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 76%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+        position: absolute;
+        top: 61%;
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width : 1024px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 156px;
+        position: absolute;
+        top: 156px;
+        width: 69%;
+        height: 476px;
+    }
+    .table-style{
+        top: 38px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 33%;
+    }
+    img {
+    position: absolute;
+    top: 57%;
+    left: 38%;
+    width: 23%;
+}
+    .text {
+    left: 30%;
+    top: 21%;
+    color:blue;
+    font-weight:bold;
+    font-size: 18px;
+    width: 40%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 72%;
+    left: 54%;
+    width: 12%;
+    font-size: 14px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 76%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+}
+@media only screen and (max-width : 992px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 88px;
+        position: absolute;
+        top: 156px;
+        width: 80%;
+        height: 476px;
+    }
+    .table-style{
+        top: 37px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 33%;
+    }
+    img {
+    position: absolute;
+    top: 57%;
+    left: 40%;
+    width: 19%;
+}
+    .text {
+    left: 30%;
+    top: 21%;
+    color:blue;
+    font-weight:bold;
+    font-size: 18px;
+    width: 40%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 72%;
+    left: 54%;
+    width: 12%;
+    font-size: 15px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 76%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+}
+
+@media only screen and (max-width : 900px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 55px;
+        position: absolute;
+        top: 156px;
+        width: 87%;
+        height: 476px;
+    }
+    .table-style{
+        top: 37px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 33%;
+    }
+    img {
+    position: absolute;
+    top: 56%;
+    left: 39%;
+    width: 22%;
+}
+    .text {
+    left: 30%;
+    top: 21%;
+    color:blue;
+    font-weight:bold;
+    font-size: 18px;
+    width: 40%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 71%;
+    left: 54%;
+    width: 12%;
+    font-size: 15px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 76%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+}
+@media only screen and (max-width : 800px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 51px;
+        position: absolute;
+        top: 156px;
+        width: 88%;
+        height: 476px;
+    }
+    .table-style{
+        top: 39px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 33%;
+    }
+    img {
+    position: absolute;
+    top: 57%;
+    left: 38%;
+    width: 22%;
+}
+    .text {
+    left: 30%;
+    top: 21%;
+    color:blue;
+    font-weight:bold;
+    font-size: 18px;
+    width: 40%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 71%;
+    left: 54%;
+    width: 12%;
+    font-size: 14px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 76%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+}
+@media only screen and (max-width : 768px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 42px;
+        position: absolute;
+        top: 156px;
+        width: 89%;
+        height: 476px;
+    }
+    .table-style{
+        top: 37px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 33%;
+    }
+    img {
+    position: absolute;
+    top: 56%;
+    left: 37%;
+    width: 25%;
+}
+    .text {
+    left: 30%;
+    top: 20%;
+    color:blue;
+    font-weight:bold;
+    font-size: 16px;
+    width: 40%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 72%;
+    left: 54%;
+    width: 12%;
+    font-size: 12px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 76%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+}
+@media only screen and (max-width : 650px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 35px;
+        position: absolute;
+        top: 156px;
+        width: 89%;
+        height: 476px;
+    }
+    .table-style{
+        top: 36px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 34%;
+    }
+    img {
+    position: absolute;
+    top: 58%;
+    left: 36%;
+    width: 26%;
+}
+    .text {
+    left: 31%;
+    top: 21%;
+    color:blue;
+    font-weight:bold;
+    font-size: 16px;
+    width: 38%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 71%;
+    left: 54%;
+    width: 12%;
+    font-size: 10px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 75%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+}
+@media only screen and (max-width : 600px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 20px;
+        position: absolute;
+        top: 156px;
+        width: 92%;
+        height: 476px;
+    }
+    .table-style{
+        top: 37px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 34%;
+    }
+    img {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    width: 29%;
+}
+    .text {
+    left: 32%;
+    top: 21%;
+    color:blue;
+    font-weight:bold;
+    font-size: 14px;
+    width: 37%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 72%;
+    left: 55%;
+    width: 11%;
+    font-size: 8px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 75%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 500px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 24px;
+        position: absolute;
+        top: 156px;
+        width: 90%;
+        height: 476px;
+    }
+    .table-style{
+        top: 36px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 34%;
+    }
+    img {
+    position: absolute;
+    top: 59%;
+    left: 35%;
+    width: 30%;
+    height: 14%;
+}
+    .text {
+    left: 31%;
+    top: 21%;
+    color:blue;
+    font-weight:bold;
+    font-size: 14px;
+    width: 38%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 71%;
+    left: 55%;
+    width: 11%;
+    font-size: 7px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 73%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+        
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 21px;
+        position: absolute;
+        top: 156px;
+        width: 90%;
+        height: 476px;
+    }
+    .table-style{
+        top: 37px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 40px;
+        position: absolute;
+        top: 19%;
+        left: 34%;
+    }
+    img {
+    position: absolute;
+    top: 60%;
+    left: 34%;
+    width: 32%;
+    height: 13%;
+}
+    .text {
+    left: 32%;
+    top: 21%;
+    color:blue;
+    font-weight:bold;
+    font-size: 14px;
+    width: 37%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 71%;
+    left: 54%;
+    width: 12%;
+    font-size: 6px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size:40px;
+        position: absolute;
+        top: 29%;
+        left: 73%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+     
+}
+@media only screen and (max-width : 400px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 14px;
+        position: absolute;
+        top: 156px;
+        width: 92%;
+        height: 476px;
+    }
+    .table-style{
+        top: 37px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 35px;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+    }
+    img {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    width: 29%;
+    height: 13%;
+}
+    .text {
+    left: 32%;
+    top: 23%;
+    color:blue;
+    font-weight:bold;
+    font-size: 13px;
+    width: 36%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 71%;
+    left: 53%;
+    width: 14%;
+    font-size: 7px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size: 35px;
+        position: absolute;
+        top: 30%;
+        left: 73%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+} 
+@media only screen and (max-width : 370px) {
+    #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 21px;
+        position: absolute;
+        top: 156px;
+        width: 88%;
+        height: 429px;
+    }
+    .table-style{
+        top: 37px;
+        left: 0px;
+        width: 100%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 35px;
+        position: absolute;
+        top: 20%;
+        left: 36%;
+    }
+    img {
+    position: absolute;
+    top: 59%;
+    left: 35%;
+    width: 31%;
+    height: 12%;
+}
+    .text {
+    top: 22%;
+    left: 32%;
+    color:blue;
+    font-weight:bold;
+    font-size: 12px;
+    width: 36%;
+    position: absolute;
+}
+    input[type=button] {
+    position: absolute;
+    top: 72%;
+    left: 53%;
+    width: 14%;
+    font-size: 6px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size: 35px;
+        position: absolute;
+        top: 30%;
+        left: 72%;
+    }
+    input[type=text] {
+        font-size: 17px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+    
+}
+@media only screen and (max-width : 330px) {
+   #question {
+        font-family: century Gothic;
+        font-size: 20px;
+        left: 115px;
+        position: absolute;
+        top: 156px;
+        width: 49%;
+        height: 476px;
+    }
+    .table-style{
+        top: 38px;
+        left: -97px;
+        width: 179%;
+        height: 392px;
+    }
+    .table-style td{
+        padding: 5px;
+    }
+    .table {
+        height: 383px;
+    }
+
+
+    #oneA {
+        color:blue;
+        font-weight:bold;
+        font-size: 22px;
+        position: absolute;
+        top: 22%;
+        left: 35%;
+    }
+    img {
+    position: absolute;
+    top: 62%;
+    left: 33%;
+    width: 34%;
+    height: 10%;
+}
+    .text {
+    left: 33%;
+    top: 22%;
+    color:blue;
+    font-weight:bold;
+    font-size: 11px;
+    width: 35%;
+}
+    input[type=button] {
+    position: absolute;
+    top: 71%;
+    left: 53%;
+    width: 14%;
+    font-size: 5px;
+}
+    #oneB {
+        color:red;
+        font-weight:bold;
+        font-size: 22px;
+        position: absolute;
+        top: 33%;
+        left: 72%;
+    }
+    input[type=text] {
+        font-size: 18px;
+        color:green;
+        font-weight:bold;
+        size:1;
+        width: 9%;
+        border:none;
+    }
+    
+    
+}

@@ -1,0 +1,246 @@
+body{
+    font-family: Arial;
+    font-size: 10pt;
+}
+.template {
+    height: 670px;
+    background-image: url('../../images/WE_MM.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+textarea,textarea:focus,input,input:focus{
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+}
+.form-control{
+    margin-bottom: 3px !important;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+input:focus,textarea:focus { 
+    outline: none;
+    border: 1px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+}
+#_objective b {
+    position: absolute;
+    left: 45%;
+    top: 12%;
+    border: 1px solid gray;
+    font-size: 27px;
+    box-shadow: 0px 0px 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#question {
+    font-family: century Gothic;
+    font-size: 18px;
+    left: 10%;
+    position: absolute;
+    top: 22%;
+    text-align: left;
+}
+table{
+    margin-left: 32%;
+}
+.table-style{
+    top: 11px;
+    left: 0px;
+    text-align: left !important;
+}
+.table-style td{
+    padding: 5px;
+}
+
+.valid_msg {
+    position: absolute;
+    top: 159px;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    table{
+        margin-left: 29%;
+    }
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width : 1040px) {
+    table{
+        margin-left: 25%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+   #_objective b {
+        left: 41%;
+        top: 13%;
+        font-size: 21px;
+    }
+    #question {
+        font-size: 12px;
+        left: 11%;
+        top: 22%;
+    }
+    table{
+        margin-left: 20%;
+    }
+    .table-style {
+        top: 12px;
+        left: 0px;
+    }
+    .table-style td {
+        padding: 7px;
+    }    
+}
+ 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 500px) {
+    #_objective b {
+        left: 40%;
+        top: 13%;
+        font-size: 21px;
+    }
+    #question {
+        font-size: 13px;
+        left: 12px;
+        top: 20%;
+    }
+    table{
+        margin-left: 6%;
+    }
+    .table-style {
+        top: 12px;
+        left: 0px;
+    }
+    .table-style td {
+        padding: 1px;
+        padding-top: 15px;
+    }
+        
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px) {
+    #_objective b {
+        left: 41%;
+        top: 13%;
+        font-size: 17px;
+    }
+    #question {
+        font-size: 12px;
+        left: 8%;
+        top: 20%;
+    }
+    table{
+        margin-left: 9%;
+    }
+    .table-style {
+        top: 0px;
+        left: 0px;
+    }
+    .table-style td {
+        padding: 1px;
+        padding-top: 15px;
+    }
+     
+} 
+@media only screen and (max-width : 370px) {
+     #_objective b {
+        left: 38%;
+        top: 13%;
+        font-size: 15px;
+    }
+    #question {
+        font-size: 12px;
+        left: 13%;
+        top: 19%;
+    }
+    table{
+        margin-left: 0%;
+    }
+    .table-style {
+        top: 30px;
+        left: 0px;
+    }
+    .table-style td {
+        padding: 1px;
+        padding-top: 9px;
+    }
+    
+}
+@media only screen and (max-width : 330px) {
+    #_objective b {
+        left: 39%;
+        top: 13%;
+        font-size: 16px;
+    }
+    #question {
+        font-size: 11px;
+        left: 12%;
+        top: 19%;
+    }
+    table{
+        margin-left: -4%;
+    }
+    .table-style {
+        top: 12px;
+        left: 0px;
+    }
+    .table-style td {
+        padding: 1px;
+        padding-top: 5px;
+    }
+}

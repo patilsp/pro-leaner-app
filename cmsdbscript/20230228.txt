@@ -1,0 +1,4 @@
+ALTER TABLE `question_categories`  ADD `subtopic` INT NULL  AFTER `course_id`;
+ALTER TABLE `question_categories`  ADD `class` INT NULL  AFTER `sortorder`;
+ALTER TABLE `question_categories`  ADD `subject` INT NULL  AFTER `class`;
+ALTER TABLE `question_categories`  ADD `topic` INT NULL  AFTER `course_id`;

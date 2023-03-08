@@ -1,0 +1,215 @@
+.pushToBottom{
+    
+}
+.template {
+    height: 670px;
+    background-image:url('../work6_images/work6.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+    ._content1 img{
+    width: 430px;
+    position: absolute;
+    top: 195px;
+    left: 36px;
+
+
+}
+
+
+.infoButton{
+    padding-top: 9%;
+}
+.table>tbody>tr>td{
+    padding: 4px 15px !important;
+}
+    #_objective1 {
+    margin-top: 2px;
+    width: 27px;
+}
+
+    ._content6 img{
+    width: 348px;
+    position: absolute;
+    top: 133px;
+    left: 109px;
+}
+
+
+
+
+#_objective h2{
+    
+    position: relative;
+    top: 104px;
+    
+}
+
+.content_part{
+      top: 186px;
+      left: -24px;
+      width: 482px;
+}
+ul{
+}
+
+li{
+    list-style-type: none;
+    /*word-wrap:break-word;*/
+    font-family:century gothic;
+    font-weight:bold;
+    font-size:20px;
+    text-align: initial;
+}
+li img{
+    width:20px;
+}
+.moveAway{
+    margin-top: 212px;
+}
+
+.table{
+    width: 0 !important;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.rf-tgrid {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 1px;
+        padding: 2px !important;
+        border: 1px solid bisque;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .table {
+        width: 50% !important;
+    }
+    
+.infoButton{
+    padding-top: 9%;
+}
+.table>tbody>tr>td{
+    padding: 3px 15px !important;
+}
+.moveAway {
+    margin-top: 302px;
+}    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.rf-tgrid {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        margin: 1px;
+        padding: 9px !important;
+        border: 1px solid bisque;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+.infoButton{
+    padding-top: 11%;
+}
+.table>tbody>tr>td{
+    padding: 0px 15px !important;
+}
+.moveAway {
+    margin-top: 302px;
+}    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.rf-tgrid {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 1px;
+        padding: 9px !important;
+        border: 1px solid bisque;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+.infoButton{
+    padding-top: 13%;
+}
+.table>tbody>tr>td{
+    padding: 0px 12px !important;
+}
+.moveAway {
+    margin-top: 302px;
+}
+}
+
+@media only screen and (max-width : 600px) {
+    .table>tbody>tr>td{
+        padding: -1px 4px !important;
+    }
+    .table {
+        width: 100% !important;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+.rf-tgrid {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        margin: 1px;
+        padding: 8px !important;
+        border: 1px solid bisque;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+.infoButton{
+    padding-top: 31%;
+}
+.table>tbody>tr>td{
+    padding: 4px 6px !important;
+}
+.moveAway {
+    margin-top: 302px;
+}    
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    .rf-tgrid {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 1px;
+        padding: 6px !important;
+        border: 1px solid bisque;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+.infoButton{
+    padding-top: 19%;
+}
+.table>tbody>tr>td{
+    padding: 0px 1px !important;
+}
+.moveAway {
+    margin-top: 302px;
+}    
+}

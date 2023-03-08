@@ -1,0 +1,24 @@
+CREATE TABLE IF NOT EXISTS `pms_assignment_files` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `assignment_id` int UNSIGNED NOT NULL,
+  `type` varchar(100) NOT NULL,
+  `student_id` int UNSIGNED DEFAULT NULL,
+  `upload_path` varchar(500) NOT NULL,
+  `upload_filename` varchar(100) NOT NULL,
+  `created_by` int UNSIGNED NOT NULL,
+  `created_on` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) 
+
+INSERT INTO `pms_assignment_files` (`id`, `assignment_id`, `type`, `student_id`, `upload_path`, `upload_filename`, `created_by`, `created_on`) VALUES
+(1, 13, 'assignment', 0, 'storage/assignment/13/164131672929082.xls', 'Temp(15).xls', 164, '2023-01-05 20:01:22'),
+(2, 739, 'assignment', 0, 'storage/assignment/739/1647391677835724.php', 'assignment.php', 164, '2023-03-03 09:28:44'),
+(3, 740, 'assignment', 0, 'storage/assignment/740/1647401677835753.php', 'assignment.php', 164, '2023-03-03 09:29:13'),
+(4, 741, 'assignment', 0, 'storage/assignment/741/1647411677835797.php', 'assignment.php', 164, '2023-03-03 09:29:57'),
+(5, 745, 'assignment', 0, 'storage/assignment/745/7451677843919.php', 'assignment.php', 0, '2023-03-03 11:45:19'),
+(6, 4, 'assignment', 0, 'storage/assignment/4/41677856071.pdf', 'SP 1.pdf', 0, '2023-03-03 15:07:51'),
+(7, 5, 'assignment', 0, 'storage/assignment/5/51677856158.xls', 'cancelorder (9).xls', 0, '2023-03-03 15:09:18'),
+(8, 1, 'assignment', 0, 'storage/assignment/1/11677856287.pdf', 'SP 1.pdf', 0, '2023-03-03 15:11:27'),
+(9, 2, 'assignment', 0, 'storage/assignment/2/21677856325.xls', 'cancelorder (9).xls', 0, '2023-03-03 15:12:05'),
+(10, 3, 'assignment', 0, 'storage/assignment/3/31678082830.php', 'assignment.php', 0, '2023-03-06 06:07:10'),
+(11, 4, 'assignment', 0, 'storage/assignment/4/41678083618.pdf', 'SP 1.pdf', 0, '2023-03-06 06:20:18'); 

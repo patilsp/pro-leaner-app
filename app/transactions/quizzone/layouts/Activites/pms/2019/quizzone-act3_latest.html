@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=EmulateIE10">
+	<title>ACT3_2019 - PMS</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../../../bootstrap_4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/fonts/San-Francisco-Font/fonts.css">
+  <link rel="stylesheet" type="text/css" href="../../../bootstrap_4.1.3/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../../bootstrap_4.1.3/css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/Activites/pms/2019/quizzone-act3.css?ver=270120221545">
+  <style type="text/css">
+    .d-none{
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  
+	<div class="container-fluid">
+    <form id="layout_form" name="layout_form" enctype="multipart/form-data">
+      <div class="row h-100 align-items-center" id="qust_section">
+        <div class="col-md-12">
+          <h1 class="text-center" id="act_title"></h1>
+          <div class="row align-items-center justify-content-center">
+            <nav aria-label="..." class="mb-5">
+              <ul class="pagination pagination-md m-0">
+                <li class="page-item" id="page_item1">
+                  <a class="page-link active" href="#" id="page_item1_link">
+                  </a>
+                </li>
+                <li class="page-item" id="page_item2">
+                  <a class="page-link" href="#" id="page_item2_link">
+                  </a>
+                </li>
+                <li class="page-item" id="page_item3">
+                  <a class="page-link" href="#" id="page_item3_link"></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row d-flex justify-content-center my-5">
+            <ul id="word_list_row1">
+              
+            </ul>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <ul id="word_list_row2">
+            </ul>
+          </div>
+          <span id="copy_section_ca">
+            <div class="row fill_in_blank" id="qus1">
+              <div class="col-12 col-md-10 offset-md-1">
+                <div class="input-group mb-3" id="qus1_loop">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row fill_in_blank qus2" id="qus2">
+              <div class="col-12 col-md-10 offset-md-1">
+                <div class="input-group mb-3" id="qus2_loop">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row fill_in_blank qus3" id="qus3">
+              <div class="col-12 col-md-10 offset-md-1">
+                <div class="input-group mb-3" id="qus3_loop">
+                  
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <span class="fontawesome_icon fontawesome_icon_right show_rightwrong_icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+        <span class="fontawesome_icon fontawesome_icon_wrong show_rightwrong_icon"><i class="fa fa-close" aria-hidden="true"></i></span>
+      </div>
+    </form>
+
+    <div class="row h-100 align-items-center cor_ans_section" id="cor_ans_section">
+      <div class="col-md-12">
+        <ul class="nav nav-pills mb-5 d-flex justify-content-center flex-nowrap" id="pills-tab" role="tablist">
+          <li class="nav-item mr-4">
+            <a class="nav-link active" id="pills-ca-tab" data-toggle="pill" href="#pills-ca" role="tab" aria-controls="pills-ca" aria-selected="true">Correct Answers</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" id="pills-vc-tab" data-toggle="pill" href="#pills-vc" role="tab" aria-controls="pills-vc" aria-selected="false">View Concept</a>
+          </li> -->
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active question_blk" id="pills-ca" role="tabpanel" aria-labelledby="pills-ca-tab"></div>
+          <div class="tab-pane fade" id="pills-vc" role="tabpanel" aria-labelledby="pills-vc-tab">
+            <div class="d-flex justify-content-around flex-wrap flex-sm-nowrap flex-md-nowrap" id="exp_blk">
+                <div class="img_st mr-5 mb-3 d-flex" id="exp_left_img">
+                  <img src="../../../../../../contents/images/upload.png" class="mx-auto img-fluid exp_img">
+                </div>
+                <div class="position-relative" id="exp_right_cont">
+                  <h5 class="font-weight-bold">Explanation</h5>
+                  <p id="explanation1"></p>
+                  <p id="explanation2"></p>
+                  <p id="explanation3"></p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center d-none" id="no_exp">
+                <span>
+                  <img src="../../../images/no_concept.svg" class="mx-auto img-fluid mb-3">
+                  <p class="text-center m-0 font-weight-bold">NO CONCEPT</p>
+                </span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+	<script src="../../../bootstrap_4.1.3/js/jquery-3.3.1.min.js"></script>
+  <script src="../../../bootstrap_4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../../assets/js/core/libraries/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../../assets/js/core/libraries/jquery.ui.touch-punch.min.js"></script>
+  <script src="../../../js/Activites/pms/2019/quizzone-act3_latest.js?ver=270120221545"></script>
+</body>
+</html>

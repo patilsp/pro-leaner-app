@@ -1,0 +1,12 @@
+/** modal styles */
+.modal-content{
+  background-color: #f6f6fa;
+}
+.class_save_active{
+  opacity: 0.4;
+  pointer-events: none;
+}
+.px-83{
+  padding-left: 83px;
+  padding-right: 83px
+}

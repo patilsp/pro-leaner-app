@@ -1,0 +1,1227 @@
+body{
+    
+}
+.template {
+    height: 670px;
+    background-image: url('../../harmony6_images/harmony6.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+    ._content1 img{
+    width: 430px;
+    position: absolute;
+    top: 195px;
+    left: 36px;
+
+
+}
+
+._content_part3 {
+    color: blue;
+    font-family: century gothic;
+    font-size: 20px;
+    left: -49px;
+    position: absolute;
+    top: 458px;
+}
+
+    #_objective1 {
+    margin-top: 2px;
+    width: 27px;
+}
+
+    ._content6 img{
+    width: 337px;
+    position: absolute;
+    top: 53px;
+    left: 132px;
+}
+
+._right1, ._wrong {
+    border-radius: 10px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 93px;
+    left: 138px;
+    top: 258px;
+    padding: 32px;
+    position: absolute;
+}
+
+._right, ._wrong {
+    border-radius: 10px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 93px;
+    left: 75px;
+    top: 423px;
+    padding: 32px;
+    position: absolute;
+}
+
+
+#_objective h2{
+    
+    position: relative;
+    top: 104px;
+    
+}
+
+.content_part{
+    top: 53px;
+    left: 28px;
+}
+ul{
+               margin-left: -1px;
+}
+
+._right1 .cancle {
+     left: 308px;
+    top: -82px;
+    position: absolute;
+}
+._right1 .stranger1_popup{
+    width: 228px;
+    position: absolute;
+    top: -60px;
+    left: 119px;
+}
+
+._right .cancle {
+     left: 410px;
+     top: -212px;
+     position: absolute;
+}
+._right .stranger_popup{
+      width: 208px;
+      position: absolute;
+      top: -193px;
+      left: 230px;
+}
+
+li{
+    list-style-type: none;
+    /*word-wrap:break-word;*/
+    font-family:century gothic;
+    font-weight:bold;
+    font-size:20px;
+    text-align: initial;
+}
+li img{
+    width:20px;
+}
+
+div .ans:hover {
+    cursor: pointer;
+}
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+    ._content1 img{
+    width: 430px;
+    position: absolute;
+    top: 195px;
+    left: 36px;
+
+
+}
+
+    #_objective h2{
+        top: 71px;
+        
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+    ._content1 img{
+    width: 320px;
+    position: absolute;
+    top: 108px;
+    height: 147px;
+    left: 240px;
+
+
+}
+
+    
+    #_objective h2{
+    top: 49px;
+    margin-left: 85px;
+    font-size: 22px;
+    font-weight: bold;
+    }
+
+}
+
+/* Small Devices, Tablets */
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px) {
+
+    ._content1 img{
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: 197px;
+
+
+}
+
+    #_objective h2{
+    top: 7px;
+    font-size: 22px;
+    margin-left: 57px;
+    font-weight: bold;
+    }
+    .content_part {
+    top: 15px;
+    left: 11px;
+    }
+        ._content6 img{
+    width: 307px;
+    position: absolute;
+    top: 42px;
+    left: 89px;
+}
+    
+     ul{
+                margin-left: -13px;
+}
+    
+        
+    #_objective1 {
+    margin-top: 3px;
+    width: 27px;
+}
+    
+    .content_part li{
+        font-size: 20px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 100px;
+        top: 210px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 40px;
+        width: 202px;
+    }
+    ._right .cancle {
+        left: 208px;
+        top: -22px;
+    }
+    
+    ._content_part3 {
+        left: -30px;
+        top: 442px;
+        font-size: 19px;
+        position: absolute;
+    }
+
+}
+@media only screen and (max-width : 992px) {
+
+    ._content1 img{
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: 197px;
+
+
+}
+
+    #_objective h2{
+    top: 7px;
+    font-size: 22px;
+    margin-left: 57px;
+    font-weight: bold;
+    }
+    .content_part {
+    top: 15px;
+    left: 11px;
+    }
+        ._content6 img{
+    width: 297px;
+    position: absolute;
+    top: 45px;
+    left: 98px;
+}
+    
+     ul{
+                margin-left: -13px;
+}
+    
+        
+    #_objective1 {
+    margin-top: 3px;
+    width: 27px;
+}
+    
+    .content_part li{
+    font-size: 20px;
+    }
+
+        .content_part li{
+        font-size: 20px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 112px;
+        top: 202px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 40px;
+        width: 197px;
+    }
+    ._right .cancle {
+        left: 201px;
+        top: -22px;
+    }
+    ._content_part3 {
+        left: -30px;
+        top: 442px;
+        font-size: 19px;
+        position: absolute;
+    }
+
+
+}
+@media only screen and (max-width : 900px) {
+
+    ._content1 img{
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: 197px;
+
+
+}
+
+    #_objective h2{
+    top: 7px;
+    font-size: 22px;
+    margin-left: 57px;
+    font-weight: bold;
+    }
+    .content_part {
+    top: -2px;
+    left: 11px;
+    }
+        ._content6 img{
+    width: 255px;
+    position: absolute;
+    top: 60px;
+    left: 56px;
+}
+    
+     ul{
+                margin-left: -13px;
+}
+    
+        
+    #_objective1 {
+    margin-top: 1px;
+    width: 27px;
+}
+    
+    .content_part li{
+    font-size: 19px;
+    }
+    
+        .content_part li{
+        font-size: 19px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 103px;
+        top: 184px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 40px;
+        width: 192px;
+    }
+    ._right .cancle {
+        left: 203px;
+        top: -22px;
+    }
+    ._content_part3 {
+        left: 0px;
+        top: 483px;
+        font-size: 15px;
+        position: absolute;
+    }
+
+}
+
+@media only screen and (max-width : 800px) {
+
+    ._content1 img{
+    width: 290px;
+    position: absolute;
+    top: 75px;
+    left: 169px;
+
+
+}
+
+    
+        ._content6 img{
+    width: 149px;
+    position: absolute;
+    top: 268px;
+    left: -136px;
+    }
+    #_objective h2{
+    top: 14px;
+    font-size: 22px;
+    margin-left: 56px;
+ }
+    .content_part {
+     top: 19px;
+     left: 325px;
+    }
+    
+    ul{
+    margin-left: -327px;
+}
+    
+        #_objective1 {
+    margin-top: 0px;
+    width: 27px;
+}
+    
+    .content_part li{
+        font-size: 18px;
+    }
+    
+li img{
+    width:15px;
+}
+
+    .content_part li{
+        font-size: 18px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 203px;
+        top: 169px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 40px;
+        width: 193px;
+    }
+    ._right .cancle {
+        left: 199px;
+        top: -22px;
+    }
+    
+    ._content_part3 {
+        left: -19px;
+        top: 450px;
+        font-size: 18px;
+        position: absolute;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    ._content1 img{
+    width: 280px;
+    position: absolute;
+    top: 26px;
+    left: 282px;
+
+
+}
+
+    
+        ._content6 img{
+    width: 108px;
+    position: absolute;
+    top: 12px;
+    left: 226px;
+}
+    #_objective h2{
+    top: 9px;
+    font-size: 22px;
+    margin-left: 20px;
+ }
+    .content_part {
+    top: 8px;
+    left: -146px;
+    }
+    
+    ul{
+           margin-left: 116px;
+}
+    
+        #_objective1 {
+    margin-top: 0px;
+    width: 27px;
+}
+    
+    .content_part li{
+        font-size: 16px;
+    }
+    
+li img{
+    width:15px;
+}
+    
+        .content_part li{
+        font-size: 18px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 163px;
+        top: 170px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 40px;
+    }
+    ._right .cancle {
+        left: 198px;
+        top: -22px;
+    }
+
+    ._content_part3 {
+        left: -30px;
+        top: 482px;
+        font-size: 13px;
+        position: absolute;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 700px) {
+
+    ._content1 img{
+    width: 270px;
+    position: absolute;
+    top: 35px;
+    left: 239px;
+
+
+}
+
+    #_objective h2{
+    top: 8px;
+    margin-left: 97px;
+    font-size: 22px;
+ }
+    
+        ._content6 img{
+      width: 157px;
+      position: absolute;
+      top: 4px;
+      left: 246px;
+}
+    .content_part {
+       top: 7px;
+       left: -40px;
+    }
+    
+    ul{
+            margin-left: 8px;
+}
+    
+        #_objective1 {margin-top: 1px;width: 25px;}
+    
+    .content_part li{
+        font-size: 18px;
+    }
+    
+li img{
+    width:15px;
+}
+    
+    .content_part li{
+        font-size: 17px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 215px;
+        top: 156px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 40px;
+    }
+    ._right .cancle {
+        left: 200px;
+        top: -22px;
+    }
+    ._content_part3 {
+        left: -8px;
+        top: 439px;
+        font-size: 18px;
+        position: absolute;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 650px) {
+
+    ._content1 img{
+    width: 260px;
+    position: absolute;
+    top: 55px;
+    left: 217px;
+
+
+}
+
+    #_objective h2{
+    top: 15px;
+    margin-left: 71px;
+    font-size: 22px;
+ }
+    
+        ._content6 img{
+    width: 143px;
+    position: absolute;
+    top: 25px;
+    left: 196px;
+}
+    .content_part {
+    top: 18px;
+    left: -81px;
+    }
+    
+    ul{
+          margin-left: 62px;
+}
+    
+        #_objective1 {
+    margin-top: -1px;
+    width: 25px;
+}
+    
+    .content_part li{
+        font-size: 16px;
+    }
+    
+li img{
+    width:15px;
+}
+    
+    .content_part li{
+        font-size: 16px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 132px;
+        top: 140px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 40px;
+    }
+    ._right .cancle {
+        left: 199px;
+        top: -22px;
+    }
+    ._content_part3 {
+        left: -30px;
+        top: 462px;
+        font-size: 16px;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+
+    ._content1 img{
+    width: 260px;
+    position: absolute;
+    top: 55px;
+    left: 217px;
+
+
+}
+
+    #_objective h2{
+    top: 15px;
+    margin-left: 69px;
+    font-size: 22px;
+ }
+    
+        ._content6 img{
+    width: 129px;
+    position: absolute;
+    top: 18px;
+    left: 175px;
+}
+    .content_part {
+    top: 15px;
+    left: -81px;
+    }
+    
+    ul{
+          margin-left:92px;
+}
+    
+        #_objective1 {
+    margin-top: 0px;
+    width: 25px;
+}
+    
+    .content_part li{
+        font-size: 16px;
+    }
+    
+li img{
+    width:15px;
+}
+    
+    .content_part li{
+        font-size: 16px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 159px;
+        top: 156px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 42px;
+        width: 185px;
+    }
+    ._right .cancle {
+        left: 203px;
+        top: -22px;
+    }
+    ._content_part3 {
+        left: -30px;
+        top: 489px;
+        font-size: 15px;
+        position: absolute;
+    }
+}
+
+
+@media only screen and (max-width : 550px) {
+
+    ._content1 img{
+    width: 260px;
+    position: absolute;
+    top: 55px;
+    left: 217px;
+
+
+}
+
+    #_objective h2{
+     top: 15px;
+     margin-left: 35px;
+     font-size: 22px;
+ }
+    
+        ._content6 img{
+     width: 140px;
+     position: absolute;
+     top: 20px;
+     left: 129px;
+}
+    .content_part {
+      top: 16px;
+      left: -35px;
+    }
+    
+    ul{
+            margin-left: 12px;
+}
+    
+        #_objective1 {
+    margin-top: -2px;
+    width: 24px;
+}
+    
+    .content_part li{
+        font-size: 16px;
+    }
+    
+li img{
+    width:15px;
+}
+    
+    .content_part li{
+        font-size: 15px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 97px;
+        top: 148px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 40px;
+        width: 177px;
+    }
+    ._right .cancle {
+        left: 194px;
+        top: -22px;
+    }
+    ._content_part3 {
+        left: -20px;
+        top: 474px;
+        font-size: 15px;
+        position: absolute;
+    }
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+    ._content1 img{
+    width: 230px;
+    position: absolute;
+    top: 95px;
+    height: 110px;
+    left: 101px;
+
+
+}
+
+    
+        ._content6 img{
+    width: 142px;
+    position: absolute;
+    top: 18px;
+    left: 117px;
+}
+    #_objective h2{
+      top: 23px;
+      font-size: 22px;
+      margin-left: 48px;
+ }
+    
+    #_objective1 {
+    margin-top: 1px;
+    width: 21px;
+}
+
+ul{
+                margin-left: 1px;
+}
+    .content_part {
+     top: 21px;
+     left: -11px;
+     }
+    .content_part li{
+      font-size: 15px;
+    }
+    
+    li img{
+    width:15px;
+}
+    
+        .content_part li{
+        font-size: 14px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 95px;
+        top: 148px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 40px;
+        width: 164px;
+    }
+    ._right .cancle {
+        left: 179px;
+        top: -22px;
+    }
+
+    ._content_part3 {
+        left: -26px;
+        top: 466px;
+        font-size: 13px;
+        position: absolute;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 400px) {
+
+    ._content1 img{
+    width: 230px;
+    position: absolute;
+    top: 95px;
+    height: 110px;
+    left: 101px;
+
+
+}
+
+    
+        ._content6 img{
+    width: 167px;
+    position: absolute;
+    top: 28px;
+    left: 78px;
+}
+    #_objective h2{
+    top: 23px;
+    font-size: 22px;
+    margin-left: 29px;
+ }
+    
+    #_objective1 {
+    margin-top: 0px;
+    width: 20px;
+}
+
+ul{
+                margin-left: 1px;
+}
+    .content_part {
+    top: 16px;
+    left: -31px;
+    }
+    .content_part li{
+      font-size: 14px;
+    }
+    
+    li img{
+    width:15px;
+}
+    
+
+        .content_part li{
+        font-size: 12px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -3px;
+        left: 40px;
+        width: 158px;
+    }
+    ._right .cancle {
+        left: 179px;
+        top: -22px;
+    }
+
+    ._content_part3 {
+        left: -19px;
+        top: 476px;
+        font-size: 12px;
+        position: absolute;
+    }
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+    ._content1 img{
+    width: 230px;
+    position: absolute;
+    top: 95px;
+    height: 110px;
+    left: 101px;
+
+
+}
+
+    
+        ._content6 img{
+    width: 139px;
+    position: absolute;
+    top: -1px;
+    left: 66px;
+}
+    #_objective h2{
+    top: 7px;
+    font-size: 22px;
+    margin-left: 22px;
+    }
+    
+    #_objective1 {
+    margin-top: 0px;
+    width: 19px;
+}
+
+ul{
+    margin-left: -36px;
+}
+    .content_part {
+    top: 2px;
+    left: -1px;
+    }
+    .content_part li{
+      font-size: 13px;
+    }
+    
+    li img{
+    width:15px;
+}
+    
+
+        .content_part li{
+        font-size: 12px;
+    }
+
+    ._right1, ._wrong {
+        left: 41px;
+        top: 184px;
+    }
+    ._right1 .stranger1_popup {
+        width: 223px;
+        position: absolute;
+        left: 220px;
+        top: -10px;
+    }
+    ._right1 .cancle {
+        left: 429px;
+        top: -25px;
+    }
+    
+    ._right, ._wrong {
+        left: 41px;
+        top: 130px;
+    }
+    ._right .stranger_popup {
+        position: absolute;
+        top: -5px;
+        left: 32px;
+        width: 159px;
+    }
+    ._right .cancle {
+        left: 168px;
+        top: -22px;
+    }
+
+    ._content_part3 {
+        left: -4px;
+        top: 442px;
+        font-size: 12px;
+        position: absolute;
+    }
+}

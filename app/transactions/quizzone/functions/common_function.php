@@ -1,0 +1,656 @@
+<?php
+	function getSlides($class, $topic_id)
+	{
+		global $db;
+		global $master_db;
+		try{
+			$class_id = $class;
+			$topic_id = $topic_id;
+			//this module will get from mdl_modules table
+			$module = "13";
+			$data = "";
+			//get chapters and category
+			$getChapters = GetRecords("$master_db.mdl_course_modules", array("course"=>$topic_id, "module"=>$module, "visible"=>1));
+			if(count($getChapters) > 0) {
+			  $instance = array();
+			  foreach ($getChapters as $getChapter) {
+			    $instance[] = $getChapter['instance'];
+			  }
+			  $instanceImplode = implode(",", $instance);
+			$query0 = "SELECT sequence FROM $master_db.mdl_course_sections WHERE course = ? AND sequence != ''";
+			$stmt0 = $db->prepare($query0);
+	  		$stmt0->execute(array($topic_id));
+	  		if($fetch0 = $stmt0->fetch(PDO::FETCH_ASSOC))
+	  			$sequence = $fetch0['sequence'];
+	  		else
+	  			$sequence = 0;
+	  		$sequence_ids = array();
+	  		$query0 = "SELECT instance FROM $master_db.mdl_course_modules WHERE course = ? ORDER BY FIELD (id, $sequence)";
+	  		$stmt0 = $db->prepare($query0);
+	  		$stmt0->execute(array($topic_id));
+	  		while($fetch0 = $stmt0->fetch(PDO::FETCH_ASSOC)) {
+	  			$sequence_ids[] = $fetch0['instance'];
+	  		}
+	  		if(count($sequence_ids) > 0) {
+	  			$sequence_ids_string = implode(",", $sequence_ids);
+	  		} else {
+	  			$sequence_ids_string = "0";
+	  		}
+
+			  $query = "SELECT * FROM $master_db.mdl_lesson WHERE id IN ($instanceImplode)  ORDER BY FIELD (id, $sequence_ids_string)";
+			  $stmt = $db->query($query);
+			  $rowcount = $stmt->rowCount();
+			  //if($_SESSION['cms_usertype'] != "Instructional Designer") {
+				  if($rowcount > 0){
+				    while($fetch = $stmt->fetch(PDO::FETCH_ASSOC)){
+				      $name = $fetch['name'];
+				      $lesson_id = $fetch['id'];
+				      $data .= '<label class="sidebar-label pd-x-10 mg-t-25 mg-b-20 tx-info">"'.$name.'"</label>';
+				      $slides = GetRecords("add_slide_list", array("class"=>$class_id, "topic_id"=>$topic_id, "lesson_id"=>$lesson_id), array("sequence"));
+			          if(count($slides) > 0) {
+			            foreach ($slides as $slide) {
+			              $topic_id = $slide['topic_id'];
+			              $lesson_id = $slide['lesson_id'];
+			              $layout_id = $slide['layout_id'];
+			              $slide_title = $slide['slide_title'];
+			              $taskid = $slide['task_assign_id'];
+			              $id = $slide['id'];
+			              $classid = $slide['class'];
+			              $slide_file_path = $slide['slide_file_path'];
+
+			              $data .= '
+		              	<div class="row savedSlides">
+				              <div class="col-md-12">
+				                <div class="card bd-0 shadow-base">
+				                	<button type="button" class="delete_slide btn btn-md btn-danger" data-slide_id ="'.$id.'" data-slide_title ="'.$slide_title.'"><span>&times</spa></button>
+			                		<button type="button" class="move_slide btn btn-md btn-warning" data-slide_id ="'.$id.'" data-slide_title ="'.$slide_title.'">move</button>
+				                  <div class="pd-y-40 pd-x-30 tx-center">
+				                  	<button type="button" data-taskid="'.$taskid.'" data-autoid="'.$id.'" data-topic_id="'.$topic_id.'" data-slidepath="'.$slide_file_path.'" data-classid="'.$classid.'" data-layoutid="'.$layout_id.'" class="btn btn-dafault btn-oblong btn-block bd-0 tx-11 tx-semibold pd-y-12 tx-mont tx-uppercase tx-spacing-1 clickSavedSlides">'.$slide_title.'</button>
+				                  </div>
+				                </div>
+				              </div>
+				            </div>
+			              ';
+		              }// end of foreach loop
+		              $data .='
+		              <div class="row">
+			              <div class="col-md-12">
+			                <div class="card bd-0 shadow-base">
+			                  <div class="pd-y-20 pd-x-30 tx-center">
+			                    <h5 class="tx-inverse tx-roboto tx-normal mg-b-15">Click Here.. To</h5>
+			                    <a href="#" class="btn btn-info btn-oblong btn-block bd-0 tx-11 tx-semibold pd-y-12 tx-mont tx-uppercase tx-spacing-1 topbarCollapse" data-classid ="'.$class_id.'" data-topicid ="'.$topic_id.'" data-slidepath="'.$slide_file_path.'" data-lessonid ="'.$lesson_id.'">Add New Slide</a>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+		              ';
+	              }// end of slide list count if loop
+	          		else {
+	      					$data .='
+	    						<div class="row">
+			              <div class="col-md-12">
+			                <div class="card bd-0 shadow-base">
+			                <div class="pd-y-20 pd-x-30 tx-center">
+			                  <h5 class="tx-inverse tx-roboto tx-normal mg-b-15">Click Here.. To</h5>
+			                  <a href="#" class="btn btn-info btn-oblong btn-block bd-0 tx-11 tx-semibold pd-y-12 tx-mont tx-uppercase tx-spacing-1 topbarCollapse" data-classid ="'.$class_id.'" data-topicid ="'.$topic_id.'" data-lessonid ="'.$lesson_id.'">Add New Slide</a>
+			                </div>
+			              </div>
+			              </div>
+			            </div>
+	      					';
+	    					} //end of else loop
+			        }// end of mdl_lesson while loop
+			      } else {
+	      			$data .='
+	    				<div class="row">
+			          <div class="col-md-12">
+			            <div class="card bd-0 shadow-base">
+			              <div class="pd-y-20 pd-x-30 tx-center">
+			                <h5 class="tx-inverse tx-roboto tx-normal mg-b-15">No chapters are created, Contact Admin.</h5>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+	      			';
+					}// end of else loop of mdl_lesson
+				/*} else {
+					if($rowcount > 0){
+				    while($fetch = $stmt->fetch(PDO::FETCH_ASSOC)){
+				      $name = $fetch['name'];
+				      $lesson_id = $fetch['id'];
+				      $data .= '<label class="sidebar-label pd-x-10 mg-t-25 mg-b-20 tx-info">"'.$name.'"</label>';
+				      $slides = GetRecords("add_slide_list", array("class"=>$class_id, "topic_id"=>$topic_id, "lesson_id"=>$lesson_id), array("sequence"));
+			          if(count($slides) > 0) {
+			            foreach ($slides as $slide) {
+			              $topic_id = $slide['topic_id'];
+			              $lesson_id = $slide['lesson_id'];
+			              $layout_id = $slide['layout_id'];
+			              $slide_title = $slide['slide_title'];
+			              $taskid = $slide['task_assign_id'];
+			              $id = $slide['id'];
+			              $classid = $slide['class'];
+			              $slide_file_path = $slide['slide_file_path'];
+
+			              $data .= '
+		              	<div class="row savedSlides">
+				              <div class="col-md-12">
+				                <div class="card bd-0 shadow-base">
+				                  <div class="pd-y-20 pd-x-30 tx-center">
+				                    <button type="button" data-taskid="'.$taskid.'" data-autoid="'.$id.'" data-topic_id="'.$topic_id.'" data-classid="'.$classid.'" data-slidepath="'.$slide_file_path.'" class="btn btn-danger btn-oblong btn-block bd-0 tx-11 tx-semibold pd-y-12 tx-mont tx-uppercase tx-spacing-1 clickSavedSlidesReview">'.$slide_title.'</button>
+				                  </div>
+				                </div>
+				              </div>
+				            </div>
+			              ';
+		              }// end of foreach loop
+	              }// end of slide list count if loop
+	          		else {
+	      					$data .='
+	    						<div class="row">
+			              <div class="col-md-12">
+			                <div class="card bd-0 shadow-base">
+			                <div class="pd-y-20 pd-x-30 tx-center">
+			                  <a href="#" class="btn btn-info btn-oblong btn-block bd-0 tx-11 tx-semibold pd-y-12 tx-mont tx-uppercase tx-spacing-1" data-classid ="'.$class_id.'" data-topicid ="'.$topic_id.'" data-lessonid ="'.$lesson_id.'">Slides Not Yet Created.</a>
+			                </div>
+			              </div>
+			              </div>
+			            </div>
+	      					';
+	    					} //end of else loop
+			        }// end of mdl_lesson while loop
+			      } else {
+	      			$data .='
+	    				<div class="row">
+			          <div class="col-md-12">
+			            <div class="card bd-0 shadow-base">
+			              <div class="pd-y-20 pd-x-30 tx-center">
+			                <h5 class="tx-inverse tx-roboto tx-normal mg-b-15">No chapters are created, Contact Admin.</h5>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+	      			';
+					}// end of else loop of mdl_lesson
+				}*/
+	    }// end of if loop of getChapters
+	    else {
+	    	$data .='
+	    	<div class="row">
+	        <div class="col-md-12">
+	          <div class="card bd-0 shadow-base">
+	            <div class="pd-y-20 pd-x-30 tx-center">
+	              <h5 class="tx-inverse tx-roboto tx-normal mg-b-15">No chapters are created, Contact Admin.</h5>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    	';
+    	}// end of else loop of getChapters
+
+    	return $data;
+		} catch(Exception $exp) {
+			echo "<pre/>";
+			print_r($exp);
+		}
+	}
+
+	//getSlides for Add Existing topics
+	function getSlidesExistingTopic($web_root, $class_id, $topic_id, $date)
+	{
+		global $db;
+		global $master_db;
+		try{
+			$data = array();
+			if(in_array($next_slide, $new_slides_prev_page_ids)) {
+  				//next_slide exists in add_slide_list table means fetch the path from the table
+  				$prev_slide_id_array = array();
+  				$add_slide_list = GetRecord("add_slide_list", array("date"=>$date, "class"=>$class_id, "sub_id"=>$topic_id));
+  				if(isset($add_slide_list['id'])) {
+  						$new_slide = true;
+  						$id = $add_slide_list['id'];
+	  					$layout_id = $add_slide_list['layout_id'];
+	  					$slide_title = $add_slide_list['slide_title'];
+	  					$slide_file_path = $add_slide_list['slide_file_path'];
+  				} else {
+  					$new_slide = false;
+					}
+  				if($new_slide) {
+  					$slides_arr .='
+			              	<div class="row savedSlides">
+				              <div class="col-md-12">
+				                <div class="card bd-0 shadow-base">
+				                  <div class="pd-y-20 pd-x-30 tx-center">
+				                    <button type="button" data-taskid="'.$task_assi_id.'" data-autoid="'.$id.'" data-topic_id="'.$topic_id.'" data-classid="'.$class_id.'" data-layoutid="'.$layout_id.'" class="btn btn-danger btn-oblong btn-block bd-0 tx-11 tx-semibold pd-y-12 tx-mont tx-uppercase tx-spacing-1 clickSavedSlides">'.$slide_title.'</button>
+				                  </div>
+				                </div>
+				              </div>
+				            </div>
+			              ';
+  				} else {
+	  				$slides_arr .='
+						<div class="row">
+						  <div class="col-md-12">
+						    <div class="card bd-0 shadow-base">
+						    <div class="pd-y-20 pd-x-30 tx-center">
+						      <h5 class="tx-inverse tx-roboto tx-normal mg-b-15">Click Here.. To</h5>
+						      <a href="#" class="btn btn-info btn-oblong btn-block bd-0 tx-11 tx-semibold pd-y-12 tx-mont tx-uppercase tx-spacing-1 topbarCollapse" data-classid ="'.$class_id.'" data-topicid ="'.$topic_id.'" data-lessonid ="'.$fetch1['id'].'" data-prev_slide_id ="'.$next_slide.'">Add New Slide</a>
+						    </div>
+						  </div>
+						  </div>
+						</div>
+						';
+  				}
+  			}
+			return $slides_arr;
+		} catch(Exception $exp) {
+			echo "<pre/>";
+			print_r($exp);
+		}
+	}
+
+	function updateSlideJson($id, $data) {
+		global $dbs;
+		try{
+
+			$query = "UPDATE quizzone_questions SET slide_json = ? WHERE id = ?";
+			$stmt = $dbs->prepare($query);
+			$stmt->execute(array($data, $id));
+			if($stmt->rowCount())
+				return 1;
+			else
+				return 0;
+		} catch(Exception $exp) {
+			echo "<pre/>";
+			print_r($exp);
+		}
+	}
+
+	function updateSlideStatus($task_assign_id, $status) {
+		global $db;
+		try{
+			$query = "UPDATE add_slide_list SET status = ? WHERE task_assign_id = ?";
+			$stmt = $db->prepare($query);
+			$stmt->execute(array($status, $task_assign_id));
+			if($stmt->rowCount())
+				return 1;
+			else
+				return 0;
+		} catch(Exception $exp) {
+			echo "<pre/>";
+			print_r($exp);
+		}
+	}
+
+	function getFolderName($course_id) {
+		global $db;
+		try{
+			$data1 = GetRecord("course_folder_name", array("course_id"=>$course_id, "deleted"=>0));
+			$class_topicname = "images/graphics/".$data1['folder_name']."/";
+			return $class_topicname;
+		} catch(Exception $exp) {
+			echo "<pre/>";
+			print_r($exp);
+		}
+	}
+
+	function getFolderNameHTML($id) {
+		global $db;
+		try{
+
+			$data = GetRecord("add_slide_list", array("id"=>$id));
+			$course_id = $data['topic_id'];
+
+			$data1 = GetRecord("course_folder_name", array("course_id"=>$course_id, "deleted"=>0));
+			$htmlFilePath = $data1['folder_name']."/class".$data['class']."/lesson/";
+			return $htmlFilePath;
+		} catch(Exception $exp) {
+			echo "<pre/>";
+			print_r($exp);
+		}
+	}
+
+	function getResourceImages($classid, $topicid) {
+		global $db;
+		global $web_root;
+		global $dir_root;
+		try{
+			$data = "";
+		    $query = "SELECT * FROM resources WHERE status_id=1 AND resource_type_id=1 AND class_id='".$classid."' AND topics_id='".$topicid."' ORDER BY id DESC";
+		    $stmt = $db->query($query);
+		    $rowcount = $stmt->rowCount();
+
+		    $data .='
+		        <div class="col-md-12">
+		            <div class="card bd-0">
+		              <div class="card-header bg-info bd-0 d-flex align-items-center justify-content-between pd-y-5">
+		                <h6 class="mg-b-0 tx-14 tx-black tx-normal">Image Upload</h6>
+		              </div><!-- card-header -->
+		              <form id="img_upload" enctype="multipart/form-data">
+		                <div class="card-body bd bd-t-0 rounded-bottom-0">
+		                    <div class="row">
+		                        <div class="col-md-4">
+		                            <div class="form-group">
+		                                <label for="files">Attach Files:</label>
+		                                <input type="file" class="form-control" name="img_res[]" id="img_res" multiple required="required"/>
+		                            </div>
+		                        </div>
+		                        <div class="col-md-4">
+		                            <div class="form-group">
+		                                <label for="tags">Tags:</label>
+		                                <input type="text" id="tags" class="form-control" name="tags" data-role="tagsinput" required="required">
+		                            </div>
+		                        </div>
+		                        <div class="col-md-4">
+		                            <button type="submit" style="margin-top: 27px;" class="btn btn-info">Submit</button>
+		                        </div>
+		                    </div>
+		                </div><!-- card-body -->
+		              </form>
+		            </div>
+		        </div>
+		    ';
+		    if ($rowcount) {
+		        $data .='
+		        <div class="col-md-12">
+		            <div class="card bd-0">
+		                <div class="card-header bg-info bd-0 d-flex align-items-center justify-content-between pd-y-5">
+		                    <h6 class="mg-b-0 tx-14 tx-black tx-normal">Choose Images</h6>
+		                </div><!-- card-header -->
+		                <div class="card-body bd bd-t-0 rounded-bottom-0" style="height: 400px;overflow-y:scroll">
+		                    <table class="table table-responsive table-bordered table-striped">
+		                        <thead>
+		                        <tr>
+		                            <th>Image</th>
+		                            <th>File Name</th>
+		                            <th>Type/File Size</th>
+		                            <th>Choose Image</th>
+		                        </tr>
+		                        </thead>
+		                        <tbody>';
+		                        while($fetch = $stmt->fetch(PDO::FETCH_ASSOC)){
+		                            $files_data = json_decode($fetch['filepath']);
+		                            if (is_array($files_data))
+									{
+			                            foreach ($files_data as $item) {
+			                            	$file_path = pathinfo($item);
+			                                $file_type = $file_path['extension'];
+			                                $file_name = $file_path['basename'];
+
+			                                $dir_item = $item;
+			                                //$radio_val = str_replace("../../", $web_root."app/", $item);
+			                                $radio_val = str_replace($dir_root, "$web_root", $item);
+			                                $item = str_replace($dir_root, $web_root, $item);
+
+			                                $ms_file_formates = array("doc", "docx", "ppt", "pptx", "xls", "xlsx", "pdf");
+											if(in_array($file_type, $ms_file_formates)){
+												if($file_type == "doc" || $file_type == "docx")
+													$widget_img = '<img src="../../images/word.jpg" class="img-responsive center-block" wdith="100px" height="100px">';
+												else if($file_type == "ppt" || $file_type == "pptx")
+													$widget_img = '<img src="../../images/ppt.png" class="img-responsive center-block" wdith="100px" height="100px">';
+												else if($file_type == "xls" || $file_type == "xls")
+													$widget_img = '<img src="../../images/excel.jpg" class="img-responsive center-block" wdith="100px" height="100px">';
+												else if($file_type == "pdf")
+													$widget_img = '<img src="../../images/pdf.jpg" class="img-responsive center-block" wdith="100px" height="100px">';
+											} else {
+												$widget_img = '<img src="'.$item.'" class="img-responsive center-block" wdith="100px" height="100px">';
+											}
+			                                
+			                                if(file_exists($dir_item)) {
+			                                	$file_size = filesize($dir_item);
+			                                	if ($file_size >= 1024)
+				                                {
+				                                    $file_size_kb = number_format($file_size / 1024, 2) . ' KB';
+				                                }
+				                                $data.='
+				                                <tr data-name="'.$fetch["name"].'">
+				                                    <td>
+				                                        '.$widget_img.'
+				                                    </td>
+				                                    <td>
+				                                        <a href="'.$item.'">'.$file_name.'</a>
+				                                    </td>
+				                                    <td><span>'.$file_type. '/' .$file_size_kb.'</span></td>
+				                                    <td>
+				                                        <label class="checked_btn btn btn-danger d-block mx-auto">
+				                                          <input type="radio" class=" btn btn-md btn-danger imgpath" name="imgpath" value="'.$radio_val.'"autocomplete="off"> '.$file_name.'
+				                                        </label>
+				                                    </td>
+				                                </tr>';
+			                            	}
+			                            }
+		                            }
+		                        }
+		                        $data.='
+		                        </tbody>
+		                    </table>
+		                </div>
+		            </div>
+		        </div>
+		        ';
+		    } else {
+		        $data .='
+		        <div class="col-md-12">
+		            <div class="card bd-0">
+		                <div class="card-header bg-info bd-0 d-flex align-items-center justify-content-between pd-y-5">
+		                    <h6 class="mg-b-0 tx-14 tx-black tx-normal">List of Images</h6>
+		                </div><!-- card-header -->
+		                <div class="card-body bd bd-t-0 rounded-bottom-0">
+		                    <div class="well well-lg text-center"><strong>This folder is empty!</strong></div>
+		                </div>
+		            </div>
+		        </div>
+		        ';
+		    }
+
+		    return $data;
+	    } catch(Exception $exp) {
+	    	echo "<pre/>";
+	    	print_r($exp);
+	    }
+	}
+
+	//get ReviewSlides for ID
+	function getAssignSlidesID($web_root, $class_id, $topic_id){
+		global $db;
+		global $master_db;
+		try{
+			$data = array();
+			$slide_count = 0;
+			$selected_slide_id = 0;
+			$slides_arr = "";
+			$query0 = "SELECT sequence FROM $master_db.mdl_course_sections WHERE course = ? AND sequence != ''";
+			$stmt0 = $db->prepare($query0);
+	  		$stmt0->execute(array($topic_id));
+	  		if($fetch0 = $stmt0->fetch(PDO::FETCH_ASSOC))
+	  			$sequence = $fetch0['sequence'];
+	  		else
+	  			$sequence = 0;
+	  		$sequence_ids = array();
+	  		$query0 = "SELECT instance FROM $master_db.mdl_course_modules WHERE course = ? ORDER BY FIELD (id, $sequence)";
+	  		$stmt0 = $db->prepare($query0);
+	  		$stmt0->execute(array($topic_id));
+	  		while($fetch0 = $stmt0->fetch(PDO::FETCH_ASSOC)) {
+	  			$sequence_ids[] = $fetch0['instance'];
+	  		}
+	  		if(count($sequence_ids) > 0) {
+	  			$sequence_ids_string = implode(",", $sequence_ids);
+	  		} else {
+	  			$sequence_ids_string = "0";
+	  		}
+
+			$query1 = "SELECT * FROM $master_db.mdl_lesson WHERE course = ? ORDER BY FIELD (id, $sequence_ids_string)";
+	  		$stmt1 = $db->prepare($query1);
+	  		$stmt1->execute(array($topic_id));
+	  		$i=1;
+	  		while($fetch1 = $stmt1->fetch(PDO::FETCH_ASSOC)){
+	  			$chap_name = $fetch1['name'];
+
+	  			$slides_arr.= '
+				<div class="col-md-12 mg-t-20 mg-md-t-0">
+					<div class="accordion" id="accordion">
+					  <div class="card">
+					    <div class="card-header" id="h'.$fetch1['id'].'">
+					      <h5 class="mb-0">
+					      	<a data-toggle="collapse" data-parent="#accordion" href="#c'.$fetch1['id'].'" aria-expanded="false" aria-controls="c'.$fetch1['id'].'" class="tx-gray-800 transition">
+			        			'.$chap_name.'
+					        </a>
+					      </h5>
+					    </div>
+
+					    <div id="c'.$fetch1['id'].'" class="collapse" aria-labelledby="h'.$fetch1['id'].'" data-parent="#accordion">
+					      <div class="card-body">';
+				$slide_sequences = array();
+				$paths = array();
+				$slide_ids = array();
+				$nedpgids = array();
+				$pvedpgids = array();
+				$page = GetRecord("$master_db.mdl_lesson_pages", array("lessonid"=>$fetch1['id'], "prevpageid"=>0));
+				if(!isset($page['id'])) {
+					$slides_arr .= '
+							</div>
+						</div>
+					</div>
+					</div>
+					</div>
+				';
+					continue;
+				}
+				$nextpageid = $page['nextpageid'];
+				array_push($paths, DecryptContent($page['contents']));
+				array_push($slide_ids, $page['id']);
+				array_push($nedpgids, $page['nextpageid']);
+				array_push($pvedpgids, $page['prevpageid']);
+
+				while($nextpageid != 0)
+				{
+					//echo "<br />$lessonid--$nextpageid--CAME";
+					$page = GetRecord("$master_db.mdl_lesson_pages", array("lessonid"=>$fetch1['id'], "id"=>$nextpageid));				
+					array_push($slide_sequences, $page['id']);
+					$nextpageid = $page['nextpageid'];
+					array_push($paths, DecryptContent($page['contents']));
+					array_push($slide_ids, $page['id']);
+					array_push($nedpgids, $page['nextpageid']);
+					array_push($pvedpgids, $page['prevpageid']);
+				}
+		  		$next_slide = 0;
+		  		foreach($slide_ids as $key=>$slide_id)
+		  		{
+		  			$slides_arr.= '
+	  					<div class="card">';
+	  				if(!($selected_slide_id == $slide_id || (isset($slide_ids[$key-1]) && $selected_slide_id == $slide_ids[$key-1])))
+	  				$slides_arr.='
+						  <div class="card-header d-flex align-items-center justify-content-between pd-y-5">
+						    <div class="alert alert-danger text-center" role="alert" style="width:100%;font-size: 26px;padding:0px">
+						      	<label class="checked_btn btn btn-danger d-block mx-auto">
+							  		<input type="checkbox" class="slideid" name="slideid[]" value="'.$fetch1['id'].':'.$next_slide.'" data-DestlessonID='.$fetch1['id'].'>Add New Slide
+								</label>
+						    </div>
+						  </div><!-- card-header -->';
+					$next_slide = $slide_id;
+					$slides_arr .= '
+						  <div class="card-body">
+						    <object width="100%" height="670px" data="'.$web_root."app/".$paths[$key].'"></object>
+						  </div><!-- card-body -->
+						</div>
+		  			';
+				}
+				if($selected_slide_id != end($slide_ids))
+				$slides_arr .='
+									<div class="card">
+									  <div class="card-header d-flex align-items-center justify-content-between pd-y-5">
+									    <div class="alert alert-danger text-center" role="alert" style="width:100%;font-size: 26px;padding:0px">
+									      	<label class="checked_btn btn btn-danger d-block mx-auto">
+										  		<input type="checkbox" class="slideid" name="slideid[]" value="'.$fetch1['id'].':'.$next_slide.'" data-DestlessonID='.$fetch1['id'].'>Add New Slide
+											</label>
+									    </div>
+									  </div><!-- card-header -->';
+				$slides_arr .='								  
+								  	</div>
+								</div>
+				    		</div>
+				  		</div>
+					</div>
+				</div>
+				';
+				$slide_count += count($paths);
+			}
+			$data['html'] = $slides_arr;
+			$data['slide_count'] = $slide_count;
+			return $data;
+		} catch(Exception $exp) {
+			echo "<pre/>";
+			print_r($exp);
+		}
+	}
+
+	function getSlideNames($class, $topic_id)
+	{
+		global $db;
+		global $master_db;
+		try{
+			$class_id = $class;
+			echo $topic_id = $topic_id;
+			//this module will get from mdl_modules table
+			$module = "13";
+			$data = "";
+			$options = "<option value=''>-Select Slide-</option>";
+			//get chapters and category
+			$getChapters = GetRecords("$master_db.mdl_course_modules", array("course"=>$topic_id, "module"=>$module, "visible"=>1));
+			if(count($getChapters) > 0) {
+			  $instance = array();
+			  foreach ($getChapters as $getChapter) {
+			    $instance[] = $getChapter['instance'];
+			  }
+			  $instanceImplode = implode(",", $instance);
+			$query0 = "SELECT sequence FROM $master_db.mdl_course_sections WHERE course = ? AND sequence != ''";
+			$stmt0 = $db->prepare($query0);
+	  		$stmt0->execute(array($topic_id));
+	  		if($fetch0 = $stmt0->fetch(PDO::FETCH_ASSOC))
+	  			$sequence = $fetch0['sequence'];
+	  		else
+	  			$sequence = 0;
+	  		$sequence_ids = array();
+	  		$query0 = "SELECT instance FROM $master_db.mdl_course_modules WHERE course = ? ORDER BY FIELD (id, $sequence)";
+	  		$stmt0 = $db->prepare($query0);
+	  		$stmt0->execute(array($topic_id));
+	  		while($fetch0 = $stmt0->fetch(PDO::FETCH_ASSOC)) {
+	  			$sequence_ids[] = $fetch0['instance'];
+	  		}
+	  		if(count($sequence_ids) > 0) {
+	  			$sequence_ids_string = implode(",", $sequence_ids);
+	  		} else {
+	  			$sequence_ids_string = "0";
+	  		}
+
+			  $query = "SELECT * FROM $master_db.mdl_lesson WHERE id IN ($instanceImplode)  ORDER BY FIELD (id, $sequence_ids_string)";
+			  $stmt = $db->query($query);
+			  $rowcount = $stmt->rowCount();
+			  if($rowcount > 0){
+			    while($fetch = $stmt->fetch(PDO::FETCH_ASSOC)){
+			      $name = $fetch['name'];
+			      if($name == "Activity" || $name == "Scenario") {
+			      	continue;
+			      }
+			      $lesson_id = $fetch['id'];
+			      $data .= '<label class="sidebar-label pd-x-10 mg-t-25 mg-b-20 tx-info">"'.$name.'"</label>';
+			      $slides = GetRecords("add_slide_list", array("class"=>$class_id, "topic_id"=>$topic_id, "lesson_id"=>$lesson_id), array("sequence"));
+			      
+		          if(count($slides) > 0) {
+		          	$options .= '<optgroup label="'.$name.'">';
+		            foreach ($slides as $slide) {
+		              $id = $slide['id'];
+		              $title = $slide['slide_title'];
+		              $options .= '<option value="'.$id.'">'.$title.'</option>';
+		            }
+		            $options .= '</optgroup>';
+		           }
+		        }
+		      }
+		      echo $options;
+		  }
+		} catch(Exception $exp) {
+			echo "<pre/>";
+			print_r($exp);
+		}
+	}
+?>

@@ -1,0 +1,1 @@
+INSERT INTO `cms_2021`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Assignment', 'Assignment', '1', '2', '1', 'app/Assignment/assignment.php', '10', 'ion-ios-paper-outline');

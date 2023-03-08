@@ -1,0 +1,57 @@
+#enroll{
+	border-radius: 10px;
+  	background-color: #f6f6fa;
+  	padding: 100px 30px
+}
+
+#enroll header{
+	max-width: 385px;
+	width: 100%
+}
+.badge.active{
+	background-color: #3395ff !important;
+	color: #ffffff !important
+}
+.badge{
+    width: 31px;
+    height: 30px;
+    border-radius: 5px;
+}
+.badge.content_badge{
+	width: auto;
+}
+#enroll #trans_modules .card{
+	border-radius: 20px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+
+#enroll #trans_modules .card-body{
+	padding: 32px 0px
+}
+
+#enroll #trans_modules .a_card{
+	max-width: 220px;
+	width: 100%;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+#enroll #trans_modules > :last-child{
+	margin-right: 0px
+}
+#enroll_student:hover{
+	background-color: #ddedff !important
+}
+#enroll_teacher:hover{
+	background-color: #ffeeb7 !important
+}
+
+@media(max-width: 559px){
+	#enroll #trans_modules .a_card{
+		margin-right: 15px !important
+	}
+}
+.cust_card{
+    margin-bottom: -16px;
+}

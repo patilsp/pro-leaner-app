@@ -1,0 +1,521 @@
+body,html{
+  margin: 0px;
+  font-family: San Francisco;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  overflow: hidden;
+  height: 100vh;
+  background-image: linear-gradient(to right, #ffd651ad 0%, #ffeaa6 48%, #ffd651ad 100%);
+}
+.container-fluid{
+  max-width: 1280px;
+  max-height: 677px;
+  height: 100vh;
+  width: 100%;
+}
+.h-100{
+  height: 100vh !important;
+}
+h1{
+  letter-spacing: 0.1px;
+  color: #2f2f3c;
+  margin-bottom: 40px;
+  font-family: "San Francisco Display Medium";
+}
+#qust_section label{
+  font-family: "San Francisco Display Regular";
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #333333;
+}
+.qustImg {
+  max-width: 250px;
+}
+.page-item {
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  background-color: #ffffff;
+}
+#qust_section li.page-item:last-child{
+  margin-right: 0px;
+}
+.page-item .page-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 50% !important;
+  margin: 0px !important;
+  background-color: #ffdb01;
+  border: 1px solid #ffdb01;
+  display: flex;
+  justify-content: center;
+}
+.page-item .page-link .cyu_pagination_icon {
+  color: #675900;
+  font-size: 22px;
+  font-weight: bold;
+  top: 4px;
+  position: absolute;
+  /* left: 19px; */
+  /* margin: 0px auto; */
+  /* display: flex; */
+}
+.page-item .page-link .active_qust{
+  /* margin-left: -8px; */
+}
+.page-item .page-link .ansed_qust{
+  /* margin-left: -8px; */
+  color: #cdb000;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+ul.pagination {
+  gap : 1rem
+}
+.page-item .page-link .yet_ansed_qust{
+  color: #2f2f3c;
+  /* left: 12px; */
+}
+.page-item .page-link.active {
+  background-color: #ffdb01;
+}
+.page-item .page-link.present {
+  background-color: #ffdb01;
+}
+.page-item .page-link.presented {
+  background-color: rgba(107, 181, 246, 0.4);
+  opacity: 0.3;
+}
+.page-item .page-link.yet_present {
+  background-color: #ffe877;
+  border-color: #efcd00;
+  display: flex;
+  justify-content: center;
+}
+.mb-80{
+  margin-bottom: 40px
+}
+#qust_section .card, .card-footer {
+    border: 0px;
+}
+#qust_section .card-footer {
+    padding: 0px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #2f2f3c;
+    font-family: "San Francisco Display Bold";
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+}
+#qust_section .card, .card-footer {
+    border: 0px;
+    margin: 0px 20px
+}
+.img_checkbox {
+    z-index: -1;
+}
+.right_image{
+  max-width: 100%;
+}
+ol{
+  padding: 0px 0px 0px 14px;
+  margin: 0px
+}
+ol li{
+  font-family: "San Francisco Display Thin";
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: 0px;
+  color: #222222;
+}
+#submit_btn, #next_btn, .go_back_btn,#submit{
+  width: 197px;
+  height: 51px;
+  border: 2px solid #6bb5f6;
+  border-radius: 6px;
+  background-color: #6bb5f6;
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 20px;
+  font-family: "San Francisco Display Semibold";
+  cursor: pointer;
+}
+.fontawesome_icon {
+  width: 31px;
+  height: 30px;
+  position: absolute;
+  right: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  top: 20px;
+}
+.fontawesome_icon_right{
+  background-color: #59d966;
+}
+.fontawesome_icon_wrong{
+  background-color: #d8675c;
+}
+/*score screen style*/
+.col_div {
+  margin-top: 40.5px;
+  align-items: center;
+}
+.score_page_body{
+  max-width: 940px;
+  width: 100%;
+}
+.score_page_body_bg{
+  margin-bottom: 4rem;
+}
+.card-title{
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #222222;
+  margin-top: 14px;
+  font-family: "San Francisco Display Bold";
+}
+#feedback .card-title{
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #222222;
+  margin-top: 0px;
+  font-family: "San Francisco Display Medium";
+}
+#option_btn label{
+  margin: 0px;
+}
+.card-text {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #222222;
+  margin-top: 17px;
+  font-family: "San Francisco Display Medium";
+}
+.card-text span#score_text{
+  font-family: "San Francisco Display Bold";
+}
+.cor_ans_btn{
+  width: 242px;
+  height: 51px;
+  border: 2px solid #6bb5f6;
+  border-radius: 6px;
+  background-color: #6bb5f6;
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 50px;
+  font-family: "San Francisco Display Semibold";
+}
+.mt-32{
+  margin-top: 32px
+}
+.try_again{
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #6bb5f6;
+  font-family: "San Francisco Display Semibold";
+}
+.badge {
+    width: 280px;
+    height: 197px;
+}
+.next_btn{
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.4;
+}
+/*hide sections*/
+.qust_section, .score_section, .cor_ans_section, .submit_btn, .qus1, .qus2, .qus3, .qus4, .qus5, .option_btn, .feedback, .qus6, .qus7, .qus8, .qus9, .qus10, .qus11, .qus12, .qus13, .qus14, .qus15 {
+  display: none !important;
+}
+#cor_ans_section #right_ca{
+  width: 400px;
+}
+#cor_ans_section .unscram_word{
+  width: 218px;
+}
+#cor_ans_section .form-control{
+  color: #6bb5f6 !important;
+}
+#cor_ans_section .form-control:disabled{
+  background-color: transparent;
+}
+#cor_ans_section .mb-80{
+  margin-bottom: 10px
+}
+
+
+h3{
+  font-family: San Francisco Display Semibold;
+  font-size: 26px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #333333;
+  padding: 0px 15px;
+  margin-bottom: 40px;
+}
+label{
+  font-family: San Francisco Display Regular;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #333333;
+  cursor: pointer;
+}
+.custom-control{
+  margin-bottom: 24px
+}
+.custom-control:last-child{
+  margin-bottom: 0px
+}
+.custom-control-label::before{
+  background-color: #ffffff !important;
+  border: 1px solid #979797;
+  top: .50rem;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::after{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%236bb5f6'/%3E%3C/svg%3E");
+}
+.custom-control-label::after{
+  top: 0rem;
+  left: -2rem;
+  width: 2rem;
+  height: 2rem;
+}
+/** Score Section Styles */
+#score_section .card-title, #score_section .card-text{
+  font-size: 24px;
+}
+#score_section #card_message, #score_section .card-text{
+  font-family: "San Francisco Display Semibold";
+  font-size: 20px
+}
+#score_section .col_div {
+    align-items: center;
+}
+.scoreInfo{
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 1rem;
+}
+.scoreInfoMsg {
+    background-color: #fff6ed;
+    padding: 2rem 1rem
+}
+.scoreCircle {
+    top: -3rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+#score_text{
+    border: solid 7px #29bb02;
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 26px;
+    font-family: 'San Francisco Display Bold';
+}
+.gold {
+    border-color: #29bb02 !important;
+}
+.sliver {
+    border-color: #ffc60d !important;
+}
+.bronze {
+    border-color: #f34a39 !important;
+}
+hr {
+    width: 85px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 0;
+    border-top: 1px solid #d8d5dc;
+}
+.scoreImgCircle{
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border-radius: 50%;
+    opacity: 45%;
+}
+.score_page_body_bg img {
+    z-index: 1;
+}
+@media (max-width: 820px){
+  h1 {
+    font-size: 18px;
+    margin-bottom:10px;
+  }
+  .options, .submit_btn {
+    font-size: 15px;
+  }
+  #submit_btn, #next_btn, .go_back_btn {
+    width: 150px;
+    height: 44px;
+    margin-top: 21px;
+  }
+  .fontawesome_icon {
+    width: 26px;
+    height: 26px;
+    right: 0;
+    top: 15px
+  }
+  #qust_section label{
+    font-size: 18px;
+  }
+  .page-item{
+    width: 40px;
+    height: 40px;
+  }
+  .page-item .page-link{
+    width: 40px;
+    height: 40px;
+  }
+  .mb-80 {
+    margin-bottom: 30px;
+  }
+  .qust_footer #hint{
+    font-size: 18px;
+  }
+  .form-control{
+    font-size: 18px;
+  }
+  .page-item .page-link .cyu_pagination_icon{
+    position: relative;
+    z-index: 1;
+    font-size: 17px;
+    margin-top: 0px;
+  }
+  .page-item .page-link .yet_ansed_qust{
+    color: #2f2f3c;
+  }
+  .page-item .page-link .active_qust{
+    margin: 0px;
+    top: 0px;
+    left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .page-item .page-link .ansed_qust{
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .col_div {
+    margin-top: 0px;
+  }
+  
+  .cor_ans_btn{
+    margin-top: 0px
+  }
+  #cor_ans_section #right_ca{
+    width: auto
+  }
+  #cor_ans_section .unscram_word{
+    width: auto
+  }
+  .input-group-text{
+    line-height: 0.19;
+  }
+  .custom-control-label::before {
+    top: 0.15rem;
+  }
+  .custom-control-label::after {
+    top: -0.3rem;
+  }
+}
+@media (max-width: 640px){
+  h1, #submit_btn, #next_btn, .go_back_btn{
+    margin-bottom:0px;
+    font-size: 18px
+  }
+  #qust_section h1:first-of-type {
+      font-size: 16px;
+      margin-bottom: 1.5rem;
+      font-family: 'San Francisco Display Bold';
+  }
+  ul.pagination{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body{
+    overflow-y: scroll !important;
+  }
+    /* custom scroll bar **/
+  /* !important is needed sometimes */
+  body::-webkit-scrollbar {
+      width: 5px !important;
+  }
+
+  /* Track */
+  body::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+      -webkit-border-radius: 5px !important;
+      border-radius: 10px !important;
+  }
+
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px !important;
+      border-radius: 5px !important;
+      background: #fe8602 !important; 
+      -webkit-box-shadow: inset 0 0 6px #fe8602 !important;
+
+  }
+  body::-webkit-scrollbar-thumb:window-inactive {
+      background-color: #41617D !important;
+  }
+}

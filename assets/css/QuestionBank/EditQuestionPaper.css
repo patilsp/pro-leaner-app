@@ -1,0 +1,120 @@
+label{
+	font-weight: 600;
+	color: #181818
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+	border-radius: 5px;
+	border: solid 2px #e2e2e2;
+}
+.qust_section{
+	border-radius: 5px;
+	border: solid 2px #e2e2e2;
+	background-color: #ffffff;
+}
+.qust_section .sect_title{
+	max-width: 280px;
+	width: 100%
+}
+.close_section{
+	width: 24px;
+	height: 24px;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+
+.section_qust{
+	max-width: 280px;
+	width: 100%
+}
+.section_qust h5{
+	font-weight: 400
+}
+.section_qust .match_qust{
+	width: 150px;
+}
+.section_qust .match_option{
+	width: 150px;
+}
+/** saved_selected_qust */
+#saved_selected_qust img.more_option{
+	cursor: pointer;
+}
+/** tooltip */
+.tooltip.show{
+  opacity: 1
+}
+
+/*Tooltip*/
+.tooltip {
+    max-width: 175px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.tooltip-inner{
+    background-color: #ffffff;
+    color: #181818
+}
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+    border-width: 0px;
+}
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before{
+    border-width: 0px
+}
+
+/** modal styles */
+.modal-content{
+  background-color: #f6f6fa;
+}
+.close{
+	opacity: 1
+}
+#addQustToSection #popup_qust_filter{
+	max-width: 520px;
+	width: 100%
+}
+#addQustToSection #popup_qust{
+	border-radius: 5px;
+  border: solid 2px #e2e2e2;
+  background-color: #ffffff;
+}
+#addQustToSection .list_qust{
+	height: 300px;
+	overflow-y: scroll;
+}
+.btn-light-blue{
+	font-size: 14px;
+	color: #181818;
+	width: 150px;
+}
+
+/** modal styles */
+#AddviewQustModal .modal-header{
+	position: absolute;
+	right: 0px;
+	padding: 0px;
+	z-index: 1
+}
+#AddviewQustModal .modal-header button{
+  margin: 0px !important;
+}
+#AddviewQustModal .modal-body .qust_option_max_width{
+	max-width: 485px;
+	width: 100%
+}
+#AddviewQustModal .modal-body .qust_img{
+	border-radius: 5px;
+  border: solid 2px #e2e2e2;
+  background-color: #ffffff;
+}
+#AddviewQustModal .options li{
+	list-style-type:lower-alpha
+}
+#AddviewQustModal .options .right_ans{
+	border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  border: solid 2px #26e552;
+  background-color: #ebfdef;
+}

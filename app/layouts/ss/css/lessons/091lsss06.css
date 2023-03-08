@@ -1,0 +1,1495 @@
+body {}
+
+.template {
+    height: 670px;
+background-image: url('../../social9_images/social8.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+._content1 img {
+    width: 430px;
+    position: absolute;
+    top: 195px;
+    left: 36px;
+}
+
+#_objective1 {
+    margin-top: 2px;
+    width: 27px;
+}
+
+._content5 {
+    width: 457px;
+    left: -21px;
+    top: 47px;
+    position: absolute;
+}
+
+#_objective h2 {
+    position: relative;
+    top: 35px;
+    margin-left: 84px;
+    font-weight: bold;
+}
+
+.content_part {
+    top: 30px;
+    left: 81px;
+    width: 83%;
+}
+.content_part1{
+    left: 0px;
+}
+
+ul {
+    margin-left: 19%;
+    margin-top: 49px;
+}
+
+li {
+    list-style-type: none;
+    /*word-wrap:break-word;*/
+    font-family: century gothic;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: initial;
+}
+
+li img {
+    width: 20px;
+}
+.ans1 {
+    margin-left: -117px;
+    margin-top: 125px;
+    font-size: 20px;
+    position: relative;
+}
+.ans2 {
+    margin-left: 179px;
+    margin-top: -40px;
+    font-size: 20px;
+    position: relative;
+    z-index: 999;
+}
+.ans3 {
+    margin-left: 32px;
+    margin-top: -89px;
+    font-size: 20px;
+    position: relative;
+}
+.ans4 {
+    margin-left: 32px;
+    margin-top: 17px;
+    font-size: 20px;
+    position: relative;
+}
+.ans5 {
+    margin-left: 44px;
+    margin-top: 22px;
+    font-size: 20px;
+    position: relative;
+}
+.ans6 {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    position: relative;
+}
+.ans7 {
+    margin-left: 49px;
+    margin-top: 315px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ans8 {
+    margin-left: -137px;
+    margin-top: 287px;
+    font-size: 20px;
+    font-weight: bold;
+}
+._content6 {
+    width: 231px;
+    position: absolute;
+    top: 15px;
+    left: -18px;
+}
+._content7 {
+    width: 181px;
+    position: absolute;
+    top: 5px;
+    left: 29px;
+}
+.content_part1{
+    left: 37px;
+    top: 32px;
+    font-size: 20px;
+}
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1200px) {
+    ._content1 img {
+        width: 300px;
+        position: absolute;
+        top: 85px;
+        left: 197px;
+    }
+    #_objective h2 {
+        top: 38px;
+        margin-left: 60px;
+        font-weight: bold;
+        /* width: 100%; */
+    }
+    .content_part {
+        top: 30px;
+        left: 53px;
+        font-size: 20px !important;
+        font-weight: lighter;
+        width: 82%;
+    }
+    ._content5 {
+        width: 438px;
+        position: absolute;
+        top: 44px;
+        left: -26px;
+    }
+    ul {
+        margin-left: -13px;
+    }
+    #_objective1 {
+        margin-top: 3px;
+        width: 27px;
+    }
+    .content_part li {
+        font-size: 20px;
+    }
+    .ans1 {
+        margin-left: -20px;
+        margin-top: 119px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 265px;
+        margin-top: -41px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 118px;
+        margin-top: -87px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 117px;
+        margin-top: 19px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 131px;
+        margin-top: 17px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 110px;
+        margin-top: 28px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans7 {
+        margin-left: 119px;
+        margin-top: 290px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .ans8 {
+        margin-left: -125px;
+        margin-top: 252px;
+        font-size: 20px;
+    }
+    ._content6 {
+        width: 200px;
+        position: absolute;
+        top: 29px;
+        left: -17px;
+    }
+    ._content7 {
+        width: 161px;
+        position: absolute;
+        top: 13px;
+        left: 76px;
+    }
+    .content_part1{
+        left: 38px;
+        top: 21px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    ._content1 img {
+        width: 300px;
+        position: absolute;
+        top: 85px;
+        left: 197px;
+    }
+    #_objective h2 {
+        top: 45px;
+        margin-left: 65px;
+        font-weight: bold;
+        /* width: 100%; */
+    }
+    .content_part {
+        top: 30px;
+        left: 53px;
+        font-size: 20px !important;
+        font-weight: lighter;
+        width: 82%;
+    }
+    ._content5 {
+        width: 438px;
+        position: absolute;
+        top: 44px;
+        left: -26px;
+    }
+    ul {
+        margin-left: -13px;
+    }
+    #_objective1 {
+        margin-top: 3px;
+        width: 27px;
+    }
+    .content_part li {
+        font-size: 20px;
+    }
+    .ans1 {
+        margin-left: -20px;
+        margin-top: 119px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 265px;
+        margin-top: -41px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 118px;
+        margin-top: -87px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 117px;
+        margin-top: 19px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 131px;
+        margin-top: 17px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 110px;
+        margin-top: 28px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans7 {
+        margin-left: 119px;
+        margin-top: 290px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .ans8 {
+        margin-left: -121px;
+        margin-top: 255px;
+        font-size: 20px;
+    }
+    ._content6 {
+        width: 200px;
+        position: absolute;
+        top: 29px;
+        left: -17px;
+    }
+    ._content7 {
+        width: 161px;
+        position: absolute;
+        top: 13px;
+        left: 76px;
+    }
+    .content_part1{
+        left: 38px;
+        top: 42px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    ._content1 img {
+        width: 300px;
+        position: absolute;
+        top: 85px;
+        left: 197px;
+    }
+    #_objective h2 {
+        top: 42px;
+        margin-left: 60px;
+        font-weight: bold;
+        /* width: 100%; */
+    }
+    .content_part {
+        top: 30px;
+        left: 53px;
+        font-size: 20px !important;
+        font-weight: lighter;
+        width: 82%;
+    }
+    ._content5 {
+        width: 438px;
+        position: absolute;
+        top: 44px;
+        left: -26px;
+    }
+    ul {
+        margin-left: -13px;
+    }
+    #_objective1 {
+        margin-top: 3px;
+        width: 27px;
+    }
+    .content_part li {
+        font-size: 20px;
+    }
+    .ans1 {
+        margin-left: -20px;
+        margin-top: 119px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 265px;
+        margin-top: -41px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 118px;
+        margin-top: -87px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 117px;
+        margin-top: 19px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 131px;
+        margin-top: 17px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 110px;
+        margin-top: 28px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans7 {
+        margin-left: 119px;
+        margin-top: 290px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .ans8 {
+        margin-left: -100px;
+        margin-top: 249px;
+        font-size: 20px;
+    }
+    ._content6 {
+        width: 200px;
+        position: absolute;
+        top: 29px;
+        left: -17px;
+    }
+    ._content7 {
+        width: 161px;
+        position: absolute;
+        top: 13px;
+        left: 76px;
+    }
+    .content_part1{
+        left: 38px;
+        top: 26px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    ._content1 img {
+        width: 300px;
+        position: absolute;
+        top: 85px;
+        left: 197px;
+    }
+    #_objective h2 {
+        top: 33px;
+        margin-left: 56px;
+        font-weight: bold;
+        /* width: 100%; */
+    }
+    .content_part {
+        top: 30px;
+        left: 53px;
+        font-size: 20px !important;
+        font-weight: lighter;
+        width: 82%;
+    }
+    ._content5 {
+        width: 438px;
+        position: absolute;
+        top: 44px;
+        left: -26px;
+    }
+    ul {
+        margin-left: -13px;
+    }
+    #_objective1 {
+        margin-top: 3px;
+        width: 27px;
+    }
+    .content_part li {
+        font-size: 20px;
+    }
+    .ans1 {
+        margin-left: -20px;
+        margin-top: 119px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 265px;
+        margin-top: -41px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 118px;
+        margin-top: -87px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 117px;
+        margin-top: 19px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 131px;
+        margin-top: 17px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 110px;
+        margin-top: 28px;
+        font-size: 20px;
+        position: relative;
+    }
+    .ans7 {
+        margin-left: 119px;
+        margin-top: 290px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .ans8 {
+        margin-left: -97px;
+        margin-top: 249px;
+        font-size: 20px;
+    }
+    ._content6 {
+        width: 200px;
+        position: absolute;
+        top: 29px;
+        left: -17px;
+    }
+    ._content7 {
+        width: 161px;
+        position: absolute;
+        top: 13px;
+        left: 76px;
+    }
+    .content_part1{
+        left: 22px;
+        top: 24px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    ._content1 img {
+        width: 290px;
+        position: absolute;
+        top: 75px;
+        left: 169px;
+    }
+    ._content5 {
+        width: 420px;
+        position: absolute;
+        top: 49px;
+        left: -39px;
+    }
+    #_objective h2 {
+        top: 37px;
+        margin-left: 46px;
+    }
+    .content_part {
+        top: 31px;
+        left: 42px;
+        width: 83%;
+    }
+    ul {
+        margin-left: -13px;
+    }
+    #_objective1 {
+        margin-top: 1px;
+        width: 24px;
+    }
+    .content_part li {
+        font-size: 16px;
+    }
+    li img {
+        width: 15px;
+    }
+    .ans1 {
+        margin-left: -33px;
+        margin-top: 124px;
+        font-size: 18px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 239px;
+        margin-top: -39px;
+        font-size: 18px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 97px;
+        margin-top: -83px;
+        font-size: 18px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 97px;
+        margin-top: 18px;
+        font-size: 18px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 110px;
+        margin-top: 19px;
+        font-size: 18px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 92px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .ans7 {
+        margin-left: 116px;
+        margin-top: 281px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .ans8 {
+        margin-left: -55px;
+        margin-top: 231px;
+        font-size: 18px;
+    }
+    ._content6 {
+        width: 180px;
+        position: absolute;
+        top: 40px;
+        left: -12px;
+    }
+    ._content7 {
+        width: 148px;
+        position: absolute;
+        top: 26px;
+        left: 73px;
+    }
+    .content_part1{
+        left: -3px;
+        top: 39px;
+        font-size: 20px;
+    }
+    
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    ._content1 img {
+        width: 280px;
+        position: absolute;
+        top: 26px;
+        left: 282px;
+    }
+    ._content5 {
+        width: 385px;
+        position: absolute;
+        top: 30px;
+        left: -32px;
+    }
+    #_objective h2 {
+        top: 60px;
+        margin-left: 32px;
+    }
+    .content_part {
+        top: 67px;
+        left: -5px;
+        width: 100%;
+    }
+    ul {
+        margin-left: 41px;
+    }
+    #_objective1 {
+        margin-top: 0px;
+        width: 27px;
+    }
+    .content_part li {
+        font-size: 16px;
+    }
+    li img {
+        width: 15px;
+    }
+    .ans1 {
+        margin-left: -83px;
+        margin-top: 97px;
+        font-size: 17px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 166px;
+        margin-top: -36px;
+        font-size: 17px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 34px;
+        margin-top: -77px;
+        font-size: 17px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 34px;
+        margin-top: 13px;
+        font-size: 17px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 45px;
+        margin-top: 16px;
+        font-size: 17px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 27px;
+        margin-top: 26px;
+        font-size: 17px;
+        position: relative;
+    }
+    .ans7 {
+        margin-left: 51px;
+        margin-top: 246px;
+        font-size: 17px;
+    }
+    .ans8 {
+        margin-left: -43px;
+        margin-top: 197px;
+        font-size: 17px;
+    }
+    ._content6 {
+        width: 160px;
+        position: absolute;
+        top: 25px;
+        left: 17px;
+    }
+    ._content7 {
+        width: 131px;
+        position: absolute;
+        top: 13px;
+        left: 17px;
+    }
+    .content_part1{
+        left: -27px;
+        top: 35px;
+        font-size: 20px;
+    }
+
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 700px) {
+    ._content1 img {
+        width: 270px;
+        position: absolute;
+        top: 35px;
+        left: 239px;
+    }
+    #_objective h2 {
+        top: 57px;
+        margin-left: 29px;
+        font-size: 23px;
+    }
+    ._content5 {
+        width: 342px;
+        position: absolute;
+        top: 41px;
+        left: -24px;
+    }
+    .content_part {
+        top: 52px;
+        left: -6px;
+    }
+    ul {
+        margin-left: 39px;
+    }
+    #_objective1 {
+        margin-top: 1px;
+        width: 23px;
+    }
+    .content_part li {
+        font-size: 16px;
+    }
+    li img {
+        width: 15px;
+    }
+    .ans1 {
+        margin-left: -81px;
+        margin-top: 99px;
+        font-size: 16px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 143px;
+        margin-top: -34px;
+        font-size: 16px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 26px;
+        margin-top: -72px;
+        font-size: 16px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 26px;
+        margin-top: 14px;
+        font-size: 16px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 34px;
+        margin-top: 14px;
+        font-size: 16px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 19px;
+        margin-top: 21px;
+        font-size: 16px;
+    }
+    .ans7 {
+        margin-left: 33px;
+        margin-top: 244px;
+        font-size: 16px;
+    }
+    .ans8 {
+        margin-left: -29px;
+        margin-top: 203px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    ._content6 {
+        width: 150px;
+        position: absolute;
+        top: 39px;
+        left: 12px;
+    }
+    ._content7 {
+        width: 120px;
+        position: absolute;
+        top: 29px;
+        left: 12px;
+    }
+    .content_part1{
+        left: 9px;
+        top: 25px;
+        font-size: 20px;
+    }
+
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 650px) {
+    ._content1 img {
+        width: 260px;
+        position: absolute;
+        top: 55px;
+        left: 217px;
+    }
+    #_objective h2 {
+        top: 72px;
+        margin-left: 20px;
+        font-size: 23px;
+    }
+    ._content5 {
+        width: 312px;
+        position: absolute;
+        top: 44px;
+        left: -13px;
+    }
+    .content_part {
+        top: 60px;
+        left: -6px;
+    }
+    ul {
+        margin-left: 18px;
+    }
+    #_objective1 {
+        margin-top: 1px;
+        width: 24px;
+    }
+    .content_part li {
+        font-size: 16px;
+    }
+    li img {
+        width: 15px;
+    }
+    .ans1 {
+        margin-left: -53px;
+        margin-top: 97px;
+        font-size: 15px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 150px;
+        margin-top: -35px;
+        font-size: 15px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 46px;
+        margin-top: -64px;
+        font-size: 15px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 46px;
+        margin-top: 0px;
+        font-size: 15px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 55px;
+        margin-top: 0px;
+        font-size: 15px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 38px;
+        margin-top: 19px;
+        font-size: 15px;
+        position: relative;
+    }
+    .ans7 {
+        margin-left: 37px;
+        margin-top: 230px;
+        font-size: 15px;
+    }
+    .ans8 {
+        margin-left: -20px;
+        margin-top: 193px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    ._content6 {
+        width: 140px;
+        position: absolute;
+        top: 38px;
+        left: 12px;
+    }
+    ._content7 {
+        width: 119px;
+        position: absolute;
+        top: 25px;
+        left: 12px;
+    }
+    .content_part1{
+        left: 6px;
+        top: 34px;
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    ._content1 img {
+        width: 260px;
+        position: absolute;
+        top: 55px;
+        left: 217px;
+    }
+    #_objective h2 {
+        top: 68px;
+        margin-left: 22px;
+        font-size: 23px;
+    }
+    ._content5 {
+        width: 276px;
+        position: absolute;
+        top: 44px;
+        left: 1px;
+    }
+    .content_part {
+        top: 56px;
+        left: -9px;
+    }
+    ul {
+        margin-left: 0px;
+    }
+    #_objective1 {
+        margin-top: 1px;
+        width: 24px;
+    }
+    .content_part li {
+        font-size: 16px;
+    }
+    li img {
+        width: 15px;
+    }
+    .ans1 {
+        margin-left: -27px;
+        margin-top: 91px;
+        font-size: 14px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 154px;
+        margin-top: -32px;
+        font-size: 14px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 62px;
+        margin-top: -61px;
+        font-size: 14px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 61px;
+        margin-top: -2px;
+        font-size: 14px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 66px;
+        margin-top: 1px;
+        font-size: 14px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 60px;
+        margin-top: 17px;
+        font-size: 14px;
+        position: relative;
+    }
+    .ans7 {
+        margin-left: 46px;
+        margin-top: 206px;
+        font-size: 14px;
+    }
+    .ans8 {
+        margin-left: -14px;
+        margin-top: 170px;
+        font-size: 14px;
+    }
+    ._content6 {
+        width: 131px;
+        position: absolute;
+        top: 30px;
+        left: 14px;
+    }
+    ._content7 {
+        width: 114px;
+        position: absolute;
+        top: 11px;
+        left: 18px;
+    }
+    .content_part1{
+        left: 6px;
+        top: 44px;
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    ._content1 img {
+        width: 260px;
+        position: absolute;
+        top: 55px;
+        left: 217px;
+    }
+    #_objective h2 {
+        top: 70px;
+        margin-left: 21px;
+        font-size: 23px;
+    }
+    ._content5 {
+        width: 230px;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+    }
+    .content_part {
+        top: 85px;
+        left: -7px;
+    }
+    ul {
+        margin-left: -15px;
+    }
+    #_objective1 {
+        margin-top: 1px;
+        width: 24px;
+    }
+    .content_part li {
+        font-size: 16px;
+    }
+    li img {
+        width: 15px;
+    }
+    .ans1 {
+        margin-left: -8px;
+        margin-top: 62px;
+        font-size: 12px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 147px;
+        margin-top: -28px;
+        font-size: 12px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 67px;
+        margin-top: -53px;
+        font-size: 12px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 66px;
+        margin-top: -2px;
+        font-size: 12px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 73px;
+        margin-top: -3px;
+        font-size: 12px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 64px;
+        margin-top: 13px;
+        font-size: 12px;
+    }
+    .ans7 {
+        margin-left: 34px;
+        margin-top: 171px;
+        font-size: 12px;
+    }
+    .ans8 {
+        margin-left: -7px;
+        margin-top: 134px;
+        font-size: 12px;
+    }
+    ._content6 {
+        width: 121px;
+        position: absolute;
+        top: 4px;
+        left: 12px;
+    }
+    ._content7 {
+        width: 100px;
+        position: absolute;
+        top: -4px;
+        left: 12px;
+    }
+    .content_part1{
+        left: 11px;
+        top: 33px;
+        font-size: 16px;
+    }
+
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    ._content1 img {
+        width: 230px;
+        position: absolute;
+        top: 95px;
+        height: 110px;
+        left: 101px;
+    }
+    ._content5 {
+        width: 203px;
+        position: absolute;
+        top: 76px;
+        left: 4px;
+    }
+    #_objective h2 {
+        top: 76px;
+        font-size: 22px;
+        margin-left: 13px;
+    }
+    #_objective1 {
+        margin-top: -1px;
+        width: 27px;
+    }
+    ul {
+        margin-left: -36px;
+    }
+    .content_part {
+        top: 47px;
+        left: -17px;
+    }
+    .content_part li {
+        font-size: 14px;
+    }
+    li img {
+        width: 15px;
+    }
+    .ans1 {
+        margin-left: 2px;
+        margin-top: 109px;
+        font-size: 11px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 141px;
+        margin-top: -26px;
+        font-size: 11px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 70px;
+        margin-top: -48px;
+        font-size: 11px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 71px;
+        margin-top: -3px;
+        font-size: 11px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 79px;
+        margin-top: 0px;
+        font-size: 11px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 64px;
+        margin-top: -2px;
+        font-size: 11px;
+    }
+    .ans7 {
+        margin-left: 49px;
+        margin-top: 196px;
+        font-size: 11px;
+    }
+    .ans8 {
+        margin-left: 12px;
+        margin-top: 166px;
+        font-size: 11px;
+    }
+    ._content6 {
+        width: 103px;
+        position: absolute;
+        top: 62px;
+        left: 12px;
+    }
+    ._content7 {
+        width: 89px;
+        position: absolute;
+        top: 40px;
+        left: 29px;
+    }
+    .content_part1{
+        left: 15px;
+        top: 44px;
+        font-size: 16px;
+    }
+
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 400px) {
+    ._content1 img {
+        width: 230px;
+        position: absolute;
+        top: 95px;
+        height: 110px;
+        left: 101px;
+    }
+    ._content5 {
+        width: 147px;
+        position: absolute;
+        top: 36px;
+        left: 14px;
+    }
+    #_objective h2 {
+        top: 65px;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    #_objective1 {
+        margin-top: -1px;
+        width: 27px;
+    }
+    ul {
+        margin-left: -44px;
+    }
+    .content_part {
+        top: 78px;
+        left: -26px;
+        width: 106%;
+    }
+    .content_part li {
+        font-size: 12px;
+    }
+    li img {
+        width: 15px;
+    }
+    .ans1 {
+        margin-left: 17px;
+        margin-top: 61px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 114px;
+        margin-top: -24px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 65px;
+        margin-top: -40px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 64px;
+        margin-top: -6px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 69px;
+        margin-top: -6px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 61px;
+        margin-top: -4px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans7 {
+        margin-left: 28px;
+        margin-top: 147px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans8 {
+        margin-left: 15px;
+        margin-top: 118px;
+        font-size: 9px;
+    }
+    ._content6 {
+        width: 95px;
+        position: absolute;
+        top: 14px;
+        left: 12px;
+    }
+    ._content7 {
+        width: 73px;
+        position: absolute;
+        top: 7px;
+        left: 12px;
+    }
+    .content_part1{
+        left: 17px;
+        top: 37px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    ._content1 img {
+        width: 230px;
+        position: absolute;
+        top: 95px;
+        height: 110px;
+        left: 101px;
+    }
+    ._content5 {
+        width: 231px;
+        position: absolute;
+        top: 209px;
+        left: 12px;
+        
+    }
+    #_objective h2 {
+        top: 70px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    #_objective1 {
+        margin-top: -1px;
+        width: 27px;
+    }
+    ul {
+        margin-left: -57px;
+        margin-top: 17px;
+    }
+    .content_part {
+        top: 90px;
+        left: -7px;
+        width: 100%;
+    }
+    .content_part li {
+        font-size: 12px;
+    }
+    li img {
+        width: 15px;
+    }
+    .ans1 {
+        margin-left: 26px;
+        margin-top: 60px;
+        font-size: 8px;
+        position: relative;
+    }
+    .ans2 {
+        margin-left: 115px;
+        margin-top: -22px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans3 {
+        margin-left: 66px;
+        margin-top: -38px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans4 {
+        margin-left: 65px;
+        margin-top: -9px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans5 {
+        margin-left: 71px;
+        margin-top: -7px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans6 {
+        margin-left: 59px;
+        margin-top: -6px;
+        font-size: 9px;
+        position: relative;
+    }
+    .ans7 {
+        margin-left: 22px;
+        margin-top: 137px;
+        font-size: 9px;
+    }
+    .ans8 {
+        margin-left: 0px;
+        margin-top: 107px;
+        font-size: 9px;
+    }
+    ._content6 {
+        width: 86px;
+        position: absolute;
+        top: 20px;
+        left: 4px;
+    }
+    ._content5 {
+        width: 132px;
+        position: absolute;
+        top: 39px;
+        left: 12px;
+    }
+    .content_part1{
+        left: 5px;
+        top: 37px;
+        font-size: 12px;
+    }
+
+}

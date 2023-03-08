@@ -1,0 +1,701 @@
+body {
+}
+.template {
+	height: 670px;
+	background-image: url('../../images/2_Cleanliness_1st.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+._content1 img {
+	width: 430px;
+	position: absolute;
+	top: 195px;
+	left: 36px;
+}
+#_objective1 {
+	margin-top: 3px;
+	width: 31px;
+}
+.img_1 {
+	width: 225px;
+	position: absolute;
+	top: -10px;
+	left: 211px;
+}
+.img_2 {
+	width: 225px;
+	position: absolute;
+	top: 225px;
+	left: 211px;
+}
+#_objective h2 {
+	position: relative;
+	top: 10px;
+}
+.content_part {
+	top: 66px;
+	left: 173px;
+	width: 48%;
+}
+ul {
+	margin-left: -1px;
+}
+li {
+	list-style-type: none;
+	/*word-wrap:break-word;*/
+	font-family: century gothic;
+	font-weight: bold;
+	font-size: 23px;
+	text-align: initial;
+}
+li img {
+	width: 20px;
+}
+.list_content1 {
+	margin-top: -50px;
+	margin-left: 25px;
+}
+.list_content2 {
+	margin-top: 68px;
+	margin-left: 27px;
+}
+.list_content3 {
+	margin-top: 86px;
+	margin-left: 36px;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {
+ ._content1 img {
+ width: 430px;
+ position: absolute;
+ top: 195px;
+ left: 36px;
+}
+ #_objective h2 {
+ top: 10px;
+}
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+ ._content1 img {
+ width: 320px;
+ position: absolute;
+ top: 108px;
+ height: 147px;
+ left: 240px;
+}
+ #_objective h2 {
+ top: 10px;
+ margin-left: 86px;
+ font-weight: bold;
+}
+}
+
+
+/* Small Devices, Tablets */
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+ ._content1 img {
+ width: 300px;
+ position: absolute;
+ top: 85px;
+ left: 197px;
+}
+ #_objective h2 {
+ top: 10px;
+ margin-left: 62px;
+}
+ .content_part {
+ top: 32px;
+ left: 37px;
+ width: 49%;
+}
+ .img_1 {
+ width: 225px;
+ position: absolute;
+ top: -11px;
+ left: 116px;
+}
+.img_2 {
+ width: 225px;
+ position: absolute;
+ top: 227px;
+ left: 116px;
+}
+ ul {
+ margin-left: -13px;
+}
+ #_objective1 {
+ margin-top: 3px;
+ width: 31px;
+}
+ .content_part li {
+ font-size: 20px;
+}
+.list_content1 {
+	margin-top: 10px;
+	margin-left:10px;
+}
+.list_content2 {
+	margin-top: 63px;
+	margin-left:10px;
+}
+.list_content3 {
+	margin-top: 94px;
+	margin-left:10px;
+}
+}
+ @media only screen and (max-width: 800px) {
+ ._content1 img {
+ width: 290px;
+ position: absolute;
+ top: 75px;
+ left: 169px;
+}
+ .img_1 {
+ width: 181px;
+ position: absolute;
+ top: 66px;
+ left: 86px;
+}
+.img_2 {
+ width: 186px;
+ position: absolute;
+ top: 57px;
+ left: 417px;
+}
+ #_objective h2 {
+ top: 10px;
+ margin-left: 128px;
+}
+ .content_part {
+ top: 25px;
+ left: 199px;
+ width: 69%;
+}
+ ul {
+ margin-left: -237px;
+}
+ #_objective1 {
+ margin-top: 1px;
+ width: 30px;
+}
+ .content_part li {
+ font-size: 20px;
+}
+ li img {
+ width: 15px;
+}
+.list_content1 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content2 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content3 {
+	margin-top:10px;
+	margin-left:10px;
+}
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+ ._content1 img {
+ width: 280px;
+ position: absolute;
+ top: 26px;
+ left: 282px;
+}
+ .img_1 {
+ width: 187px;
+ position: absolute;
+ top: 52px;
+ left: 29px;
+}
+.img_2 {
+ width: 193px;
+ position: absolute;
+ top: 43px;
+ left: 380px;
+}
+ #_objective h2 {
+ top: 10px;
+ margin-left: 118px;
+}
+ .content_part {
+ top: 8px;
+ left: -157px;
+ width: 115%;
+}
+ ul {
+ margin-left: 116px;
+}
+ #_objective1 {
+ margin-top: -1px;
+ width: 30px;
+}
+ .content_part li {
+ font-size: 18px;
+}
+ li img {
+ width: 15px;
+}
+.list_content1 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content2 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content3 {
+	margin-top:10px;
+	margin-left:10px;
+}
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 700px) {
+ ._content1 img {
+ width: 270px;
+ position: absolute;
+ top: 35px;
+ left: 239px;
+}
+ #_objective h2 {
+ top: 10px;
+ margin-left: 97px;
+}
+ .img_1 {
+ width: 181px;
+ position: absolute;
+ top: 78px;
+ left: 16px;
+}
+.img_2 {
+ width: 192px;
+ position: absolute;
+ top: 66px;
+ left: 352px;
+}
+ .content_part {
+ top: 25px;
+ left: -119px;
+ width: 109%;
+}
+ ul {
+ margin-left: 78px;
+}
+ #_objective1 {
+ margin-top: 0px;
+ width: 29px;
+}
+ .content_part li {
+ font-size: 18px;
+}
+ li img {
+ width: 15px;
+}
+.list_content1 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content2 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content3 {
+	margin-top:10px;
+	margin-left:10px;
+}
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 650px) {
+ ._content1 img {
+ width: 260px;
+ position: absolute;
+ top: 55px;
+ left: 217px;
+}
+ #_objective h2 {
+ top: 10px;
+ margin-left: 171px;
+}
+ .img_1 {
+ width: 174px;
+ position: absolute;
+ top: 49px;
+ left: 34px;
+}
+.img_2 {
+ width: 179px;
+ position: absolute;
+ top: 52px;
+ left: 318px;
+}
+ .content_part {
+ top: 25px;
+ left: -71px;
+}
+ ul {
+ margin-left: 42px;
+}
+ #_objective1 {
+ margin-top: -2px;
+ width: 29px;
+}
+ .content_part li {
+ font-size: 18px;
+}
+ li img {
+ width: 15px;
+}
+.list_content1 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content2 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content3 {
+	margin-top:10px;
+	margin-left:10px;
+}
+}
+ @media only screen and (max-width: 600px) {
+ ._content1 img {
+ width: 260px;
+ position: absolute;
+ top: 55px;
+ left: 217px;
+}
+ #_objective h2 {
+ top: 10px;
+ margin-left: 31px;
+}
+ .img_1 {
+ width: 135px;
+ position: absolute;
+ top: 52px;
+ left: 50px;
+}
+.img_2 {
+ width: 141px;
+ position: absolute;
+ top: 56px;
+ left: 284px;
+}
+ .content_part {
+ top: 2px;
+ left: -88px;
+ width: 114%;
+}
+ ul {
+ margin-left: 42px;
+}
+ #_objective1 {
+ margin-top: 0px;
+ width: 29px;
+}
+ .content_part li {
+ font-size: 18px;
+}
+ li img {
+ width: 15px;
+}
+.list_content1 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content2 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content3 {
+	margin-top:10px;
+	margin-left:10px;
+}
+}
+ @media only screen and (max-width: 550px) {
+ ._content1 img {
+ width: 260px;
+ position: absolute;
+ top: 55px;
+ left: 217px;
+}
+ #_objective h2 {
+ top: 10px;
+ margin-left: 32px;
+}
+ .img_1 {
+ width: 129px;
+ position: absolute;
+ top: 34px;
+ left: 55px;
+}
+.img_2 {
+ width: 132px;
+ position: absolute;
+ top: 33px;
+ left: 230px;
+}
+ .content_part {
+ top: 1px;
+ left: -49px;
+ width: 104%;
+}
+ ul {
+ margin-left: 2px;
+}
+ #_objective1 {
+ margin-top: -1px;
+ width: 28px;
+}
+ .content_part li {
+ font-size: 18px;
+}
+ li img {
+ width: 15px;
+}
+.list_content1 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content2 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content3 {
+	margin-top:10px;
+	margin-left:10px;
+}
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+ ._content1 img {
+ width: 230px;
+ position: absolute;
+ top: 95px;
+ height: 110px;
+ left: 101px;
+}
+ .img_1 {
+ width: 129px;
+ position: absolute;
+ top: 54px;
+ left: 20px;
+}
+.img_2 {
+ width: 131px;
+ position: absolute;
+ top: 57px;
+ left: 215px;
+}
+ #_objective h2 {
+ top: 10px;
+ margin-left: 40px;
+}
+ #_objective1 {
+ margin-top: 0px;
+ width: 27px;
+}
+ ul {
+ margin-left: -9px;
+}
+ .content_part {
+ top: -4px;
+ left: -39px;
+ width: 100%;
+}
+ .content_part li {
+ font-size: 16px;
+}
+ li img {
+ width: 15px;
+}
+.list_content1 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content2 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content3 {
+	margin-top:10px;
+	margin-left:10px;
+}
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 400px) {
+ ._content1 img {
+ width: 230px;
+ position: absolute;
+ top: 95px;
+ height: 110px;
+ left: 101px;
+}
+ .img_1 {
+ width: 120px;
+ position: absolute;
+ top: 32px;
+ left: 3px;
+}
+.img_2 {
+ width: 126px;
+ position: absolute;
+ top: 31px;
+ left: 146px;
+}
+ #_objective h2 {
+ top: 10px;
+ font-size: 19px;
+ margin-left: 34px;
+}
+ #_objective1 {
+ margin-top: 0px;
+ width: 25px;
+}
+ ul {
+ margin-left: 1px;
+}
+ .content_part {
+ top: 0px;
+ left: -48px;
+ width: 108%;
+}
+ .content_part li {
+ font-size: 13px;
+}
+ li img {
+ width: 15px;
+}
+.list_content1 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content2 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content3 {
+	margin-top:10px;
+	margin-left:10px;
+}
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+ ._content1 img {
+ width: 230px;
+ position: absolute;
+ top: 95px;
+ height: 110px;
+ left: 101px;
+}
+ .img_1 {
+ width: 102px;
+ position: absolute;
+ top: 52px;
+ left: -10px;
+}
+.img_2 {
+ width: 105px;
+ position: absolute;
+ top: 43px;
+ left: 124px;
+}
+ #_objective h2 {
+ top: 10px;
+ font-size: 19px;
+ margin-left: 24px;
+}
+ #_objective1 {
+ margin-top: -1px;
+ width: 25px;
+}
+ ul {
+ margin-left: -36px;
+}
+ .content_part {
+ top: -2px;
+ left: -17px;
+ width: 100%;
+}
+ .content_part li {
+ font-size: 14px;
+}
+ li img {
+ width: 15px;
+}
+.list_content1 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content2 {
+	margin-top:10px;
+	margin-left:10px;
+}
+.list_content3 {
+	margin-top:10px;
+	margin-left:10px;
+}
+}

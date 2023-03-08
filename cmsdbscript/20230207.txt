@@ -1,0 +1,16 @@
+ALTER TABLE `users`  ADD `designation` INT NULL ;
+ALTER TABLE `users`  ADD `dept` INT NULL ;
+ALTER TABLE `users`  ADD `phone` VARCHAR(50) NULL ;
+ALTER TABLE `users`  ADD `username` VARCHAR(255) NULL ;
+
+CREATE TABLE IF NOT EXISTS `designation` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `designation` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `department` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `department` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;	
