@@ -48,8 +48,8 @@
 }
 .sidebar-label {
   text-align: center;
-  margin: 5px 0px;
-  padding: 5px;
+  /* margin: 5px 0px; */
+  padding: 7px 2px;
   background: #009688;
   color: #ffffff;
   box-shadow: 0 4px 10px 0px #009688;

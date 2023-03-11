@@ -68,6 +68,8 @@
           <div class="card">
             <div class="card-header d-flex align-items-center justify-content-between mb-2">
                 <h5 class="flex-grow-1">Enroll Students</h5>
+                <a href="<?php echo $web_root?>app/setup/students.php"><button class="btn btn-secondary shadow">Back</button></a>
+
             </div>
             <br/>
             <h5 class="text-center w-100 mb-4">Assign subjects and Enroll students</h5>

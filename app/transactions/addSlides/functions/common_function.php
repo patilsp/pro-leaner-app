@@ -647,7 +647,7 @@
 		        <div class="col-md-12">
 		            <div class="card bd-0">
 		              <div class="card-header bg-info bd-0 d-flex align-items-center justify-content-between pd-y-5">
-		                <h6 class="mg-b-0 tx-14 tx-black tx-normal">Image Upload</h6>
+		                <h6 class="mg-b-0 tx-14 tx-white tx-normal">Image Upload</h6>
 		              </div><!-- card-header -->
 		              <form id="img_upload" enctype="multipart/form-data">
 		                <div class="card-body bd bd-t-0 rounded-bottom-0">
@@ -658,14 +658,14 @@
 		                                <input type="file" class="form-control" name="img_res[]" id="img_res" multiple required="required"/>
 		                            </div>
 		                        </div>
-		                        <div class="col-md-4">
+		                        <div class="col-md-6 mt-1">
 		                            <div class="form-group">
 		                                <label for="tags">Tags:</label>
 		                                <input type="text" id="tags" class="form-control" name="tags" data-role="tagsinput" required="required">
 		                            </div>
 		                        </div>
-		                        <div class="col-md-4">
-		                            <button type="submit" style="margin-top: 27px;" class="btn btn-info">Submit</button>
+		                        <div class="col-md-1 pl-0 mt-2">
+		                            <button type="submit" style="margin-top: 30px;" class="btn btn-info">Submit</button>
 		                        </div>
 		                    </div>
 		                </div><!-- card-body -->
@@ -678,7 +678,7 @@
 		        <div class="col-md-12">
 		            <div class="card bd-0">
 		                <div class="card-header bg-info bd-0 d-flex align-items-center justify-content-between pd-y-5">
-		                    <h6 class="mg-b-0 tx-14 tx-black tx-normal">Choose Images</h6>
+		                    <h6 class="mg-b-0 tx-14 tx-white tx-normal">Choose Images</h6>
 		                </div><!-- card-header -->
 		                <div class="card-body bd bd-t-0 rounded-bottom-0" style="height: 400px;overflow-y:scroll">
 		                    <table class="table table-responsive table-bordered table-striped">
@@ -756,7 +756,7 @@
 		        <div class="col-md-12">
 		            <div class="card bd-0">
 		                <div class="card-header bg-info bd-0 d-flex align-items-center justify-content-between pd-y-5">
-		                    <h6 class="mg-b-0 tx-14 tx-black tx-normal">List of Images</h6>
+		                    <h6 class="mg-b-0 tx-14 tx-white tx-normal">List of Images</h6>
 		                </div><!-- card-header -->
 		                <div class="card-body bd bd-t-0 rounded-bottom-0">
 		                    <div class="well well-lg text-center"><strong>This folder is empty!</strong></div>

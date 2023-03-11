@@ -1029,6 +1029,13 @@ $(function() {
 
   $('#task_reply_ID').on('submit', function(event){
     event.preventDefault();
+    var val = $('#status_cw').val();
+    if(val==23){
+      $(".messageval").text("Published Successfully.");
+      
+    }else{
+      $(".messageval").text("Slide Sent for Review.");
+    }
     $.ajax({
       url:"taskReplyProcessID.php",
       method:'POST',

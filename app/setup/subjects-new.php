@@ -43,7 +43,9 @@ try {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title></title>
+    <title>Virtual School</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
+
 
     <!-- vendor css -->
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -104,11 +106,20 @@ try {
           <div class="card p-3">
               <div class="card-header card-header d-flex align-items-center justify-content-between bg-dark-1">
                 <h6 class="mg-b-0 tx-14 tx-white">Subjects</h6>
+                <div class="col-sm-4">
+                  <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search here">
+                </div>
                 <div class="card-option tx-24">
                   <button class="btn btn-md btn-blue font-weight-medium " data-toggle="modal" data-target="#parent_subject_modal">Add Subjects</button>
                 </div>
               </div>
+              <!-- <div class="row">
+                <div class="col-sm-4 mb-4">
+                  <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for card name...">
+                </div>
+              </div> -->
          
+
             <div class="row" id="parent_subject_modules">
               <div class="thead-bg position-relative d-flex align-items-center col-12 ml-3" id="main_card_header">
                 <label class="txt-grey col-2 d-flex">Subject</label>
@@ -129,13 +140,13 @@ try {
 
                     <div class="position-relative d-flex align-items-center col-12" >
                       <div class="col-2 mb-0 font-weight-medium">
-                        <input type="text" class="mb-0 flex-grow-1 border-0 ip_classes font-weight-medium inputClass" name="subject_name" data-classid="<?php echo $thisSubject['id']; ?>" id="subject<?php echo $thisSubject['id']; ?>" value="<?php echo $thisSubject['module']; ?>">
+                        <input type="text" class="mb-0 flex-grow-1 border-0 ip_classes font-weight-medium inputClass subjectName" name="subject_name" data-classid="<?php echo $thisSubject['id']; ?>" id="subject<?php echo $thisSubject['id']; ?>" value="<?php echo $thisSubject['module']; ?>">
 
                       </div>
-                      <div class="col-1 mb-0 font-weight-medium"><?php echo $thisSubject['class']; ?></div>
-                      <div class="col-2 mb-0 font-weight-medium"><?php echo $thisSubject['assignedname']; ?></div>
+                      <div class="col-1 mb-0 font-weight-medium className"><?php echo $thisSubject['class']; ?></div>
+                      <div class="col-2 mb-0 font-weight-medium assignTo"><?php echo $thisSubject['assignedname']; ?></div>
 
-                      <div class="col-2 mb-0 font-weight-medium"><?php echo $thisSubject['category_name']; ?></div>
+                      <div class="col-2 mb-0 font-weight-medium categoryName"><?php echo $thisSubject['category_name']; ?></div>
                       
                       <div class="col-1 mb-0 font-weight-medium">
                       <?php
@@ -146,7 +157,7 @@ try {
                         }
                       ?>
                       </div>
-                      <div class="col-2" style="width:15%">
+                      <div class="col-2 statusDiv" style="width:15%"  >
                       
                     
                       <?php
@@ -263,7 +274,7 @@ try {
                                         <i class='fa fa-plus-square-o text-primary mr-3' aria-hidden='true'></i>
                                         <div class='media-body'>
                                         <input type='hidden' class='testclass' value='<?php echo $valuechild['module']?>'>
-                                        <p class=' mb-0 txt-light-black text-left addsublevel' id='subjectdrop<?php echo $valuechild['id']; ?>-<?php echo $valuechild['module']?>' value='' role='button' data-id = 'topic' >Add Sub Level</p>
+                                        <p class=' mb-0 txt-light-black text-left addsublevel' id='subjectdrop<?php echo $valuechild['id']; ?>-<?php echo $valuechild['module']?>' value='' role='button' data-id = 'topic' >Add Topic</p>
                                         </div>
                                     </li>
                                    
@@ -309,7 +320,7 @@ try {
                                                                 <i class='fa fa-plus-square-o text-primary mr-3' aria-hidden='true'></i>
                                                                 <div class='media-body'>
                                                                 <input type='hidden' class='testclass' value='<?php echo $valuesubchild['module']?>'>
-                                                                <p class=' mb-0 txt-light-black text-left addsublevel' id='subjectdrop<?php echo $valuesubchild['id']; ?>-<?php echo $valuesubchild['module']?>' value='' data-id = 'chapter' role='button' >Add Sub Level</p>
+                                                                <p class=' mb-0 txt-light-black text-left addsublevel' id='subjectdrop<?php echo $valuesubchild['id']; ?>-<?php echo $valuesubchild['module']?>' value='' data-id = 'chapter' role='button' >Add Sub Topic</p>
                                                                 </div>
                                                             </li>
                                                                                                           
@@ -399,7 +410,6 @@ try {
                     </div>
                   </div>
 
-
                   
                 </div>
                 <?php } ?>
@@ -424,7 +434,7 @@ try {
           </div>
           <div class="modal-body">
           <!-- <h5 class="text-center mb-4 font-weight-bold"><span id="sub_child_subject_name" ></span> - Sub level </h5> -->
-            <h5 class="text-center mb-4 font-weight-bold">Sub Topic</h5>
+            <h5 class="text-center mb-4 font-weight-bold">Topic</h5>
             <form id="add_sub_child_subject_form" class="add_sub_child_subject_form" method="post">
               <!-- <div class="form-group row px-150">
                 <label for="child_subject" class="col-sm-2 col-form-label text-right">Name</label>
@@ -478,13 +488,14 @@ try {
     <div class="modal fade" id="parent_subject_edit_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header border-0 pb-0">
+          <div class="modal-header">
+            <h4 class="text-center font-weight-bold w-100"> Edit Details </h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <h5 class="text-center mb-4 font-weight-bold">Science - Edit Details </h5>
+            
             <form id="update_parent_subject_form" name="update_parent_subject_form" method="post">
               <div class="row px-5">
                 <div class="form-group col-12 col-sm-6 col-md-6">
@@ -507,7 +518,7 @@ try {
                 </div>
               </div>
               
-              <div class="position-relative text-center w-100 mb-3">
+              <div class="modal-footer">
                 <input type="hidden" name="subject_id" id="subject_id" value="" />
                 <input type="hidden" name="type" value="updateSubjectDetailsL1" />
                 <button type="submit" class="btn btn-md btn-blue shadow px-5">Save</button>
@@ -519,6 +530,7 @@ try {
     </div>
 
     <!-- Parent Subject Modal -->
+
     <div class="modal fade" id="parent_subject_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -530,21 +542,59 @@ try {
           </div>
           <div class="modal-body">            
             <form id="add_parent_subject_form" name="add_parent_subject_form" method="post">
-              <div class="row justify-content-center text-center py-5 mb-4" id="parent_subject_modal_content">
-                <div class="col-12 d-flex align-items-center text-left" id="par_sub_head">
+              <div class="row" id="parent_subject_modal_content">
+                <!-- <div class="col-12 d-flex align-items-left text-left" id="par_sub_head">
                   <label class="col-4 font-weight-medium">Name of Subject<span class="required_icon" style="color:red;">*</span></label>
-                  <label class="col-4 font-weight-medium">Category<span class="required_icon" style="color:red;">*</span></label>
-                  <label class="col-4 font-weight-medium">For Classes<span class="required_icon" style="color:red;">*</span></label>
-                </div>
+                  <label class="col-4 font-weight-medium ml-2">Category<span class="required_icon" style="color:red;">*</span></label>
+                  <label class="col-4 font-weight-medium ml-2">For Classes<span class="required_icon" style="color:red;">*</span></label>
+                </div> -->
 
                 <div class="col-12 qust" id="par_sub_body">
-                  <div class="d-flex align-items-center position-relative cmt mb-3 subjectRow">
+
+                <div class="card mb-4">
+                  
+                    <div class="card-body">
+                  
+                      <div class="row g-3 subjectRow">
+                        <div class="col-12 sub_ip">
+                          <label class="form-label" for="name">Name of Subject<span class="required_icon" style="color:red;">*</span></label>
+                          <input type="text" placeholder="Type here" name="name[]" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 cat_opt_vla">
+                          <label class="form-label" for="Category">Category<span class="required_icon" style="color:red;">*</span></label>
+                          <select class="form-control" name="category[]" required>
+                            <option value="">-Category-</option>
+                            <?php foreach($subjectCategories as $thisCat) { ?>
+                            <option value="<?php echo $thisCat['id']; ?>"><?php echo $thisCat['name']; ?></option>
+                            <?php } ?>
+                          </select>
+                       </div>
+                        <div class="col-md-6 class_opt_vla">
+                          <label class="form-label" for="Classes">For Classes<span class="required_icon" style="color:red;">*</span></label>
+                          <select class="form-control classlist" style="width: 100%" name="classes[][]" multiple="multiple" required>
+                            <option value="">-Classes-</option>
+                            <?php foreach($activeClasses as $thisClass) { ?>
+                            <option value="<?php echo $thisClass['id']; ?>"><?php echo $thisClass['module']; ?></option>
+                            <?php } ?>
+                          </select>
+                          <input type="hidden" name="class_string[]" value="" class="classstring">
+                        
+                        </div>
+                        <button type="button" class="remove d-none"><i class="fa fa-times"></i></button>
+
+                      </div>
+                      <div class="position-relative wrapper" id="qust1_wrap"></div>
+                    </div>
+                  </div>
+
+
+                  <!-- <div class="d-flex align-items-center position-relative cmt mb-3 subjectRow">
                     <div class="sub_ip col-4 mr-2">
-                      <input type="text" placeholder="Type here" name="name[]" class="form-control">
+                      <input type="text" placeholder="Type here" name="name[]" class="form-control" required>
                     </div>
 
                     <div class="cat_opt_vla col-4 mr-2">
-                      <select class="form-control" name="category[]">
+                      <select class="form-control" name="category[]" required>
                         <option value="">-Category-</option>
                         <?php foreach($subjectCategories as $thisCat) { ?>
                         <option value="<?php echo $thisCat['id']; ?>"><?php echo $thisCat['name']; ?></option>
@@ -553,7 +603,7 @@ try {
                     </div>
 
                     <div class="class_opt_vla col-4">
-                      <select class="form-control classlist" style="width: 100%" name="classes[][]" multiple="multiple">
+                      <select class="form-control classlist" style="width: 100%" name="classes[][]" multiple="multiple" required>
                         <option value="">-Classes-</option>
                         <?php foreach($activeClasses as $thisClass) { ?>
                         <option value="<?php echo $thisClass['id']; ?>"><?php echo $thisClass['module']; ?></option>
@@ -563,14 +613,14 @@ try {
                     </div>
                     <button type="button" class="remove d-none"><i class="fa fa-times"></i></button>
                   </div>
-                  <div class="position-relative wrapper" id="qust1_wrap"></div>
-                  <!-- <button class="add" data-id="qust1_add" type="button"><i class="fa fa-plus"></i>&nbsp;Add</button> -->
+                  <div class="position-relative wrapper" id="qust1_wrap"></div> -->
                 </div>
               </div>
               
-              <div class="position-relative text-center w-100 mb-3">
+              <div class="modal-footer">
                 <input type="hidden" name="type" value="addParentSubject">
-                <button type="submit" class="btn btn-md btn-blue shadow px-5">Save</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-md btn-blue shadow">Save</button>
               </div>
             </form>
           </div>
@@ -685,15 +735,15 @@ try {
     </div>
     <!-- Child Subject Modal -->
     <div class="modal fade" id="child_subject_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content w-450px">
-          <div class="modal-header border-0 pb-0">
+      <div class="modal-dialog modal-lg w-450px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="text-center font-weight-bold w-100 " id="model_title"><span id="parent_subject_name"></span> - Add Topic</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <!-- <h5 class="text-center mb-4 font-weight-bold"><span id="parent_subject_name"></span> - Sub level </h5> -->
             <form id="add_child_subject_form" class="add_child_subject_form" method="post" name="add_child_subject_form">
               <div class="form-group mb-0 row">
                 <label for="child_subject_name">Name</label>
@@ -708,9 +758,9 @@ try {
               <div class="position-relative level2_wrap" id="level2_wrap"></div>
               <button class="level2_add btn btn-sm btn-success" data-id="level2_add" type="button"><i class="fa fa-plus"></i>&nbsp;Add</button>
               
-              <div class="position-relative text-center w-100 mb-3">
+              <div class="modal-footer mt-2">
                 <input type="hidden" id="child_subject_parent_id" name="child_subject_parent_id" value="">
-                <input type="hidden" name="type" value="addSubLevel">
+                <input type="hidden" name="type" value="addSubLevel">               
                 <button type="submit" class="btn btn-md btn-blue shadow px-5">Save</button>
               </div>
             </form>
@@ -1077,6 +1127,40 @@ try {
           }
         });
       }
+
+
+      // search fillter
+      function myFunction() {
+        var input, filter, cards, cardContainer, title, i;
+        input = document.getElementById("myFilter");
+        filter = input.value.toUpperCase();
+        cardContainer = document.getElementById("accordionClass");
+        cards = cardContainer.getElementsByClassName("card");
+     
+        for (i = 0; i < cards.length; i++) {
+             cards[i].style.display = "none";
+        }
+
+        for (i = 0; i < cards.length; i++) {
+          title = cards[i].querySelector(".className");
+          subject = cards[i].querySelector(".subjectName").value;
+          assignto = cards[i].querySelector(".assignTo");
+          categoryName = cards[i].querySelector(".categoryName");
+          
+          // statusVal = cards[i].querySelector(".statusDiv").querySelector("a").text;
+          
+          
+          if(title.innerText.toUpperCase().indexOf(filter) > -1 || subject.toUpperCase().indexOf(filter) > -1 || assignto.innerText.toUpperCase().indexOf(filter) > -1 || categoryName.innerText.toUpperCase().indexOf(filter) > -1  ) {
+            cards[i].style.display = "";
+          } 
+          // else {
+          //   cards[i].style.display = "none";
+          // }
+        }
+      }
+
+   
+
       <?php if(isset($_SESSION['sb_heading'])) { ?>
         $("#sb_heading").html("<?php echo $_SESSION['sb_heading']; ?>");
         $("#sb_body").html('<?php echo $_SESSION['sb_message']; ?>');

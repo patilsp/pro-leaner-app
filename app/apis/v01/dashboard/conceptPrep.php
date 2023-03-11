@@ -124,72 +124,82 @@ if($request_method == "POST") {
   				$result['chapters'] = $chapters;			
   				$status = true;
   			} else if($type == "getTopicSubTopics" && isset($input['chapId']) && intval($input['chapId']) > 0) {
-          $id = $input['chapId'];
-  				$topicsSubTopics = array();
-  				$subTopicData = array();
-          $enabledtopics = array();
-  				//get topic details
-  				$query = "SELECT id, module FROM cpmodules WHERE parentId = ? AND type = ? AND deleted = ? ORDER BY sequence";
-  				$stmt = $db->prepare($query);
-  				$stmt->execute(array($id, 'topic', 0));
-          $uquery = "SELECT masters_sections.section FROM users JOIN masters_sections ON users.section = masters_sections.id WHERE users.id = ? LIMIT 1";
-          $stmt1 = $db->prepare($uquery);
-          $stmt1->execute(array($userid));
-          $data = $stmt1->fetch(PDO::FETCH_ASSOC);
-          $section = '';
-          if (!empty($data)) {
-            $section = $data["section"];
-          }
-          $query2 = "SELECT cmid FROM section_wise_chapter_enable WHERE class = ? AND section = ? AND courseid = ? AND enable = ?";
-          $stmt2 = $db->prepare($query2);
-          $stmt2->execute(array($classid,$section,$id,1));
-          while($rows2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
-            array_push($enabledtopics, $rows2["cmid"]);
-          }
-               
-  				while($rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            if (in_array($rows['id'], $enabledtopics)) {
-              $topic = array();
-    					$topic['topicName'] = $rows['module'];
-    					$topic['topicId'] = $rows['id'];
-    					//get sub topic details
-    					$query1 = "SELECT id, module FROM cpmodules WHERE parentId = ? AND type = ? AND deleted = ? ORDER BY sequence";
-    					$stmt1 = $db->prepare($query1);
-    					$stmt1->execute(array($rows['id'], 'subTopic', 0));
-    					while($rows1 = $stmt1->fetch(PDO::FETCH_ASSOC)) {
-                           
-    						//get total Slides count of the sub topic and user access slides count of the sub topic
-    						$query2 = "SELECT id FROM cpadd_slide_list WHERE sub_topic_id = ?";
-    						$stmt2 = $db->prepare($query2);
-    						$stmt2->execute(array($rows1['id']));
-    						$totSlideCount = $stmt2->rowCount();
-    						$subTopicSlideIds = $stmt2->fetchAll(PDO::FETCH_ASSOC);
-    						$slideIds = array();
-    						foreach ($subTopicSlideIds as $key => $value) {
-    							array_push($slideIds, $value['id']);
-    						}
-    						$slideIdsString = implode(',', $slideIds);
-                           
-    						//get user access slides count of the sub
-    						$totAccessSlideCount = 0; 
-    						if($slideIdsString != '') {
-    						  	$query3 = "SELECT DISTINCT(cms_cp_add_slide_list_id) FROM conceptprep_user_responses WHERE cms_cp_add_slide_list_id IN ($slideIdsString)";
-    							$stmt3 = $db->query($query3);
-    							$totAccessSlideCount = $stmt3->rowCount();
-    						}
+				$id = $input['chapId'];
+						$topicsSubTopics = array();
+						$subTopicData = array();
+				$enabledtopics = array();
+						//get topic details
+						$query = "SELECT id, module FROM cpmodules WHERE parentId = ? AND type = ? AND deleted = ? ORDER BY sequence";
+						$stmt = $db->prepare($query);
+						$stmt->execute(array($id, 'topic', 0));
+				$uquery = "SELECT masters_sections.section FROM users JOIN masters_sections ON users.section = masters_sections.id WHERE users.id = ? LIMIT 1";
+				$stmt1 = $db->prepare($uquery);
+				$stmt1->execute(array($userid));
+				$data = $stmt1->fetch(PDO::FETCH_ASSOC);
+				$section = '';
+				if (!empty($data)) {
+					$section = $data["section"];
+				}
+				$query2 = "SELECT cmid FROM section_wise_chapter_enable WHERE class = ? AND section = ? AND courseid = ? AND enable = ?";
+				$stmt2 = $db->prepare($query2);
+				$stmt2->execute(array($classid,$section,$id,1));
+				while($rows2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
+					array_push($enabledtopics, $rows2["cmid"]);
+				}
+					
+						while($rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
+					if (in_array($rows['id'], $enabledtopics)) {
+					$topic = array();
+								$topic['topicName'] = $rows['module'];
+								$topic['topicId'] = $rows['id'];
+								//get sub topic details
+								$query1 = "SELECT id, module FROM cpmodules WHERE parentId = ? AND type = ? AND deleted = ? ORDER BY sequence";
+								$stmt1 = $db->prepare($query1);
+								$stmt1->execute(array($rows['id'], 'subTopic', 0));
+								while($rows1 = $stmt1->fetch(PDO::FETCH_ASSOC)) {
+								
+									//get total Slides count of the sub topic and user access slides count of the sub topic
+									$query2 = "SELECT id FROM cpadd_slide_list WHERE sub_topic_id = ?";
+									$stmt2 = $db->prepare($query2);
+									$stmt2->execute(array($rows1['id']));
+									$totSlideCount = $stmt2->rowCount();
+									$subTopicSlideIds = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+									$slideIds = array();
+									foreach ($subTopicSlideIds as $key => $value) {
+										array_push($slideIds, $value['id']);
+									}
+									$slideIdsString = implode(',', $slideIds);
+								
+									//get user access slides count of the sub
+									$totAccessSlideCount = 0; 
+									if($slideIdsString != '') {
+										$query3 = "SELECT DISTINCT(cms_cp_add_slide_list_id) FROM conceptprep_user_responses WHERE cms_cp_add_slide_list_id IN ($slideIdsString)";
+										$stmt3 = $db->query($query3);
+										$totAccessSlideCount = $stmt3->rowCount();
+									}
 
-    						$totAccessSlidePercentage = 0;
-    						if($totSlideCount != 0  && $totAccessSlideCount != 0)
-    							$totAccessSlidePercentage = round(($totAccessSlideCount / $totSlideCount * 100));
+									$totAccessSlidePercentage = 0;
+									if($totSlideCount != 0  && $totAccessSlideCount != 0)
+										$totAccessSlidePercentage = round(($totAccessSlideCount / $totSlideCount * 100));
 
-    						$topic['children'][] = array("subTopicId"=>$rows1['id'], "subTopicName"=>$rows1['module'], "totSlideCount"=>$totSlideCount, "totAccessSlideCount"=>$totAccessSlideCount, "totAccessSlidePercentage"=>$totAccessSlidePercentage, "visible"=>true);
+									$topic['children'][] = array("subTopicId"=>$rows1['id'], "subTopicName"=>$rows1['module'], "totSlideCount"=>$totSlideCount, "totAccessSlideCount"=>$totAccessSlideCount, "totAccessSlidePercentage"=>$totAccessSlidePercentage, "visible"=>true);
 
-    					}
-    					array_push($topicsSubTopics, $topic);
-            }
-  				}
-  				$result['topicsSubTopics'] = $topicsSubTopics;			
-  				$status = true;
+								}
+								array_push($topicsSubTopics, $topic);
+					}
+						}
+
+						$result['topicsSubTopics'] = $topicsSubTopics;	
+						
+						$assignments = array();	
+						$query = "SELECT id, name, duedate FROM assignment_assign WHERE course = ? AND visible = ? ";
+						$stmt = $db->prepare($query);
+						$stmt->execute(array($id,  1));
+						while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+							$assignments[] = array("assignId"=>$row['id'], "assignName"=>$row['name'] , "dueDate"=>$row['duedate']);
+						}
+						$result['courseAssignments'] = $assignments;	
+						$status = true;
   			} else if($type == "getSlides" && isset($input['sub_topic_id']) && intval($input['sub_topic_id']) > 0) {
   				$sub_topic_id = $input['sub_topic_id'];
   				$slides = array();	

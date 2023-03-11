@@ -98,7 +98,7 @@
     $options = "";
     $records = GetRecords("cpmodules", array("parentId"=>$subject_id, "level"=>3, "type"=>'chapter'), array("module"));
     if(count($records) == 0) {
-      $options .= '<option value="">No Chaptes added</option>';
+      $options .= '<option value="">No Chapters added</option>';
     } else if(count($records) == 1) {
       $options .= '<option value="">-Select Chapter-</option>';
       $options .= '<option value="'.$records[0]['id'].'">'.$records[0]['module'].'</option>';

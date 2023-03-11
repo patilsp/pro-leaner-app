@@ -118,7 +118,7 @@ $(document).ready(function() {
 	        	if(json.status) {
 	        		$('html, body').animate({scrollTop: '0px'}, 1000);
 					$("#tabel").html('<div class="w-100 h-100 text-center d-flex align-items-center justify-content-center" id="empty_content"><h3 class="m-0 txt-grey">Select a class, section, subject and chapter to launch content</h3></div>');
-					$("#sb_heading").html("Success");
+					$("#sb_heading").html("Successfully Launch!");
 					$("#sb_body").html(json.message);
                     var x = document.getElementById("snackbar");
                     x.className = "show";

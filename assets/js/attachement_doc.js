@@ -148,34 +148,48 @@ $(document).on('submit', '#create_assignment_form', function(event){
             {
             var data = $.parseJSON(data);
             var data = data.Result[0];
+            // console.log(data.output);
             $("#model_title").text("Edit Assignment");
-                if(data.files.length != 0){
-                    $.each(data.files,function(key,value){
-                        if(key == 'name'){
-                            $("#upload_documents_js").append('<div id="show_attachedfiel" class="show_attachedfiel d-flex align-items-center mx-3 border rounded-lg p-2 mb-2 mt-2 body"><p class="d-flex m-0 font-weight-bold txt-grey align-items-center fn">'+value+'</p><i class="fa fa-times close_btn_sm ml-4 delete" id="0"></i></div>');
-                        }
-                    })
-                    // data.files.forEach(files => {
+                // if(data.files.length != 0){
+                //     $.each(data.files,function(key,value){
+                //         if(key == 'name'){
+                //             $("#upload_documents_js").append('<div id="show_attachedfiel" class="show_attachedfiel d-flex align-items-center mx-3 border rounded-lg p-2 mb-2 mt-2 body"><p class="d-flex m-0 font-weight-bold txt-grey align-items-center fn">'+value+'</p><i class="fa fa-times close_btn_sm ml-4 delete" id="0"></i></div>');
+                //         }
+                //     })
+                //     // data.files.forEach(files => {
                        
-                    // });
-                }
+                //     // });
+                // }
                                
                 $("#name").val(data.title);
                 $("#intro").val(data.intro);
                 $("#att_to_date").val(data.date);
                 $("#due_by").val(data.time);
+                $("#publish_date").val(data.publish_date);
+                $("#publish_time").val(data.publish_time);
+                $("#grade").val(data.grade);
+                $("#selectedClass").val(data.classId);
+                $("#selectedSubject").html(data.output.subject);
+                $("#selectedSubject").val(data.subject);
+                $("#course").html(data.output.course);
+                $("#course").val(data.course);
+                // $("#course").trigger("change");
+                $("#topic").html(data.output.topic);
+                $("#topic").val(data.topic);
+                // $("#topic").trigger("change");
+                $("#subtopic").html(data.output.subtopic);
+                $("#subtopic").val(data.subtopic);
 
                 var d = new Date(data.duedatetime);
                 // $('#due_by').val(d.getHours()+":"+d.getMinutes());
-                $("#grade").val(data.grade);
                 $("#link").val(data.link);
                
             $('#create_assignment_modal').modal('show');
-            $('.hideclass').hide();
-            $('.hidesubject').hide();
-            $('.hidechapter').hide();
-            $('.hidetopic').hide();
-            $('.hidesubtopic').hide();
+            // $('.hideclass').hide();
+            // $('.hidesubject').hide();
+            // $('.hidechapter').hide();
+            // $('.hidetopic').hide();
+            // $('.hidesubtopic').hide();
 
         }            
         });

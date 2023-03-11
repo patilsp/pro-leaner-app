@@ -121,10 +121,10 @@ $(document).on('submit', '#create_assignment_form', function(event){
     });
 
 
-    $(document).on('click', '#editdetails', function(event){   
+    $(document).on('click', '.editdetails', function(event){  
         type = 'editmodal';
         rowID = $(this).data('id');
-        var editdata = {type : 'editmodal', subId : subId, cmid: rowID};
+        var editdata = {type : 'editmodal',cmid: rowID};
         var form_data = new FormData();
         for ( var key in editdata ) {
             form_data.append(key, editdata[key]);
@@ -140,12 +140,12 @@ $(document).on('submit', '#create_assignment_form', function(event){
             var data = $.parseJSON(data);
             var data = data.Result[0];
             $("#model_title").text("Edit Assignment");
-                if(data.files.length != 0){
-                    //loop uploaded files
-                    data.files.forEach(files => {
-                        $("#upload_documents_js").append('<div id="show_attachedfiel" class="show_attachedfiel d-flex align-items-center mx-3 border rounded-lg p-2 mb-2 mt-2 body"><p class="d-flex m-0 font-weight-bold txt-grey align-items-center fn">'+files.name+'</p><i class="fa fa-times close_btn_sm ml-4 delete" id="0"></i></div>');
-                    });
-                }
+                // if(data.files.length != 0){
+                //     //loop uploaded files
+                //     data.files.forEach(files => {
+                //         $("#upload_documents_js").append('<div id="show_attachedfiel" class="show_attachedfiel d-flex align-items-center mx-3 border rounded-lg p-2 mb-2 mt-2 body"><p class="d-flex m-0 font-weight-bold txt-grey align-items-center fn">'+files.name+'</p><i class="fa fa-times close_btn_sm ml-4 delete" id="0"></i></div>');
+                //     });
+                // }
                                
                 $("#name").val(data.title);
                 $("#intro").val(data.intro);
@@ -154,6 +154,8 @@ $(document).on('submit', '#create_assignment_form', function(event){
                 $('#due_by').val(d.getHours()+":"+d.getMinutes());
                 $("#grade").val(data.grade);
                 $("#link").val(data.link_actual);
+                $("#publish_date").val(data.publish_date);
+                $("#publish_time").val(data.publish_time);
                
             $('#create_assignment_modal').modal('show')
         }            

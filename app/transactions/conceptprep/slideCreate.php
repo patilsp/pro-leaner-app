@@ -485,7 +485,7 @@ try{
               <h6 style="margin-bottom: 0px"><?php echo "Class ".$_GET['class']; ?> - <?php echo $sub_name; ?><b id="boxTitle"><?php echo " - ".$rolescreen; ?></b>&nbsp; &nbsp;<span id="clicked_slidepath"></span></h6>
               <div class="btn-group d-none" id="audioOption">
                 <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Audio
+                  Add Audio
                 </button>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#" id="addChangeAudio" data-toggle="modal" data-target="#audioModal" data-resourceId="">Add/Change</a>
@@ -545,7 +545,7 @@ try{
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body" id="privewAllSlidesBody">
+                <div class="modal-body tableresponsive" id="privewAllSlidesBody">
                   <div id="accordion"> 
                     <?php echo $sideleft['previSlideInfo']; ?> 
                   </div>                                   
@@ -566,7 +566,7 @@ try{
                     <span aria-hidden="true">&times;</span>
                   </button>
                   <i class="icon ion-ios-checkmark-outline tx-100 tx-success lh-1 mg-t-20 d-inline-block"></i>
-                  <p class="mg-b-20 mg-x-20" id="success_msg"> Slide Sent for Review.</p>
+                  <p class="mg-b-20 mg-x-20 messageval" id="success_msg"> Slide Sent for Review.</p>
                   <a href="<?php echo $web_root; ?>app/taskList.php" class="btn btn-success tx-11 tx-uppercase pd-y-12 pd-x-25 tx-mont tx-medium mg-b-20 close_save" data-dismiss="modal">
                     Close</a>
                 </div><!-- modal-body -->
@@ -974,14 +974,14 @@ try{
     <!-- LARGE MODAL -->
     <div id="resources" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content tx-size-sm">
+        <div class="modal-content tx-size-sm" style="900px">
           <div class="modal-header pd-x-20">
             <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Images</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body pd-20">
+          <div class="modal-body pd-10">
             <div class="row">
               <div class="col-md-12" id="img_table">
                 

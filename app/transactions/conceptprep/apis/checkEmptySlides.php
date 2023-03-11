@@ -14,7 +14,7 @@
     $class = getSanitizedData($_POST['class']);
     $subject_id = getSanitizedData($_POST['subject_id']);
     
-    $cpadd_slide_list_tb = GetRecords("cpadd_slide_list", array("task_assign_id"=>$task_assi_id, "class"=>$class, "subject_id"=>$subject_id), array("sequence"));
+    $cpadd_slide_list_tb = GetRecords("cpadd_slide_list", array( "class"=>$class, "subject_id"=>$subject_id), array("sequence"));
     $slideContentContains = "";
     $slides = array();
     $message = "";

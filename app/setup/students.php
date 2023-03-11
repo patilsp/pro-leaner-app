@@ -17,7 +17,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title></title>
+    <title>Virtual School</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
 
     <!-- vendor css -->
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -65,8 +66,11 @@
                 <h6 class="mg-b-0 tx-14 tx-white">Students</h6>
                 <div class="card-option tx-24">
                   <!-- <a href="userCreation.php" class="btn btn-md btn-info" >New User</a> -->
-                  <a href="<?php echo $web_root?>app/setup/enroll_student.php"><button class="btn btn-md btn-info">Enroll Students</button></a>
-                  <button class="btn btn-md btn-info" data-toggle="modal" data-target="#student_modal" id="add_student_bth">Add Student</button>
+                  <a href="<?php echo $web_root?>app/setup/enroll_student.php"><button class="btn btn-primary shadow">Enroll Students</button></a>
+                  <button class="btn btn-primary shadow" data-toggle="modal" data-target="#student_modal" id="add_student_bth">Add Student</button>  
+                 
+                  <a href="student_upload.php" class="btn btn-primary shadow">Upload file</a>
+                
                 </div><!-- card-option -->
               </div><!-- card-header -->
               <div class="card-body">
@@ -75,7 +79,7 @@
 
                      
                     <tr>
-                      <th>Name</th>
+                      <th>Name </th>
                       <th>Admission No.</th>
                       <th>Class</th>
                       <th>Section</th>
@@ -126,24 +130,24 @@
         </button>
       </div>
       <div class="modal-body">
-        
+    
         <form class="user_form form-horizontal" action="createStudent.php" name="form" method="POST">
             <div class="card-body bd rounded-bottom">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label for="title">Admission/Reg No.:<span class="required_icon" style="color:red;">*</span></label>
-                    <input type="text" class="form-control" name="admission" id="admission" placeholder="Enter Admission" required>
+                    <input type="text" class="form-control admission" name="admission" id="admission" placeholder="Enter Admission" required>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label for="title">First Name:<span class="required_icon" style="color:red;">*</span></label>
                     <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter First Name" required>
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label for="title">Last Name:<span class="required_icon" style="color:red;">*</span></label>
                     <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter Last Name" required>
@@ -179,9 +183,9 @@
                 </div> -->
 
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group mult">
-                      <label class="col-md-12">Class<span class="required_icon" style="color:red;">*</span></label>
+                      <label for="Class">Class<span class="required_icon" style="color:red;">*</span></label>
                       <select class="form-control select" name="class" id="selectclass" required>
                           <option value="" selected="selected">Select</option>
 
@@ -200,9 +204,9 @@
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group mult">
-                      <label class="col-md-12">Section<span class="required_icon" style="color:red;">*</span></label>
+                      <label for="Section">Section<span class="required_icon" style="color:red;">*</span></label>
                       <select class="form-control section" name="section" id="section" required>
                           <option value="" selected="selected">Select</option>
                          
@@ -215,7 +219,7 @@
 
             </div><!-- card-body -->
            
-            <div class="card-footer bd bd-t-0 d-flex justify-content-between">
+            <div class="card-footer">
               <a href="<?php echo $web_root ?>app/setup/students.php" class="btn btn-md btn-danger">Cancel</a>
               <button type="submit" class="btn btn-md btn-info" name="submit">Submit</button>
             </div><!-- card-footer -->
@@ -239,35 +243,35 @@
             <input type="hidden" class="form-control" name="user_auto_id" id="user_auto_id" value="">
             <div class="card-body bd rounded-bottom">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label for="title">Admission/Reg No.:<span class="required_icon" style="color:red;">*</span></label>
-                    <input type="text" class="form-control" name="admission" id="admissionEdit" value="" required>
+                    <input type="text" class="form-control admission" name="admission" id="admissionEdit" value="" required>
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label for="title">First Name:<span class="required_icon" style="color:red;">*</span></label>
                     <input type="text" class="form-control" name="fname" id="fnameEdit" value="" required>
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label for="title">Last Name:<span class="required_icon" style="color:red;">*</span></label>
                     <input type="text" class="form-control" name="lname" id="lnameEdit"  value="" required>
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label for="title">Password:</label>
                     <input type="password" name="password" id="passwordEdit" class="form-control" placeholder="Password"> 
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label for="title">Confirm Password:</label>
                     <input type="password" name="cpassword" id="cpasswordEdit" class="form-control" placeholder="Confirm Password"> 
@@ -288,7 +292,7 @@
                   </div>
                 </div> -->
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="form-group mult">
                         <label class="col-md-12">Class<span class="required_icon" style="color:red;">*</span></label>
                         <select class="form-control select" name="class" id="classEdit" required>
@@ -309,9 +313,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="form-group mult">
-                        <label class="col-md-12">Section<span class="required_icon" style="color:red;">*</span></label>
+                        <label for="Section">Section<span class="required_icon" style="color:red;">*</span></label>
                         <select class="form-control section" name="section" id="sectionEdit" required>
                             <option value="" selected="selected">Select</option>
                         </select>
@@ -325,7 +329,7 @@
 
             </div><!-- card-body -->
            
-            <div class="card-footer bd bd-t-0 d-flex justify-content-between">
+            <div class="card-footer">
               <a href="<?php echo $web_root ?>app/setup/students.php" class="btn btn-md btn-danger">Cancel</a>
               <button type="submit" class="btn btn-md btn-info" name="update" id="update">Update</button>
             </div><!-- card-footer -->
@@ -334,6 +338,18 @@
     </div>
   </div>
 </div>
+  <!-- Snackbar  -->
+  <div id="snackbar">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h6 class="m-0" id="sb_heading">Notice!</h6>
+        <button type="button" class="close close_snackbar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <p class="text-left" style="max-width: 163px; width: 100%" id="sb_body"></p>
+      </div>
+    </div>
 
 
     <!-- ########## END: MAIN PANEL ########## -->
@@ -352,6 +368,19 @@
 
     <script src="../../js/cms.js"></script>
     <script>
+      // function checkSpace() {
+   
+      //     preg_replace(array('/[^\w\s]+/', '/[^a-zA-Z0-9]+/'), array('', '_'), $str);
+      // }
+      $('.admission').keyup(function() {
+          var $th = $(this);
+          $th.val( $th.val().replace(/[^a-zA-Z0-9]/g, function(str) {             
+            alert('You typed " ' + str + ' ".\n\nPlease use only letters and numbers.'); 
+            return ''; 
+          }));
+      });
+
+
       $(function(){
         'use strict';
 
@@ -429,6 +458,14 @@
           });
         });
       }) 
+
+      <?php if(isset($_SESSION['sb_heading'])) { ?>
+        $("#sb_heading").html("<?php echo $_SESSION['sb_heading']; ?>");
+        $("#sb_body").html('<?php echo $_SESSION['sb_message']; ?>');
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, <?php echo $_SESSION['sb_time']; ?>);
+      <?php unset($_SESSION['sb_heading']); } ?>
     </script>
   </body>
 </html>

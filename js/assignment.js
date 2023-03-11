@@ -36,6 +36,27 @@ $(document).ready(function() {
     });
 
  
+   
+    $('.publish_date').click(function(){
+        $('#publish_date').trigger('focus');
+      });
+  
+      $('#publish_time').datetimepicker({
+        format: 'LT',
+        icons: {
+          time: 'fa fa-clock-o',
+          date: 'fa fa-calendar',
+          up: 'fa fa-angle-up',
+          down: 'fa fa-angle-down',
+          previous: 'fa fa-angle-left',
+          next: 'fa fa-angle-right',
+          today: 'fa fa-dot-circle-o',
+          clear: 'fa fa-trash',
+          close: 'fa fa-times'
+        }
+      }).on('change', function() {
+  
+      });
 
 
     $('#error_info').tooltip();
@@ -61,6 +82,10 @@ $(document).ready(function() {
                 var json = $.parseJSON(data);
                 if(json.status){
             		$("#selectedSubject").html(json.subject);
+                    $("#selectedSubject").trigger("change");
+                    $("#course").trigger("change");
+                    $("#subtopic").empty();
+                    $("#subtopic").html('<option value="">-Select Sub Topic-</option>');
                 }
             },
             beforeSend: function(){

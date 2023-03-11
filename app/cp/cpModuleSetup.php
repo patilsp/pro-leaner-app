@@ -33,7 +33,8 @@ try {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title></title>
+    <title>Virtual School</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
 
     <!-- vendor css -->
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">

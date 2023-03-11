@@ -20,7 +20,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title></title>
+    <title>Virtual School</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
+
 
     <!-- vendor css -->
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -39,10 +41,18 @@
   <style type="text/css">
     
     #enroll_edit_div{
-      min-width: 820px
+      min-width: 740px
     }
-    
-    
+    #card_blk{
+      display: grid;
+      justify-content: center;
+    }
+    .mb-0{
+      margin-bottom:0px !important
+    }
+    .add{
+      width:80px
+    }
 </style>
 
   <body class="collapsed-menu ">
@@ -70,7 +80,7 @@
                 <h6 class="mg-b-0 tx-14 tx-white">Teachers</h6>
                 <div class="card-option tx-24">
                   <!-- <a href="userCreation.php" class="btn btn-md btn-info" >New User</a> -->
-                  <button class="btn btn-md btn-info" data-toggle="modal" data-target="#student_modal_new" id="add_student_bth">Add Teacher</button>
+                  <button class="btn btn-primary shadow" data-toggle="modal" data-target="#student_modal_new" id="add_student_bth">Add Teacher</button>
                 </div><!-- card-option -->
               </div><!-- card-header -->
               <div class="card-body">
@@ -181,20 +191,20 @@
 
                  
               </div>
-            <div class="col-12 qust mx-auto" id="card_blk">
+            <div class="qust" id="card_blk" style="display:block">
             <div class="d-flex align-items-center position-relativemb-3">
               <div class="col-4">
-                <div class="form-group">
+                <div class="form-group mb-0">
                   <label>Class</label>
                 </div>
               </div>
               <div class="col-4">
-                <div class="form-group">
+                <div class="form-group mb-0">
                   <label>Section</label>
                 </div>
               </div>
               <div class="col-4">
-                <div class="form-group">
+                <div class="form-group mb-0">
                   <label>Subject</label>
                 </div>
               </div>
@@ -235,7 +245,7 @@
 
             </div><!-- card-body -->
            
-            <div class="card-footer bd bd-t-0 d-flex justify-content-between">
+            <div class="card-footer">
               <a href="<?php echo $web_root ?>app/setup/teachers.php" class="btn btn-md btn-danger">Cancel</a>
               <button type="submit" class="btn btn-md btn-info" name="submit">Submit</button>
             </div><!-- card-footer -->
@@ -311,20 +321,20 @@
 
                 
 
-              <div class="col-12 qust mx-auto" id="card_blk">
+          <div class="col-12 qust mx-auto" id="card_blk">
             <div class="d-flex align-items-center position-relativemb-3">
               <div class="col-4">
-                <div class="form-group">
+                <div class="form-group mb-0">
                   <label>Class</label>
                 </div>
               </div>
               <div class="col-4">
-                <div class="form-group">
+                <div class="form-group mb-0">
                   <label>Section</label>
                 </div>
               </div>
               <div class="col-4">
-                <div class="form-group">
+                <div class="form-group mb-0">
                   <label>Subject</label>
                 </div>
               </div>
@@ -333,7 +343,7 @@
                 <div id="enroll_edit_div">
                 </div>
                 <button type="button" class="remove d-none"><i class="fa fa-times"></i></button>
-              </div>
+            </div>
             <div class="position-relative wrapper" id="qust1_wrap"></div>
             <button class="add" data-id="qust1_add" type="button"><i class="fa fa-plus"></i>&nbsp;Add</button>
             <input type="hidden" class="teacherId" id="teacherId" value="">
@@ -344,7 +354,7 @@
 
             </div><!-- card-body -->
            
-            <div class="card-footer bd bd-t-0 d-flex justify-content-between">
+            <div class="card-footer">
               <a href="<?php echo $web_root ?>app/setup/teachers.php" class="btn btn-md btn-danger">Cancel</a>
               <button type="submit" class="btn btn-md btn-info" name="update" id="update">Update</button>
             </div><!-- card-footer -->

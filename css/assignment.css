@@ -240,7 +240,7 @@ table.dataTable td, table.dataTable th{
   }
   
   #upload_blk button, #upload_blk label{
-    max-width: 155px;
+    max-width: 80px;
     width: 100%;
   }
   #upload_blk button.review{

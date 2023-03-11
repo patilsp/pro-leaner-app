@@ -169,7 +169,7 @@ try {
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
               <a class="nav-item nav-link active" id="nav-assignedTask-tab" data-toggle="tab" href="#nav-assignedTask" role="tab" aria-controls="nav-assignedTask" aria-selected="true">Assigned Tasks</a>
               <?php if($role_id == 1) { ?>
-              <a class="nav-item nav-link" id="nav-yetToAssignTask-tab" data-toggle="tab" href="#nav-yetToAssignTask" role="tab" aria-controls="nav-yetToAssignTask" aria-selected="false">Yet To Assign Tasks</a>
+              <!-- <a class="nav-item nav-link" id="nav-yetToAssignTask-tab" data-toggle="tab" href="#nav-yetToAssignTask" role="tab" aria-controls="nav-yetToAssignTask" aria-selected="false">Yet To Assign Tasks</a> -->
               <?php } ?>
             </div>
           </nav>

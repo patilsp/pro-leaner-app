@@ -18,7 +18,8 @@ $user_type = $_SESSION['cms_usertype'];
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title></title>
+    <title>Virtual School</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
 
     <!-- vendor css -->
     <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -458,7 +459,7 @@ $user_type = $_SESSION['cms_usertype'];
                                             <!--begin::Info-->
                                             <div class="m-0">
                                                 <!--begin::Subtitle-->
-                                                <h4 class="fw-bold text-gray-800 mb-3">Ruby on Rails</h4>
+                                                <h4 class="fw-bold text-gray-800 mb-3">English</h4>
                                                 <!--end::Subtitle-->
 
                                                 <!--begin::Items-->
@@ -547,7 +548,7 @@ $user_type = $_SESSION['cms_usertype'];
                                             <!--begin::Info-->
                                             <div class="m-0">
                                                 <!--begin::Subtitle-->
-                                                <h4 class="fw-bold text-gray-800 mb-3">Ruby on Rails</h4>
+                                                <h4 class="fw-bold text-gray-800 mb-3">English</h4>
                                                 <!--end::Subtitle-->
 
                                                 <!--begin::Items-->
@@ -636,7 +637,7 @@ $user_type = $_SESSION['cms_usertype'];
                                             <!--begin::Info-->
                                             <div class="m-0">
                                                 <!--begin::Subtitle-->
-                                                <h4 class="fw-bold text-gray-800 mb-3">Ruby on Rails</h4>
+                                                <h4 class="fw-bold text-gray-800 mb-3">English</h4>
                                                 <!--end::Subtitle-->
 
                                                 <!--begin::Items-->
@@ -779,7 +780,7 @@ $user_type = $_SESSION['cms_usertype'];
                                             <!--begin::Info-->
                                             <div class="m-0">
                                                 <!--begin::Subtitle-->
-                                                <h4 class="fw-bold text-gray-800 mb-3">Ruby on Rails</h4>
+                                                <h4 class="fw-bold text-gray-800 mb-3">Math</h4>
                                                 <!--end::Subtitle-->
 
                                                 <!--begin::Items-->
@@ -876,7 +877,7 @@ $user_type = $_SESSION['cms_usertype'];
                                             <!--begin::Info-->
                                             <div class="m-0">
                                                 <!--begin::Subtitle-->
-                                                <h4 class="fw-bold text-gray-800 mb-3">Ruby on Rails</h4>
+                                                <h4 class="fw-bold text-gray-800 mb-3">Math</h4>
                                                 <!--end::Subtitle-->
 
                                                 <!--begin::Items-->
@@ -973,7 +974,7 @@ $user_type = $_SESSION['cms_usertype'];
                                             <!--begin::Info-->
                                             <div class="m-0">
                                                 <!--begin::Subtitle-->
-                                                <h4 class="fw-bold text-gray-800 mb-3">Ruby on Rails</h4>
+                                                <h4 class="fw-bold text-gray-800 mb-3">Math</h4>
                                                 <!--end::Subtitle-->
 
                                                 <!--begin::Items-->

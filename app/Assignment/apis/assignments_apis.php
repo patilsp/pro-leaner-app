@@ -5,6 +5,7 @@ require_once "../../functions/db_functions.php";
 // require_once "../../functions/courses.php";
 require_once "../../functions/questions.php";
 require_once "../../functions/assignments.php";
+require_once "../../functions/subjects.php";
 
 $type = $_POST['type'];
 $output = array();
@@ -13,7 +14,7 @@ $output['message'] = "";
 $status = false;
 $message = "";
 $snackbar = false;
-$login_userid = isset($_SESSION['ilp_loginid'])?$_SESSION['ilp_loginid']:NULL;
+$login_userid = isset($_SESSION['cms_userid'])?$_SESSION['cms_userid']:NULL;
 // print_r($_SESSION);
 // exit;
 if($type == "updatemodal") {
@@ -25,8 +26,13 @@ if($type == "updatemodal") {
 	$intro = getSanitizedData($_POST['intro']);
 	
 
-	$date = $_POST['att_date'];
+	$date = date('Y-m-d', strtotime($_POST['att_date']));
 	$time = $_POST['due_by'];
+	$class = $_POST["selectedClass"];
+	$selectedSubject = $_POST["selectedSubject"];
+	$course = $_POST["course"];
+	$topic = $_POST["topic"];
+	$subtopic = $_POST["subtopic"];
 
 	if($date != "" && $time != "") {
 		$duedate = strtotime("$date $time");
@@ -38,10 +44,11 @@ if($type == "updatemodal") {
 	$duedate = date('Y-m-d H:i:s', strtotime("$date $time"));
 
 	$url_link = getSanitizedData($_POST['url_link']);
+	$grade = $_POST["grade"];
 
-	$query = "UPDATE assignment_assign SET name = ?, intro = ?, duedate = ?, url_link = ?, date = ?, time = ? WHERE id = ?";
+	$query = "UPDATE assignment_assign SET name = ?, intro = ?, duedate = ?, url_link = ?, date = ?, time = ?,grade = ?,class = ?,subject = ?,course = ?,topic = ?,subtopic = ?  WHERE id = ?";
 	$stmt = $db->prepare($query);
-	$stmt->execute(array($name, $intro, $duedate, $url_link, $date, $time, $cmid));
+	$stmt->execute(array($name, $intro, $duedate, $url_link, $date, $time,$grade,$class,$selectedSubject,$course,$topic,$subtopic,$cmid));
 
 	
 	
@@ -172,7 +179,7 @@ if($type == "updatemodal") {
       $options .= '<option value="">No topics added</option>';
     } else if(count($records) == 1) {
 	  
-	  $options .= '<option value="">-Select Chapter-</option>';
+	  $options .= '<option value="">-Select Topic-</option>';
       $options .= '<option value="'.$records[0]['id'].'">'.$records[0]['module'].'</option>';
     } else if(count($records) > 1) {
       $options .= '<option value="">-Select Topic-</option>';
@@ -192,7 +199,7 @@ if($type == "updatemodal") {
     if(count($records) == 0) {
       $options .= '<option value="">No Sub Topics added</option>';
     } else if(count($records) == 1) {
-	  $options .= '<option value="">-Select Chapter-</option>';
+	  $options .= '<option value="">-Select Sub Topic-</option>';
       $options .= '<option value="'.$records[0]['id'].'">'.$records[0]['module'].'</option>';
     } else if(count($records) > 1) {
       $options .= '<option value="">-Select Sub Topic-</option>';
@@ -210,6 +217,9 @@ if($type == "updatemodal") {
 	$date = $_POST['att_date'];
 	$time = $_POST['due_by'];
 
+	$publish_date = date('Y-m-d', strtotime($_POST['publish_date']));;
+	$publish_time = $_POST['publish_time'];
+
 	if($date != "" && $time != "") {
 		$duedate = strtotime("$date $time");
 	} else if($date != "" && $time ==  "") {
@@ -217,10 +227,18 @@ if($type == "updatemodal") {
 	} else {
 		$duedate = 0;
 	}
+	if($publish_date != "" && $publish_time != "") {
+		$publishdate = strtotime("$publish_date $publish_time");
+	} else if($publish_date != "" && $time ==  "") {
+		$publishdate = strtotime("$publish_date 23:59:59");
+	} else {
+		$publishdate = 0;
+	}
 	$class = $_POST['selectedClass'];
     $classdb = $class;
     
 	$duedate = date('Y-m-d H:i:s', strtotime("$date $time"));
+	$publishdate = date('Y-m-d H:i:s', strtotime("$publish_date $publish_time"));
 	
 	$insertArr = [
 		"class" =>	 $classdb,
@@ -234,6 +252,10 @@ if($type == "updatemodal") {
 		"url_link" => getSanitizedData($_POST['url_link']),	
 		"date"=> date('Y-m-d', strtotime($_POST['att_date'])),
 		"time" => $_POST['due_by'],
+		"publish_date" => $publish_date,
+		"publish_time" => $_POST['publish_time'],
+		"publish_date_time" => $publishdate,
+		"grade" => $_POST["grade"],
 
 		"timemodified" => time()
 	
@@ -252,7 +274,7 @@ if($type == "updatemodal") {
 			}
 		}
 	}
-
+	$save_path = '';
 	if(isset($_FILES)) {
 		foreach($_FILES as $key => $val){
 			$orginal_name = $val['name'];

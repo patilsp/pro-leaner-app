@@ -1,0 +1,65 @@
+#sudent{ 
+	/* border-radius: 10px;
+	background-color: #f6f6fa;
+	padding: 40px 40px */
+}
+#sudent header .btn:hover{
+  color: #ffffff
+}
+#sudent #student_modules .card{
+	border-radius: 10px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+a:hover{
+  text-decoration: none;
+}
+
+#sudent #student_modules .btn-yellow{
+	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffcf9a;
+}
+.header_button{
+  max-width: 155px;
+  width: 100%;
+}
+
+/**upload block styles */
+#upload_blk{
+  max-width: 650px;
+}
+
+#upload_blk button, #upload_blk label{
+  max-width: 155px;
+  width: 100%;
+}
+#upload_blk button.review{
+  opacity: 0.4;
+  pointer-events: none;
+}
+input[type="file"] {
+    display: none;
+}
+#upload_blk #show_attachedfiel img{
+  width: 50px
+}
+#upload_blk .show_attachedfiel{
+  display: none !important;
+}
+.upload_col, .review_col{
+  display: none;
+}
+#error_info{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/** modal styles */
+.modal-content{
+  background-color: #f6f6fa;
+}
+.class_save_active{
+  opacity: 0.4;
+  pointer-events: none;
+}

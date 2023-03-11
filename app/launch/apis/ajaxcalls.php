@@ -55,7 +55,7 @@ if($type == "getSectionsSubjectMapping") {
 		
 		$classsearch = "CLASS ".$_POST['classes'];
 		$subjectsearch = $_POST['subject'];
-		$query3 = "SELECT id, module FROM cpmodules WHERE parentId = ? AND type = 'chapter' AND level = 3 ORDER BY id";
+		$query3 = "SELECT id, module FROM cpmodules WHERE parentId = ? AND type = 'chapter' AND level = 3 and deleted=0 ORDER BY id";
   		$stmt3 = $db->prepare($query3);
   		$stmt3->execute(array($subjectsearch));
   		$rowcount3 = $stmt3->rowCount();

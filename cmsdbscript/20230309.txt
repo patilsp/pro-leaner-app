@@ -1,0 +1,5 @@
+ALTER TABLE `assignment_assign`  ADD `publish_date` DATE NULL ;
+
+ALTER TABLE `assignment_assign`  ADD `publish_time` VARCHAR(50) NULL ,  ADD `publish_date_time` DATETIME NULL ;
+ALTER TABLE `assignment_assign` CHANGE `publish_time` `publish_time` TIME NULL DEFAULT NULL;
+ALTER TABLE `assignment_assign`  ADD `grade` INT NULL ;

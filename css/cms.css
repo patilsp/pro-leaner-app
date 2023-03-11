@@ -4389,10 +4389,17 @@ button.list-group-item-dark.active {
 }
 
 button.close {
-  padding: 0;
-  background: transparent;
+  /* padding: 0;
+  background: transparent; */
   border: 0;
   -webkit-appearance: none;
+  background-color: #ff3e1d;
+  border-color: #ff3e1d;
+  border-radius: 50%;
+  color: #fff;
+}
+button.close:hover {
+  box-shadow: 0 1px 20px 1px #ff3e1d;
 }
 
 .modal-open {
@@ -50818,7 +50825,7 @@ a.hover-white-8:hover, a.hover-white-8:focus {
 }
 
 .tx-white {
-  /* color: #fff; */
+  color: #fff;
 }
 
 .tx-black {
@@ -62283,4 +62290,9 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-link {
 .nav_link:hover {
   color: #fff !important;
   background-color: #696cff !important;
+}
+
+.tableresponsive{
+  max-height: 500px;
+  overflow: auto;
 }

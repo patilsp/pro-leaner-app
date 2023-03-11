@@ -36,7 +36,9 @@ try {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title></title>
+    <title>Virtual School</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
+
 
     <!-- vendor css -->
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -318,7 +320,7 @@ try {
                 <?php foreach($activeClasses as $thisClass) { ?>
                 <div class="form-check-inline px-3 py-2 mb-3">
                   <label class="form-check-label d-flex justify-content-between align-items-center w-100" for="class-<?php echo $thisClass['module']; ?>" role="pointer">
-                    <?php echo $thisClass['module']; ?><input type="checkbox" class="form-check-input ml-4" id="class-<?php echo $thisClass['module']; ?>" value="<?php echo $thisClass['module']; ?>" checked>
+                    <?php echo $thisClass['module']; ?><input type="checkbox" class="form-check-input ml-4" id="class-<?php echo $thisClass['module']; ?>" value="<?php echo $thisClass['module']; ?>" checked disabled>
                   </label>
                 </div>
                 <?php } ?>
@@ -335,15 +337,19 @@ try {
                 <?php } ?>
               </div>
               <div class="position-relative text-center w-100 mb-5">
-                <div class="text-center mb-4" id="sellectall_blk">
+                <div class="text-center mb-2" id="sellectall_blk">
                   <div class="form-check-inline px-3 py-2 ml-4">
                     <label class="form-check-label d-flex align-items-center w-100" for="selectall" role="pointer">
                       <input type="checkbox" class="form-check-input mr-2" id="selectall">Select All
                     </label>
                   </div>
                 </div>
-                <input type="hidden" class="form-control text-center" name="type" value="createClasses">
-                <button type="submit" class="btn btn-md btn-blue shadow px-5 class_save_active mt-4" id="class_save_submit">Save</button>
+                <div class="modal-footer">
+                  <input type="hidden" class="form-control text-center" name="type" value="createClasses">
+                  <button type="submit" class="btn btn-md btn-blue shadow px-5 class_save_active mt-4" id="class_save_submit">Save</button>
+
+                </div>
+
               </div>
               <?php } ?>
             </form>

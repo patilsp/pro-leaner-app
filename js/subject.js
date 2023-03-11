@@ -50,12 +50,19 @@ $(document).ready(function() {
         document.getElementById("new_task_form").reset();
         $('#assignModal').modal('hide');
         var json = $.parseJSON(data);
+
+        // $("#sb_body").html(json.message);
+        // var x = document.getElementById("snackbar");
+        // x.className = "show";
+        // $("#sb_body").html(json.message);
+        // setTimeout(function(){ x.className = x.className.replace("show", ""); }, 10000);
+      
         if(json.status){
           assigned = true;
         } else {
           $.toaster({ message : json.message, title : 'Oh No!', priority : 'danger' });
-          console.log("fail");
         }
+        location.reload();
       },
       beforeSend: function(){
         $("body").mLoading()
@@ -260,9 +267,9 @@ $(document).on('submit', '#add_parent_subject_form', function(event){
             } else {
                 $("#sb_heading").html("Notice!");
                 var x = document.getElementById("snackbar");
-            x.className = "show";
-            $("#sb_body").html(json.message);
-            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 10000);
+                x.className = "show";
+                $("#sb_body").html(json.message);
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 10000);
             }
         },
         beforeSend: function(){
