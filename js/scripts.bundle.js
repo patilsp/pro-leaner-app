@@ -412,65 +412,6 @@ var KTApp = function () {
             return;
         }
 
-        // Init Slider
-        var initSlider = function (el) {
-            if (!el) {
-                return;
-            }
-
-            const tnsOptions = {};
-
-            // Convert string boolean
-            const checkBool = function (val) {
-                if (val === 'true') {
-                    return true;
-                }
-                if (val === 'false') {
-                    return false;
-                }
-                return val;
-            };
-
-            // get extra options via data attributes
-            el.getAttributeNames().forEach(function (attrName) {
-                // more options; https://github.com/ganlanyuan/tiny-slider#options
-                if ((/^data-tns-.*/g).test(attrName)) {
-                    let optionName = attrName.replace('data-tns-', '').toLowerCase().replace(/(?:[\s-])\w/g, function (match) {
-                        return match.replace('-', '').toUpperCase();
-                    });
-
-                    if (attrName === 'data-tns-responsive') {
-                        // fix string with a valid json
-                        const jsonStr = el.getAttribute(attrName).replace(/(\w+:)|(\w+ :)/g, function (matched) {
-                            return '"' + matched.substring(0, matched.length - 1) + '":';
-                        });
-                        try {
-                            // convert json string to object
-                            tnsOptions[optionName] = JSON.parse(jsonStr);
-                        }
-                        catch (e) {
-                        }
-                    }
-                    else {
-                        tnsOptions[optionName] = checkBool(el.getAttribute(attrName));
-                    }
-                }
-            });
-
-            const opt = Object.assign({}, {
-                container: el,
-                slideBy: 'page',
-                autoplay: true,
-                autoplayButtonOutput: false,
-            }, tnsOptions);
-
-            if (el.closest('.tns')) {
-                KTUtil.addClass(el.closest('.tns'), 'tns-initiazlied');
-            }
-
-            return tns(opt);
-        }
-
         // Sliders
         const elements = Array.prototype.slice.call(document.querySelectorAll('[data-tns="true"]'), 0);
 
@@ -483,10 +424,69 @@ var KTApp = function () {
                 return;
             }
 
-            initSlider(el);
+            initTinySlider(el);
 
             el.setAttribute("data-kt-initialized", "1");
         });
+    }
+
+    var initTinySlider = function (el) {
+        if (!el) {
+            return;
+        }
+
+        const tnsOptions = {};
+
+        // Convert string boolean
+        const checkBool = function (val) {
+            if (val === 'true') {
+                return true;
+            }
+            if (val === 'false') {
+                return false;
+            }
+            return val;
+        };
+
+        // get extra options via data attributes
+        el.getAttributeNames().forEach(function (attrName) {
+            // more options; https://github.com/ganlanyuan/tiny-slider#options
+            if ((/^data-tns-.*/g).test(attrName)) {
+                let optionName = attrName.replace('data-tns-', '').toLowerCase().replace(/(?:[\s-])\w/g, function (match) {
+                    return match.replace('-', '').toUpperCase();
+                });
+
+                if (attrName === 'data-tns-responsive') {
+                    // fix string with a valid json
+                    const jsonStr = el.getAttribute(attrName).replace(/(\w+:)|(\w+ :)/g, function (matched) {
+                        return '"' + matched.substring(0, matched.length - 1) + '":';
+                    });
+                    try {
+                        // convert json string to object
+                        tnsOptions[optionName] = JSON.parse(jsonStr);
+                    }
+                    catch (e) {
+                    }
+                }
+                else {
+                    tnsOptions[optionName] = checkBool(el.getAttribute(attrName));
+                }
+            }
+        });
+
+        const opt = Object.assign({}, {
+            container: el,
+            slideBy: 'page',
+            autoplay: true,
+            center: true,
+            autoplayButtonOutput: false,
+        }, tnsOptions);
+
+        if (el.closest('.tns')) {
+            KTUtil.addClass(el.closest('.tns'), 'tns-initiazlied');
+        }
+
+        return tns(opt);
     }
 
     var initSmoothScroll = function () {
@@ -696,6 +696,10 @@ var KTApp = function () {
             createTinySliders();
 
             initialized = true;
+        },
+
+        initTinySlider: function(el) {
+            initTinySlider(el);
         },
 
         showPageLoading: function () {
@@ -2455,7 +2459,7 @@ var KTMenu = function(element, options) {
 
     // Set external trigger element
     var _setTriggerElement = function() {
-        var target = document.querySelector('[data-kt-menu-target="# ' + the.element.getAttribute('id')  + '"]');
+        var target = document.querySelector('[data-kt-menu-target="#' + the.element.getAttribute('id')  + '"]');
 
         if ( target !== null ) {
             the.triggerElement = target;
@@ -2589,7 +2593,7 @@ var KTMenu = function(element, options) {
         var sub = item.closest('.menu-sub');
         var parentItem;
 
-        if ( KTUtil.data(sub).has('item') ) {
+        if ( sub && KTUtil.data(sub).has('item') ) {
             return KTUtil.data(sub).get('item');
         }
 
@@ -3299,7 +3303,7 @@ KTMenu.initHandlers = function() {
 
 // Render menus by url
 KTMenu.updateByLinkAttribute = function(value, name = "href") {
-    // Locate and update Offcanvas instances on window resize
+    // Set menu link active state by attribute value
     var elements = document.querySelectorAll('[data-kt-menu="true"]');
 
     if ( elements && elements.length > 0 ) {
@@ -3510,8 +3514,8 @@ var KTPasswordMeter = function(element, options) {
     }
 
     var _visibility = function() {
-        var visibleIcon = the.visibilityElement.querySelector('i:not(.d-none), .svg-icon:not(.d-none)');
-        var hiddenIcon = the.visibilityElement.querySelector('i.d-none, .svg-icon.d-none');
+        var visibleIcon = the.visibilityElement.querySelector(':scope > i:not(.d-none)');
+        var hiddenIcon = the.visibilityElement.querySelector(':scope > i.d-none');
         
         if (the.inputElement.getAttribute('type').toLowerCase() === 'password' ) {
             the.inputElement.setAttribute('type', 'text');
