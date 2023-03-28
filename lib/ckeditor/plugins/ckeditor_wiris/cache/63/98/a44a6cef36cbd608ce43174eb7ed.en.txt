@@ -1,0 +1,1 @@
+{"result":{"text":"fraction numerator 1 over denominator 1 root index 1 of 1 end fraction"},"status":"ok"}

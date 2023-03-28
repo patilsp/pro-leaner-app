@@ -1,0 +1,24 @@
+ALTER TABLE  `qp_questiondetails` 
+ADD COLUMN `assesType` INT(11) NULL AFTER `updatedOn`;
+
+ALTER TABLE  `qp_questiondetails` 
+ADD COLUMN `noTimes` INT(11) NULL AFTER `assesType`;
+
+ALTER TABLE  `qp_questiondetails` 
+ADD COLUMN `quesMarks` INT(11) NULL DEFAULT 0 AFTER `noTimes`;
+
+
+CREATE TABLE `qp_master_difficulty` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `difficulty` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
+ALTER TABLE  `qp_master_difficulty` 
+ADD COLUMN `deleted` INT(11) NULL DEFAULT 0 AFTER `difficulty`;
+
+INSERT INTO `qp_master_difficulty` VALUES (1,'Easy',0),(2,'Medium',0),(3,'Complex',0);
+
+ALTER TABLE  `qp_master_difficulty` 
+CHANGE COLUMN `difficulty` `name` VARCHAR(45) NULL DEFAULT NULL ;
+
+

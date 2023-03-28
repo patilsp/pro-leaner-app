@@ -1,0 +1,99 @@
+
+html.light-theme .sidebar-wrapper,
+html.light-theme .sidebar-wrapper .sidebar-header {
+
+    background-color: #ffffff;
+
+}
+
+
+html.light-theme .top-header .navbar{
+    background-color: #ffffff;
+}
+html.light-theme .nav-container {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    background-color: #b5d8ff;
+}
+
+
+
+html.light-theme .top-header .navbar .searchbar .form-control {
+
+    border: 1px solid #e2e3e4;
+    box-shadow: none;
+
+}
+
+
+html.light-theme .top-header .navbar .searchbar .form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+}
+
+html.light-theme .top-header .navbar .user-setting {
+ 
+    border: 1px solid #e2e3e4;
+    box-shadow: none;
+
+}
+
+html.light-theme .mobile-toggle-icon,
+html.light-theme .search-toggle-icon,
+html.light-theme .projects,
+html.light-theme .notifications,
+html.light-theme .messages {
+
+    border: 1px solid #e2e3e4;
+    box-shadow: none;
+    
+}
+
+html.light-theme .sidebar-wrapper .iconmenu .nav-pills .nav-link {
+
+    border: 1px solid #e2e3e4;
+    box-shadow: none !important;
+
+}
+
+html.light-theme .sidebar-wrapper .iconmenu .nav-toggle-box .nav-toggle-icon {
+    border: 1px solid #e2e3e4;
+    box-shadow: none !important;
+}
+
+.btn-info, .btn-info:hover, .btn-info:active, .btn-info:focus{
+    background-color: #3395ff;
+    color: #ffffff;
+}
+
+table.dataTable{
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+table.dataTable tbody tr{
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    background-color: #f8fbfe !important
+}
+table.dataTable td, table.dataTable thead th{
+    border: none;
+}
+table.dataTable thead th{
+    color: #878787;
+    font-size: 14px;
+    font-weight: 600;
+}
+table.dataTable td{
+    color: #393f4e;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 1rem;
+    vertical-align: middle;
+}
+table.dataTable .action_img img{
+    width: 20px;
+    height: 20px
+}
+table .tableIcon{
+    width: 36px;
+    height: 36px;
+}

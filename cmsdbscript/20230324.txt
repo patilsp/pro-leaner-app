@@ -1,0 +1,23 @@
+INSERT INTO `pms`.`qp_evaluation` (`id`, `name`, `deleted`) VALUES (NULL, 'Autoevaluate - Marks', '0');
+
+CREATE TABLE IF NOT EXISTS `users_module_access` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `permission_id` int(10) unsigned DEFAULT NULL,
+  `created_by` int(10) unsigned NOT NULL,
+  `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Create', 'Create', '49', '3', '1', '#', '9', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Edit', 'Edit', '49', '3', '1', '#', '9', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Create', 'Create', '50', '3', '1', '#', '3', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Edit', 'Edit', '50', '3', '1', '#', '3', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Create', 'Create', '48', '2', '1', '#', '3', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Edit', 'Edit', '48', '2', '1', '#', '3', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Create', 'Create', '27', '3', '1', '#', '3', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Edit', 'Edit', '27', '3', '1', '#', '3', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Create', 'Create', '30', '3', '1', '#', '3', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Edit', 'Edit', '30', '3', '1', '#', '3', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Create', 'Create', '31', '3', '1', '#', '3', 'ion-ios-paper-outline');
+INSERT INTO `pms`.`permission` (`id`, `name`, `title`, `parent`, `level`, `visible`, `link`, `sequence`, `icon`) VALUES (NULL, 'Edit', 'Edit', '31', '3', '1', '#', '3', 'ion-ios-paper-outline');

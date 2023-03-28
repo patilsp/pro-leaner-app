@@ -12,14 +12,14 @@ $user_type = $_SESSION['cms_usertype'];
         <title>Tech E-Learning School</title>
         <meta charset="utf-8"/>       
         <meta name="viewport" content="width=device-width, initial-scale=1"/>      
-        <link rel="shortcut icon" href="<?php echo $web_root ?>assets/assets/media/logos/favicon.ico"/>
-        <link href="<?php echo $web_root ?>lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../links/media/logos/favicon.ico"/>
+        <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"/>  
-        <link href="<?php echo $web_root ?>assets/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo $web_root ?>assets/assets/plugins/custom/vis-timeline/vis-timeline.bundle.css" rel="stylesheet" type="text/css"/>
+        <link href="../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
+        <link href="../links/plugins/custom/vis-timeline/vis-timeline.bundle.css" rel="stylesheet" type="text/css"/>
     
-        <link href="<?php echo $web_root ?>assets/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo $web_root ?>assets/assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+        <link href="../links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+        <link href="../links/css/main.css" rel="stylesheet" type="text/css"/>
       
 </head>
 
@@ -60,17 +60,7 @@ $user_type = $_SESSION['cms_usertype'];
     <!--begin::Wrapper-->
     <div class="d-flex flex-align-items flex-wrap gap-3 gap-xl-0">
         <!--begin::Users group-->
-        <div class="symbol-group symbol-hover flex-nowrap me-5">
-            
-            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Perry Matthew">
-                    <span class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
-            </div>
-            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Cody Fishers">
-                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg" />
-            </div>
-                     
-        </div>
-        <!--end::Users group-->
+       
 
         <!--begin::Actions-->
         <div class="d-flex align-items-center flex-shrink-0">
@@ -85,7 +75,7 @@ $user_type = $_SESSION['cms_usertype'];
 <!--end::Svg Icon-->                Invite 
             </a>   
 
-            <a href="/<?php echo $web_root ?>demo19/account/overview.html" class="btn btn-sm btn-flex btn-primary ms-5">
+            <a href="/../demo19/account/overview.html" class="btn btn-sm btn-flex btn-primary ms-5">
                 Edit You Profile
             </a> 
         </div>
@@ -109,7 +99,7 @@ $user_type = $_SESSION['cms_usertype'];
 <div class="card card-flush h-xl-100" >   
     <!--begin::Heading-->
     <div class="card-header rounded bgi-no-repeat bgi-size-cover bgi-position-y-top bgi-position-x-center align-items-start h-250px" 
-    style="background-image:url('<?php echo $web_root ?>assets/assets/media/top-green.png" data-bs-theme="light">
+    style="background-image:url('../links/media/top-green.png" data-bs-theme="light">
         <!--begin::Title-->
         <h3 class="card-title align-items-start flex-column text-white pt-15">
             <span class="fw-bold fs-2x mb-3">My Tasks</span>
@@ -118,7 +108,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <span class="opacity-75">You have</span>
 
                 <span class="position-relative d-inline-block">
-                    <a href="/<?php echo $web_root ?>demo19/pages/user-profile/projects.html" class="link-white opacity-75-hover fw-bold d-block mb-1">4 tasks</a>
+                    <a href="/../demo19/pages/user-profile/projects.html" class="link-white opacity-75-hover fw-bold d-block mb-1">4 tasks</a>
 
                     <!--begin::Separator-->
                     <span class="position-absolute opacity-50 bottom-0 start-0 border-2 border-body border-bottom w-100"></span>
@@ -1060,7 +1050,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <span class="me-2">
                     You have got
                     <span class="position-relative d-inline-block text-danger">
-                        <a href="/<?php echo $web_root ?>demo19/pages/user-profile/overview.html" class="text-danger opacity-75-hover">2300 bonus</a>  
+                        <a href="/../demo19/pages/user-profile/overview.html" class="text-danger opacity-75-hover">2300 bonus</a>  
 
                         <!--begin::Separator-->
                         <span class="position-absolute opacity-50 bottom-0 start-0 border-4 border-danger border-bottom w-100"></span>
@@ -1078,7 +1068,7 @@ $user_type = $_SESSION['cms_usertype'];
                     Get Reward
                 </a> 
 
-                <a href="/<?php echo $web_root ?>demo19/apps/support-center/overview.html" class="btn btn-color-white bg-white bg-opacity-15 bg-hover-opacity-25 fw-semibold">
+                <a href="/../demo19/apps/support-center/overview.html" class="btn btn-color-white bg-white bg-opacity-15 bg-hover-opacity-25 fw-semibold">
                     How to
                 </a> 
             </div>
@@ -1087,7 +1077,7 @@ $user_type = $_SESSION['cms_usertype'];
         <!--begin::Wrapper-->                 
 
         <!--begin::Illustration-->
-        <img src="<?php echo $web_root ?>assets/assets/media/illustrations/sigma-1/17-dark.png" class="position-absolute me-3 bottom-0 end-0 h-200px" alt=""/> 
+        <img src="../links/media/illustrations/sigma-1/17-dark.png" class="position-absolute me-3 bottom-0 end-0 h-200px" alt=""/> 
         <!--end::Illustration-->
     </div>
     <!--end::Body-->
@@ -1138,7 +1128,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="d-flex align-items-center flex-row-fluid flex-wrap">
                     <!--begin:Author-->                    
                     <div class="flex-grow-1 me-2">
-                        <a href="/<?php echo $web_root ?>demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">UI/UX Design</a>
+                        <a href="/../demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">UI/UX Design</a>
                         
                         <span class="text-muted fw-semibold d-block fs-7">40+ Courses</span>
                     </div>
@@ -1176,7 +1166,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="d-flex align-items-center flex-row-fluid flex-wrap">
                     <!--begin:Author-->                    
                     <div class="flex-grow-1 me-2">
-                        <a href="/<?php echo $web_root ?>demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">QA Analysis</a>
+                        <a href="/../demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">QA Analysis</a>
                         
                         <span class="text-muted fw-semibold d-block fs-7">18 Courses</span>
                     </div>
@@ -1214,7 +1204,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="d-flex align-items-center flex-row-fluid flex-wrap">
                     <!--begin:Author-->                    
                     <div class="flex-grow-1 me-2">
-                        <a href="/<?php echo $web_root ?>demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Web Development</a>
+                        <a href="/../demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Web Development</a>
                         
                         <span class="text-muted fw-semibold d-block fs-7">120+ Courses</span>
                     </div>
@@ -1252,7 +1242,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="d-flex align-items-center flex-row-fluid flex-wrap">
                     <!--begin:Author-->                    
                     <div class="flex-grow-1 me-2">
-                        <a href="/<?php echo $web_root ?>demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Marketing</a>
+                        <a href="/../demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Marketing</a>
                         
                         <span class="text-muted fw-semibold d-block fs-7">50+ Courses.</span>
                     </div>
@@ -1290,7 +1280,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="d-flex align-items-center flex-row-fluid flex-wrap">
                     <!--begin:Author-->                    
                     <div class="flex-grow-1 me-2">
-                        <a href="/<?php echo $web_root ?>demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Philosophy</a>
+                        <a href="/../demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Philosophy</a>
                         
                         <span class="text-muted fw-semibold d-block fs-7">24+ Courses</span>
                     </div>
@@ -1328,7 +1318,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="d-flex align-items-center flex-row-fluid flex-wrap">
                     <!--begin:Author-->                    
                     <div class="flex-grow-1 me-2">
-                        <a href="/<?php echo $web_root ?>demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Mathematics</a>
+                        <a href="/../demo19/pages/user-profile/overview.html" class="text-gray-800 text-hover-primary fs-6 fw-bold">Mathematics</a>
                         
                         <span class="text-muted fw-semibold d-block fs-7">24+ Courses</span>
                     </div>
@@ -2217,7 +2207,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--begin::Wrapper-->                                  
                 <div class="d-flex align-items-center me-3">
                     <!--begin::Logo-->                         
-                    <img src="<?php echo $web_root ?>assets/assets/media/svg/brand-logos/laravel-2.svg" class="me-4 w-30px" alt=""/>                  
+                    <img src="../links/media/svg/brand-logos/laravel-2.svg" class="me-4 w-30px" alt=""/>                  
                     <!--end::Logo-->
 
                     <!--begin::Section-->                                  
@@ -2262,7 +2252,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--begin::Wrapper-->                                  
                 <div class="d-flex align-items-center me-3">
                     <!--begin::Logo-->                         
-                    <img src="<?php echo $web_root ?>assets/assets/media/svg/brand-logos/vue-9.svg" class="me-4 w-30px" alt=""/>                  
+                    <img src="../links/media/svg/brand-logos/vue-9.svg" class="me-4 w-30px" alt=""/>                  
                     <!--end::Logo-->
 
                     <!--begin::Section-->                                  
@@ -2307,7 +2297,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--begin::Wrapper-->                                  
                 <div class="d-flex align-items-center me-3">
                     <!--begin::Logo-->                         
-                    <img src="<?php echo $web_root ?>assets/assets/media/svg/brand-logos/bootstrap5.svg" class="me-4 w-30px" alt=""/>                  
+                    <img src="../links/media/svg/brand-logos/bootstrap5.svg" class="me-4 w-30px" alt=""/>                  
                     <!--end::Logo-->
 
                     <!--begin::Section-->                                  
@@ -2352,7 +2342,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--begin::Wrapper-->                                  
                 <div class="d-flex align-items-center me-3">
                     <!--begin::Logo-->                         
-                    <img src="<?php echo $web_root ?>assets/assets/media/svg/brand-logos/angular-icon.svg" class="me-4 w-30px" alt=""/>                  
+                    <img src="../links/media/svg/brand-logos/angular-icon.svg" class="me-4 w-30px" alt=""/>                  
                     <!--end::Logo-->
 
                     <!--begin::Section-->                                  
@@ -2397,7 +2387,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--begin::Wrapper-->                                  
                 <div class="d-flex align-items-center me-3">
                     <!--begin::Logo-->                         
-                    <img src="<?php echo $web_root ?>assets/assets/media/svg/brand-logos/spring-3.svg" class="me-4 w-30px" alt=""/>                  
+                    <img src="../links/media/svg/brand-logos/spring-3.svg" class="me-4 w-30px" alt=""/>                  
                     <!--end::Logo-->
 
                     <!--begin::Section-->                                  
@@ -2442,7 +2432,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--begin::Wrapper-->                                  
                 <div class="d-flex align-items-center me-3">
                     <!--begin::Logo-->                         
-                    <img src="<?php echo $web_root ?>assets/assets/media/svg/brand-logos/typescript-1.svg" class="me-4 w-30px" alt=""/>                  
+                    <img src="../links/media/svg/brand-logos/typescript-1.svg" class="me-4 w-30px" alt=""/>                  
                     <!--end::Logo-->
 
                     <!--begin::Section-->                                  
@@ -3822,8 +3812,8 @@ $user_type = $_SESSION['cms_usertype'];
             
             <!--begin::Illustration-->
             <div class="py-10 text-center">
-                                    <img src="<?php echo $web_root ?>assets/assets/media/svg/illustrations/easy/1.svg" class="theme-light-show w-200px" alt="">
-                    <img src="<?php echo $web_root ?>assets/assets/media/svg/illustrations/easy/1-dark.svg" class="theme-dark-show w-200px" alt="">
+                                    <img src="../links/media/svg/illustrations/easy/1.svg" class="theme-light-show w-200px" alt="">
+                    <img src="../links/media/svg/illustrations/easy/1-dark.svg" class="theme-dark-show w-200px" alt="">
                             </div>
             <!--end::Illustration-->
         </div>
@@ -3837,7 +3827,7 @@ $user_type = $_SESSION['cms_usertype'];
             <!--end::Link-->
 
             <!--begin::Link-->
-            <a class="btn btn-sm btn-light" href="/<?php echo $web_root ?>demo19/pages/user-profile/followers.html">
+            <a class="btn btn-sm btn-light" href="/../demo19/pages/user-profile/followers.html">
                 Learn more            </a>
             <!--end::Link-->
         </div>
@@ -3894,12 +3884,12 @@ $user_type = $_SESSION['cms_usertype'];
             <div class="tab-pane active blockui" id="kt_timeline_widget_1_tab_day" role="tabpanel" aria-labelledby="day-tab" data-kt-timeline-widget-1-blockui="true" style="">
                 <div class="table-responsive pb-10">
                     <!--begin::Timeline-->
-                    <div id="kt_timeline_widget_1_1" class="vis-timeline-custom h-350px min-w-700px" data-kt-timeline-widget-1-image-root="<?php echo $web_root ?>assets/assets/media/" style="position: relative;"><div class="vis-timeline vis-bottom vis-ltr" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); visibility: visible; height: 354px;"><div class="vis-panel vis-background" style="height: 354px; width: 750px; left: 0px; top: 0px;"></div><div class="vis-panel vis-background vis-vertical" style="height: 354px; width: 624px; left: 128px; top: 0px;"><div class="vis-axis" style="top: 304px; left: 0px;"><div class="vis-group"></div><div class="vis-group"></div><div class="vis-group"></div><div class="vis-group"></div></div><div class="vis-time-axis vis-background"><div class="vis-grid vis-vertical vis-minor vis-h15  vis-today  vis-odd" style="width: 201.333px; height: 330px; transform: translate(-40.8964px, -1px);"></div><div class="vis-grid vis-vertical vis-minor vis-h16  vis-today  vis-even" style="width: 201.333px; height: 330px; transform: translate(160.437px, -1px);"></div><div class="vis-grid vis-vertical vis-minor vis-h17  vis-today  vis-odd" style="width: 201.333px; height: 330px; transform: translate(361.77px, -1px);"></div><div class="vis-grid vis-vertical vis-minor vis-h18  vis-today  vis-even" style="width: 201.333px; height: 330px; transform: translate(563.104px, -1px);"></div></div></div><div class="vis-panel vis-background vis-horizontal" style="height: 305px; width: 750px; left: 0px; top: -1px;"></div><div class="vis-panel vis-center" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 305px; width: 624px; left: 127px; top: -1px;"><div class="vis-content" style="left: 0px; transform: translateY(0px);"><div class="vis-itemset" style="height: 303px;"><div class="vis-background"><div class="vis-group" style="height: 0px;"><div style="visibility: hidden; position: absolute;"></div></div><div class="vis-group" style="height: 75px;"><div style="visibility: hidden; position: absolute;"></div></div><div class="vis-group" style="height: 75px;"><div style="visibility: hidden; position: absolute;"></div></div><div class="vis-group" style="height: 75px;"><div style="visibility: hidden; position: absolute;"></div></div><div class="vis-group" style="height: 78px;"><div style="visibility: hidden; position: absolute;"></div></div></div><div class="vis-foreground"><div class="vis-group" style="height: 75px;"><div class="vis-item vis-range vis-readonly" style="transform: translateX(10px); width: 302px; top: 17.5px;"><div class="vis-item-overflow"><div class="vis-item-content" style="transform: translateX(0px);"><div class="rounded-pill bg-light-primary d-flex align-items-center position-relative h-40px w-100 p-2 overflow-hidden">
+                    <div id="kt_timeline_widget_1_1" class="vis-timeline-custom h-350px min-w-700px" data-kt-timeline-widget-1-image-root="../links/media/" style="position: relative;"><div class="vis-timeline vis-bottom vis-ltr" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); visibility: visible; height: 354px;"><div class="vis-panel vis-background" style="height: 354px; width: 750px; left: 0px; top: 0px;"></div><div class="vis-panel vis-background vis-vertical" style="height: 354px; width: 624px; left: 128px; top: 0px;"><div class="vis-axis" style="top: 304px; left: 0px;"><div class="vis-group"></div><div class="vis-group"></div><div class="vis-group"></div><div class="vis-group"></div></div><div class="vis-time-axis vis-background"><div class="vis-grid vis-vertical vis-minor vis-h15  vis-today  vis-odd" style="width: 201.333px; height: 330px; transform: translate(-40.8964px, -1px);"></div><div class="vis-grid vis-vertical vis-minor vis-h16  vis-today  vis-even" style="width: 201.333px; height: 330px; transform: translate(160.437px, -1px);"></div><div class="vis-grid vis-vertical vis-minor vis-h17  vis-today  vis-odd" style="width: 201.333px; height: 330px; transform: translate(361.77px, -1px);"></div><div class="vis-grid vis-vertical vis-minor vis-h18  vis-today  vis-even" style="width: 201.333px; height: 330px; transform: translate(563.104px, -1px);"></div></div></div><div class="vis-panel vis-background vis-horizontal" style="height: 305px; width: 750px; left: 0px; top: -1px;"></div><div class="vis-panel vis-center" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 305px; width: 624px; left: 127px; top: -1px;"><div class="vis-content" style="left: 0px; transform: translateY(0px);"><div class="vis-itemset" style="height: 303px;"><div class="vis-background"><div class="vis-group" style="height: 0px;"><div style="visibility: hidden; position: absolute;"></div></div><div class="vis-group" style="height: 75px;"><div style="visibility: hidden; position: absolute;"></div></div><div class="vis-group" style="height: 75px;"><div style="visibility: hidden; position: absolute;"></div></div><div class="vis-group" style="height: 75px;"><div style="visibility: hidden; position: absolute;"></div></div><div class="vis-group" style="height: 78px;"><div style="visibility: hidden; position: absolute;"></div></div></div><div class="vis-foreground"><div class="vis-group" style="height: 75px;"><div class="vis-item vis-range vis-readonly" style="transform: translateX(10px); width: 302px; top: 17.5px;"><div class="vis-item-overflow"><div class="vis-item-content" style="transform: translateX(0px);"><div class="rounded-pill bg-light-primary d-flex align-items-center position-relative h-40px w-100 p-2 overflow-hidden">
                     <div class="position-absolute rounded-pill d-block bg-primary start-0 top-0 h-100 z-index-1" style="width:60%;"></div>
         
                     <div class="d-flex align-items-center position-relative z-index-2">
                         <div class="symbol-group symbol-hover flex-nowrap me-3">
-                            <div class="symbol symbol-circle symbol-25px"><img alt="" src="<?php echo $web_root ?>assets/assets/media/avatars/300-6.jpg"></div><div class="symbol symbol-circle symbol-25px"><img alt="" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg"></div>
+                            <div class="symbol symbol-circle symbol-25px"><img alt="" src="../links/media/avatars/300-6.jpg"></div><div class="symbol symbol-circle symbol-25px"><img alt="" src="../links/media/avatars/300-1.jpg"></div>
                         </div>
         
                         <a href="#" class="fw-bold text-white text-hover-dark">Meeting</a>
@@ -3914,7 +3904,7 @@ $user_type = $_SESSION['cms_usertype'];
         
                     <div class="d-flex align-items-center position-relative z-index-2">
                         <div class="symbol-group symbol-hover flex-nowrap me-3">
-                            <div class="symbol symbol-circle symbol-25px"><img alt="" src="<?php echo $web_root ?>assets/assets/media/avatars/300-2.jpg"></div>
+                            <div class="symbol symbol-circle symbol-25px"><img alt="" src="../links/media/avatars/300-2.jpg"></div>
                         </div>
         
                         <a href="#" class="fw-bold text-white text-hover-dark">Testing</a>
@@ -3929,7 +3919,7 @@ $user_type = $_SESSION['cms_usertype'];
         
                     <div class="d-flex align-items-center position-relative z-index-2">
                         <div class="symbol-group symbol-hover flex-nowrap me-3">
-                            <div class="symbol symbol-circle symbol-25px"><img alt="" src="<?php echo $web_root ?>assets/assets/media/avatars/300-5.jpg"></div><div class="symbol symbol-circle symbol-25px"><img alt="" src="<?php echo $web_root ?>assets/assets/media/avatars/300-20.jpg"></div>
+                            <div class="symbol symbol-circle symbol-25px"><img alt="" src="../links/media/avatars/300-5.jpg"></div><div class="symbol symbol-circle symbol-25px"><img alt="" src="../links/media/avatars/300-20.jpg"></div>
                         </div>
         
                         <a href="#" class="fw-bold text-white text-hover-dark">Landing page</a>
@@ -3944,7 +3934,7 @@ $user_type = $_SESSION['cms_usertype'];
         
                     <div class="d-flex align-items-center position-relative z-index-2">
                         <div class="symbol-group symbol-hover flex-nowrap me-3">
-                            <div class="symbol symbol-circle symbol-25px"><img alt="" src="<?php echo $web_root ?>assets/assets/media/avatars/300-23.jpg"></div><div class="symbol symbol-circle symbol-25px"><img alt="" src="<?php echo $web_root ?>assets/assets/media/avatars/300-12.jpg"></div><div class="symbol symbol-circle symbol-25px"><img alt="" src="<?php echo $web_root ?>assets/assets/media/avatars/300-9.jpg"></div>
+                            <div class="symbol symbol-circle symbol-25px"><img alt="" src="../links/media/avatars/300-23.jpg"></div><div class="symbol symbol-circle symbol-25px"><img alt="" src="../links/media/avatars/300-12.jpg"></div><div class="symbol symbol-circle symbol-25px"><img alt="" src="../links/media/avatars/300-9.jpg"></div>
                         </div>
         
                         <a href="#" class="fw-bold text-white text-hover-dark">Products module</a>
@@ -3964,7 +3954,7 @@ $user_type = $_SESSION['cms_usertype'];
             <div class="tab-pane blockui" id="kt_timeline_widget_1_tab_week" role="tabpanel" aria-labelledby="week-tab" data-kt-timeline-widget-1-blockui="true" style="overflow: hidden;">
                 <div class="table-responsive pb-10">
                     <!--begin::Timeline-->
-                    <div id="kt_timeline_widget_1_2" class="vis-timeline-custom h-350px min-w-700px" data-kt-timeline-widget-1-image-root="<?php echo $web_root ?>assets/assets/media/"></div>
+                    <div id="kt_timeline_widget_1_2" class="vis-timeline-custom h-350px min-w-700px" data-kt-timeline-widget-1-image-root="../links/media/"></div>
                     <!--end::Timeline-->
                 </div>
             <div class="blockui-overlay bg-body" style="z-index: 1;"><span class="spinner-border text-primary"></span></div></div>
@@ -3974,7 +3964,7 @@ $user_type = $_SESSION['cms_usertype'];
             <div class="tab-pane blockui" id="kt_timeline_widget_1_tab_month" role="tabpanel" aria-labelledby="month-tab" data-kt-timeline-widget-1-blockui="true" style="overflow: hidden;">
                 <div class="table-responsive pb-10">
                     <!--begin::Timeline-->
-                    <div id="kt_timeline_widget_1_3" class="vis-timeline-custom h-350px min-w-700px" data-kt-timeline-widget-1-image-root="<?php echo $web_root ?>assets/assets/media/"></div>
+                    <div id="kt_timeline_widget_1_3" class="vis-timeline-custom h-350px min-w-700px" data-kt-timeline-widget-1-image-root="../links/media/"></div>
                     <!--end::Timeline-->
                 </div>
             <div class="blockui-overlay bg-body" style="z-index: 1;"><span class="spinner-border text-primary"></span></div></div>
@@ -4120,7 +4110,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                 <!--begin::User-->
                 <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
-                    <img src="<?php echo $web_root ?>assets/assets/media/avatars/300-14.jpg" alt="img"/>
+                    <img src="../links/media/avatars/300-14.jpg" alt="img"/>
                 </div>  
                 <!--end::User--> 
             </div>
@@ -4133,7 +4123,7 @@ $user_type = $_SESSION['cms_usertype'];
             <!--begin::Record-->
             <div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-5">  
                 <!--begin::Title-->                                   
-                <a href="/<?php echo $web_root ?>demo19/apps/projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Meeting with customer</a>                                  
+                <a href="/../demo19/apps/projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Meeting with customer</a>                                  
                 <!--end::Title-->
 
                 <!--begin::Label-->
@@ -4146,13 +4136,13 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px pe-2">
                     <!--begin::User-->
                     <div class="symbol symbol-circle symbol-25px">
-                        <img src="<?php echo $web_root ?>assets/assets/media/avatars/300-2.jpg" alt="img"/>
+                        <img src="../links/media/avatars/300-2.jpg" alt="img"/>
                     </div>
                     <!--end::User-->
 
                     <!--begin::User-->
                     <div class="symbol symbol-circle symbol-25px">
-                        <img src="<?php echo $web_root ?>assets/assets/media/avatars/300-14.jpg" alt="img"/>
+                        <img src="../links/media/avatars/300-14.jpg" alt="img"/>
                     </div>  
                     <!--end::User-->                                  
 
@@ -4171,7 +4161,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--end::Progress-->
                                     
                 <!--begin::Action-->
-                <a href="/<?php echo $web_root ?>demo19/apps/projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>    
+                <a href="/../demo19/apps/projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>    
                 <!--end::Action-->                                
             </div>
             <!--end::Record-->
@@ -4179,7 +4169,7 @@ $user_type = $_SESSION['cms_usertype'];
             <!--begin::Record-->
             <div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-0">  
                 <!--begin::Title-->                                   
-                <a href="/<?php echo $web_root ?>demo19/apps/projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Project Delivery Preparation</a>                                  
+                <a href="/../demo19/apps/projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Project Delivery Preparation</a>                                  
                 <!--end::Title-->
 
                 <!--begin::Label-->
@@ -4192,7 +4182,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px">
                     <!--begin::User-->
                     <div class="symbol symbol-circle symbol-25px">
-                        <img src="<?php echo $web_root ?>assets/assets/media/avatars/300-20.jpg" alt="img"/>
+                        <img src="../links/media/avatars/300-20.jpg" alt="img"/>
                     </div>
                     <!--end::User-->                               
 
@@ -4211,7 +4201,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--end::Progress-->
                                     
                 <!--begin::Action-->
-                <a href="/<?php echo $web_root ?>demo19/apps/projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>    
+                <a href="/../demo19/apps/projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>    
                 <!--end::Action-->                                
             </div>
             <!--end::Record-->
@@ -4256,7 +4246,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                 <!--begin::User-->
                 <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Alan Nilson">
-                    <img src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg" alt="img"/>
+                    <img src="../links/media/avatars/300-1.jpg" alt="img"/>
                 </div>  
                 <!--end::User--> 
             </div>
@@ -4302,7 +4292,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                 <!--begin::User-->
                 <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Jan Hummer">
-                    <img src="<?php echo $web_root ?>assets/assets/media/avatars/300-23.jpg" alt="img"/>
+                    <img src="../links/media/avatars/300-23.jpg" alt="img"/>
                 </div>  
                 <!--end::User--> 
             </div>
@@ -4316,13 +4306,13 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--begin::Item-->
                 <div class="d-flex flex-aligns-center pe-10 pe-lg-20">  
                     <!--begin::Icon-->                                  
-                    <img alt="" class="w-30px me-3" src="<?php echo $web_root ?>assets/assets/media/svg/files/pdf.svg"/>
+                    <img alt="" class="w-30px me-3" src="../links/media/svg/files/pdf.svg"/>
                     <!--end::Icon--> 
 
                     <!--begin::Info--> 
                     <div class="ms-1 fw-semibold">
                         <!--begin::Desc--> 
-                        <a href="/<?php echo $web_root ?>demo19/apps/projects/project.html" class="fs-6 text-hover-primary fw-bold">Finance KPI App Guidelines</a>
+                        <a href="/../demo19/apps/projects/project.html" class="fs-6 text-hover-primary fw-bold">Finance KPI App Guidelines</a>
                         <!--end::Desc--> 
 
                         <!--begin::Number--> 
@@ -4336,7 +4326,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--begin::Item-->
                 <div class="d-flex flex-aligns-center pe-10 pe-lg-20">   
                     <!--begin::Icon-->                                  
-                    <img alt="/<?php echo $web_root ?>demo19/apps/projects/project.html" class="w-30px me-3" src="<?php echo $web_root ?>assets/assets/media/svg/files/doc.svg"/>
+                    <img alt="/../demo19/apps/projects/project.html" class="w-30px me-3" src="../links/media/svg/files/doc.svg"/>
                     <!--end::Icon--> 
 
                     <!--begin::Info--> 
@@ -4356,7 +4346,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <!--begin::Item-->
                 <div class="d-flex flex-aligns-center">   
                     <!--begin::Icon-->                                  
-                    <img alt="/<?php echo $web_root ?>demo19/apps/projects/project.html" class="w-30px me-3" src="<?php echo $web_root ?>assets/assets/media/svg/files/css.svg"/>
+                    <img alt="/../demo19/apps/projects/project.html" class="w-30px me-3" src="../links/media/svg/files/css.svg"/>
                     <!--end::Icon--> 
 
                     <!--begin::Info--> 
@@ -4417,7 +4407,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                 <!--begin::User-->
                 <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
-                    <img src="<?php echo $web_root ?>assets/assets/media/avatars/300-14.jpg" alt="img"/>
+                    <img src="../links/media/avatars/300-14.jpg" alt="img"/>
                 </div>  
                 <!--end::User--> 
             </div>
@@ -4463,7 +4453,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                 <!--begin::User-->
                 <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
-                    <img src="<?php echo $web_root ?>assets/assets/media/avatars/300-2.jpg" alt="img"/>
+                    <img src="../links/media/avatars/300-2.jpg" alt="img"/>
                 </div>  
                 <!--end::User--> 
             </div>
@@ -4478,7 +4468,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="overlay me-10">  
                     <!--begin::Image-->                                      
                     <div class="overlay-wrapper">
-                        <img alt="img" class="rounded w-150px" src="<?php echo $web_root ?>assets/assets/media/stock/600x400/img-29.jpg"/>  
+                        <img alt="img" class="rounded w-150px" src="../links/media/stock/600x400/img-29.jpg"/>  
                     </div>
                     <!--end::Image-->
 
@@ -4494,7 +4484,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="overlay me-10">   
                     <!--begin::Image-->                                     
                     <div class="overlay-wrapper">
-                        <img alt="img" class="rounded w-150px" src="<?php echo $web_root ?>assets/assets/media/stock/600x400/img-31.jpg"/> 
+                        <img alt="img" class="rounded w-150px" src="../links/media/stock/600x400/img-31.jpg"/> 
                     </div>
                     <!--end::Image-->
 
@@ -4510,7 +4500,7 @@ $user_type = $_SESSION['cms_usertype'];
                 <div class="overlay">   
                     <!--begin::Image-->                                     
                     <div class="overlay-wrapper">
-                        <img alt="img" class="rounded w-150px" src="<?php echo $web_root ?>assets/assets/media/stock/600x400/img-40.jpg"/>
+                        <img alt="img" class="rounded w-150px" src="../links/media/stock/600x400/img-40.jpg"/>
                     </div>
                     <!--end::Image-->
 
@@ -4614,7 +4604,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                 <!--begin::User-->
                 <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Robert Rich">
-                    <img src="<?php echo $web_root ?>assets/assets/media/avatars/300-4.jpg" alt="img"/>
+                    <img src="../links/media/avatars/300-4.jpg" alt="img"/>
                 </div>  
                 <!--end::User--> 
             </div>
@@ -4717,7 +4707,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 		<!--begin::Footer-->
 		<div class="card-footer py-5 text-center" id="kt_activities_footer">
-			<a href="/<?php echo $web_root ?>demo19/pages/user-profile/activity.html" class="btn btn-bg-body text-primary">
+			<a href="/../demo19/pages/user-profile/activity.html" class="btn btn-bg-body text-primary">
 				View All Activities <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
 <span class="svg-icon svg-icon-3 svg-icon-primary"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor"/>
@@ -4890,7 +4880,7 @@ $user_type = $_SESSION['cms_usertype'];
         <div class="d-flex flex-column align-items-start">
             <!--begin::User-->
             <div class="d-flex align-items-center mb-2">
-                                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-25.jpg"/></div><!--end::Avatar-->
+                                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../links/media/avatars/300-25.jpg"/></div><!--end::Avatar-->
                     <!--begin::Details-->
                     <div class="ms-3">
                         <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -4923,7 +4913,7 @@ $user_type = $_SESSION['cms_usertype'];
                     </div>
                     <!--end::Details-->
 
-                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg"/></div><!--end::Avatar-->                 
+                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../links/media/avatars/300-1.jpg"/></div><!--end::Avatar-->                 
             </div>
             <!--end::User-->
 
@@ -4942,7 +4932,7 @@ $user_type = $_SESSION['cms_usertype'];
         <div class="d-flex flex-column align-items-start">
             <!--begin::User-->
             <div class="d-flex align-items-center mb-2">
-                                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-25.jpg"/></div><!--end::Avatar-->
+                                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../links/media/avatars/300-25.jpg"/></div><!--end::Avatar-->
                     <!--begin::Details-->
                     <div class="ms-3">
                         <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -4975,7 +4965,7 @@ $user_type = $_SESSION['cms_usertype'];
                     </div>
                     <!--end::Details-->
 
-                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg"/></div><!--end::Avatar-->                 
+                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../links/media/avatars/300-1.jpg"/></div><!--end::Avatar-->                 
             </div>
             <!--end::User-->
 
@@ -4994,7 +4984,7 @@ $user_type = $_SESSION['cms_usertype'];
         <div class="d-flex flex-column align-items-start">
             <!--begin::User-->
             <div class="d-flex align-items-center mb-2">
-                                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-25.jpg"/></div><!--end::Avatar-->
+                                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../links/media/avatars/300-25.jpg"/></div><!--end::Avatar-->
                     <!--begin::Details-->
                     <div class="ms-3">
                         <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -5027,7 +5017,7 @@ $user_type = $_SESSION['cms_usertype'];
                     </div>
                     <!--end::Details-->
 
-                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg"/></div><!--end::Avatar-->                 
+                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../links/media/avatars/300-1.jpg"/></div><!--end::Avatar-->                 
             </div>
             <!--end::User-->
 
@@ -5046,7 +5036,7 @@ $user_type = $_SESSION['cms_usertype'];
         <div class="d-flex flex-column align-items-start">
             <!--begin::User-->
             <div class="d-flex align-items-center mb-2">
-                                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-25.jpg"/></div><!--end::Avatar-->
+                                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../links/media/avatars/300-25.jpg"/></div><!--end::Avatar-->
                     <!--begin::Details-->
                     <div class="ms-3">
                         <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -5079,7 +5069,7 @@ $user_type = $_SESSION['cms_usertype'];
                     </div>
                     <!--end::Details-->
 
-                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg"/></div><!--end::Avatar-->                 
+                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../links/media/avatars/300-1.jpg"/></div><!--end::Avatar-->                 
             </div>
             <!--end::User-->
 
@@ -5098,7 +5088,7 @@ $user_type = $_SESSION['cms_usertype'];
         <div class="d-flex flex-column align-items-start">
             <!--begin::User-->
             <div class="d-flex align-items-center mb-2">
-                                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-25.jpg"/></div><!--end::Avatar-->
+                                    <!--begin::Avatar--><div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../links/media/avatars/300-25.jpg"/></div><!--end::Avatar-->
                     <!--begin::Details-->
                     <div class="ms-3">
                         <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -5200,7 +5190,7 @@ $user_type = $_SESSION['cms_usertype'];
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->                                  
                         <div class="mb-3">
-                            <a href="/<?php echo $web_root ?>demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Iblender</a>
+                            <a href="/../demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Iblender</a>
                             
                             <span class="text-gray-400 fw-semibold d-block">The best kitchen gadget in 2022</span>
                         </div>                   
@@ -5233,7 +5223,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Pic--> 
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="<?php echo $web_root ?>assets/assets/media/stock/600x400/img-1.jpg" alt=""/>   
+                        <img src="../links/media/stock/600x400/img-1.jpg" alt=""/>   
                     </div>                                       
                     <!--end::Pic-->            
                 </div>
@@ -5250,7 +5240,7 @@ $user_type = $_SESSION['cms_usertype'];
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->                                  
                         <div class="mb-3">
-                            <a href="/<?php echo $web_root ?>demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">SmartCleaner</a>
+                            <a href="/../demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">SmartCleaner</a>
                             
                             <span class="text-gray-400 fw-semibold d-block">Smart tool for cooking</span>
                         </div>                   
@@ -5283,7 +5273,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Pic--> 
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="<?php echo $web_root ?>assets/assets/media/stock/600x400/img-3.jpg" alt=""/>   
+                        <img src="../links/media/stock/600x400/img-3.jpg" alt=""/>   
                     </div>                                       
                     <!--end::Pic-->            
                 </div>
@@ -5300,7 +5290,7 @@ $user_type = $_SESSION['cms_usertype'];
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->                                  
                         <div class="mb-3">
-                            <a href="/<?php echo $web_root ?>demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">CameraMaxr</a>
+                            <a href="/../demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">CameraMaxr</a>
                             
                             <span class="text-gray-400 fw-semibold d-block">Professional camera for edge</span>
                         </div>                   
@@ -5333,7 +5323,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Pic--> 
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="<?php echo $web_root ?>assets/assets/media/stock/600x400/img-8.jpg" alt=""/>   
+                        <img src="../links/media/stock/600x400/img-8.jpg" alt=""/>   
                     </div>                                       
                     <!--end::Pic-->            
                 </div>
@@ -5350,7 +5340,7 @@ $user_type = $_SESSION['cms_usertype'];
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->                                  
                         <div class="mb-3">
-                            <a href="/<?php echo $web_root ?>demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
+                            <a href="/../demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
                             
                             <span class="text-gray-400 fw-semibold d-block">Manfactoring unique objekts</span>
                         </div>                   
@@ -5383,7 +5373,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Pic--> 
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="<?php echo $web_root ?>assets/assets/media/stock/600x400/img-26.jpg" alt=""/>   
+                        <img src="../links/media/stock/600x400/img-26.jpg" alt=""/>   
                     </div>                                       
                     <!--end::Pic-->            
                 </div>
@@ -5400,7 +5390,7 @@ $user_type = $_SESSION['cms_usertype'];
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->                                  
                         <div class="mb-3">
-                            <a href="/<?php echo $web_root ?>demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">MotionWire</a>
+                            <a href="/../demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">MotionWire</a>
                             
                             <span class="text-gray-400 fw-semibold d-block">Perfect animation tool</span>
                         </div>                   
@@ -5433,7 +5423,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Pic--> 
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="<?php echo $web_root ?>assets/assets/media/stock/600x400/img-21.jpg" alt=""/>   
+                        <img src="../links/media/stock/600x400/img-21.jpg" alt=""/>   
                     </div>                                       
                     <!--end::Pic-->            
                 </div>
@@ -5450,7 +5440,7 @@ $user_type = $_SESSION['cms_usertype'];
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->                                  
                         <div class="mb-3">
-                            <a href="/<?php echo $web_root ?>demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Samsung</a>
+                            <a href="/../demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Samsung</a>
                             
                             <span class="text-gray-400 fw-semibold d-block">Profile info,Timeline etc</span>
                         </div>                   
@@ -5483,7 +5473,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Pic--> 
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="<?php echo $web_root ?>assets/assets/media/stock/600x400/img-34.jpg" alt=""/>   
+                        <img src="../links/media/stock/600x400/img-34.jpg" alt=""/>   
                     </div>                                       
                     <!--end::Pic-->            
                 </div>
@@ -5500,7 +5490,7 @@ $user_type = $_SESSION['cms_usertype'];
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->                                  
                         <div class="mb-3">
-                            <a href="/<?php echo $web_root ?>demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
+                            <a href="/../demo19/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">$D Printer</a>
                             
                             <span class="text-gray-400 fw-semibold d-block">Manfactoring unique objekts</span>
                         </div>                   
@@ -5533,7 +5523,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Pic--> 
                     <div class="symbol symbol-70px symbol-2by3 flex-shrink-0">
-                        <img src="<?php echo $web_root ?>assets/assets/media/stock/600x400/img-27.jpg" alt=""/>   
+                        <img src="../links/media/stock/600x400/img-27.jpg" alt=""/>   
                     </div>                                       
                     <!--end::Pic-->            
                 </div>
@@ -5750,7 +5740,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo1.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo1.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -5774,7 +5764,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo2.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo2.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -5798,7 +5788,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo30.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo30.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -5822,7 +5812,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo39.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo39.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -5846,7 +5836,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo31.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo31.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -5870,7 +5860,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo27.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo27.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -5894,7 +5884,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo6.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo6.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -5918,7 +5908,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo3.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo3.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -5942,7 +5932,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo23.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo23.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -5966,7 +5956,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo38.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo38.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -5990,7 +5980,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo36.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo36.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6014,7 +6004,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo10.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo10.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6038,7 +6028,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo35.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo35.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6062,7 +6052,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo8.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo8.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6086,7 +6076,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo25.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo25.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6110,7 +6100,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo20.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo20.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6134,7 +6124,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo7.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo7.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6158,7 +6148,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo43.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo43.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6182,7 +6172,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo32.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo32.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6206,7 +6196,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo42.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo42.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6230,7 +6220,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo44.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo44.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6254,7 +6244,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo33.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo33.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6278,7 +6268,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo37.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo37.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6302,7 +6292,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo11.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo11.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6326,7 +6316,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo16.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo16.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6350,7 +6340,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo26.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo26.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6374,7 +6364,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo22.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo22.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6398,7 +6388,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo19.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo19.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6422,7 +6412,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo40.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo40.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6446,7 +6436,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo29.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo29.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6470,7 +6460,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo24.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo24.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6494,7 +6484,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo4.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo4.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6518,7 +6508,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo41.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo41.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6542,7 +6532,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo18.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo18.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6566,7 +6556,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo21.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo21.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6590,7 +6580,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo34.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo34.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6614,7 +6604,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo15.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo15.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6638,7 +6628,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo14.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo14.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6662,7 +6652,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo9.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo9.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6686,7 +6676,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo5.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo5.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6710,7 +6700,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo13.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo13.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6734,7 +6724,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo12.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo12.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6758,7 +6748,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo48.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo48.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6782,7 +6772,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo28.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo28.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6806,7 +6796,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo17.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo17.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6830,7 +6820,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/demos/demo49.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/demos/demo49.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6874,7 +6864,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/multipurpose-demo19.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/multipurpose-demo19.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6886,7 +6876,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/marketing.html" 
+	href="/../demo19/dashboards/marketing.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -6897,7 +6887,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/marketing.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/marketing.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6909,7 +6899,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/social.html" 
+	href="/../demo19/dashboards/social.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -6920,7 +6910,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/social.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/social.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6932,7 +6922,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/ecommerce.html" 
+	href="/../demo19/dashboards/ecommerce.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -6943,7 +6933,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/ecommerce.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/ecommerce.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6955,7 +6945,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/store-analytics.html" 
+	href="/../demo19/dashboards/store-analytics.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -6966,7 +6956,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/store-analytics.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/store-analytics.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -6978,7 +6968,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/logistics.html" 
+	href="/../demo19/dashboards/logistics.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -6989,7 +6979,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/logistics.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/logistics.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7001,7 +6991,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/delivery.html" 
+	href="/../demo19/dashboards/delivery.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7012,7 +7002,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/delivery.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/delivery.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7024,7 +7014,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/online-courses.html" 
+	href="/../demo19/dashboards/online-courses.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7035,7 +7025,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/online-courses.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/online-courses.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7047,7 +7037,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/school.html" 
+	href="/../demo19/dashboards/school.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7058,7 +7048,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/school.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/school.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7070,7 +7060,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/crypto.html" 
+	href="/../demo19/dashboards/crypto.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7081,7 +7071,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/crypto.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/crypto.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7093,7 +7083,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/finance-performance.html" 
+	href="/../demo19/dashboards/finance-performance.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7104,7 +7094,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/finance-performance.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/finance-performance.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7116,7 +7106,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/website-analytics.html" 
+	href="/../demo19/dashboards/website-analytics.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7127,7 +7117,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/website-analytics.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/website-analytics.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7139,7 +7129,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/bidding.html" 
+	href="/../demo19/dashboards/bidding.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7150,7 +7140,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/bidding.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/bidding.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7162,7 +7152,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/podcast.html" 
+	href="/../demo19/dashboards/podcast.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7173,7 +7163,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/podcast.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/podcast.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7185,7 +7175,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/projects.html" 
+	href="/../demo19/dashboards/projects.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7196,7 +7186,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/projects.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/projects.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7208,7 +7198,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/call-center.html" 
+	href="/../demo19/dashboards/call-center.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7219,7 +7209,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/call-center.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/call-center.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7231,7 +7221,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/dashboards/pos.html" 
+	href="/../demo19/dashboards/pos.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7242,7 +7232,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/dashboards/pos.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/dashboards/pos.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7273,7 +7263,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/projects/list/list.html" 
+	href="/../demo19/apps/projects/list/list.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7284,7 +7274,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/projects.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/projects.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7296,7 +7286,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/ecommerce/catalog/products/products.html" 
+	href="/../demo19/apps/ecommerce/catalog/products/products.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7307,7 +7297,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/ecommerce.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/ecommerce.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7319,7 +7309,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/customers/list/list.html" 
+	href="/../demo19/apps/customers/list/list.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7330,7 +7320,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/customers.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/customers.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7342,7 +7332,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/subscriptions/list/list.html" 
+	href="/../demo19/apps/subscriptions/list/list.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7353,7 +7343,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/subscriptions.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/subscriptions.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7365,7 +7355,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/user-management/users/list/list.html" 
+	href="/../demo19/apps/user-management/users/list/list.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7376,7 +7366,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/user-management.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/user-management.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7388,7 +7378,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/invoices/create/main.html" 
+	href="/../demo19/apps/invoices/create/main.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7399,7 +7389,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/invoices.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/invoices.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7411,7 +7401,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/support-center/overview/main.html" 
+	href="/../demo19/apps/support-center/overview/main.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7422,7 +7412,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/support-center.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/support-center.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7434,7 +7424,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/chat/private.html" 
+	href="/../demo19/apps/chat/private.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7445,7 +7435,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/chat.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/chat.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7457,7 +7447,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/calendar/calendar.html" 
+	href="/../demo19/apps/calendar/calendar.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7468,7 +7458,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/calendar.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/calendar.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7480,7 +7470,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/file-manager/list/folders.html" 
+	href="/../demo19/apps/file-manager/list/folders.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7491,7 +7481,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/file-manager.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/file-manager.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7503,7 +7493,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/inbox/listing/listing.html" 
+	href="/../demo19/apps/inbox/listing/listing.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7514,7 +7504,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/inbox.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/inbox.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7526,7 +7516,7 @@ $user_type = $_SESSION['cms_usertype'];
 		
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/apps/contacts/getting-started.html" 
+	href="/../demo19/apps/contacts/getting-started.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7537,7 +7527,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/apps/contacts.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/apps/contacts.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7689,7 +7679,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/layouts/corporate/sign-in.html" 
+	href="/../demo19/authentication/layouts/corporate/sign-in.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7700,7 +7690,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-corporate.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-corporate.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7712,7 +7702,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/layouts/creative/sign-in.html" 
+	href="/../demo19/authentication/layouts/creative/sign-in.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7723,7 +7713,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-creative.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-creative.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7735,7 +7725,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/layouts/fancy/sign-in.html" 
+	href="/../demo19/authentication/layouts/fancy/sign-in.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7746,7 +7736,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-fancy.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-fancy.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7758,7 +7748,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/layouts/overlay/sign-in.html" 
+	href="/../demo19/authentication/layouts/overlay/sign-in.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7769,7 +7759,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-overlay.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-overlay.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7781,7 +7771,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/extended/multi-steps-sign-up.html" 
+	href="/../demo19/authentication/extended/multi-steps-sign-up.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7792,7 +7782,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-multistep.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-multistep.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7804,7 +7794,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/extended/two-factor-auth.html" 
+	href="/../demo19/authentication/extended/two-factor-auth.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7815,7 +7805,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-2factor.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-2factor.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7827,7 +7817,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/general/password-confirmation.html" 
+	href="/../demo19/authentication/general/password-confirmation.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7838,7 +7828,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-passwordchanged.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-passwordchanged.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7850,7 +7840,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/general/verify-email.html" 
+	href="/../demo19/authentication/general/verify-email.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7861,7 +7851,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-verifyemail.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-verifyemail.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7873,7 +7863,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/general/welcome.html" 
+	href="/../demo19/authentication/general/welcome.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7884,7 +7874,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-welcome.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-welcome.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7896,7 +7886,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/general/coming-soon.html" 
+	href="/../demo19/authentication/general/coming-soon.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7907,7 +7897,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-comingsoon.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-comingsoon.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7919,7 +7909,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/general/account-deactivated.html" 
+	href="/../demo19/authentication/general/account-deactivated.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7930,7 +7920,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-accountdeactivated.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-accountdeactivated.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7942,7 +7932,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/general/error-404.html" 
+	href="/../demo19/authentication/general/error-404.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7953,7 +7943,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-404.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-404.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -7965,7 +7955,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/general/error-500.html" 
+	href="/../demo19/authentication/general/error-500.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -7976,7 +7966,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/auth-500.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/auth-500.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8027,7 +8017,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/user-profile/overview.html" 
+	href="/../demo19/pages/user-profile/overview.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8038,7 +8028,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/profile-overview.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/profile-overview.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8050,7 +8040,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/user-profile/projects.html" 
+	href="/../demo19/pages/user-profile/projects.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8061,7 +8051,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/profile-overview.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/profile-overview.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8073,7 +8063,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/user-profile/campaigns.html" 
+	href="/../demo19/pages/user-profile/campaigns.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8084,7 +8074,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/profile-campaigns.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/profile-campaigns.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8096,7 +8086,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/user-profile/documents.html" 
+	href="/../demo19/pages/user-profile/documents.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8107,7 +8097,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/profile-documents.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/profile-documents.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8119,7 +8109,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/user-profile/followers.html" 
+	href="/../demo19/pages/user-profile/followers.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8130,7 +8120,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/profile-followers.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/profile-followers.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8142,7 +8132,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/user-profile/activity.html" 
+	href="/../demo19/pages/user-profile/activity.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8153,7 +8143,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/profile-activity.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/profile-activity.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8201,7 +8191,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/about.html" 
+	href="/../demo19/pages/about.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8212,7 +8202,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/corporate-aboutus.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/corporate-aboutus.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8224,7 +8214,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/contact.html" 
+	href="/../demo19/pages/contact.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8235,7 +8225,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/corporate-contactus.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/corporate-contactus.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8247,7 +8237,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/licenses.html" 
+	href="/../demo19/pages/licenses.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8258,7 +8248,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/corporate-license.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/corporate-license.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8270,7 +8260,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/team.html" 
+	href="/../demo19/pages/team.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8281,7 +8271,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/corporate-ourteam.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/corporate-ourteam.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8293,7 +8283,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/sitemap.html" 
+	href="/../demo19/pages/sitemap.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8304,7 +8294,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/corporate-sitemap.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/corporate-sitemap.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8352,7 +8342,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/social/feeds.html" 
+	href="/../demo19/pages/social/feeds.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8363,7 +8353,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/social-activity.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/social-activity.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8375,7 +8365,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/social/activity.html" 
+	href="/../demo19/pages/social/activity.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8386,7 +8376,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/social-feeds.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/social-feeds.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8398,7 +8388,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/social/followers.html" 
+	href="/../demo19/pages/social/followers.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8409,7 +8399,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/social-followers.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/social-followers.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8421,7 +8411,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/social/settings.html" 
+	href="/../demo19/pages/social/settings.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8432,7 +8422,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/social-settings.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/social-settings.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8480,7 +8470,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/faq/classic.html" 
+	href="/../demo19/pages/faq/classic.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8491,7 +8481,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/faq-classic.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/faq-classic.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8503,7 +8493,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/faq/extended.html" 
+	href="/../demo19/pages/faq/extended.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8514,7 +8504,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/faq-extended.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/faq-extended.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8526,7 +8516,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/blog/home.html" 
+	href="/../demo19/pages/blog/home.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8537,7 +8527,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/blog-home.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/blog-home.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8549,7 +8539,7 @@ $user_type = $_SESSION['cms_usertype'];
 				
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/pages/blog/post.html" 
+	href="/../demo19/pages/blog/post.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8560,7 +8550,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/blog-post.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/blog-post.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8584,7 +8574,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/account/overview.html" 
+	href="/../demo19/account/overview.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8595,7 +8585,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/account-overview.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/account-overview.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8607,7 +8597,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/account/settings.html" 
+	href="/../demo19/account/settings.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8618,7 +8608,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/account-settings.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/account-settings.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8630,7 +8620,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/account/billing.html" 
+	href="/../demo19/account/billing.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8641,7 +8631,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/account-billing.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/account-billing.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8653,7 +8643,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/account/security.html" 
+	href="/../demo19/account/security.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8664,7 +8654,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/account-security.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/account-security.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8676,7 +8666,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/account/referrals.html" 
+	href="/../demo19/account/referrals.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8687,7 +8677,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/account-referrals.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/account-referrals.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8699,7 +8689,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/account/logs.html" 
+	href="/../demo19/account/logs.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8710,7 +8700,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/account-logs.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/account-logs.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8722,7 +8712,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/account/api-keys.html" 
+	href="/../demo19/account/api-keys.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8733,7 +8723,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/account-apikeys.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/account-apikeys.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8745,7 +8735,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/account/statements.html" 
+	href="/../demo19/account/statements.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8756,7 +8746,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/account-statements.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/account-statements.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8768,7 +8758,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/account/billing.html" 
+	href="/../demo19/account/billing.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8779,7 +8769,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/account-billing.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/account-billing.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8800,7 +8790,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/general/view-users.html" 
+	href="/../demo19/utilities/modals/general/view-users.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8811,7 +8801,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-viewfriends.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-viewfriends.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8823,7 +8813,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/general/upgrade-plan.html" 
+	href="/../demo19/utilities/modals/general/upgrade-plan.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8834,7 +8824,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-upgradeplan.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-upgradeplan.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8846,7 +8836,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/top-up-wallet.html" 
+	href="/../demo19/utilities/modals/wizards/top-up-wallet.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8857,7 +8847,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-topupwallet.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-topupwallet.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8869,7 +8859,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/general/share-earn.html" 
+	href="/../demo19/utilities/modals/general/share-earn.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8880,7 +8870,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-shareandearn.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-shareandearn.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8892,7 +8882,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/general/select-users.html" 
+	href="/../demo19/utilities/modals/general/select-users.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8903,7 +8893,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-selectuser.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-selectuser.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8915,7 +8905,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/forms/bidding.html" 
+	href="/../demo19/utilities/modals/forms/bidding.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8926,7 +8916,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-placeyourbid.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-placeyourbid.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8938,7 +8928,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/offer-a-deal.html" 
+	href="/../demo19/utilities/modals/wizards/offer-a-deal.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8949,7 +8939,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-offeradeal.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-offeradeal.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8961,7 +8951,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/forms/new-target.html" 
+	href="/../demo19/utilities/modals/forms/new-target.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8972,7 +8962,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-newtarget.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-newtarget.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -8984,7 +8974,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/forms/new-card.html" 
+	href="/../demo19/utilities/modals/forms/new-card.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -8995,7 +8985,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-newcard.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-newcard.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9007,7 +8997,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/forms/new-address.html" 
+	href="/../demo19/utilities/modals/forms/new-address.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9018,7 +9008,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-newaddress.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-newaddress.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9030,7 +9020,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/general/invite-friends.html" 
+	href="/../demo19/utilities/modals/general/invite-friends.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9041,7 +9031,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-invitefriend.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-invitefriend.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9053,7 +9043,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/create-project.html" 
+	href="/../demo19/utilities/modals/wizards/create-project.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9064,7 +9054,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-createproject.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-createproject.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9076,7 +9066,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/create-campaign.html" 
+	href="/../demo19/utilities/modals/wizards/create-campaign.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9087,7 +9077,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-createcampaign.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-createcampaign.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9099,7 +9089,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/create-account.html" 
+	href="/../demo19/utilities/modals/wizards/create-account.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9110,7 +9100,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-createbusinessacc.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-createbusinessacc.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9122,7 +9112,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/create-app.html" 
+	href="/../demo19/utilities/modals/wizards/create-app.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9133,7 +9123,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-createapp.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-createapp.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9145,7 +9135,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/forms/create-api-key.html" 
+	href="/../demo19/utilities/modals/forms/create-api-key.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9156,7 +9146,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-createapikey.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-createapikey.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9168,7 +9158,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/two-factor-authentication.html" 
+	href="/../demo19/utilities/modals/wizards/two-factor-authentication.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9179,7 +9169,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/modal-2factorauth.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/modal-2factorauth.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9200,7 +9190,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/wizards/horizontal.html" 
+	href="/../demo19/utilities/wizards/horizontal.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9211,7 +9201,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/wizard-2factorauth.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/wizard-2factorauth.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9223,7 +9213,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/wizards/horizontal.html" 
+	href="/../demo19/utilities/wizards/horizontal.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9234,7 +9224,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/wizard-horizontal.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/wizard-horizontal.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9246,7 +9236,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/wizards/vertical.html" 
+	href="/../demo19/utilities/wizards/vertical.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9257,7 +9247,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/wizard-vertical.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/wizard-vertical.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9278,7 +9268,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/search/users.html" 
+	href="/../demo19/utilities/search/users.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9289,7 +9279,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/search-users.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/search-users.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9301,7 +9291,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/search/horizontal.html" 
+	href="/../demo19/utilities/search/horizontal.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9312,7 +9302,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/search-horizontal.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/search-horizontal.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9324,7 +9314,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/search/vertical.html" 
+	href="/../demo19/utilities/search/vertical.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9335,7 +9325,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/search-vertical.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/search-vertical.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9347,7 +9337,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/utilities/search/select-location.html" 
+	href="/../demo19/utilities/search/select-location.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9358,7 +9348,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/search-location.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/search-location.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9379,7 +9369,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/widgets/charts.html" 
+	href="/../demo19/widgets/charts.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9390,7 +9380,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/widgets-charts.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/widgets-charts.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9402,7 +9392,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/widgets/feeds.html" 
+	href="/../demo19/widgets/feeds.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9413,7 +9403,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/widgets-feeds.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/widgets-feeds.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9425,7 +9415,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/widgets/lists.html" 
+	href="/../demo19/widgets/lists.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9436,7 +9426,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/widgets-lists.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/widgets-lists.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9448,7 +9438,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/widgets/mixed.html" 
+	href="/../demo19/widgets/mixed.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9459,7 +9449,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/widgets-mixed.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/widgets-mixed.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9471,7 +9461,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/widgets/statistics.html" 
+	href="/../demo19/widgets/statistics.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9482,7 +9472,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/widgets-stats.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/widgets-stats.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9494,7 +9484,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/widgets/tables.html" 
+	href="/../demo19/widgets/tables.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9505,7 +9495,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/widgets-tables.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/widgets-tables.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9526,7 +9516,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/email/welcome-message.html" 
+	href="/../demo19/authentication/email/welcome-message.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9537,7 +9527,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/email-welcome.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/email-welcome.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9549,7 +9539,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/email/subscription-confirmed.html" 
+	href="/../demo19/authentication/email/subscription-confirmed.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9560,7 +9550,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/email-subscriptionconfirmed.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/email-subscriptionconfirmed.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9572,7 +9562,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/email/reset-password.html" 
+	href="/../demo19/authentication/email/reset-password.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9583,7 +9573,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/email-resetpassword.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/email-resetpassword.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9595,7 +9585,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/email/card-declined.html" 
+	href="/../demo19/authentication/email/card-declined.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9606,7 +9596,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/email-creditcarddeclined.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/email-creditcarddeclined.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9618,7 +9608,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/email/promo-1.html" 
+	href="/../demo19/authentication/email/promo-1.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9629,7 +9619,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/email-promo1.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/email-promo1.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9641,7 +9631,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/email/promo-2.html" 
+	href="/../demo19/authentication/email/promo-2.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9652,7 +9642,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/email-promo2.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/email-promo2.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -9664,7 +9654,7 @@ $user_type = $_SESSION['cms_usertype'];
 			
 <!--begin::Preview-->
 <a 
-	href="/<?php echo $web_root ?>demo19/authentication/email/promo-3.html" 
+	href="/../demo19/authentication/email/promo-3.html" 
 	data-kt-href="true" 
 	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
 >
@@ -9675,7 +9665,7 @@ $user_type = $_SESSION['cms_usertype'];
 
 	<!--begin::Thumbnail-->
 	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
-		<img src="<?php echo $web_root ?>assets/assets/media/preview/demos/placeholder.jpg" data-src="<?php echo $web_root ?>assets/assets/media/preview/prebuilts/pages/email-promo3.png" class="lozad w-100 rounded"/>
+		<img src="../links/media/preview/demos/placeholder.jpg" data-src="../links/media/preview/prebuilts/pages/email-promo3.png" class="lozad w-100 rounded"/>
 	</span>
 	<!--end::Thumbnail-->
 </a>
@@ -10061,25 +10051,25 @@ $user_type = $_SESSION['cms_usertype'];
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/marketing.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/marketing.html">
 				Marketing Dashboard			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/social.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/social.html">
 				Social Dashboard			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/ecommerce.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/ecommerce.html">
 				eCommerce Dashboard			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/store-analytics.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/store-analytics.html">
 				Store Analytics			</a>
 
 										</div>
@@ -10093,31 +10083,31 @@ $user_type = $_SESSION['cms_usertype'];
 				<!--begin::List-->
 				<div class="d-flex flex-column gap-3 gap-lg-5">
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/logistics.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/logistics.html">
 				Logistics			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/delivery.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/delivery.html">
 				Delivery			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/online-courses.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/online-courses.html">
 				Online Courses			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/school.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/school.html">
 				Hello Tyler			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/crypto.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/crypto.html">
 				My Balance: 37,045$			</a>
 
 										</div>
@@ -10131,31 +10121,31 @@ $user_type = $_SESSION['cms_usertype'];
 				<!--begin::List-->
 				<div class="d-flex flex-column gap-3 gap-lg-5">
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/finance-performance.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/finance-performance.html">
 				Finance Performance			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/website-analytics.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/website-analytics.html">
 				Website Analytics			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/bidding.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/bidding.html">
 				Bidding Dashboard			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/podcast.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/podcast.html">
 				Podcast Dashboard			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/projects.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/projects.html">
 				Projects Dashboard			</a>
 
 										</div>
@@ -10169,13 +10159,13 @@ $user_type = $_SESSION['cms_usertype'];
 				<!--begin::List-->
 				<div class="d-flex flex-column gap-3 gap-lg-5">
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/call-center.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/call-center.html">
 				Call Center			</a>
 
 		
 			
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/dashboards/pos.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/dashboards/pos.html">
 				POS System			</a>
 
 										</div>
@@ -10213,22 +10203,22 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/layouts/corporate/sign-in.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/layouts/corporate/sign-in.html">
 						Corporate					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/layouts/creative/sign-in.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/layouts/creative/sign-in.html">
 						Creative					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/layouts/fancy/sign-in.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/layouts/fancy/sign-in.html">
 						Fancy					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/layouts/overlay/sign-in.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/layouts/overlay/sign-in.html">
 						Overlay					</a>
 
 																</div>
@@ -10241,22 +10231,22 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/extended/multi-steps-sign-up.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/extended/multi-steps-sign-up.html">
 						Multi-step					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/extended/two-factor-auth.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/extended/two-factor-auth.html">
 						2 Factor Auth					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/general/password-confirmation.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/general/password-confirmation.html">
 						Password Changed					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/general/verify-email.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/general/verify-email.html">
 						Verify Email					</a>
 
 																</div>
@@ -10269,22 +10259,22 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/general/welcome.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/general/welcome.html">
 						Welcome					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/general/coming-soon.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/general/coming-soon.html">
 						Coming Soon					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/general/account-deactivated.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/general/account-deactivated.html">
 						Account Deactivated					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/general/error-404.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/general/error-404.html">
 						404 Page					</a>
 
 																</div>
@@ -10297,7 +10287,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/general/error-500.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/general/error-500.html">
 						505 Page					</a>
 
 																</div>
@@ -10323,17 +10313,17 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/account/overview.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/account/overview.html">
 						Overview					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/account/settings.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/account/settings.html">
 						Settings					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/account/billing.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/account/billing.html">
 						Billing					</a>
 
 																</div>
@@ -10346,17 +10336,17 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/account/security.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/account/security.html">
 						Security					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/account/referrals.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/account/referrals.html">
 						Referrals					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/account/logs.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/account/logs.html">
 						Logs					</a>
 
 																</div>
@@ -10369,17 +10359,17 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/account/api-keys.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/account/api-keys.html">
 						API Keys					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/account/statements.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/account/statements.html">
 						Statements					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/account/billing.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/account/billing.html">
 						Billing					</a>
 
 																</div>
@@ -10405,27 +10395,27 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/general/view-users.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/general/view-users.html">
 						View Friends					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/general/upgrade-plan.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/general/upgrade-plan.html">
 						Upgrade Plan					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/top-up-wallet.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/wizards/top-up-wallet.html">
 						Topup Wallet					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/general/share-earn.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/general/share-earn.html">
 						Share & Earn					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/general/select-users.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/general/select-users.html">
 						Select User					</a>
 
 																</div>
@@ -10438,27 +10428,27 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/forms/bidding.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/forms/bidding.html">
 						Place Bid					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/offer-a-deal.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/wizards/offer-a-deal.html">
 						Offer Deal					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/forms/new-target.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/forms/new-target.html">
 						New Target					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/forms/new-card.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/forms/new-card.html">
 						New Card					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/forms/new-address.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/forms/new-address.html">
 						New Address					</a>
 
 																</div>
@@ -10471,27 +10461,27 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/general/invite-friends.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/general/invite-friends.html">
 						Invite Friend					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/create-project.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/wizards/create-project.html">
 						Create Project					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/create-campaign.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/wizards/create-campaign.html">
 						Create Campaign					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/create-account.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/wizards/create-account.html">
 						Create Business Account					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/create-app.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/wizards/create-app.html">
 						Create App					</a>
 
 																</div>
@@ -10504,12 +10494,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/forms/create-api-key.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/forms/create-api-key.html">
 						Create Api Key					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/modals/wizards/two-factor-authentication.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/modals/wizards/two-factor-authentication.html">
 						2 Factor Auth					</a>
 
 																</div>
@@ -10535,7 +10525,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/wizards/horizontal.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/wizards/horizontal.html">
 						2 Factor Auth					</a>
 
 																</div>
@@ -10548,7 +10538,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/wizards/horizontal.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/wizards/horizontal.html">
 						Horizontal					</a>
 
 																</div>
@@ -10561,7 +10551,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/wizards/vertical.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/wizards/vertical.html">
 						Vertical					</a>
 
 																</div>
@@ -10587,7 +10577,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/search/users.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/search/users.html">
 						Search Users					</a>
 
 																</div>
@@ -10600,7 +10590,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/search/horizontal.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/search/horizontal.html">
 						Search Horizontal					</a>
 
 																</div>
@@ -10613,7 +10603,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/search/vertical.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/search/vertical.html">
 						Search Vertical					</a>
 
 																</div>
@@ -10626,7 +10616,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/utilities/search/select-location.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/utilities/search/select-location.html">
 						Search Location					</a>
 
 																</div>
@@ -10652,12 +10642,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/widgets/charts.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/widgets/charts.html">
 						Charts					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/widgets/feeds.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/widgets/feeds.html">
 						Feeds					</a>
 
 																</div>
@@ -10670,12 +10660,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/widgets/lists.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/widgets/lists.html">
 						Lists					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/widgets/mixed.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/widgets/mixed.html">
 						Mixed					</a>
 
 																</div>
@@ -10688,12 +10678,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/widgets/statistics.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/widgets/statistics.html">
 						Statistics					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/widgets/tables.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/widgets/tables.html">
 						Tables					</a>
 
 																</div>
@@ -10719,12 +10709,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/email/welcome-message.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/email/welcome-message.html">
 						Welcome					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/email/subscription-confirmed.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/email/subscription-confirmed.html">
 						Subscription Confirmed					</a>
 
 																</div>
@@ -10737,12 +10727,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/email/reset-password.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/email/reset-password.html">
 						Reset Password					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/email/card-declined.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/email/card-declined.html">
 						Card Declined					</a>
 
 																</div>
@@ -10755,12 +10745,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/email/promo-1.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/email/promo-1.html">
 						Promotion 1					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/email/promo-2.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/email/promo-2.html">
 						Promotion 2					</a>
 
 																</div>
@@ -10773,7 +10763,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/authentication/email/promo-3.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/authentication/email/promo-3.html">
 						Promotion 3					</a>
 
 																</div>
@@ -10799,12 +10789,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/user-profile/overview.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/user-profile/overview.html">
 						Profile Overview					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/user-profile/projects.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/user-profile/projects.html">
 						User Projects					</a>
 
 																</div>
@@ -10817,12 +10807,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/user-profile/campaigns.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/user-profile/campaigns.html">
 						User Campaigns					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/user-profile/documents.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/user-profile/documents.html">
 						User Documents					</a>
 
 																</div>
@@ -10835,12 +10825,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/user-profile/followers.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/user-profile/followers.html">
 						User Followers					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/user-profile/activity.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/user-profile/activity.html">
 						User Activity					</a>
 
 																</div>
@@ -10866,12 +10856,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/about.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/about.html">
 						About Us					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/contact.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/contact.html">
 						Contact Us					</a>
 
 																</div>
@@ -10884,12 +10874,12 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/licenses.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/licenses.html">
 						License					</a>
 
 											
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/team.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/team.html">
 						Our Team					</a>
 
 																</div>
@@ -10902,7 +10892,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/sitemap.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/sitemap.html">
 						Sitemap					</a>
 
 																</div>
@@ -10928,7 +10918,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/social/feeds.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/social/feeds.html">
 						Activity					</a>
 
 																</div>
@@ -10941,7 +10931,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/social/activity.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/social/activity.html">
 						Feeds					</a>
 
 																</div>
@@ -10954,7 +10944,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/social/followers.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/social/followers.html">
 						Followers					</a>
 
 																</div>
@@ -10967,7 +10957,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/social/settings.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/social/settings.html">
 						Settings					</a>
 
 																</div>
@@ -10993,7 +10983,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/faq/classic.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/faq/classic.html">
 						FAQ Classic					</a>
 
 																</div>
@@ -11006,7 +10996,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/faq/extended.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/faq/extended.html">
 						FAQ Extended					</a>
 
 																</div>
@@ -11019,7 +11009,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/blog/home.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/blog/home.html">
 						Blog Home					</a>
 
 																</div>
@@ -11032,7 +11022,7 @@ $user_type = $_SESSION['cms_usertype'];
 						<!--begin::List-->
 						<div class="d-flex flex-column gap-3 gap-lg-5">
 				
-					<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/pages/blog/post.html">
+					<a class="fw-6 fw-semibold" href="/../demo19/pages/blog/post.html">
 						Blog Post					</a>
 
 																</div>
@@ -11063,17 +11053,17 @@ $user_type = $_SESSION['cms_usertype'];
 				<!--begin::List-->
 				<div class="d-flex flex-column gap-3 gap-lg-5">
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/projects/list/list.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/projects/list/list.html">
 				Projects			</a>
 
 					
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/ecommerce/catalog/products/products.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/ecommerce/catalog/products/products.html">
 				Ecommerce			</a>
 
 					
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/customers/list/list.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/customers/list/list.html">
 				Customers			</a>
 
 										</div>
@@ -11086,17 +11076,17 @@ $user_type = $_SESSION['cms_usertype'];
 				<!--begin::List-->
 				<div class="d-flex flex-column gap-3 gap-lg-5">
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/subscriptions/list/list.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/subscriptions/list/list.html">
 				Subscriptions			</a>
 
 					
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/user-management/users/list/list.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/user-management/users/list/list.html">
 				User Management			</a>
 
 					
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/invoices/create/main.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/invoices/create/main.html">
 				Invoices			</a>
 
 										</div>
@@ -11109,17 +11099,17 @@ $user_type = $_SESSION['cms_usertype'];
 				<!--begin::List-->
 				<div class="d-flex flex-column gap-3 gap-lg-5">
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/support-center/overview/main.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/support-center/overview/main.html">
 				Support Center			</a>
 
 					
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/chat/private.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/chat/private.html">
 				Chat			</a>
 
 					
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/calendar/calendar.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/calendar/calendar.html">
 				Calendar			</a>
 
 										</div>
@@ -11132,17 +11122,17 @@ $user_type = $_SESSION['cms_usertype'];
 				<!--begin::List-->
 				<div class="d-flex flex-column gap-3 gap-lg-5">
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/file-manager/list/folders.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/file-manager/list/folders.html">
 				File Manager			</a>
 
 					
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/inbox/listing/listing.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/inbox/listing/listing.html">
 				Inbox			</a>
 
 					
 		
-			<a class="fw-6 fw-semibold" href="/<?php echo $web_root ?>demo19/apps/contacts/getting-started.html">
+			<a class="fw-6 fw-semibold" href="/../demo19/apps/contacts/getting-started.html">
 				Contacts			</a>
 
 										</div>
@@ -11907,7 +11897,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                 <!--begin::Google Contacts Invite-->
                 <div class="btn btn-light-primary fw-bold w-100 mb-8">
-                    <img alt="Logo" src="<?php echo $web_root ?>assets/assets/media/svg/brand-logos/google-icon.svg" class="h-20px me-3"/>
+                    <img alt="Logo" src="../links/media/svg/brand-logos/google-icon.svg" class="h-20px me-3"/>
                     Invite Gmail Contacts
                 </div>
                 <!--end::Google Contacts Invite-->
@@ -11937,7 +11927,7 @@ $user_type = $_SESSION['cms_usertype'];
                                 <div class="d-flex align-items-center">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-35px symbol-circle">
-                                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-6.jpg" />
+                                                                                    <img alt="Pic" src="../links/media/avatars/300-6.jpg" />
                                                                             </div>
                                     <!--end::Avatar-->
 
@@ -12000,7 +11990,7 @@ $user_type = $_SESSION['cms_usertype'];
                                 <div class="d-flex align-items-center">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-35px symbol-circle">
-                                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg" />
+                                                                                    <img alt="Pic" src="../links/media/avatars/300-1.jpg" />
                                                                             </div>
                                     <!--end::Avatar-->
 
@@ -12031,7 +12021,7 @@ $user_type = $_SESSION['cms_usertype'];
                                 <div class="d-flex align-items-center">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-35px symbol-circle">
-                                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-5.jpg" />
+                                                                                    <img alt="Pic" src="../links/media/avatars/300-5.jpg" />
                                                                             </div>
                                     <!--end::Avatar-->
 
@@ -12062,7 +12052,7 @@ $user_type = $_SESSION['cms_usertype'];
                                 <div class="d-flex align-items-center">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-35px symbol-circle">
-                                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-25.jpg" />
+                                                                                    <img alt="Pic" src="../links/media/avatars/300-25.jpg" />
                                                                             </div>
                                     <!--end::Avatar-->
 
@@ -12125,7 +12115,7 @@ $user_type = $_SESSION['cms_usertype'];
                                 <div class="d-flex align-items-center">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-35px symbol-circle">
-                                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-9.jpg" />
+                                                                                    <img alt="Pic" src="../links/media/avatars/300-9.jpg" />
                                                                             </div>
                                     <!--end::Avatar-->
 
@@ -12220,7 +12210,7 @@ $user_type = $_SESSION['cms_usertype'];
                                 <div class="d-flex align-items-center">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-35px symbol-circle">
-                                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-23.jpg" />
+                                                                                    <img alt="Pic" src="../links/media/avatars/300-23.jpg" />
                                                                             </div>
                                     <!--end::Avatar-->
 
@@ -12283,7 +12273,7 @@ $user_type = $_SESSION['cms_usertype'];
                                 <div class="d-flex align-items-center">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-35px symbol-circle">
-                                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-12.jpg" />
+                                                                                    <img alt="Pic" src="../links/media/avatars/300-12.jpg" />
                                                                             </div>
                                     <!--end::Avatar-->
 
@@ -12346,7 +12336,7 @@ $user_type = $_SESSION['cms_usertype'];
                                 <div class="d-flex align-items-center">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-35px symbol-circle">
-                                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-13.jpg" />
+                                                                                    <img alt="Pic" src="../links/media/avatars/300-13.jpg" />
                                                                             </div>
                                     <!--end::Avatar-->
 
@@ -12409,7 +12399,7 @@ $user_type = $_SESSION['cms_usertype'];
                                 <div class="d-flex align-items-center">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-35px symbol-circle">
-                                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-21.jpg" />
+                                                                                    <img alt="Pic" src="../links/media/avatars/300-21.jpg" />
                                                                             </div>
                                     <!--end::Avatar-->
 
@@ -13118,9 +13108,9 @@ $user_type = $_SESSION['cms_usertype'];
 
         <!--begin::Card logos-->
         <div class="position-absolute translate-middle-y top-50 end-0 me-5">
-            <img src="<?php echo $web_root ?>assets/assets/media/svg/card-logos/visa.svg" alt="" class="h-25px"/>
-            <img src="<?php echo $web_root ?>assets/assets/media/svg/card-logos/mastercard.svg" alt="" class="h-25px"/>
-            <img src="<?php echo $web_root ?>assets/assets/media/svg/card-logos/american-express.svg" alt="" class="h-25px"/>
+            <img src="../links/media/svg/card-logos/visa.svg" alt="" class="h-25px"/>
+            <img src="../links/media/svg/card-logos/mastercard.svg" alt="" class="h-25px"/>
+            <img src="../links/media/svg/card-logos/american-express.svg" alt="" class="h-25px"/>
         </div>
         <!--end::Card logos-->
     </div>
@@ -13251,7 +13241,7 @@ $user_type = $_SESSION['cms_usertype'];
 
         <!--begin::Illustration-->
         <div class="text-center px-4 py-15">       
-            <img src="<?php echo $web_root ?>assets/assets/media/illustrations/sketchy-1/9.png" alt="" class="mw-100 mh-300px"/>
+            <img src="../links/media/illustrations/sketchy-1/9.png" alt="" class="mw-100 mh-300px"/>
         </div>
         <!--end::Illustration-->
     </div>
@@ -13441,11 +13431,11 @@ $user_type = $_SESSION['cms_usertype'];
             <!--begin::Image input placeholder-->
             <style>
                 .image-input-placeholder {
-                    background-image: url('<?php echo $web_root ?>assets/assets/media/svg/files/blank-image.svg');
+                    background-image: url('../links/media/svg/files/blank-image.svg');
                 }
 
                 [data-bs-theme="dark"] .image-input-placeholder {
-                    background-image: url('<?php echo $web_root ?>assets/assets/media/svg/files/blank-image-dark.svg');
+                    background-image: url('../links/media/svg/files/blank-image-dark.svg');
                 }                
             </style>
             <!--end::Image input placeholder-->
@@ -13658,7 +13648,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/pdf.svg" alt="icon" />
+                                <img src="../links/media/svg/files/pdf.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -13687,7 +13677,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/tif.svg" alt="icon" />
+                                <img src="../links/media/svg/files/tif.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -13716,7 +13706,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/folder-document.svg" alt="icon" />
+                                <img src="../links/media/svg/files/folder-document.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -13745,7 +13735,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/css.svg" alt="icon" />
+                                <img src="../links/media/svg/files/css.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -13774,7 +13764,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/ai.svg" alt="icon" />
+                                <img src="../links/media/svg/files/ai.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -13803,7 +13793,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/doc.svg" alt="icon" />
+                                <img src="../links/media/svg/files/doc.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -13958,7 +13948,7 @@ $user_type = $_SESSION['cms_usertype'];
             <!--End::Label-->
 
             <!--begin::Tagify-->
-            <input class="form-control d-flex align-items-center" value="" id="kt_modal_create_campaign_location" data-kt-flags-path="<?php echo $web_root ?>assets/assets/media/flags/"/>
+            <input class="form-control d-flex align-items-center" value="" id="kt_modal_create_campaign_location" data-kt-flags-path="../links/media/flags/"/>
             <!--end::Tagify-->
         </div>
         <!--end::Input group-->
@@ -14078,7 +14068,7 @@ $user_type = $_SESSION['cms_usertype'];
 
         <!--begin::Illustration-->
         <div class="text-center px-4">
-            <img src="<?php echo $web_root ?>assets/assets/media/illustrations/sketchy-1/9.png" alt="" class="mww-100 mh-350px"/>          
+            <img src="../links/media/illustrations/sketchy-1/9.png" alt="" class="mww-100 mh-350px"/>          
         </div>
         <!--end::Illustration-->
     </div>
@@ -14776,7 +14766,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-6.jpg" />
+                                                                    <img alt="Pic" src="../links/media/avatars/300-6.jpg" />
                                                             </div>
                             <!--end::Avatar-->
 
@@ -14839,7 +14829,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg" />
+                                                                    <img alt="Pic" src="../links/media/avatars/300-1.jpg" />
                                                             </div>
                             <!--end::Avatar-->
 
@@ -14870,7 +14860,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-5.jpg" />
+                                                                    <img alt="Pic" src="../links/media/avatars/300-5.jpg" />
                                                             </div>
                             <!--end::Avatar-->
 
@@ -14901,7 +14891,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-25.jpg" />
+                                                                    <img alt="Pic" src="../links/media/avatars/300-25.jpg" />
                                                             </div>
                             <!--end::Avatar-->
 
@@ -14964,7 +14954,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-9.jpg" />
+                                                                    <img alt="Pic" src="../links/media/avatars/300-9.jpg" />
                                                             </div>
                             <!--end::Avatar-->
 
@@ -15059,7 +15049,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-23.jpg" />
+                                                                    <img alt="Pic" src="../links/media/avatars/300-23.jpg" />
                                                             </div>
                             <!--end::Avatar-->
 
@@ -15122,7 +15112,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-12.jpg" />
+                                                                    <img alt="Pic" src="../links/media/avatars/300-12.jpg" />
                                                             </div>
                             <!--end::Avatar-->
 
@@ -15185,7 +15175,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-13.jpg" />
+                                                                    <img alt="Pic" src="../links/media/avatars/300-13.jpg" />
                                                             </div>
                             <!--end::Avatar-->
 
@@ -15248,7 +15238,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-21.jpg" />
+                                                                    <img alt="Pic" src="../links/media/avatars/300-21.jpg" />
                                                             </div>
                             <!--end::Avatar-->
 
@@ -15279,7 +15269,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg" />
+                                                                    <img alt="Pic" src="../links/media/avatars/300-1.jpg" />
                                                             </div>
                             <!--end::Avatar-->
 
@@ -15581,7 +15571,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/pdf.svg" alt="icon" />
+                                <img src="../links/media/svg/files/pdf.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -15610,7 +15600,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/doc.svg" alt="icon" />
+                                <img src="../links/media/svg/files/doc.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -15639,7 +15629,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/css.svg" alt="icon" />
+                                <img src="../links/media/svg/files/css.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -15668,7 +15658,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/ai.svg" alt="icon" />
+                                <img src="../links/media/svg/files/ai.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -15697,7 +15687,7 @@ $user_type = $_SESSION['cms_usertype'];
                         <div class="d-flex align-items-center">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px">
-                                <img src="<?php echo $web_root ?>assets/assets/media/svg/files/tif.svg" alt="icon" />
+                                <img src="../links/media/svg/files/tif.svg" alt="icon" />
                             </div>
                             <!--end::Avatar-->
 
@@ -15802,7 +15792,7 @@ $user_type = $_SESSION['cms_usertype'];
 
         <!--begin::Illustration-->
         <div class="text-center px-4">
-            <img src="<?php echo $web_root ?>assets/assets/media/illustrations/sketchy-1/9.png" alt="" class="mww-100 mh-350px"/>          
+            <img src="../links/media/illustrations/sketchy-1/9.png" alt="" class="mww-100 mh-350px"/>          
         </div>
         <!--end::Illustration-->
     </div>
@@ -15916,7 +15906,7 @@ $user_type = $_SESSION['cms_usertype'];
             <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                 <!--begin::Avatar-->
                 <div class="symbol symbol-35px symbol-circle me-5">
-                                            <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-6.jpg" />
+                                            <img alt="Pic" src="../links/media/avatars/300-6.jpg" />
                                     </div>
                 <!--end::Avatar-->
 
@@ -15949,7 +15939,7 @@ $user_type = $_SESSION['cms_usertype'];
             <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                 <!--begin::Avatar-->
                 <div class="symbol symbol-35px symbol-circle me-5">
-                                            <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg" />
+                                            <img alt="Pic" src="../links/media/avatars/300-1.jpg" />
                                     </div>
                 <!--end::Avatar-->
 
@@ -15965,7 +15955,7 @@ $user_type = $_SESSION['cms_usertype'];
             <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                 <!--begin::Avatar-->
                 <div class="symbol symbol-35px symbol-circle me-5">
-                                            <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-5.jpg" />
+                                            <img alt="Pic" src="../links/media/avatars/300-5.jpg" />
                                     </div>
                 <!--end::Avatar-->
 
@@ -15981,7 +15971,7 @@ $user_type = $_SESSION['cms_usertype'];
             <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                 <!--begin::Avatar-->
                 <div class="symbol symbol-35px symbol-circle me-5">
-                                            <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-25.jpg" />
+                                            <img alt="Pic" src="../links/media/avatars/300-25.jpg" />
                                     </div>
                 <!--end::Avatar-->
 
@@ -16014,7 +16004,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-6.jpg" />
+                                                    <img alt="Pic" src="../links/media/avatars/300-6.jpg" />
                                             </div>
                     <!--end::Avatar-->
 
@@ -16099,7 +16089,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg" />
+                                                    <img alt="Pic" src="../links/media/avatars/300-1.jpg" />
                                             </div>
                     <!--end::Avatar-->
 
@@ -16141,7 +16131,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-5.jpg" />
+                                                    <img alt="Pic" src="../links/media/avatars/300-5.jpg" />
                                             </div>
                     <!--end::Avatar-->
 
@@ -16183,7 +16173,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-25.jpg" />
+                                                    <img alt="Pic" src="../links/media/avatars/300-25.jpg" />
                                             </div>
                     <!--end::Avatar-->
 
@@ -16268,7 +16258,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-9.jpg" />
+                                                    <img alt="Pic" src="../links/media/avatars/300-9.jpg" />
                                             </div>
                     <!--end::Avatar-->
 
@@ -16396,7 +16386,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-23.jpg" />
+                                                    <img alt="Pic" src="../links/media/avatars/300-23.jpg" />
                                             </div>
                     <!--end::Avatar-->
 
@@ -16481,7 +16471,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-12.jpg" />
+                                                    <img alt="Pic" src="../links/media/avatars/300-12.jpg" />
                                             </div>
                     <!--end::Avatar-->
 
@@ -16566,7 +16556,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-13.jpg" />
+                                                    <img alt="Pic" src="../links/media/avatars/300-13.jpg" />
                                             </div>
                     <!--end::Avatar-->
 
@@ -16651,7 +16641,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-21.jpg" />
+                                                    <img alt="Pic" src="../links/media/avatars/300-21.jpg" />
                                             </div>
                     <!--end::Avatar-->
 
@@ -16693,7 +16683,7 @@ $user_type = $_SESSION['cms_usertype'];
 
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                                                    <img alt="Pic" src="<?php echo $web_root ?>assets/assets/media/avatars/300-1.jpg" />
+                                                    <img alt="Pic" src="../links/media/avatars/300-1.jpg" />
                                             </div>
                     <!--end::Avatar-->
 
@@ -16748,7 +16738,7 @@ $user_type = $_SESSION['cms_usertype'];
 
     <!--begin::Illustration-->
     <div class="text-center px-5">
-        <img src="<?php echo $web_root ?>assets/assets/media/illustrations/sketchy-1/1.png" alt="" class="w-100 h-200px h-sm-325px"/>        
+        <img src="../links/media/illustrations/sketchy-1/1.png" alt="" class="w-100 h-200px h-sm-325px"/>        
     </div>
     <!--end::Illustration-->
 </div>
@@ -16768,23 +16758,23 @@ $user_type = $_SESSION['cms_usertype'];
         
                 <!--begin::Javascript-->
                 <script>
-                    var hostUrl = "<?php echo $web_root ?>assets/assets/";        
+                    var hostUrl = "../links/";        
                 </script>
 
-                <script src="<?php echo $web_root ?>assets/assets/plugins/global/plugins.bundle.js"></script>
-                <script src="<?php echo $web_root ?>assets/assets/js/scripts.bundle.js"></script>
-                <script src="<?php echo $web_root ?>assets/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+                <script src="../links/plugins/global/plugins.bundle.js"></script>
+                <script src="../links/js/scripts.bundle.js"></script>
+                <script src="../links/plugins/custom/datatables/datatables.bundle.js"></script>
                 <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
                 <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
                 <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
                 <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
                 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-                <script src="<?php echo $web_root ?>assets/assets/js/widgets.bundle.js"></script>
-                <script src="<?php echo $web_root ?>assets/assets/js/custom/widgets.js"></script>
-                <script src="<?php echo $web_root ?>assets/assets/js/chat.js"></script>
-                <script src="<?php echo $web_root ?>assets/assets/js/upgrade-plan.js"></script>
-                <script src="<?php echo $web_root ?>assets/assets/js/create-app.js"></script>            
-                <script src="<?php echo $web_root ?>assets/assets/js/users-search.js"></script>
+                <script src="../links/js/widgets.bundle.js"></script>
+                <script src="../links/js/custom/widgets.js"></script>
+                <script src="../links/js/chat.js"></script>
+                <script src="../links/js/upgrade-plan.js"></script>
+                <script src="../links/js/create-app.js"></script>            
+                <script src="../links/js/users-search.js"></script>
             <!--end::Custom Javascript-->
             </body>
     <!--end::Body-->

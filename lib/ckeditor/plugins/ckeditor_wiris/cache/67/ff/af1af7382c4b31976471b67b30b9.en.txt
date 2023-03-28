@@ -1,0 +1,1 @@
+{"result":{"text":"C H subscript 3 superscript blank C O O Na"},"status":"ok"}

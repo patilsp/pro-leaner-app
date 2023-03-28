@@ -1,0 +1,23 @@
+CREATE TABLE `assign_submission` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `assignment` bigint(10) NOT NULL DEFAULT '0',
+  `userid` bigint(10) NOT NULL DEFAULT '0',
+  `timecreated` bigint(10) NOT NULL DEFAULT '0',
+  `timemodified` bigint(10) NOT NULL DEFAULT '0',
+  `status` varchar(10) DEFAULT NULL,
+  `groupid` bigint(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `mdl_assisubm_use_ix` (`userid`),
+  KEY `mdl_assisubm_ass_ix` (`assignment`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COMMENT='This table keeps information about student interactions with';
+
+CREATE TABLE `assignsubmission_onlinetext` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `assignment` bigint(10) NOT NULL DEFAULT '0',
+  `submission` bigint(10) NOT NULL DEFAULT '0',
+  `onlinetext` longtext,
+  `onlineformat` smallint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `mdl_assionli_ass_ix` (`assignment`),
+  KEY `mdl_assionli_sub_ix` (`submission`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COMMENT='Info about onlinetext submission';

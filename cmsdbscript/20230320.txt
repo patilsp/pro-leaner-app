@@ -1,0 +1,4 @@
+ALTER TABLE `qp_questiondetails` CHANGE `assesType` `assesType` VARCHAR(255) NULL DEFAULT NULL;
+
+ALTER TABLE `qp_qustpaperclasssubid`  ADD `due_by` DATETIME NULL ;
+ALTER TABLE `qp_qustpaperclasssubid`  ADD `publish_date` DATETIME NULL ;

@@ -1,0 +1,1 @@
+{"result":{"text":"mol equilibrium H subscript 2 O"},"status":"ok"}

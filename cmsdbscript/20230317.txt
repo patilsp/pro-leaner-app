@@ -1,0 +1,109 @@
+ALTER TABLE `qp_qustpaperclasssubid`  ADD `chapId` INT NULL ;
+ALTER TABLE `qp_qustpaperclasssubid`  ADD `topicId` INT NULL ,  ADD `subtopicId` INT NULL ;\
+ALTER TABLE `qp_qustpaperclasssubid`  ADD `sectionId` VARCHAR(50) NULL  AFTER `classId`;
+
+ALTER TABLE `qp_qustpaperclasssubid`  ADD `qType` INT NULL ,  ADD `qEvaluation` INT NULL ,  ADD `qPaperType` INT NULL ;
+
+
+CREATE TABLE IF NOT EXISTS `qp_evaluation` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `deleted` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `qp_evaluation`
+--
+
+INSERT INTO `qp_evaluation` (`id`, `name`, `deleted`) VALUES
+(1, 'No', 0),
+(2, 'Yes - Marks', 0),
+(3, 'Yes - Grade', 0);
+
+
+CREATE TABLE IF NOT EXISTS `qp_paper_display` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `deleted` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `qp_paper_display`
+--
+
+INSERT INTO `qp_paper_display` (`id`, `name`, `deleted`) VALUES
+(1, 'Serial', 0),
+(2, 'One after Other', 0);
+
+CREATE TABLE IF NOT EXISTS `qp_candidate_assess_response` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userId` int(11) DEFAULT NULL,
+  `assessId` int(11) DEFAULT NULL,
+  `userResJson` longtext,
+  `QuestionWiseMarksObtained` text,
+  `submittedStatus` varchar(100) DEFAULT NULL,
+  `evaluateStatus` varchar(100) DEFAULT NULL,
+  `marksObtained` decimal(6,1) DEFAULT NULL,
+  `resultStatus` varchar(100) DEFAULT NULL,
+  `remarks` text,
+  `reAttemptStatus` int(11) DEFAULT '0',
+  `submittedBy` int(11) DEFAULT NULL,
+  `submittedOn` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `evaluateBy` int(11) DEFAULT NULL,
+  `evaluateOn` datetime DEFAULT NULL,
+  `time_taken` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+CREATE TABLE IF NOT EXISTS `qp_master_category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `sequence` int(11) DEFAULT NULL,
+  `deleted` int(11) DEFAULT '0',
+  `updatedBy` int(11) DEFAULT NULL,
+  `updatedOn` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+
+--
+-- Dumping data for table `qp_master_category`
+--
+
+INSERT INTO `qp_master_category` (`id`, `name`, `sequence`, `deleted`, `updatedBy`, `updatedOn`) VALUES
+(10, 'Category 1', NULL, 0, 1, '2023-02-14 23:11:12'),
+(12, 'Category 6', NULL, 0, 1, '2023-02-14 10:55:07'),
+(13, 'Category 7', NULL, 0, 1, '2023-02-14 10:55:07'),
+(14, 'Category 8', NULL, 0, 1, '2023-02-14 10:55:07');
+
+CREATE TABLE IF NOT EXISTS `qp_setup_map_subject_category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `subId` int(11) DEFAULT NULL,
+  `catId` int(11) DEFAULT NULL,
+  `updatedBy` int(11) DEFAULT NULL,
+  `updatedOn` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+CREATE TABLE IF NOT EXISTS `qp_usersclasssubject` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userId` int(11) DEFAULT NULL,
+  `class` int(11) DEFAULT NULL,
+  `subject` varchar(100) DEFAULT NULL,
+  `categoryid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+CREATE TABLE `qp_qustpaperclasssubid` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qustPaperId` int(11) DEFAULT NULL,
+  `catId` int(11) DEFAULT NULL COMMENT 'category get from master_category table',
+  `classId` int(11) DEFAULT NULL,
+  `subId` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+

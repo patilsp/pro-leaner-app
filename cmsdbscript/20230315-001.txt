@@ -1,0 +1,4 @@
+ALTER TABLE `assignment_assign` ADD `evaluate` VARCHAR(10) NULL AFTER `grade`, ADD `evaluate_type` VARCHAR(10) NULL AFTER `evaluate`;
+
+ALTER TABLE  `assign_submission`ADD COLUMN `marks` FLOAT(10,2) NULL AFTER `teacher_remarks`, CHANGE COLUMN `grade` `grade` VARCHAR(25) NULL DEFAULT NULL ;
+

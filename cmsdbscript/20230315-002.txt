@@ -1,0 +1,1 @@
+ALTER TABLE `assignment_assign` CHANGE `grade` `grade` FLOAT(10,2) NULL DEFAULT NULL;

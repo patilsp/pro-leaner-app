@@ -1,0 +1,289 @@
+.bi-arrow-right-square-fill::before {
+    content: url(../../images/icons/right-arrow.svg) !important;
+}
+
+.pl-3 {
+    padding-left: 30px;
+}
+
+.pl-0 {
+    padding-left: 0px !important;
+}
+
+.ml--10 {
+    margin-left: -10px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.pl-7 {
+    padding-left: 70px !important;
+}
+
+.pl-4 {
+    padding-left: 40px !important;
+}
+
+.custom-card-body {
+    border: solid 1.5px #d8dee5;
+    background-color: #f8fbfe;
+    /* border-radius: 10px; */
+}
+
+.card-header {
+    border-bottom: solid 2.5px rgba(107, 181, 246, 0.2);
+    /*height: 50px;*/
+    background-color: #fff;
+    padding: 10px;
+}
+
+.card-header span {
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.06px;
+    color: #222;
+}
+
+.custom-control-label {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#candidateFAQ {
+    border-radius: 10px;
+    border: solid 1.5px #d8dee5;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pl-25 {
+    padding-left: 25px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.btn-sueccss {
+    background-color: #41d97f;
+    border-color: #41d97f;
+    color: #ffffff;
+}
+
+.btn-cancel {
+    background-color: #181818;
+    border-color: #181818;
+    color: #ffffff;
+}
+
+.card-footer {
+    background-color: #f8fbfe;
+}
+
+.custom-control-label {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #393f4e;
+}
+
+.form-check-label {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #393f4e;
+    padding-left: 10px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.mr-10 {
+    margin-right: 10px !important;
+}
+
+.form-check {
+    margin: 1.5rem 0px;
+}
+.form-check-input[type=checkbox], .form-check label {
+    cursor: pointer;
+}
+
+.form-check-input{
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 0px;
+    border: 4px solid #6c757d;
+}
+
+/*DD Match Styles*/
+
+.DDMatchStyles .qust_table_col {
+    padding: 0px;
+}
+
+.DDMatchStyles p {
+    margin-bottom: 0px;
+}
+
+.DDMatchStyles .options_ans_li {
+    margin-left: -24px;
+    display: block;
+    transition: all 1s ease-in-out;
+}
+
+.DDMatchStyles #sortable1 tr {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.DDMatchStyles ul {
+    width: 90%;
+    margin: 0px;
+    padding: 0px
+}
+
+.DDMatchStyles ul li {
+    display: inline-block;
+    height: 65px;
+    width: 100%;
+    position: relative;
+    list-style-type: none;
+}
+
+.DDMatchStyles ul li.options_li:before {
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 0px;
+    border-style: solid;
+    border-width: 33px 0 33px 25px;
+    border-color: transparent transparent transparent #fff;
+    z-index: 0;
+}
+
+.DDMatchStyles ul li.qust_li {
+    border-color: transparent;
+}
+
+.DDMatchStyles ul li.qust_li span:after {
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0px;
+    right: -25px;
+    border-style: solid;
+    border-width: 33px 0 33px 25px;
+    border-color: transparent transparent transparent #7e8e9e;
+    z-index: 9;
+}
+
+.DDMatchStyles ul li span.span_height {
+    height: 65px;
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+.DDMatchStyles ul li.qust_li span {
+    padding: 0px 30px;
+    background: #7e8e9e;
+}
+
+.DDMatchStyles ul li.options_li span.li_span {
+    padding: 0px 30px 0px 50px;
+    background: #7e8e9e;
+}
+
+.DDMatchStyles .box_showdow {
+    width: 110%;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4);
+    transition: all 100ms;
+}
+
+.DDMatchStyles ul li.box_showdow:before {
+    border-color: transparent transparent transparent #7e8e9e !important;
+}
+
+@media (max-width: 820px) {
+    .DDMatchStyles table tbody td {
+        font-size: 15px;
+        padding: 7px !important;
+    }
+    .DDMatchStyles table tbody td span {
+        font-size: 15px;
+    }
+    .DDMatchStyles .options {
+        font-size: 15px;
+    }
+    .DDMatchStyles .options {
+        width: 100px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 640px) {
+    .DDMatchStyles table tbody td {
+        font-size: 13px;
+    }
+    .DDMatchStyles table tbody td span {
+        font-size: 13px;
+    }
+    .DDMatchStyles ul li {
+        height: 53px;
+    }
+    .DDMatchStyles ul li span.span_height {
+        height: 53px;
+    }
+    .DDMatchStyles ul li.options_li span.li_span {
+        padding: 0px 5px;
+    }
+    .DDMatchStyles ul li.qust_li span {
+        padding: 0px 5px;
+    }
+    .DDMatchStyles ul li.qust_li span:after {
+        content: none;
+    }
+    .DDMatchStyles ul li.options_li:before {
+        content: none;
+        border-width: 27px 0 26px 25px;
+    }
+    .DDMatchStyles ul li.qust_li span:after {
+        border-width: 27px 0 26px 25px;
+    }
+    .DDMatchStyles .options_ans_li {
+        margin-left: -14px;
+    }
+}
+
+
+/* candidate timer fixed header */
+
+#fixed_header .fixed-header {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+#fixed_header .card-header {
+    position: sticky;
+    top: 0;
+}

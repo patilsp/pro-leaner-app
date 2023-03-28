@@ -1,0 +1,190 @@
+.custom-card-candidate-profile {
+    border-radius: 20px;
+    border: solid 1px #d8dee5;
+    background-color: #f8fbfe;
+    padding: 20px
+}
+
+#candidate_profile .candidate-profile {
+    border: solid 1px #d8dee5;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+}
+
+.subCatCheckbox{
+    border: 3px solid #6c757d;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+#candidatePofile {
+    border: solid 1px #d8dee5;
+    background-color: #fff !important;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#candidatePofile .modal-label {
+    margin-bottom: 20px
+}
+
+.section_heading {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    color: #393f4e;
+}
+
+.modal-label {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.16px;
+    color: #181818;
+    margin-bottom: 10px
+}
+
+#candidate_profile .form-control {
+    border-radius: 10px;
+    border: solid 1.5px #d8dee5;
+    background-color: #fff;
+}
+
+.btn-sueccss {
+    background-color: #41d97f;
+    border-color: #41d97f;
+    color: #ffffff;
+}
+
+.btn-cancel {
+    background-color: #181818;
+    border-color: #181818;
+    color: #ffffff;
+}
+
+input[type='file'] {
+    opacity: 0;
+    color: rgba(0, 0, 0, 0);
+}
+
+.file-lable {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.16px;
+    text-align: center;
+    color: #b1b6bb;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+/* file input */
+
+.drop-zone {
+    max-width: 200px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    margin-left: 50px;
+}
+
+.drop-zone--over {
+    border-style: solid;
+}
+
+.drop-zone-input {
+    display: none;
+}
+
+.drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+}
+
+.drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+}
+
+.drop-zone-prompt {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.16px;
+    text-align: center;
+    color: #b1b6bb;
+    margin-bottom: 50px;
+}
+
+.drop-zone-label-one {
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.16px;
+    color: #181818;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-footer {
+    border-top: none !important;
+}
+
+.pEventsNone {
+  pointer-events: none;
+  opacity: .6;
+}
+#candidate_quiz p {
+  margin-bottom: 0px;
+}
+#camModal, #camModal .modal-body {
+  background-color: #000000;
+}
+#camModal i {
+  font-size: 30px;
+  color: #f8f9fa;
+  cursor: pointer;
+}
+#camModal i:hover {
+  color: #32bfff;
+}
+#camModal video {
+  width: 100% !important;
+}
+th, td { white-space: nowrap; }
+div.dataTables_wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+table.dataTable{
+  margin: 0px !important;
+}

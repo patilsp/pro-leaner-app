@@ -1,0 +1,16 @@
+CREATE TABLE `masters_background_musics` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `audio_ref` varchar(50) NOT NULL,
+  `audio_path` varchar(100) NOT NULL,
+  `active` tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+ 
+
+INSERT INTO `masters_background_musics` VALUES (1,'Aqua','assets/sounds/slidesBgMusic/bgMusic1.mp3',1),(2,'Sunshine','assets/sounds/slidesBgMusic/bgMusic2.mp3',1),(3,'Wonder','assets/sounds/slidesBgMusic/bgMusic3.mp3',1),(4,'MilkyWay','assets/sounds/slidesBgMusic/bgMusic4.mp3',1),(5,'Fireflies','assets/sounds/slidesBgMusic/bgMusic5.mp3',1),(6,'Jungle','assets/sounds/slidesBgMusic/bgMusic6.mp3',1);
+
+
+ALTER TABLE  `users` 
+ADD COLUMN `bg_music_status` TINYINT(4) NULL DEFAULT 1 AFTER `deleted`,
+ADD COLUMN `bg_music_id` SMALLINT(6) NULL DEFAULT 1 AFTER `bg_music_status`,
+ADD COLUMN `narrative_voice` TINYINT(4) NULL DEFAULT 1 AFTER `bg_music_id`;

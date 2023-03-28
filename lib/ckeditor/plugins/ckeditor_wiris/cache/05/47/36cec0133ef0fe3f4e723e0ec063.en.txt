@@ -1,0 +1,1 @@
+{"result":{"text":"blank subscript blank superscript 2 minus sign end superscript"},"status":"ok"}

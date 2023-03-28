@@ -1,0 +1,1 @@
+{"result":{"text":"H subscript 2 o space equals space mol greater-than or slanted equal to C O subscript 2"},"status":"ok"}

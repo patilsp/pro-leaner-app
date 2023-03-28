@@ -1,0 +1,169 @@
+
+ALTER TABLE  `class` 
+ADD COLUMN `class_alt_name` VARCHAR(45) NULL AFTER `deleted`;
+
+--------------------
+
+ 
+CREATE TABLE `qp_master_qp_types` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `deleted` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+ 
+
+ 
+INSERT INTO `qp_master_qp_types` VALUES (1,'Assessment',0),(2,'Practice',0),(3,'Baseline',0);
+
+---------------------
+
+ 
+CREATE TABLE `qp_master_questiontypes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(100) DEFAULT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `deleted` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+ 
+ 
+INSERT INTO `qp_master_questiontypes` VALUES (1,'multichoice','Multiple Choice (With 1 correct Answer)',0),(2,'multichoicem','Multiple Choice (With more than 1 correct answer)',0),(3,'shortanswer','Short Answer',0),(4,'shortanswertable','Multiple Short Answer',0),(5,'ddmatch','Match the following (Drag & Drop)',0),(6,'Fillintheblanks','Fill in the blanks',0),(7,NULL,'Multiple Choice and Short Answer',0);
+ 
+---------------------
+
+CREATE TABLE `qp_questiondetails` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `catId` int(11) DEFAULT NULL,
+  `classId` int(11) DEFAULT NULL,
+  `subId` int(11) DEFAULT NULL,
+  `chapId` int(11) DEFAULT NULL,
+  `topicId` int(11) DEFAULT NULL,
+  `subTopicId` int(11) DEFAULT NULL,
+  `difficultyId` int(11) DEFAULT NULL,
+  `qustType` varchar(50) DEFAULT NULL,
+  `deleted` int(11) DEFAULT '0',
+  `createdBy` int(11) DEFAULT NULL,
+  `createdOn` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updatedBy` int(11) DEFAULT NULL,
+  `updatedOn` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+---------
+
+CREATE TABLE `qp_questions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qustDetailsId` int(11) DEFAULT NULL,
+  `question` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-----------------
+
+CREATE TABLE `qp_shortanser` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qId` int(11) DEFAULT NULL,
+  `ans` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--------------
+CREATE TABLE `qp_shortansertable` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qId` int(11) DEFAULT NULL,
+  `qustTd` text,
+  `ansTd` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `qp_ddmatchqust` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qId` int(11) DEFAULT NULL,
+  `qustCol` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `qp_ddmatchans` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ddMatchQustId` int(11) DEFAULT NULL,
+  `ansCol` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `qp_fillintheblank` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qId` int(11) DEFAULT NULL,
+  `qustFill` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `qp_nestedshortanser` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qId` int(11) DEFAULT NULL,
+  `question` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `qp_nestedmcqquestions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qId` int(11) DEFAULT NULL,
+  `question` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `qp_nestedmcqoptions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nestedmcqqId` int(11) DEFAULT NULL,
+  `optionContent` longtext,
+  `correctAns` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `qp_mcqoptions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qId` int(11) DEFAULT NULL,
+  `optionContent` longtext,
+  `correctAns` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `qp_qustpaper` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qpType` int(11) DEFAULT NULL COMMENT 'Question Paper Type Get from master_qp_types table',
+  `title` text,
+  `totMarks` decimal(6,1) DEFAULT NULL,
+  `total_question` int(11) DEFAULT NULL,
+  `time_allowed` int(11) DEFAULT NULL,
+  `publishStatus` varchar(50) DEFAULT NULL,
+  `updatedBy` int(11) DEFAULT NULL,
+  `updatedOn` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `qp_qustpaperclasssubid` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qustPaperId` int(11) DEFAULT NULL,
+  `catId` int(11) DEFAULT NULL COMMENT 'category get from master_category table',
+  `classId` int(11) DEFAULT NULL,
+  `subId` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `qp_qustpapersections` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qustPaperId` int(11) DEFAULT NULL,
+  `secHeading` text,
+  `secTitle` text,
+  `secMarks` decimal(6,1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `qp_qustpapersectionquestions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qustPaperSectionId` int(11) DEFAULT NULL,
+  `questionsId` int(11) DEFAULT NULL,
+  `qustMark` decimal(6,1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

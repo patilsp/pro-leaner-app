@@ -1,0 +1,1 @@
+{"result":{"text":"mol identical to rightwards arrow over leftwards arrow rightwards arrow over leftwards arrow with rightwards arrow over leftwards arrow with 2 on top on top"},"status":"ok"}

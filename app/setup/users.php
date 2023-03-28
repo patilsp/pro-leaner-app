@@ -1,8 +1,9 @@
 <?php 
   include_once "../session_token/checksession.php";
   include_once "../configration/config.php";
-  //include_once "session_token/checktoken.php";
   require_once "../functions/db_functions.php";
+  include "functions/common_function.php";
+  $classList = getCPClasses();
 ?>
 
 <!DOCTYPE html>
@@ -11,115 +12,92 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-    <!-- Meta -->
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Virtual School</title>
     <link rel="icon" type="image/png" href="../../img/favicon.png" />
-
-
     <!-- vendor css -->
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="../../lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="../../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
     <link href="../../lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
     <link href="../../lib/highlightjs/github.css" rel="stylesheet">
-    <link href="../../lib/datatables/jquery.dataTables.css" rel="stylesheet">
+    <!-- <link href="../../lib/datatables/jquery.dataTables.css" rel="stylesheet"> -->
     <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="../links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../links/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
 
     <!-- CMS CSS -->
-    <link rel="stylesheet" href="../../css/cms.css">
+    <!-- <link rel="stylesheet" href="../../css/cms.css"> -->
    
   </head>
-
-  <style type="text/css">
-    
-    
-    
-    
-</style>
-
-  <body class="collapsed-menu">
-
-    <!-- ########## START: LEFT PANEL ########## -->
-    <?php include("../fixed-blocks/left_sidebar.php"); ?>
-    <!-- ########## END: LEFT PANEL ########## -->
-
-    <!-- ########## START: HEAD PANEL ########## -->
+  <body  id="kt_body"  class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
     <?php include("../fixed-blocks/header.php"); ?>
-    <!-- ########## END: HEAD PANEL ########## -->
-
-    <!-- ########## START: MAIN PANEL ########## -->
-    <div class="br-mainpanel">
-      <div class="br-pagetitle">
+   
+    <!-- start you own content here -->
+    <div class="row">
+      <div class="col-md-12">
         
-      </div><!-- d-flex -->
-
-      <div class="br-pagebody">
-        <!-- start you own content here -->
-        <div class="row new-row-bg">
-          <div class="col-md-12">
-            
-            <div class="card h-100 d-flex flex-column justify-content-between mb-4">
-              <div class="card-header">
-                <h6 class="mg-b-0 tx-14 mt-4">Users</h6>
-                <div class="card-option tx-24">
-                  <!-- <a href="userCreation.php" class="btn btn-md btn-info" >New User</a> -->
-                  <button class="btn btn-primary shadow" data-toggle="modal" data-target="#student_modal" id="add_student_bth">Add User</button>
-                </div><!-- card-option -->
-              </div><!-- card-header -->
-              <div class="card-body">
-                  <div class="table-responsive">
-                      <table id="datatable" class="table table-striped table-bordered ">
-                      <thead>
-
-                        
-                        <tr>
-                          <th>Username</th>
-                          <th>Email</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <?php 
-                            $i=1; 
-                            $query="SELECT * FROM users where deleted=0";
-                            $result=$db->query($query);
-                            while($row = $result->fetch(PDO::FETCH_ASSOC))
-                            { 
-                                
-                            ?>
-                        <tr>
-
-                          <td><?php echo $row['first_name']." ".$row['last_name']; ?></td>
-                          <td><?php echo $row['email']; ?></td>
-                          <!-- <td><button type="button" class="btn btn-info" onclick="location.href='updateUser.php?id=<?php //echo $row['id']; ?>';">Edit</button></td> -->
-                          <td><button type="button" class="btn btn-sm btn-info mr-1 editUser" title="Edit User" data-toggle="modal" data-target="#student_edit_modal" data-id="<?php echo $row['id']; ?>"><i class="fa fa-edit" aria-hidden="true"></i></button>
-                        
-                          <button type="button" class="btn btn-sm btn-danger deleteUser" title="Delete User" id='<?php echo $row['id']; ?>' >
-                          <i class='fa fa-trash' aria-hidden='true'></i>
-                        </button>
-                        </td>
-                          
-                        </tr>
-
-
-                        <?php
-                      }
-                      ?>
-                      </tbody>
-                      
-                    </table>
-                  </div>
-              </div><!-- card-body -->
+        <div class="card h-100 d-flex flex-column justify-content-between mb-4">
+          <div class="card-header">
+            <h6 class="mg-b-0 tx-14 mt-4">Users</h6>
+          
+            <div class="card-option tx-24">
+              <button class="btn btn-primary shadow" data-toggle="modal" data-target="#student_modal" id="add_student_bth">Add User</button>
             </div>
+          
           </div>
+          <div class="card-body">
+              <div class="table-responsive">
+                  <table id="datatable" class="table table-striped table-bordered ">
+                  <thead>
+
+                    
+                    <tr>
+                      <th>Username</th>
+                      <th>Email</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php 
+                        $i=1; 
+                        $query="SELECT * FROM users where deleted=0";
+                        $result=$db->query($query);
+                        while($row = $result->fetch(PDO::FETCH_ASSOC))
+                        { 
+                            
+                        ?>
+                    <tr>
+
+                      <td><?php echo $row['first_name']." ".$row['last_name']; ?></td>
+                      <td><?php echo $row['email']; ?></td>
+                      <!-- <td><button type="button" class="btn btn-info" onclick="location.href='updateUser.php?id=<?php //echo $row['id']; ?>';">Edit</button></td> -->
+                      <td>
+                      <a target="_blank" href="add_permissionnew.php?user_id=<?php echo $row['id']?>&role=<?php echo $row['roles_id']?>"><button type="button" class="btn btn-sm btn-info mr-1">Permissions</button></a>
+                      <button type="button" class="btn btn-sm btn-info mr-1 editUser" title="Edit User" data-toggle="modal" data-target="#student_edit_modal" data-id="<?php echo $row['id']; ?>"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                    
+                      <button type="button" class="btn btn-sm btn-danger deleteUser" title="Delete User" id='<?php echo $row['id']; ?>' >
+                      <i class='fa fa-trash' aria-hidden='true'></i>
+                    </button>
+                    </td>
+                      
+                    </tr>
+
+
+                    <?php
+                  }
+                  ?>
+                  </tbody>
+                  
+                </table>
+              </div>
+          </div><!-- card-body -->
         </div>
-      </div><!-- br-pagebody -->
-    </div><!-- br-mainpanel -->
+      </div>
+    </div>
+     
 
 <div class="modal fade" id="student_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -183,14 +161,14 @@
                   </div>
                 </div>
 
-                <div class="col-md-6">
+              <div class="col-md-6">
                   <div class="form-group mult">
                       <label for="Role">Role<span class="required_icon" style="color:red;">*</span></label>
                       <select class="form-control" name="role" id="role" required>
                           <option value="" selected="selected">Select</option>
 
                             <?php
-                                $query = "SELECT * FROM roles WHERE id NOT IN('9','10')";
+                                $query = "SELECT * FROM roles WHERE id NOT IN('11','12')";
                                 $stmt = $db->query($query);
                                 while($rows = $stmt->fetch(PDO::FETCH_ASSOC))
                                 {
@@ -289,7 +267,7 @@
                             <option value="" selected="selected">Select</option>
 
                               <?php
-                                  $query = "SELECT * FROM roles WHERE id NOT IN('9','10')";
+                                  $query = "SELECT * FROM roles WHERE id NOT IN('11','12')";
                                   $stmt = $db->query($query);
                                   while($rows = $stmt->fetch(PDO::FETCH_ASSOC))
                                   {
@@ -309,11 +287,16 @@
 
 
             </div><!-- card-body -->
-           
+           <?php
+              if (checkUserAccess($user_id,$role_id,61) == "true") {
+            ?>
             <div class="card-footer bd bd-t-0 d-flex justify-content-between">
               <a href="<?php echo $web_root ?>app/setup/users.php" class="btn btn-md btn-danger">Cancel</a>
               <button type="submit" class="btn btn-md btn-info" name="update" id="update">Update</button>
             </div><!-- card-footer -->
+            <?php
+              }
+            ?>
           </form> 
       </div>
     </div>
@@ -352,7 +335,7 @@
     </div>
 
     
-
+    <?php include("../fixed-blocks/footer.php"); ?>
     <!-- ########## END: MAIN PANEL ########## -->
     <script src="../../lib/jquery/jquery.js"></script>
     <script src="../../lib/popper.js/popper.js"></script>
@@ -367,6 +350,9 @@
     <script src="../../lib/datatables-responsive/dataTables.responsive.js"></script>
     <script src="../../lib/select2/js/select2.min.js"></script>
 
+    <script src="../../links/plugins/global/plugins.bundle.js"></script>
+    <script src="../../links/js/scripts.bundle.js"></script>
+    <script src="../../links/plugins/custom/datatables/datatables.bundle.js"></script>
     <script src="../../js/cms.js"></script>
     <script>
       $(function(){

@@ -1,11 +1,9 @@
 <?php 
   include_once "../session_token/checksession.php";
   include_once "../configration/config.php";
-  //include_once "session_token/checktoken.php";
   require_once "../functions/db_functions.php";
   include "functions/common_function.php";
   $classList = getCPClasses();
-
 ?>
 
 <!DOCTYPE html>
@@ -14,119 +12,81 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-    <!-- Meta -->
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Virtual School</title>
     <link rel="icon" type="image/png" href="../../img/favicon.png" />
-
-
     <!-- vendor css -->
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="../../lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="../../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
     <link href="../../lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
     <link href="../../lib/highlightjs/github.css" rel="stylesheet">
-    <link href="../../lib/datatables/jquery.dataTables.css" rel="stylesheet">
+    <!-- <link href="../../lib/datatables/jquery.dataTables.css" rel="stylesheet"> -->
     <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="links/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
 
     <!-- CMS CSS -->
-    <link rel="stylesheet" href="../../css/cms.css">
+    <!-- <link rel="stylesheet" href="../../css/cms.css"> -->
    
   </head>
-
-  <style type="text/css">
-    
-    #enroll_edit_div{
-      min-width: 740px
-    }
-    #card_blk{
-      display: grid;
-      justify-content: center;
-    }
-    .mb-0{
-      margin-bottom:0px !important
-    }
-    .add{
-      width:80px
-    }
-</style>
-
-  <body class="collapsed-menu ">
-
-    <!-- ########## START: LEFT PANEL ########## -->
-    <?php include("../fixed-blocks/left_sidebar.php"); ?>
-    <!-- ########## END: LEFT PANEL ########## -->
-
-    <!-- ########## START: HEAD PANEL ########## -->
+  <body  id="kt_body"  class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
     <?php include("../fixed-blocks/header.php"); ?>
-    <!-- ########## END: HEAD PANEL ########## -->
-
-    <!-- ########## START: MAIN PANEL ########## -->
-    <div class="br-mainpanel">
-      <div class="br-pagetitle">
-        
-      </div><!-- d-flex -->
-
-      <div class="br-pagebody">
-        <!-- start you own content here -->
-        <div class="row new-row-bg">
-          <div class="col-md-12">
-            <div class="card h-100 d-flex flex-column justify-content-between">
-              <div class="card-header card-header d-flex align-items-center justify-content-between pd-y-5 bg-dark">
-                <h6 class="mg-b-0 tx-14 tx-white">Teachers</h6>
-                <div class="card-option tx-24">
-                  <!-- <a href="userCreation.php" class="btn btn-md btn-info" >New User</a> -->
-                  <button class="btn btn-primary shadow" data-toggle="modal" data-target="#student_modal_new" id="add_student_bth">Add Teacher</button>
-                </div><!-- card-option -->
-              </div><!-- card-header -->
-              <div class="card-body">
-                  <div class="table-responsive">
-                      <table id="datatable" class="table table-striped table-bordered">
-                      <thead>
-                        <tr>
-                          <th>Username</th>
-                          <th>Email</th>
-                          <th>Phone</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <?php 
-                            $i=1; 
-                            $query="SELECT * FROM users WHERE roles_id = 9";
-                            $result=$db->query($query);
-                            while($row = $result->fetch(PDO::FETCH_ASSOC))
-                            { 
-                                
-                            ?>
-                        <tr>
-
-                          <td><?php echo $row['first_name']." ".$row['last_name']; ?></td>
-                          <td><?php echo $row['email']; ?></td>
-                          <td><?php echo $row['phone']; ?></td>
-                          <!-- <td><button type="button" class="btn btn-info" onclick="location.href='updateUser.php?id=<?php //echo $row['id']; ?>';">Edit</button></td> -->
-                          <td><button type="button" class="btn btn-md btn-info btn3d editUser" title="Edit Teacher" data-toggle="modal" data-target="#student_edit_modal" data-id="<?php echo $row['id']; ?>"><i class="fa fa-edit" aria-hidden="true"></i></button></td>
-                          
-                        </tr>
-
-
-                        <?php
-                      }
-                      ?>
-                      </tbody>
-                      
-                    </table>
-                  </div>
-              </div><!-- card-body -->
+    
+    <!-- start you own content here -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card h-100 d-flex flex-column justify-content-between">
+          <div class="card-header card-header d-flex align-items-center justify-content-between pd-y-5">
+            <h6 class="mg-b-0 tx-14 tx-white">Teachers</h6>
+            <div class="card-option tx-24">
+              <button class="btn btn-primary shadow" data-toggle="modal" data-target="#student_modal_new" id="add_student_bth">Add Teacher</button>
             </div>
           </div>
+          <div class="card-body">
+              <div class="dataTables_wrapper dt-bootstrap4 no-footer">
+                  <table id="datatable" class="table align-middle table-row-dashed fs-6 gy-5 dataTable no-footer">
+                  <thead>
+                    <tr>
+                      <th>Username</th>
+                      <th>Email</th>
+                      <th>Phone</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php 
+                        $i=1; 
+                        $query="SELECT * FROM users WHERE roles_id = 9";
+                        $result=$db->query($query);
+                        while($row = $result->fetch(PDO::FETCH_ASSOC))
+                        { 
+                            
+                        ?>
+                    <tr>
+
+                      <td><?php echo $row['first_name']." ".$row['last_name']; ?></td>
+                      <td><?php echo $row['email']; ?></td>
+                      <td><?php echo $row['phone']; ?></td>
+                      <td><button type="button" class="btn btn-md btn-info btn3d editUser" title="Edit Teacher" data-toggle="modal" data-target="#student_edit_modal" data-id="<?php echo $row['id']; ?>"><i class="fa fa-edit" aria-hidden="true"></i></button></td>
+                      
+                    </tr>
+
+
+                    <?php
+                  }
+                  ?>
+                  </tbody>
+                  
+                </table>
+              </div>
+          </div><!-- card-body -->
         </div>
-      </div><!-- br-pagebody -->
-    </div><!-- br-mainpanel -->
+      </div>
+    </div>
+     
 
 <div class="modal fade" id="student_modal_new" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -140,13 +100,7 @@
       <div class="modal-body">        
         <form class="user_form form-horizontal" action="createTeacher.php" name="form" method="POST">
             <div class="card mb-4">
-              <div class=" row card-body bd bd-t-0 rounded-bottom">
-                <!-- <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="title">Emp Id:<span class="required_icon" style="color:red;">*</span></label>
-                    <input type="text" class="form-control" name="username" id="username" placeholder="Enter Emp Id" required>
-                  </div>
-                </div> -->
+              <div class="row card-body bd bd-t-0 rounded-bottom">
                 <div class="col-md-4">
                   <div class="form-group">
                     <label for="title">First Name:<span class="required_icon" style="color:red;">*</span></label>
@@ -231,7 +185,6 @@
                   <div class="form-group">
                     <select class="form-control subject select_remove_space" id="sectionOptionSubject" name="subject[]">
                       <option value="">-Choose Subject-</option>
-                      <!-- Note: Akash if 2 spaces for child subject and 3 spaces for sub-child subject options -->
                     </select>
                   </div>
                 </div>
@@ -243,12 +196,12 @@
             <input type="hidden" class="teacherId" id ="teacherId" value="">
           </div>
 
-            </div><!-- card-body -->
+            </div>
            
             <div class="card-footer">
               <a href="<?php echo $web_root ?>app/setup/teachers.php" class="btn btn-md btn-danger">Cancel</a>
               <button type="submit" class="btn btn-md btn-info" name="submit">Submit</button>
-            </div><!-- card-footer -->
+            </div>
           </form>
       </div>
     </div>
@@ -270,13 +223,7 @@
             <input type="hidden" class="form-control" name="user_auto_id" id="user_auto_id" value="">
             <div class="card mb-4">
               <div class="row card-body bd bd-t-0 rounded-bottom">
-                <!-- <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="title">Emp Id:<span class="required_icon" style="color:red;">*</span></label>
-                    <input type="text" class="form-control" name="username" id="usernameEdit" value="" required>
-                  </div>
-                </div> -->
-
+                
                 <div class="col-md-4">
                   <div class="form-group">
                     <label for="title">First Name:<span class="required_icon" style="color:red;">*</span></label>
@@ -364,7 +311,7 @@
   </div>
 </div>
 
-
+    <?php include("../fixed-blocks/footer.php"); ?>
     <!-- ########## END: MAIN PANEL ########## -->
     <script src="../../lib/jquery/jquery.js"></script>
     <script src="../../lib/popper.js/popper.js"></script>
@@ -378,6 +325,12 @@
     <script src="../../lib/datatables/jquery.dataTables.js"></script>
     <script src="../../lib/datatables-responsive/dataTables.responsive.js"></script>
     <script src="../../lib/select2/js/select2.min.js"></script>
+   
+
+    <script src="../../links/plugins/global/plugins.bundle.js"></script>
+    <script src="../../links/js/scripts.bundle.js"></script>
+    <script src="../../links/plugins/custom/datatables/datatables.bundle.js"></script>
+
 
     <script src="../../js/cms.js"></script>
     <script>
