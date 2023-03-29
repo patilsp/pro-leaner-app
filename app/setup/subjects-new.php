@@ -83,25 +83,10 @@ try {
     </style>
   </head>
 
-  <body class="collapsed-menu">
-
-    <!-- ########## START: LEFT PANEL ########## -->
-    <?php include("../fixed-blocks/left_sidebar.php"); ?>
-    <!-- ########## END: LEFT PANEL ########## -->
-
-    <!-- ########## START: HEAD PANEL ########## -->
+  <body  id="kt_body"  class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
     <?php include("../fixed-blocks/header.php"); ?>
-    <!-- ########## END: HEAD PANEL ########## -->
 
-    <!-- ########## START: MAIN PANEL ########## -->
-    <div class="br-mainpanel">
-      <div class="br-pagetitle">
-        
-      </div><!-- d-flex -->
-
-      <div class="br-pagebody">
-
-      <section id="subject" class="row new-row-bg ">
+      <section id="subject" class="row">
         <div class="col-md-12">   
           <div class="card p-3">
               <div class="card-header card-header d-flex align-items-center justify-content-between bg-dark-1">
@@ -113,13 +98,7 @@ try {
                   <button class="btn btn-md btn-blue font-weight-medium " data-toggle="modal" data-target="#parent_subject_modal">Add Subjects</button>
                 </div>
               </div>
-              <!-- <div class="row">
-                <div class="col-sm-4 mb-4">
-                  <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for card name...">
-                </div>
-              </div> -->
-         
-
+             
             <div class="row" id="parent_subject_modules">
               <div class="thead-bg position-relative d-flex align-items-center col-12 ml-3" id="main_card_header">
                 <label class="txt-grey col-2 d-flex">Subject</label>
@@ -207,45 +186,7 @@ try {
                         
                       </div> 
                      </div>
-<!-- 
-                     <button type="button" class="btn btn-yellow h6 mb-0 border-0 mr-2 d-flex align-items-center tooltip_options subjectL1<?php echo $thisSubject['id']; ?>" data-toggle="tooltip" data-html="true" title="<ul class='list-unstyled mb-0 py-2 px-2'>
-                        
-                       <li class='media align-items-center mb-3 editDetails' role='button' id='ed@<?php echo $thisSubject['id']; ?>'>
-                         <i class='fa fa-pencil-square txt-blue mr-3' aria-hidden='true'></i>
-                         <div class='media-body'>
-                           <p class='mb-0 txt-light-black text-left'>Edit Details</p>
-                         </div>
-                       </li>
-                       <li class='media align-items-center mb-3 renameSubjectL1' role='button' id='rs1@<?php echo $thisSubject['id']; ?>'>
-                         <i class='fa fa-pencil txt-blue mr-3' aria-hidden='true'></i>
-                         <div class='media-body'>
-                           <p class='mb-0 txt-light-black text-left'>Rename</p>
-                         </div>
-                       </li>
-                       
-                      
-                       <li class='media align-items-center mb-3 move_subjectL1_option move_option' aria-subjectcardid='card<?php echo $thisSubject['id']; ?>' role='button' >
-                         <i class='fa fa-arrows text-success mr-3' aria-hidden='true'></i>
-                         <div class='media-body'>
-                           <p class='mb-0 txt-light-black text-left'>Move</p>
-                         </div>
-                       </li>
-                    
-                        
-                       <li class='media align-items-center deleteSubjectL1' role='button' id='deleteSubject<?php echo $thisSubject['id']; ?>' aria-deletename='<?php echo $thisSubject['module']; ?>'>
-                         <i class='fa fa-trash text-danger mr-3' aria-hidden='true'></i>
-                         <div class='media-body'>
-                           <p class='mb-0 txt-light-black text-left'>Delete</p>
-                         </div>
-                       </li>
-                      
-                     </ul>" data-placement="bottom"><img src="../../assets/images/common/icon_more_option.png" class=""></button>
-                     <div class="d-flex align-items-center btn btn-sm btn-icon btn-light btn-default" data-toggle="collapse" data-target="#collapse<?php echo $thisSubject['id']; ?>" aria-expanded="false" aria-controls="collapse1" role="button">
-                       <p class="mb-0 "></p>
-                       <i class="fa fa-chevron-down"></i>
-                       
-                     </div> -->
-                    
+
                     </div>
                    
                     <!-- <h5 class="mb-0 col-2">
@@ -420,8 +361,6 @@ try {
       </section>
         <!-- start you own content here -->
      
-      </div><!-- br-pagebody -->
-    </div><!-- br-mainpanel -->
 
     <!-- Sub Child Subject Modal -->
     <div class="modal fade" id="sub_child_subject_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -819,7 +758,7 @@ try {
     </div>
 
 
-
+    <?php include("../fixed-blocks/footer.php"); ?>
     <?php include("../setup/common-blocks/js.php"); ?>
     <!-- ########## END: MAIN PANEL ########## -->
     <!-- <script src="../../lib/jquery/jquery.js"></script> -->
@@ -838,6 +777,12 @@ try {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     <script src="../../lib/bootstrap/js/bootstrap.js"></script>
+
+    <script src="../../links/plugins/global/plugins.bundle.js"></script>
+    <script src="../../links/js/scripts.bundle.js"></script>
+    <script src="../../links/plugins/custom/datatables/datatables.bundle.js"></script>
+
+
     <script type="text/javascript">
       var openedCard = '';
       var openedCardArray = [];

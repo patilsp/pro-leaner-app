@@ -1,8 +1,9 @@
 <?php 
   include_once "../session_token/checksession.php";
   include_once "../configration/config.php";
-  //include_once "session_token/checktoken.php";
   require_once "../functions/db_functions.php";
+  include "functions/common_function.php";
+  $classList = getCPClasses();
 ?>
 
 <!DOCTYPE html>
@@ -11,52 +12,28 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-    <!-- Meta -->
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title></title>
-
+    <title>Virtual School</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
     <!-- vendor css -->
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="../../lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="../../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
     <link href="../../lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
     <link href="../../lib/highlightjs/github.css" rel="stylesheet">
-    <link href="../../lib/datatables/jquery.dataTables.css" rel="stylesheet">
+    <!-- <link href="../../lib/datatables/jquery.dataTables.css" rel="stylesheet"> -->
     <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="links/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
 
     <!-- CMS CSS -->
-    <link rel="stylesheet" href="../../css/cms.css">
+    <!-- <link rel="stylesheet" href="../../css/cms.css"> -->
    
   </head>
-
-  <style type="text/css">
-    
-    
-    
-    
-</style>
-
-  <body class="collapsed-menu">
-
-    <!-- ########## START: LEFT PANEL ########## -->
-    <?php include("../fixed-blocks/left_sidebar.php"); ?>
-    <!-- ########## END: LEFT PANEL ########## -->
-
-    <!-- ########## START: HEAD PANEL ########## -->
+  <body  id="kt_body"  class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
     <?php include("../fixed-blocks/header.php"); ?>
-    <!-- ########## END: HEAD PANEL ########## -->
-
-    <!-- ########## START: MAIN PANEL ########## -->
-    <div class="br-mainpanel">
-      <div class="br-pagetitle">
-        
-      </div><!-- d-flex -->
-
-      <div class="br-pagebody">
         <!-- start you own content here -->
         <div class="row">
           <div class="col-md-12">
@@ -106,11 +83,9 @@
             </div>
           </div>
         </div>
-      </div><!-- br-pagebody -->
-    </div><!-- br-mainpanel -->
+     
 
-
-
+    <?php include("../fixed-blocks/footer.php"); ?>
     <!-- ########## END: MAIN PANEL ########## -->
     <script src="../../lib/jquery/jquery.js"></script>
     <script src="../../lib/popper.js/popper.js"></script>
@@ -124,6 +99,10 @@
     <script src="../../lib/datatables/jquery.dataTables.js"></script>
     <script src="../../lib/datatables-responsive/dataTables.responsive.js"></script>
     <script src="../../lib/select2/js/select2.min.js"></script>
+
+    <script src="../../links/plugins/global/plugins.bundle.js"></script>
+    <script src="../../links/js/scripts.bundle.js"></script>
+    <script src="../../links/plugins/custom/datatables/datatables.bundle.js"></script>
 
     <script src="../../js/cms.js"></script>
     <script>

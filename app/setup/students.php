@@ -14,189 +14,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Virtual School</title>
-    <link rel="icon" type="image/png" href="../../img/favicon.png" />
-    <!-- vendor css -->
+    <title>Tech E-Learning App</title>
+    <link rel="icon" type="image/png" href="../../links/media/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700">
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="../../lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="../../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
-    <link href="../../lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
-    <link href="../../lib/highlightjs/github.css" rel="stylesheet">
-    <!-- <link href="../../lib/datatables/jquery.dataTables.css" rel="stylesheet"> -->
-    <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
-    <link href="links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
-    <link href="links/css/style.bundle.css" rel="stylesheet" type="text/css"/>
-    <link href="../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../../links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../../links/css/main.css" rel="stylesheet" type="text/css"/>
 
-    <!-- CMS CSS -->
-    <!-- <link rel="stylesheet" href="../../css/cms.css"> -->
-   
   </head>
   <body  id="kt_body"  class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
     <?php include("../fixed-blocks/header.php"); ?>
 
-        <!-- start you own content here -->
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card h-100 d-flex flex-column justify-content-between">
-              <div class="card-header card-header d-flex align-items-center justify-content-between pd-y-5">
-                <h6 class="mg-b-0 tx-14 tx-white">Students</h6>
-                <div class="card-option tx-24">
-                  <a href="<?php echo $web_root?>app/setup/enroll_student.php"><button class="btn btn-primary shadow">Enroll Students</button></a>
-                  <button class="btn btn-primary shadow" data-toggle="modal" data-target="#student_modal" id="add_student_bth">Add Student</button>  
-                  <a href="student_upload.php" class="btn btn-primary shadow">Upload file</a>                
-                </div>
-              </div>
-              <div class="card-body">
-                <table id="datatable" class="table align-middle table-row-dashed fs-6 gy-5 dataTable no-footer">
-                  <thead>
-
-                     
-                    <tr>
-                      <th>Name </th>
-                      <th>Admission No.</th>
-                      <th>Class</th>
-                      <th>Section</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                     <?php 
-                        $i=1; 
-                        $query="SELECT users.id,users.first_name,users.last_name,users.admission,cpmodules.module,masters_sections.section FROM users LEFT JOIN cpmodules ON users.class = cpmodules.id LEFT JOIN masters_sections ON users.section = masters_sections.id WHERE roles_id = 10";
-                        $result=$db->query($query);
-                        while($row = $result->fetch(PDO::FETCH_ASSOC))
-                        { 
-                            
-                        ?>
-                    <tr>
-
-                      <td><?php echo $row['first_name']." ".$row['last_name']; ?></td>
-                      <td><?php echo $row['admission']; ?></td>
-                      <td><?php echo $row['module']; ?></td>
-                      <td><?php echo $row['section']; ?></td>
-                      <!-- <td><button type="button" class="btn btn-info" onclick="location.href='updateUser.php?id=<?php //echo $row['id']; ?>';">Edit</button></td> -->
-                      <td><button type="button" class="btn btn-md btn-info btn3d editUser" title="Edit Student" data-toggle="modal" data-target="#student_edit_modal" data-id="<?php echo $row['id']; ?>"><i class="fa fa-edit" aria-hidden="true"></i></button></td>
-                      
-                    </tr>
-
-
-                    <?php
-                  }
-                  ?>
-                  </tbody>
-                  
-                </table>
-              </div><!-- card-body -->
+    <!-- start you own content here -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card h-100 d-flex flex-column justify-content-between">
+          <div class="card-header card-header d-flex align-items-center justify-content-between pd-y-5">
+            <h6 class="mg-b-0 tx-14 tx-white">Students</h6>
+            <div class="card-option tx-24">
+              <!-- <a href="<?php echo $web_root?>app/setup/enroll_student.php"><button class="btn btn-sm btn-flex btn-primary ms-2">Enroll Students</button></a> -->
+              <button class="btn btn-sm btn-flex btn-primary ms-2" data-toggle="modal" data-target="#student_modal" id="add_student_bth">Add Student</button>  
+              <!-- <a href="student_upload.php" class="btn btn-sm btn-flex btn-primary ms-2">Upload file</a>                 -->
             </div>
           </div>
-        </div>
-      </div><!-- br-pagebody -->
-    </div><!-- br-mainpanel -->
+          <div class="card-body">
+            <table id="datatable" class="table align-middle table-row-dashed fs-6 dataTable no-footer">
+              <thead>
 
+                  
+                <tr>
+                  <th>Name </th>
+                  <th>Admission No.</th>
+                  <th>Class</th>
+                  <th>Section</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <?php 
+                    $i=1; 
+                    $query="SELECT users.id,users.first_name,users.last_name,users.admission,cpmodules.module,masters_sections.section FROM users LEFT JOIN cpmodules ON users.class = cpmodules.id LEFT JOIN masters_sections ON users.section = masters_sections.id WHERE roles_id = 10";
+                    $result=$db->query($query);
+                    while($row = $result->fetch(PDO::FETCH_ASSOC))
+                    { 
+                        
+                    ?>
+                <tr>
+
+                  <td><?php echo $row['first_name']." ".$row['last_name']; ?></td>
+                  <td><?php echo $row['admission']; ?></td>
+                  <td><?php echo $row['module']; ?></td>
+                  <td><?php echo $row['section']; ?></td>
+                  <!-- <td><button type="button" class="btn btn-info" onclick="location.href='updateUser.php?id=<?php //echo $row['id']; ?>';">Edit</button></td> -->
+                  <td>
+                    <a type="button" class="editUser" title="Edit Student" data-toggle="modal" data-target="#student_edit_modal" data-id="<?php echo $row['id']; ?>"><img src="../../links/media/icons/edit.svg" class="" alt="edit"></a>
+                    <a type="button" class="deleteStudent" title="Delete Student" id='<?php echo $row['id']; ?>' ><img src="../../links/media/icons/delete.svg" class="" alt="edit"></a>
+                  </td>
+                  
+                </tr>
+
+
+                <?php
+              }
+              ?>
+              </tbody>
+              
+            </table>
+          </div><!-- card-body -->
+        </div>
+      </div>
+    </div>
+    
 <div class="modal fade" id="student_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="text-center font-weight-bold w-100" id="model_title">Add New Student</h4>
+        <h4 class="font-weight-bold w-100" id="model_title">Add New Student</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body scroll-y mx-5 my-5">
     
         <form class="user_form form-horizontal" action="createStudent.php" name="form" method="POST">
             <div class="card-body bd rounded-bottom">
               <div class="row">
                 <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="title">Admission/Reg No.:<span class="required_icon" style="color:red;">*</span></label>
-                    <input type="text" class="form-control admission" name="admission" id="admission" placeholder="Enter Admission" required>
-                  </div>
+                  <div class="form-floating">
+                    <input type="text" class="form-control admission" name="admission" id="admission" placeholder="Enter Admission Number" aria-describedby="floatingInputHelp" required>
+                    <label for="floatingInput" class="required">Admission/Reg No.:</label>
+                  </div>                 
                 </div>
                 <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="title">First Name:<span class="required_icon" style="color:red;">*</span></label>
-                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter First Name" required>
-                  </div>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter First Name" aria-describedby="floatingInputHelp" required>
+                    <label for="floatingInput" class="required">First Name:</label>
+                  </div>                    
                 </div>
 
                 <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="title">Last Name:<span class="required_icon" style="color:red;">*</span></label>
-                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter Last Name" required>
-                  </div>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter First Lame" aria-describedby="floatingInputHelp" required>
+                    <label for="floatingInput" class="required">Last Name:</label>
+                  </div>  
                 </div>
-
-                <!-- <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="title">Password:<span class="required_icon" style="color:red;">*</span></label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Password*" required> 
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="title">Confirm Password:<span class="required_icon" style="color:red;">*</span></label>
-                    <input type="password" name="cpassword" id="cpassword" class="form-control" placeholder="Confirm Password*" required> 
-                  </div>
-                </div> -->
-
-                <!-- <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="title">Email:</label>
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Enter Email">
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="title">Phone:</label>
-                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter Phone">
-                  </div>
-                </div> -->
-
 
                 <div class="col-md-6">
-                  <div class="form-group mult">
-                      <label for="Class">Class<span class="required_icon" style="color:red;">*</span></label>
-                      <select class="form-control select" name="class" id="selectclass" required>
-                          <option value="" selected="selected">Select</option>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" name="password" id="password" placeholder="password*" aria-describedby="floatingInputHelp" required>
+                    <label for="floatingInput" class="required">Password:</label>
+                  </div> 
+                </div>
 
-                            <?php
-                                $query = "SELECT * FROM cpmodules WHERE level = 1 AND type = 'class' AND visibility = 1";
-                                $stmt = $db->query($query);
-                                while($rows = $stmt->fetch(PDO::FETCH_ASSOC))
-                                {
-                                ?>
-                                     <option value="<?php echo $rows['id']; ?>"><?php echo $rows['module']; ?></option>
-                                <?php
-                                    }
-                                 ?>
-                         
-                      </select>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" name="cpassword" id="cpassword" placeholder="Confirm password*" aria-describedby="floatingInputHelp" required>
+                    <label for="floatingInput" class="required">Confirm Password:</label>
+                  </div> 
+                </div>
+
+                <div class="col-md-6">
+                 <div class="form-floating">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Enter Email ID" aria-describedby="floatingInputHelp" required>
+                    <label for="floatingInput" class="required">Email:</label>
                   </div>
                 </div>
 
                 <div class="col-md-6">
-                  <div class="form-group mult">
-                      <label for="Section">Section<span class="required_icon" style="color:red;">*</span></label>
-                      <select class="form-control section" name="section" id="section" required>
-                          <option value="" selected="selected">Select</option>
-                         
-                      </select>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter phone" aria-describedby="floatingInputHelp" required>
+                    <label for="floatingInput" class="required">Phone:</label>
+                  </div> 
+                </div>
+
+
+                <div class="col-md-6">
+                  <div class="form-floating mult">
+                    <select class="form-select select"  name="class" id="selectclass" aria-label="Floating label select example">
+                    <option value="" selected="selected">Select</option>
+                    <?php
+                        $query = "SELECT * FROM cpmodules WHERE level = 1 AND type = 'class' AND visibility = 1";
+                        $stmt = $db->query($query);
+                        while($rows = $stmt->fetch(PDO::FETCH_ASSOC))
+                        {
+                        ?>
+                              <option value="<?php echo $rows['id']; ?>"><?php echo $rows['module']; ?></option>
+                      <?php
+                          }
+                        ?>
+                    </select>
+                    <label for="floatingSelect" class="required">Class</label>
+                  </div>
+                
+                </div>
+
+                <div class="col-md-6">
+                <div class="form-floating mult">
+                    <select class="form-select section"  name="section" id="section" aria-label="Floating label select example">
+                    <option value="" selected="selected">Select</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <label for="floatingSelect" class="required">Section</label>
                   </div>
                 </div>
-                 
               </div>
-              
-
-            </div><!-- card-body -->
-           
-            <div class="card-footer">
-              <a href="<?php echo $web_root ?>app/setup/students.php" class="btn btn-md btn-danger">Cancel</a>
+            </div>
+            <div class="card-footer mt-5">
+              <a href="<?php echo $web_root ?>app/setup/students.php" class="btn btn-md btn-danger me-2">Cancel</a>
               <button type="submit" class="btn btn-md btn-info" name="submit">Submit</button>
-            </div><!-- card-footer -->
+            </div>
           </form>
       </div>
     </div>

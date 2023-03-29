@@ -45,6 +45,7 @@ try {
     <link href="../../lib/ajax_loader/jquery.mloading.css" rel="stylesheet">
     <!-- CMS CSS -->
     <link rel="stylesheet" href="../../css/cms.css">
+    <link href="links/css/style.bundle.css" rel="stylesheet" type="text/css"/>
     <!-- orgchart CSS -->
     <link rel="stylesheet" href="../../lib/orgchart/jquery.orgchart.css?ver=231120211126">
     <style type="text/css">
@@ -79,30 +80,15 @@ try {
     </style>
   </head>
 
-  <body class="collapsed-menu">
+  <body  id="kt_body"  class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
+    <?php include("../fixed-blocks/header.php"); ?>   
 
-    <!-- ########## START: LEFT PANEL ########## -->
-    <?php include("../fixed-blocks/left_sidebar.php"); ?>
-    <!-- ########## END: LEFT PANEL ########## -->
-
-    <!-- ########## START: HEAD PANEL ########## -->
-    <?php include("../fixed-blocks/header.php"); ?>
-    <!-- ########## END: HEAD PANEL ########## -->
-
-    <!-- ########## START: MAIN PANEL ########## -->
-    <div class="br-mainpanel">
-      <div class="br-pagetitle">
-        
-      </div><!-- d-flex -->
-
-      <div class="br-pagebody">
-
-      <div class="row new-row-bg">
+      <div class="row">
           <div class="col-md-12">
             <!-- start you own content here -->
             <div class="card h-100 d-flex flex-column justify-content-between">
-              <div class="card-header card-header d-flex align-items-center justify-content-between pd-y-5 bg-dark">
-                <h6 class="mg-b-0 tx-14 tx-white">Module SetUp</h6>
+              <div class="card-header card-header d-flex align-items-center justify-content-between pd-y-5">
+                <h6 class="mg-b-0 tx-14">Module SetUp</h6>
               </div><!-- card-header -->
               <div class="card-body">
                 <div class="accordion" id="moduleSetupAccordion">
@@ -150,9 +136,9 @@ try {
             </div>
           </div>
         </div>
-      </div><!-- br-pagebody -->
-    </div><!-- br-mainpanel -->
+    </div>
 
+    <?php include("../fixed-blocks/footer.php"); ?>
     <!-- ########## END: MAIN PANEL ########## -->
     <script src="../../lib/jquery/jquery.js"></script>
     <script src="../../lib/popper.js/popper.js"></script>
@@ -166,6 +152,11 @@ try {
     <script src="../../lib/orgchart/jquery.orgchart.js"></script>
     <script src="../../lib/ajax_loader/jquery.mloading.js"></script>
     <script src="../../js/cms.js"></script>
+    
+    <script src="../../links/plugins/global/plugins.bundle.js"></script>
+    <script src="../../links/js/scripts.bundle.js"></script>
+    <script src="../../links/plugins/custom/datatables/datatables.bundle.js"></script>
+
     <script type="text/javascript">
       var openedCard = '';
       var openedCardArray = [];

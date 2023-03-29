@@ -1,29 +1,31 @@
 <?php
 include_once "../session_token/checksession.php";
 include_once "../configration/config.php";
-//include_once "session_token/checktoken.php";
 require_once "../functions/db_functions.php";
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-  <!-- Meta -->
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Virtual School</title>
-  <link rel="icon" type="image/png" href="../../img/favicon.png" />
-
-
-  <!-- vendor css -->
-  <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Virtual School</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
+    <!-- vendor css -->
+    <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../../lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="../../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="../../lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
+    <link href="../../lib/highlightjs/github.css" rel="stylesheet">
+    <!-- <link href="../../lib/datatables/jquery.dataTables.css" rel="stylesheet"> -->
+    <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="links/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
   <link href="../../lib/Ionicons/css/ionicons.css" rel="stylesheet">
   <link href="../../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
   <link href="../../lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
@@ -38,105 +40,76 @@ require_once "../functions/db_functions.php";
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
 <link rel="stylesheet" href="../../css/assignment.css">
-    
-  <!-- CMS CSS -->
-  <link rel="stylesheet" href="../../css/cms.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
+    </head>
+  <body  id="kt_body"  class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
+    <?php include("../fixed-blocks/header.php"); ?>
 
-</head>
+    <div class="row">
+      <div class="col-md-12">
 
-<style type="text/css">
+        <div class="card h-100 d-flex flex-column justify-content-between mb-4">
+          <div class="card-header">
+            <h6 class="mg-b-0 tx-14 mt-4">Assessment</h6>
+            <div class="card-option tx-24">
+              <!-- <a href="userCreation.php" class="btn btn-md btn-info" >New User</a> -->
+              <!-- <button class="btn btn-primary shadow" data-toggle="modal" data-target="#student_modal" id="add_student_bth">Add P</button> -->
+            </div><!-- card-option -->
+          </div><!-- card-header -->
+          <div class="card-body">
 
-
-
-
-</style>
-
-<body class="collapsed-menu">
-
-  <!-- ########## START: LEFT PANEL ########## -->
-  <?php include("../fixed-blocks/left_sidebar.php"); ?>
-  <!-- ########## END: LEFT PANEL ########## -->
-
-  <!-- ########## START: HEAD PANEL ########## -->
-  <?php include("../fixed-blocks/header.php"); ?>
-  <!-- ########## END: HEAD PANEL ########## -->
-
-  <!-- ########## START: MAIN PANEL ########## -->
-  <div class="br-mainpanel">
-    <div class="br-pagetitle">
-
-    </div><!-- d-flex -->
-
-    <div class="br-pagebody">
-      <!-- start you own content here -->
-
-
-
-      <div class="row new-row-bg">
-        <div class="col-md-12">
-
-          <div class="card h-100 d-flex flex-column justify-content-between mb-4">
-            <div class="card-header">
-              <h6 class="mg-b-0 tx-14 mt-4">Assessment</h6>
-              <div class="card-option tx-24">
-                <!-- <a href="userCreation.php" class="btn btn-md btn-info" >New User</a> -->
-                <!-- <button class="btn btn-primary shadow" data-toggle="modal" data-target="#student_modal" id="add_student_bth">Add P</button> -->
-              </div><!-- card-option -->
-            </div><!-- card-header -->
-            <div class="card-body">
-
-              <div class="card">
-                <div class="card-body">
-                  <ul class="nav nav-tabs nav-primary" role="tablist">
-                    <!-- <li class="nav-item" role="presentation">
-                      <a class="nav-link" data-bs-toggle="tab" href="#cqp" role="tab" aria-selected="true">
-                        <div class="d-flex align-items-center">
-                          <div class="tab-icon"><i class='bx bx-home font-18 me-1'></i>
-                          </div>
-                          <div class="tab-title">Create Question Paper1</div>
+            <div class="card">
+              <div class="card-body">
+                <ul class="nav nav-tabs nav-primary" role="tablist">
+                  <!-- <li class="nav-item" role="presentation">
+                    <a class="nav-link" data-bs-toggle="tab" href="#cqp" role="tab" aria-selected="true">
+                      <div class="d-flex align-items-center">
+                        <div class="tab-icon"><i class='bx bx-home font-18 me-1'></i>
                         </div>
-                      </a>
-                    </li> -->
-                    <!-- <li class="nav-item" role="presentation">
-                      <a class="nav-link active" data-bs-toggle="tab" href="#veqp" role="tab" aria-selected="false">
-                        <div class="d-flex align-items-center">
-                          <div class="tab-icon"><i class='bx bx-user-pin font-18 me-1'></i>
-                          </div>
-                          <div class="tab-title">View/Edit Question Paper</div>
+                        <div class="tab-title">Create Question Paper1</div>
+                      </div>
+                    </a>
+                  </li> -->
+                  <!-- <li class="nav-item" role="presentation">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#veqp" role="tab" aria-selected="false">
+                      <div class="d-flex align-items-center">
+                        <div class="tab-icon"><i class='bx bx-user-pin font-18 me-1'></i>
                         </div>
-                      </a>
-                    </li> -->
-                   
-                    
-                  </ul>
-                  <div class="tab-content py-3">
-                    
-                    <div>
-                      <button class="btn btn-primary shadow" data-toggle="modal" data-target="#test_edit_modal" id="add_student_bth">Add Question Paper</button>
-                      <table id="viewEditQpListTable" class="table dataTable" style="width:100%">
-                        <thead>
-                          <tr>
-                            <th>Title</th>
-                            <th>Status</th>
-                            <th>Total Marks</th>
-                            <th>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                      </table>
-                    </div>
+                        <div class="tab-title">View/Edit Question Paper</div>
+                      </div>
+                    </a>
+                  </li> -->
                   
-                     
+                  
+                </ul>
+                <div class="tab-content py-3">
+                  
+                  <div>
+                    <button class="btn btn-primary shadow" data-toggle="modal" data-target="#test_edit_modal" id="add_student_bth">Add Question Paper</button>
+                    <table id="viewEditQpListTable" class="table dataTable" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th>Title</th>
+                          <th>Status</th>
+                          <th>Total Marks</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
                   </div>
+                
+                    
                 </div>
               </div>
-            </div><!-- card-body -->
-          </div>
+            </div>
+          </div><!-- card-body -->
         </div>
       </div>
-    </div><!-- br-pagebody -->
-  </div><!-- br-mainpanel -->
+    </div>
+   
   <div class="modal fade" id="test_edit_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -255,7 +228,8 @@ require_once "../functions/db_functions.php";
 
 
   <!-- ########## END: MAIN PANEL ########## -->
-  <?php include("../setup/common-blocks/js.php"); ?>
+    <?php include("../fixed-blocks/footer.php"); ?>
+    <?php include("../setup/common-blocks/js.php"); ?>
     <script src="../../lib/popper.js/popper.js"></script>
     <script src="../../lib/datatables/jquery.dataTables.js"></script>
     <script src="../../lib/datatables-responsive/dataTables.responsive.js"></script>
@@ -277,6 +251,9 @@ require_once "../functions/db_functions.php";
   <script src="../../js/cms.js"></script>
 
  -->
+ <script src="../../links/plugins/global/plugins.bundle.js"></script>
+    <script src="../../links/js/scripts.bundle.js"></script>
+    <script src="../../links/plugins/custom/datatables/datatables.bundle.js"></script>
  <script src="../../js/qp/qustPaper.js"></script>
 
 </body>

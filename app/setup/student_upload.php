@@ -1,17 +1,7 @@
 <?php session_start();
    include_once "../session_token/checksession.php";
    include_once "../configration/config.php";
-   //include_once "session_token/checktoken.php";
    require_once "../functions/db_functions.php";
-//   if(checkPageAccess(13, 1) !== true) {
-//     die;
-//   }
-
-
-//   $back_page = $web_root."app/create.php";
-//   if(count($studentsList) > 0){
-//     $back_page = $web_root."app/student/student.php";
-//   }
 ?>
 
 <!doctype html>
@@ -28,22 +18,12 @@
   	<link rel="stylesheet" href="../../css/student_upload.css">
 
   </head>
-  <body class="collapsed-menu">
-
-    <!-- ########## START: LEFT PANEL ########## -->
-    <?php include("../fixed-blocks/left_sidebar.php"); ?>
-    <!-- ########## END: LEFT PANEL ########## -->
-
-    <!-- ########## START: HEAD PANEL ########## -->
+  <body  id="kt_body"  class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
     <?php include("../fixed-blocks/header.php"); ?>
-    <!-- ########## END: HEAD PANEL ########## -->
 
-    <div class="br-mainpanel">    
-      <div class="br-pagebody"> 	
+  		<section id="sudent">
 
-  		<section id="sudent" class="mt-5">
-
-          <div class="row new-row-bg">      
+          <div class="row">      
           
           <div class="col-12">
 
@@ -125,8 +105,6 @@
                 </div>
             </div>
         </section>
-    </div>
-</div>
 
     <!-- Snackbar  -->
     <div id="snackbar">
@@ -144,6 +122,9 @@
 
 
   	<!-- common scripts -->
+    <script src="../../links/plugins/global/plugins.bundle.js"></script>
+    <script src="../../links/js/scripts.bundle.js"></script>
+    <script src="../../links/plugins/custom/datatables/datatables.bundle.js"></script>
     <?php include("../setup/common-blocks/js.php"); ?>
     <script src="../../js/student_upload.js"></script>
   </body>

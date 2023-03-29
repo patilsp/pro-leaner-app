@@ -36,47 +36,20 @@ include "functions/common_function.php";
     <link href="../../lib/ajax_loader/jquery.mloading.css" rel="stylesheet">
     <!-- CMS CSS -->
     <link rel="stylesheet" href="../../css/cms.css">
-    <!-- <link rel="stylesheet" href="../../css/subject.css"> -->
-    <!-- orgchart CSS -->
     <link rel="stylesheet" href="../../lib/orgchart/jquery.orgchart.css?ver=231120211126">
     <link rel="stylesheet" href="<?php echo $web_root ?>assets/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/QuestionBank/QuestionBank.css">
     <link rel="stylesheet" href="../../assets/css/QuestionBank/qust_upload.css">
     <link rel="stylesheet" href="../../assets/css/QuestionBank/add_qust_blk.css">
-    <style type="text/css">
-      .orgChartDiv{
-          width: auto;
-          height: auto;
-      }
-
-      .orgChartContainer{
-          overflow: auto;
-          background: #eeeeee;
-      }
-      .disableEditAddAction{
-        pointer-events: none;
-      }
-
-
-      .card .card-header{
-        display: flex;
-        justify-content: center !important;
-      }
-      
-    </style>
+    <link href="../links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../links/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
+   
   </head>
-  <body class="collapsed-menu">
-    <!-- navbar -->
-    <?php include("../fixed-blocks/left_sidebar.php"); ?>
+  <body  id="kt_body"  class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
     <?php include("../fixed-blocks/header.php"); ?>
 
-    <div class="container-fluid mb-5 mb-lg-0">
-      <!-- breadcrumb -->
-      <?php //include("../common-blocks/breadcrumb.php"); ?>
-
-      <hr class="mt-0">
-       <div class="br-pagebody">
-      <section id="questionbank" class="mt-5">
+      <section id="questionbank1">
         <div class="card">
           <div class="card-header w-100 mb-4 d-flex align-items-center">
             <h6 class="flex-grow-1">Question Bank</h6>
@@ -401,8 +374,7 @@ include "functions/common_function.php";
           </div>
         </div>
       </section>
-    </div>
-    </div>
+  
     <!-- Snackbar  -->
     <div id="snackbar">
       <div class="d-flex justify-content-between align-items-center mb-3">
@@ -417,6 +389,7 @@ include "functions/common_function.php";
     </div>
     <!-- common scripts -->
     <?php //include("../common-blocks/js.php"); ?>
+    <?php include("../fixed-blocks/footer.php"); ?>
     <?php include("../setup/common-blocks/js.php"); ?>
     <script src="../../lib/popper.js/popper.js"></script>
 
@@ -436,6 +409,11 @@ include "functions/common_function.php";
     <script src="../../js/QuestionBank.js"></script>
     <script src="../../js/QuestionBankUpload.js"></script>
     <script src="../../js/add_qust_blk.js"></script>
+
+    <script src="../../links/plugins/global/plugins.bundle.js"></script>
+    <script src="../../links/js/scripts.bundle.js"></script>
+    <script src="../../links/plugins/custom/datatables/datatables.bundle.js"></script>
+    
     <script type="text/javascript">
     <?php if(isset($_SESSION['sb_heading']))  { ?>
         $("#sb_heading").html("<?php echo $_SESSION['sb_heading']; ?>");

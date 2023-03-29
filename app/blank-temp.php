@@ -28,30 +28,13 @@ $user_type = $_SESSION['cms_usertype'];
             <!-- Header End -->
 			<div class="wrapper d-flex flex-column flex-row-fluid  container-xxl " id="kt_wrapper">
                 <div class="toolbar d-flex flex-stack flex-wrap py-4 gap-2" id="kt_toolbar">
-                <div  class="page-title d-flex flex-column">
-                    <h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-3 m-0">
-                        Users
-                    </h1>
-                </div>
+                    <div  class="page-title d-flex flex-column">
+                        <h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-3 m-0">
+                            Users
+                        </h1>
+                    </div>
                 
-                    <div class="d-flex flex-align-items flex-wrap gap-3 gap-xl-0">
-                        <!--begin::Users group-->
-                        <div class="symbol-group symbol-hover flex-nowrap me-5">
-                            
-                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Perry Matthew">
-                                    <span class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
-                            </div>
-                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Cody Fishers">
-                                    <img alt="Pic" src="../links/media/avatars/300-1.jpg" />
-                            </div>
-                                    
-                        </div>
-                        
-                        <div class="d-flex align-items-center flex-shrink-0">
-                            <a href="#" class="btn btn-sm btn-flex btn-secondary px-3"  data-bs-toggle="modal" data-bs-target="#kt_modal_invite_friends">
-                            Invite 
-                            </a>   
-
+                    <div class="d-flex flex-align-items flex-wrap gap-3 gap-xl-0">                     
                             <a href="#" class="btn btn-sm btn-flex btn-primary ms-5">
                                 Edit You Profile
                             </a> 
@@ -80,20 +63,5 @@ $user_type = $_SESSION['cms_usertype'];
 
 <script src="../links/plugins/global/plugins.bundle.js"></script>
 <script src="../links/js/scripts.bundle.js"></script>
-<script src="../links/plugins/custom/datatables/datatables.bundle.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-<script src="../links/js/widgets.bundle.js"></script>
-<script src="../links/js/custom/widgets.js"></script>
-<script src="../links/js/chat.js"></script>
-<script src="../links/js/upgrade-plan.js"></script>
-<script src="../links/js/create-app.js"></script>            
-<script src="../links/js/users-search.js"></script>
-<!--end::Custom Javascript-->
-
-
 </body>
 </html>

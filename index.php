@@ -20,7 +20,7 @@
     <link href="lib/ajax_loader/jquery.mloading.css" rel="stylesheet">
     <!-- Bracket CSS -->
     <link href="links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
-    <link href="links/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="links/css/main.css" rel="stylesheet" type="text/css"/>
   </head>
   <body  id="kt_body"  class="auth-bg bgi-size-cover bgi-attachment-fixed bgi-position-center bg-black" >
     <div class="d-flex flex-column flex-root">
@@ -70,15 +70,19 @@
                                     <!--end::Password-->
                                 </div>
                                 <span id="html_invalid"></span>
-                                <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">                      
-                                    <a href="/metronic8/demo19/../demo19/authentication/layouts/overlay/reset-password.html" class="link-primary">
+                                <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-5 mt-5">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="remember" class="form-check-input" id="rememberme">
+                                        <label class="form-check-label font-weight-bold" role="button" for="rememberme">Remember me</label>
+                                    </div>
+                                    <a href="<?php echo $web_root?>app/login_blocks/reset-password.php" class="link-primary">
                                         Forgot Password ?
                                     </a>
                                 </div>
                                 <div class="d-grid mb-10">
-                                <button type="submit"  id="login_btn" class="btn btn-primary p-4 login-btn shadow">
-                                    Sign In
-                                </button>
+                                    <button type="submit"  id="login_btn" class="btn btn-primary p-4 login-btn shadow">
+                                        <i class="fa fa-lock"></i>Sign In
+                                    </button>
                                 </div>
                                 <!--end::Submit button-->
 
@@ -86,7 +90,7 @@
                                 <div class="text-gray-500 text-center fw-semibold fs-6">
                                     Not a Member yet?
 
-                                    <a href="/metronic8/demo19/../demo19/authentication/layouts/overlay/sign-up.html" class="link-primary">
+                                    <a href="#" class="link-primary">
                                         Sign up
                                     </a>
                                 </div>

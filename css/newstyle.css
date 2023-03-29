@@ -334,12 +334,7 @@
     border-radius: 5px;
   }
   
-  .page-item.active .page-link, .page-item.active .page-link:hover, .page-item.active .page-link:focus, .pagination li.active>a:not(.page-link), .pagination li.active>a:not(.page-link):hover, .pagination li.active>a:not(.page-link):focus {
-    border-color: #a6c;
-    background-color: #a6c;
-    color: #fff;
-    box-shadow: 0 0.125rem 0.25rem rgb(105 108 255 / 40%);
-  }
+
   .page-item.active .page-link {
     margin: 0 0.1rem 0 0.3rem;
   }
