@@ -90,7 +90,7 @@ try {
               <div class="card-header card-header d-flex align-items-center justify-content-between pd-y-5">
                 <h6 class="mg-b-0 tx-14">Module SetUp</h6>
               </div><!-- card-header -->
-              <div class="card-body">
+              <div class="card-body mt-2">
                 <div class="accordion" id="moduleSetupAccordion">
                   <input type="hidden" id="classId" value="">
                   <input type="hidden" id="openedCard" value="">

@@ -8,14 +8,14 @@ $(document).ready(function($) {
           $(this).removeClass('eye-slash');
           
           $(this).addClass('eye');
-          $(this).attr('src','img/show_password.svg');
+          $(this).attr('src','links/media/show_password.svg');
           $('#password').attr('type','text');
           }else{
          
           $(this).removeClass('eye');
           
           $(this).addClass('eye-slash');  
-          $(this).attr('src','img/hide_password.svg');
+          $(this).attr('src','links/media/hide_password.svg');
           
           $('#password').attr('type','password');
         }

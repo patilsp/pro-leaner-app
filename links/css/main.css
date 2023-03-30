@@ -36697,7 +36697,7 @@ code:not([class*=language-]) {
   min-height: inherit;
 }
 .table:not(.table-bordered) tr:first-child, .table:not(.table-bordered) th:first-child, .table:not(.table-bordered) td:first-child {
-  padding-left: 0;
+  padding-left: 10px;
 }
 .table:not(.table-bordered) tr:last-child, .table:not(.table-bordered) th:last-child, .table:not(.table-bordered) td:last-child {
   padding-right: 0;
@@ -36732,7 +36732,7 @@ code:not([class*=language-]) {
 }
 .table:not(.table-bordered).table-row-dashed tr {
   border-bottom-width: 1px;
-  border-bottom-style: dashed;
+  border-bottom-style: none;
   border-bottom-color: var(--bs-border-color);
 }
 .table:not(.table-bordered).table-row-dashed tfoot th, .table:not(.table-bordered).table-row-dashed tfoot td {
@@ -47312,7 +47312,7 @@ body:not(.bg-body, .app-blank) {
 }
 
 .table {
-  border-spacing: 0 0.95rem !important;
+  border-spacing: 0 0.75rem !important;
 }
 
 .table .dropdown {
@@ -47322,15 +47322,14 @@ body:not(.bg-body, .app-blank) {
 .table td,
 .table th {
   vertical-align: middle !important;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   border: none;
-  text-align: center !important;
 }
 .table thead tr, .table thead th{
   border:none !important
 }
 .table td .btn{
-  padding: 8px 12px !important;
+  /* padding: 8px 12px !important; */
 }
 .table thead tr,
 .table thead th {
@@ -47628,7 +47627,7 @@ div.dataTables_wrapper div.dataTables_filter input {
     background-color: transparent;
   }
   .card-body{
-    padding: 0;
+    padding: 0 !important;
   }
   .card-header{
     padding: 0 !important;
@@ -47639,5 +47638,23 @@ div.dataTables_wrapper div.dataTables_filter input {
   .table-responsive{
     overflow-x: auto !important;
   }
+  .flex-lg-row-fluid{
+    display: none !important;
+  }
+  .edit-icon{
+    height:25px
+  }
+  .delete-icon{
+    height:25px
+  }
+}
+
+
+#icon{
+  bottom: -38px;
+  float: right;
+  margin: 0px 10px;
+  position: relative;
+  height:25px
 }
 

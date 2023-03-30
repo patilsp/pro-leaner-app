@@ -47229,7 +47229,7 @@ body[data-kt-sticky-landing-header=on] {
   --bs-app-blank-bg: #ffffff;
   --bs-header-link-bg-color: rgba(255, 255, 255, 0.1);
   --bs-content-bg: #ECEEF7;
-  --bs-page-bg-image: url("../media/misc/page-bg.jpg");
+  --bs-page-bg-image: url("../media/page-bg.jpg");
   --bs-aside-bg-color: #ffffff;
   --bs-toolbar-bg-color: #ffffff;
   --bs-topbar-btn-bg-color: rgba(255, 255, 255, 0.07);
@@ -47241,7 +47241,7 @@ body[data-kt-sticky-landing-header=on] {
   --bs-app-blank-bg: #151521;
   --bs-header-link-bg-color: rgba(255, 255, 255, 0.1);
   --bs-content-bg: #151521;
-  --bs-page-bg-image: url("../media/misc/page-bg.jpg");
+  --bs-page-bg-image: url("../media/page-bg.jpg");
   --bs-aside-bg-color: #1E1E2D;
   --bs-toolbar-bg-color: #1E1E2D;
   --bs-topbar-btn-bg-color: rgba(255, 255, 255, 0.07);

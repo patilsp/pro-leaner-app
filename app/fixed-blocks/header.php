@@ -26,8 +26,8 @@
                 <i class="fa fa-chart bx-sm mx-2"></i>           
             </div>
             <a href="<?php echo $web_root ?>/index.php">            
-                <img alt="Logo" src="../../links/media/logo.svg" class="d-none d-lg-inline-block h-60px"/>                
-                <img alt="Logo" src="../links/media/logo.svg" class="d-lg-none h-25px"/>            
+                <img alt="Logo" src="../../links/media/favicon.png" class="d-none d-lg-inline-block h-60px"/>                
+                <img alt="Logo" src="../../links/media/favicon.png" class="d-lg-none h-25px"/>            
             </a>
         </div>
         <div class="topbar d-flex align-items-stretch flex-shrink-0" id="kt_topbar">           
@@ -38,17 +38,23 @@
                         <i class="fa fa-search bx-sm mx-2"></i>                         
                     </div>
                 </div>
-                <form data-kt-search-element="form" class="d-none d-lg-block w-100 position-relative mb-5 mb-lg-0" autocomplete="off">
-                    <input type="hidden"/>
-                    <input type="text" class="search-input form-control form-control-solid ps-13" name="search" value="" placeholder="Search..." data-kt-search-element="input"/>
-            
+                <div id="kt_header_search" class="header-search d-flex align-items-center topbar-search w-lg-225px" data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter" data-kt-search-layout="menu" data-kt-search-responsive="lg" data-kt-menu-trigger="auto" data-kt-menu-permanent="true" data-kt-menu-placement="bottom-end" data-kt-search="true">
+                    <form data-kt-search-element="form" class="d-lg-block w-100 position-relative mb-5 mb-lg-0 d-none" autocomplete="off">	
+                  
+                    <input type="hidden">
+                    <i class="fa fa-search fs-2 fs-lg-3 text-gray-800 position-absolute top-50 translate-middle-y ms-5"><span class="path1"></span><span class="path2"></span></i>   
+                    <input type="text" class="search-input form-control form-control-solid ps-13" name="search" value="" placeholder="Search..." data-kt-search-element="input">
+                    
                     <span class="position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5" data-kt-search-element="spinner">
-                    <span class="spinner-border h-15px w-15px align-middle text-gray-400"></span>
-                </span>
-                <span class="btn btn-flush btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-4" data-kt-search-element="clear">
-                    <i class="fa fa-search"></i>
-                </span>
-            </form>
+                        <span class="spinner-border h-15px w-15px align-middle text-gray-400"></span>
+                    </span>
+                   
+                    <span class="btn btn-flush btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-4" data-kt-search-element="clear">
+                        <i class="fa fa-search fs-2 fs-lg-1 me-0"><span class="path1"></span><span class="path2"></span></i>    </span>
+                    
+                </form>
+        </div>
+
         </div>
      </div>	
     <!--end:Search-->

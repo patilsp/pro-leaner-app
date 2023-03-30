@@ -22,15 +22,11 @@
     <link href="../../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
     <link href="../../lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
     <link href="../../lib/highlightjs/github.css" rel="stylesheet">
-    <!-- <link href="../../lib/datatables/jquery.dataTables.css" rel="stylesheet"> -->
     <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
     <link href="links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
     <link href="links/css/style.bundle.css" rel="stylesheet" type="text/css"/>
     <link href="../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
 
-    <!-- CMS CSS -->
-    <!-- <link rel="stylesheet" href="../../css/cms.css"> -->
-   
   </head>
   <body  id="kt_body"  class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
     <?php include("../fixed-blocks/header.php"); ?>
@@ -47,9 +43,9 @@
           </div>
           <div class="card-body">
               <div class="dataTables_wrapper dt-bootstrap4 no-footer">
-                  <table id="datatable" class="table align-middle table-row-dashed fs-6 gy-5 dataTable no-footer">
+              <table id="datatable" class="table align-middle table-row-dashed dataTable no-footer">
                   <thead>
-                    <tr>
+                    <tr class="text-start text-muted fw-bold fs-5 text-uppercase gs-0">
                       <th>Username</th>
                       <th>Email</th>
                       <th>Phone</th>
@@ -82,7 +78,7 @@
                   
                 </table>
               </div>
-          </div><!-- card-body -->
+          </div>
         </div>
       </div>
     </div>

@@ -17,8 +17,7 @@
     <title>Tech E-Learning App</title>
     <link rel="icon" type="image/png" href="../../links/media/favicon.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700">
-    <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="../../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="../../links/plugins/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="../../links/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
     <link href="../../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
     <link href="../../links/css/main.css" rel="stylesheet" type="text/css"/>
@@ -42,8 +41,6 @@
           <div class="card-body">
             <table id="datatable" class="table align-middle table-row-dashed fs-6 dataTable no-footer">
               <thead>
-
-                  
                 <tr>
                   <th>Name </th>
                   <th>Admission No.</th>
@@ -68,9 +65,9 @@
                   <td><?php echo $row['module']; ?></td>
                   <td><?php echo $row['section']; ?></td>
                   <!-- <td><button type="button" class="btn btn-info" onclick="location.href='updateUser.php?id=<?php //echo $row['id']; ?>';">Edit</button></td> -->
-                  <td>
-                    <a type="button" class="editUser" title="Edit Student" data-toggle="modal" data-target="#student_edit_modal" data-id="<?php echo $row['id']; ?>"><img src="../../links/media/icons/edit.svg" class="" alt="edit"></a>
-                    <a type="button" class="deleteStudent" title="Delete Student" id='<?php echo $row['id']; ?>' ><img src="../../links/media/icons/delete.svg" class="" alt="edit"></a>
+                  <td class="d-flex px-0">
+                    <a type="button" class="editUser" title="Edit Student" data-toggle="modal" data-target="#student_edit_modal" data-id="<?php echo $row['id']; ?>"><img src="../../links/media/icons/edit.svg" class="edit-icon me-1" alt="edit"></a>
+                    <a type="button" class="deleteStudent" title="Delete Student" id='<?php echo $row['id']; ?>' ><img src="../../links/media/icons/delete.svg" class="delete-icon" alt="edit"></a>
                   </td>
                   
                 </tr>
@@ -86,9 +83,10 @@
         </div>
       </div>
     </div>
-    
+
+
 <div class="modal fade" id="student_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog mw-650px">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="font-weight-bold w-100" id="model_title">Add New Student</h4>
@@ -96,10 +94,10 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body scroll-y mx-5 my-5">
+      <div class="modal-body scroll-y mx-5 pt-2 pb-15">
     
         <form class="user_form form-horizontal" action="createStudent.php" name="form" method="POST">
-            <div class="card-body bd rounded-bottom">
+            <div class="card-body mh-300px scroll-y me-n7 pe-7">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-floating">
@@ -183,9 +181,9 @@
                 </div>
               </div>
             </div>
-            <div class="card-footer mt-5">
-              <a href="<?php echo $web_root ?>app/setup/students.php" class="btn btn-md btn-danger me-2">Cancel</a>
-              <button type="submit" class="btn btn-md btn-info" name="submit">Submit</button>
+            <div class="card-footer mt-2">
+              <a href="<?php echo $web_root ?>app/setup/students.php" class="btn btn-sm btn-default me-2">Discard</a>
+              <button type="submit" class="btn btn-sm btn-info" name="submit">Submit</button>
             </div>
           </form>
       </div>

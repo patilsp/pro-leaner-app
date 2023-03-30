@@ -12,7 +12,7 @@ $user_type = $_SESSION['cms_usertype'];
         <title>Tech E-Learning School</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="../links/media/logos/favicon.ico" />
+        <link rel="shortcut icon" href="../links/media/favicon.png" />
         <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
         <link href="../links/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />

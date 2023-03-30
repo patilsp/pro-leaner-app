@@ -16,8 +16,8 @@
                 <i class="fa fa-chart bx-sm mx-2"></i>           
             </div>
             <a href="<?php echo $web_root ?>/index.php">            
-                <img alt="Logo" src="../links/media/study.png" class="d-none d-lg-inline-block h-60px"/>                
-                <img alt="Logo" src="../links/media/study.png" class="d-lg-none h-25px"/>            
+                <img alt="Logo" src="../links/media/favicon.png" class="d-none d-lg-inline-block h-60px"/>                
+                <img alt="Logo" src="../links/media/favicon.png" class="d-lg-none h-25px"/>            
             </a>
         </div>
         <div class="topbar d-flex align-items-stretch flex-shrink-0" id="kt_topbar">           
