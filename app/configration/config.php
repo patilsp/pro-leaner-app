@@ -5,7 +5,7 @@
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
 $password=''; // Mysql password 
-$db_name="cms-2023"; // Database name
+$db_name="cms_2021"; // Database name
 $web_root = "http://localhost:81/e-learning-app/";
 $dir_root = "c:/wamp/www/e-learning-app/";
 $dir_root_production = "E:/wamp/www/skills4lifeadmin/";

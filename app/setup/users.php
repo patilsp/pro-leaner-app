@@ -54,16 +54,26 @@
                   <tbody>
                     <?php 
                         $i=1; 
-                        $query="SELECT * FROM users where deleted=0";
-                        $result=$db->query($query);
-                        while($row = $result->fetch(PDO::FETCH_ASSOC))
-                        { 
-                          $date = new DateTime($row['date_created']);
-                          $createDate = $date->format('Y-m-d');
 
-                          $datemodified = new DateTime($row['date_modified']);
-                          $last_login = $datemodified->format('Y-m-d');
-                         
+                            $query="SELECT * FROM users where deleted = 0";
+                            $result=$db->query($query);
+                            while($row = $result->fetch(PDO::FETCH_ASSOC))
+                            { 
+                              $date = new DateTime($row['date_created']);
+                              $createDate = $date->format('Y-m-d');
+
+                              $datemodified = new DateTime($row['date_modified']);
+                              $last_login = $datemodified->format('Y-m-d');
+                            
+
+                                  $sql = "SELECT * FROM roles WHERE id = ?";
+                                  $query=$db->prepare($sql);
+                                  $query->execute(array($role_id)); 
+                                  while($fetch = $query->fetch(PDO::FETCH_ASSOC))
+                                  {
+
+                                    $user_auto_id = $fetch['id'];
+                                    $role_name = $fetch['name'];
                         ?>
                     <tr>
                      
@@ -83,8 +93,8 @@
                           <!--begin::User details-->
                       </td>
                         
-                      <td><?php echo $row['first_name']." ".$row['last_name']; ?></td>
-                      <td><?php echo $last_login ?></td>
+                      <td><?php echo $role_name; ?></td>
+                      <td><div class="badge badge-light fw-bold"><?php echo $last_login ?></div></td>
                       <td><?php echo $createDate ?></td>
                       <!-- <td><button type="button" class="btn btn-info" onclick="location.href='updateUser.php?id=<?php //echo $row['id']; ?>';">Edit</button></td> -->
                       <td class="d-flex px-0">
@@ -101,6 +111,7 @@
 
                     <?php
                   }
+                }
                   ?>
                   </tbody>
                   
